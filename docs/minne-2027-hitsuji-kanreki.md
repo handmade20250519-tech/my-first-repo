@@ -149,3 +149,41 @@ OUTPUT: Highest available resolution (4K), 9:16 vertical aspect ratio. Crisp, pr
 - 梅が桃色になったら「pure white plum petals, no pink」を足す。
 - 朱印まで赤く見えて気になる場合は、朱印を省いて生成し、後から小さな朱印画像を重ねる。
 - 掛軸版は上の余白を延ばさず、9:16のまま本紙にしてもよい(梅と羊の間の余白が、もともと縦に長い)。
+
+---
+
+## 改訂2: 二頭の距離(色紙版)
+
+### ユーザーの指摘
+- 日本の老夫婦は、あまりベタベタくっつかない。羊同士をもう少し離す
+- それでも、お互いを思い合っている構図にする
+
+### 変更点
+| 項目 | 変更前 | 変更後 |
+|---|---|---|
+| 距離 | 寄り添い、頭を傾ける | 羊の体の半分ほど離して座る。体は触れない |
+| 思い合い | 頭を相手に傾ける | **二頭が同じ白梅を見上げている。** 体の向きはわずかに相手の側へ開き、並んで同じものを眺める |
+| 並び | 横並び | 一頭が少し手前、もう一頭が少し奥。鏡に映したような左右対称にしない |
+| 余白 | 枝と羊の間は空白 | 同じ空白が、二頭の視線が通る道になる(右下の羊から左上の梅へ) |
+
+#### 色紙版(改訂2)
+```
+Create an original Japanese nihonga-style painting on warm washi paper, for display in a traditional tokonoma alcove or Japanese tatami room. A calm, gentle New Year picture for 2027, the Year of the Sheep.
+
+SUBJECT: Two adult sheep, like a quiet elderly couple, resting on the ground with their legs folded. They sit a little apart, with a clear gap of about half a sheep's body length between them; they do NOT touch or lean on each other. One sheep sits slightly in front, the other slightly behind, so they are not mirror images. Both bodies are turned very slightly toward each other, and both sheep are calmly raising their heads to look up at the same white plum blossoms in the upper left, sharing the same view in silence. Their eyes are softly open and calm. Paint the sheep with soft gofun white (#F7F1E6) for the wool and a few gentle strokes of warm diluted sumi ink (#7A6E62) for the faces, legs and shading; soft edges, no hard outlines. Beneath them, only a very faint, soft wash of pale yellow ochre (#D9C39A) suggesting the ground; no horizon line, no landscape. From the upper left edge, one slender branch of white plum blossoms (hakubai) reaches into the picture: a few white five-petal flowers with pale yellow stamens and two or three small buds, the branch painted in light warm grey ink. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Square canvas with a diagonal composition. The plum branch enters from the upper-left edge and reaches no further than one third into the canvas. The two sheep sit in the lower-right third, together (including the gap between them) about 45% of the canvas width. The diagonal band between the branch and the sheep is completely empty, and the sheep's gaze travels across it toward the blossoms. Leave about 60–65% of the canvas as empty negative space (Japanese "ma"). Keep the sheep and the seal within the central 80% of the width so the image can be trimmed to shikishi proportions (242×272 mm).
+
+COLOR: Warm kinari washi paper background (#EFE6D3) with a subtle, natural paper fiber texture. Only soft, warm, quiet colors: gofun white, warm grey ink, pale yellow ochre, pale yellow stamens. Absolutely no red or pink washes, no red bleeding, no sunset, no cool colors.
+
+JAPANESE LETTERING: In the lower-right corner, one small square vermilion-orange (#D0643C) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, crisp white lines on flat vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Peaceful, gentle, and warm; a quiet, understated bond, like an elderly couple who have lived together for many years, sitting a little apart and admiring the same early spring blossoms.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
+```
+
+### 生成のコツ(改訂2)
+- まだくっついて見える → 「a visible empty space between the two sheep」を足す。
+- 離れすぎて他人同士に見える → 「their bodies angled slightly toward each other」を強め、隙間を「about one third of a body length」に縮める。
+- 視線がばらばらになる → 「both sheep look at the same plum blossom」を足す。
