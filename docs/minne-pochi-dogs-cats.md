@@ -269,3 +269,42 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - **ハムスター:** 件数は多いが、種類が偏っていてお気に入りも少ない。需要が弱い可能性があるので後回し。
 - **アフリカヤマネ:** 空きは最大だが、買う人も極めて少ない。データ版なら損はないので、余力があれば作る。
 - **まだ足りない証拠:** モルモットの上位作品のお気に入り数(数字)。出品後の反応で確かめる。
+
+---
+
+## モルモット(小動物の1番目)
+
+### 共通指示文(モルモット用)
+犬猫と同じ画風のまま、モルモットの体つきを書き足した。`[SCENE LINE]` を下の表の一文に差し替えて使う。
+
+```
+Create an original, warm and humorous illustration of a single guinea pig for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: [SCENE LINE]
+The humor must feel affectionate and true to life, the kind of moment real guinea pig owners instantly recognize. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+THIS IS A GUINEA PIG, NOT A HAMSTER, RABBIT OR MOUSE: a plump, loaf-shaped body that is wider than tall, NO visible tail at all, a big rounded blunt nose (Roman nose) with no pointed snout, small droopy petal-shaped ears on the sides of the head, round eyes set on the sides of the face, and tiny short legs mostly hidden under the body. No neck: the head flows straight into the body.
+
+STYLE: Cute, simplified cartoon illustration with deformed (chibi-like) proportions: a big round head, a small soft body, short stubby legs, and simple dot or small oval eyes. Keep only the few features that make the animal instantly recognizable (body shape, ear shape, coat color and patches, coat texture) and exaggerate them slightly. Clean, smooth outlines in a soft dark brown, flat colors with gentle shading, warm and friendly palette. Simple shapes that stay readable when printed small (about 5 cm tall).
+
+COMPOSITION: One guinea pig only, centered, filling about 70% of the canvas width, with generous empty space around it. Plain pure white background, no floor, no shadow except a very light one under the animal, no props unless described above.
+
+TEXT: No text, letters, numbers, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
+※犬猫は「画面の高さの70%」だが、モルモットは横長なので「幅の70%」にしている。
+
+### あるある候補(仮。ユーザーの実体験で差し替える)
+| あるある | [SCENE LINE] に入れる一文 |
+|---|---|
+| 野菜の袋の音でプイプイ叫ぶ | A short-haired guinea pig with tortoiseshell-and-white patches (orange, black and white), standing up on its hind legs with its mouth wide open, loudly squeaking for food, with small curved "sound lines" near its mouth, eyes shining with excitement. |
+| ポップコーンジャンプ | A short-haired cream-and-white guinea pig in the middle of a happy "popcorning" jump: all four tiny feet off the ground, body twisted slightly in mid-air, eyes closed with joy, a few small motion lines under it. |
+| 牧草をくわえたまま固まる | An Abyssinian guinea pig with messy swirled rosettes in its brown-and-white coat, frozen still with a long strand of hay sticking out of its mouth, staring straight ahead with a blank, serious face. |
+| 袋から顔だけ出す | A long-haired (Peruvian-style) guinea pig with flowing silky hair, only its head and front paws poking out from the opening of an opaque paper envelope, hair spilling over the edge, looking out cautiously. The rest of the body is hidden inside the envelope. |
+
+### 毛色・毛の種類の候補
+- 短毛の三毛(オレンジ・黒・白)、クリーム×白、ヒマラヤン(白い体に黒い鼻と耳)
+- アビシニアン(つむじがたくさんある)、長毛(ペルビアンやシェルティ)、テディ(もこもこ)
+- **ユーザーの子の毛色を1枚目にする**のがいちばん強い(本人が「似ている」と判断できるため)。
