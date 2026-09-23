@@ -73,7 +73,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 ### 犬レアセット(8種)
 | 犬種 | あるある | [BREED LINE] に入れる一文 |
 |---|---|---|
-| ボルゾイ | 優雅なはずが、長い顔で真顔のまま変な寝相 | A borzoi lying on its side with its long legs tangled in an awkward way, long elegant face completely serious and deadpan. |
+| ボルゾイ | 外では貴族のように優雅。家では仰向けで、長い足を四方に折り曲げた変な寝相。それでも顔だけは気品のある真顔 | A borzoi asleep upside down on its back in the typical sighthound "roach" pose: long thin legs folded and sticking up in four different awkward directions, long plumed tail curled around, silky coat spilling to the sides. Yet its long, narrow, aristocratic face remains perfectly calm, noble and serious, eyes gently closed, as if posing for a royal portrait. Classic borzoi features: very long narrow muzzle, small folded-back ears, long silky wavy coat, deep narrow chest, long legs. For this breed only, keep the long narrow muzzle and noticeably longer legs than the other animals, while the head stays cute and simplified. Coat color: white with soft light-gray patches. |
 | グレート・デーン | 自分を小型犬だと思って、人の膝に乗ろうとする | A great dane trying to sit on a small cushion far too small for it, its huge body overflowing, with an innocent face as if it thinks it is a small dog. |
 | セント・バーナード | よだれを垂らして、のんびり寝そべる | A saint bernard lying down calmly with a sleepy, gentle face and a small, comical drip of drool from its jowls. |
 | バーニーズ・マウンテン・ドッグ | 大きな体で、甘えて仰向け | A bernese mountain dog rolling on its back, big fluffy body twisted, paws curled, begging for a belly rub with a sweet face. |
