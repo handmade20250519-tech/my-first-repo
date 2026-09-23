@@ -4,6 +4,10 @@
   pochi_guide_A4.png  Canvaで下敷きにする案内つきの型(300dpi)
   pochi_lines_A4.png  印刷用の線だけ(背景透明、300dpi)
   pochi_guide_A4.pdf  試し刷り用の案内つきの型(実寸)
+  pochi_print_A4.png  売るデータ用。組み立てたあと線が目立たない版(背景透明、300dpi)
+                      ・切り線はごく薄い細線
+                      ・折り線は袋の上に引かず、型の外側に短い目印だけ
+                      ・のりしろの印は、組み立てると②の下に隠れる①の端だけ
 """
 from pathlib import Path
 
@@ -166,7 +170,35 @@ def draw_pdf(path):
     c.save()
 
 
+def draw_print_png():
+    """組み立てたときに線が目立たない、売るデータ用の版。"""
+    img = Image.new("RGBA", (p(PAGE_W), p(PAGE_H)), (255, 255, 255, 0))
+    d = ImageDraw.Draw(img)
+    cut = (200, 200, 200, 255)   # ごく薄いグレー
+    mark = (170, 170, 170, 255)
+    for ox, oy in nets():
+        fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
+        fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
+        # のりしろ(①の外側の端)。②を貼ると下に隠れるので、印刷しても見えない
+        d.rectangle([p(ox + 0.6), p(fy0 + 3.6), p(ox + 5.5), p(fy1 - 3.6)], fill=(235, 235, 235, 255))
+        # 切り線: ごく薄く細い線
+        pts = outline(ox, oy)
+        d.line([(p(x), p(y)) for x, y in pts] + [(p(pts[0][0]), p(pts[0][1]))], fill=cut, width=2)
+        # 折り線の目印: 型の外側に短い線だけ(袋の上には線を引かない)
+        L = 3.0
+        ticks = [
+            ((fx0, oy - 1), (fx0, oy - 1 - L)), ((fx1, oy - 1), (fx1, oy - 1 - L)),          # 左右の折り目(上端の外)
+            ((fx0, oy + NET_H + 1), (fx0, oy + NET_H + 1 + L)), ((fx1, oy + NET_H + 1), (fx1, oy + NET_H + 1 + L)),
+            ((ox - 1, fy0), (ox - 1 - L, fy0)), ((ox + NET_W + 1, fy0), (ox + NET_W + 1 + L, fy0)),  # 上下の折り目(左右の外)
+            ((ox - 1, fy1), (ox - 1 - L, fy1)), ((ox + NET_W + 1, fy1), (ox + NET_W + 1 + L, fy1)),
+        ]
+        for a, b in ticks:
+            d.line([(p(a[0]), p(a[1])), (p(b[0]), p(b[1]))], fill=mark, width=3)
+    return img
+
+
 if __name__ == "__main__":
+    draw_print_png().save(OUT / "pochi_print_A4.png", dpi=(DPI, DPI))
     draw_png(True).convert("RGB").save(OUT / "pochi_guide_A4.png", dpi=(DPI, DPI))
     draw_png(False).save(OUT / "pochi_lines_A4.png", dpi=(DPI, DPI))
     draw_pdf(OUT / "pochi_guide_A4.pdf")
