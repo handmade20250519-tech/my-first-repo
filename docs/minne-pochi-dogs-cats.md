@@ -62,7 +62,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 | トイ・プードル | トリミング直後の、ちょっと得意げなすまし顔 | A toy poodle freshly groomed, standing proudly with its nose slightly up and eyes half closed, looking very pleased with itself. |
 | チワワ | 小さく震えているのに、目だけは強気 | A chihuahua trembling slightly, tiny body tense, but staring forward with huge, fierce, determined eyes. |
 | ミニチュア・ダックスフンド | 胴が長すぎて、袋の横いっぱいに伸びる | A miniature dachshund stretched out lying flat on its belly, its extremely long body extended horizontally, looking up with a relaxed, satisfied face. Wide horizontal composition inside the square. |
-| 柴犬 | 散歩の帰り道、踏ん張って動かない | A shiba inu firmly planting all four legs and leaning back, refusing to move, with a stubborn, unimpressed face (no leash visible, no person). |
+| 柴犬 | 散歩の帰り道、踏ん張って動かない(拒否柴) | A red shiba inu refusing to walk: front legs stiffly braced forward, body leaning far back, bottom lowered toward the ground. A leash from its collar is pulled tight and runs straight out of the right edge of the canvas (no person visible). Ears pinned back, eyes squeezed into narrow flat lines, chin tucked, cheeks puffed, a firm "absolutely not" face. Classic shiba features: red-orange coat with cream-white urajiro markings on the cheeks, chest and belly, small triangle ears, tightly curled tail. |
 | ポメラニアン | 毛が爆発して、ほぼ丸いかたまり | A pomeranian so fluffy it looks like an almost perfect round ball of fur, with tiny paws and a small happy face peeking out. |
 | フレンチ・ブルドッグ | へそ天で、いびきをかいて爆睡 | A french bulldog sleeping deeply on its back, belly up, legs in the air, bat ears flopped, mouth slightly open as if snoring. |
 | ゴールデン・レトリーバー | 靴下をくわえて、誇らしげに持ってくる | A golden retriever proudly carrying a single striped sock in its mouth, tail wagging, with a big joyful expression. |
@@ -100,6 +100,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - デフォルメしすぎて犬種が分からなくなったら、その犬種の見分けどころを一文足す(例: 「long body and very short legs」「curled tail and triangle ears」)。
 - 人間のようなポーズや表情になりすぎたら「animal-like pose, no human clothing, no human gestures」を足す(イタグレのセーターなど、指示したものは除く)。
 - 犬種の特徴が弱いときは、その犬種の見分けどころ(ダックスの胴、コーギーの短い足など)を一文足す。
+- 画風は「デフォルメしたイラスト」で確定(ユーザーが決定)。
 - 画風がばらつかないよう、**共通指示文は変えずに、[BREED LINE]だけ差し替える**。同じチャットで続けて作ると画風がそろいやすい。
 
 ---
