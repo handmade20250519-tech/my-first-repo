@@ -335,3 +335,30 @@ MOOD: Peaceful, gentle, and warm; an understated bond between two companions who
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
 ```
+
+---
+
+## 改訂7: 左の羊を確実に小さくする
+
+### 問題
+- 改訂6の修正指示では、左の羊が小さくならなかった
+
+### 原因の見立て
+- 「10%小さく」は差が小さすぎて、Geminiが「ほぼ同じ」と扱いやすい
+- 3つの変更を一度に頼んだので、大きさの変更が埋もれた
+- 画像編集では、Geminiは元の形を保とうとするため、大きさの変更が苦手
+
+### 対策
+1. **大きさだけを単独で頼む**(目はすでに直っているので触らない)
+2. **差をはっきり言う:** 横幅を右の羊の約80%にする。「今は同じ大きさに見える。これは誤り」と現状を否定する
+3. **比べる基準を示す:** 頭、胴、脚のすべてを小さくする。右の羊の頭が左の羊の頭より明らかに大きく見えること
+4. それでも変わらなければ、画像編集ソフトで左の羊を選んで85%に縮小し、空いた所を背景で埋める(AIより確実)
+
+#### 修正指示(改訂7・同じチャットで送る)
+```
+The left sheep is still the same size as the right sheep. This is wrong. Please fix only this one thing:
+
+Make the left sheep clearly smaller. Scale down the whole left sheep (head, body and legs together) so that its width is about 80% of the right sheep's width. The right sheep's head must look clearly larger than the left sheep's head.
+
+Do not change anything else: keep the right sheep, the left sheep's lowered head angle and eyes, the style, colors, paper, plum branch and seal exactly as they are. After shrinking, move the left sheep slightly to the right so the gap between the two sheep stays about the width of one sheep's head.
+```
