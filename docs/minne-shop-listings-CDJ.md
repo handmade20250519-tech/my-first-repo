@@ -337,3 +337,39 @@ Extend the canvas of this image. Keep the existing painting exactly as it is, wi
 ### 出品文への反映
 - 各説明文の「制作方法について」の最後に、次の一文を足す:
   「お届けする色紙は、一枚ずつ私が検品し、梱包してお送りします。」
+
+---
+
+## 11. C 椿とメジロの親子 色紙版の指示文
+
+### 元の指示文(ポスター版)からの変更点
+| 項目 | ポスター版 | 色紙版 |
+|---|---|---|
+| 用途の一文 | 赤ちゃんの初正月 | 床の間や和室に飾る、冬から春の色紙絵 |
+| 比率 | 2:3 縦長 | **4:5** 縦長で出力し、上を少し切って色紙(縦273×横242mm)に合わせる |
+| 余白 | 上半分を完全に空ける | 上の約45%を空ける(色紙はポスターより横に広いので、枝と鳥を少し大きく見せる) |
+| 端からの距離 | 8% | **10%**(塗り足しと金の縁の分) |
+| 背景 | ─ | 和紙の地を画面の端まで途切れず描く(全面印刷のため) |
+| 気分 | 親子で迎える新年の光 | 冬の終わりの静かな床の間 |
+
+### 指示文(色紙版)
+```
+Create an original Japanese sumi-e style painting for a shikishi board, to be displayed in a traditional tokonoma alcove or Japanese tatami room from winter to early spring.
+
+SUBJECT: One branch of winter camellia (tsubaki) with a single open red camellia blossom and one bud, and two Japanese white-eyes (mejiro) perched close together on the branch: one adult and one smaller fluffy fledgling leaning against it. Paint the birds with soft dry-brush strokes so they look round and fluffy, in muted olive green with the characteristic white eye-ring. Camellia leaves in diluted sumi with a hint of green. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical shikishi format, only slightly taller than wide. The branch enters from the lower left edge and rises gently toward the center; the birds sit in the lower-middle part of the picture, facing right toward the open space. Keep the upper 45% of the canvas completely empty, and leave about 60% of the whole canvas as empty negative space (Japanese "ma"). Keep the birds, blossom and all elements except the entering branch at least 10% away from every edge, so the image can be trimmed to shikishi proportions (273 mm tall × 242 mm wide) with a safe margin for printing. The entering branch must continue all the way off the left edge.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture, extending evenly to all four edges with no border or vignette, for full-bleed printing. Ink in warm grey-brown tones (#8A7F72). Birds in muted olive (#8C9460). Camellia in soft, slightly faded crimson, not saturated.
+
+JAPANESE LETTERING: In the lower right, at least 10% from the right and bottom edges, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「春」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, gentle, protective, quiet; a parent and child resting together on a still morning at the end of winter.
+
+OUTPUT: Highest available resolution (4K), 4:5 vertical aspect ratio. Crisp, print-ready flat artwork for a shikishi board. No frame, no gold border, no mockup, no room scene.
+```
+
+### 出力後の調整
+- 4:5で出力されたら、Canvaで**上側だけを切って**縦273×横242mmの比率にする(上は空白なので、絵は切れない)。
+- 4Kの4:5(横約3300px)なら、色紙の横242mmに当てて約350dpi。印刷に十分。
+- 塗り足しは、Canvaの「塗り足しを表示」で確認する。背景が端まで途切れていないこと。
