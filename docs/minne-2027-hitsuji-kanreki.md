@@ -84,3 +84,68 @@ OUTPUT: Highest available resolution (4K), 9:16 vertical aspect ratio. Crisp, pr
 - **朱印の「丁未」:** 二字はAIの字形が崩れやすい。崩れたら朱印なしで再生成し、別に作った朱印画像を重ねる。二字がどうしても崩れる場合は「未」一字に切り替える。
 - **生成のコツ:** 円相が閉じてしまったら「clearly open gap in the circle」を足す。羊が可愛く丸くなりすぎたら「dignified adult sheep, not a cute lamb, no chibi style」を足す。
 - **生産支援の確認:** 色紙印刷と、印刷した本紙を掛軸に仕立てる業者があるかどうか、納期と最小ロットは未確認。出品前に調べる。
+
+---
+
+## 改訂: 円相をやめる
+
+### ユーザーの指摘
+- 円を描いた赤(弁柄)が血の色に見える
+- 座っている羊を円が取り囲んでいる意味が分からない
+- 抽象的なもので意味を持たせなくてよい。穏やかな印象の絵がよい
+- 円はやめる
+
+→ 上の「還る円」案は**不採用**。
+
+### 新しいデザイン: 白梅の下で寄り添う二頭の羊
+**コンセプト:** 実家の床の間で眺める、白梅の下で寄り添う二頭の羊の一枚
+
+| 項目 | 内容 |
+|---|---|
+| モチーフ | 並んで休む二頭の成羊。一頭がもう一頭へ、わずかに頭を傾けている。上から白梅の枝が一本 |
+| 意味 | 説明がなくても分かるものだけにする。二頭で寄り添う姿は、親への贈り物や夫婦の還暦祝いにそのまま重なる。白梅は新春の花 |
+| 構図 | 床の間の絵の基本である対角線の構図。梅の枝は左上から入り、羊は右下に置く。その間の斜めの帯は何も描かない |
+| 配色 | 地は生成りの和紙(#EFE6D3)。羊は胡粉の白(#F7F1E6)と暖かい薄墨(#7A6E62)。足元にごく淡い黄土(#D9C39A)をぼかす。梅は白い花びらに、淡い黄色のしべ。枝は薄墨 |
+| 赤 | 赤いにじみは一切使わない。赤は朱印ひとつだけで、色はくっきりした橙寄りの朱(#D0643C) |
+| 朱印 | 右下の隅に小さく。印面は篆書風の「未」一字(二字より字形が崩れにくい) |
+| 避けるもの | 夕日、閉じた目(眠り=終わりと読まれないため)、抽象的な形 |
+
+#### 色紙版(主力)
+```
+Create an original Japanese nihonga-style painting on warm washi paper, for display in a traditional tokonoma alcove or Japanese tatami room. A calm, gentle New Year picture for 2027, the Year of the Sheep.
+
+SUBJECT: Two adult sheep resting side by side on the ground with their legs folded, close together, one gently leaning its head toward the other. Their eyes are softly open and calm. Paint the sheep with soft gofun white (#F7F1E6) for the wool and a few gentle strokes of warm diluted sumi ink (#7A6E62) for the faces, legs and shading; soft edges, no hard outlines. Beneath them, only a very faint, soft wash of pale yellow ochre (#D9C39A) suggesting the ground; no horizon line, no landscape. From the upper left edge, one slender branch of white plum blossoms (hakubai) reaches into the picture: a few white five-petal flowers with pale yellow stamens and two or three small buds, the branch painted in light warm grey ink. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Square canvas with a diagonal composition. The plum branch enters from the upper-left edge and reaches no further than one third into the canvas. The two sheep sit in the lower-right third, together about 35% of the canvas width. The diagonal band between the branch and the sheep is completely empty. Leave about 65% of the canvas as empty negative space (Japanese "ma"). Keep the sheep and the seal within the central 80% of the width so the image can be trimmed to shikishi proportions (242×272 mm).
+
+COLOR: Warm kinari washi paper background (#EFE6D3) with a subtle, natural paper fiber texture. Only soft, warm, quiet colors: gofun white, warm grey ink, pale yellow ochre, pale yellow stamens. Absolutely no red or pink washes, no red bleeding, no sunset, no cool colors.
+
+JAPANESE LETTERING: In the lower-right corner, one small square vermilion-orange (#D0643C) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, crisp white lines on flat vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Peaceful, gentle, and warm, like early spring sunlight in a quiet tatami room.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
+```
+
+#### 掛軸版
+```
+Create an original Japanese nihonga-style painting on warm washi paper, designed as the painting panel of a vertical hanging scroll (kakejiku) for a traditional tokonoma alcove. A calm, gentle New Year picture for 2027, the Year of the Sheep.
+
+SUBJECT: Two adult sheep resting side by side on the ground with their legs folded, close together, one gently leaning its head toward the other. Their eyes are softly open and calm. Paint the sheep with soft gofun white (#F7F1E6) for the wool and a few gentle strokes of warm diluted sumi ink (#7A6E62) for the faces, legs and shading; soft edges, no hard outlines. Beneath them, only a very faint, soft wash of pale yellow ochre (#D9C39A) suggesting the ground; no horizon line, no landscape. From the top edge, slightly left, one slender branch of white plum blossoms (hakubai) hangs down into the picture: a few white five-petal flowers with pale yellow stamens and two or three small buds, the branch painted in light warm grey ink. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Tall vertical canvas. The plum branch hangs from the top edge and reaches down no further than the upper quarter of the canvas. The two sheep sit in the bottom fifth of the canvas, slightly right of center, together about 55% of the canvas width. Everything between the branch and the sheep is completely empty plain paper (Japanese "ma").
+
+COLOR: Warm kinari washi paper background (#EFE6D3) with a subtle, natural paper fiber texture. Only soft, warm, quiet colors: gofun white, warm grey ink, pale yellow ochre, pale yellow stamens. Absolutely no red or pink washes, no red bleeding, no sunset, no cool colors.
+
+JAPANESE LETTERING: In the lower-right corner, one small square vermilion-orange (#D0643C) artist seal (rakkan), about 6% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, crisp white lines on flat vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Peaceful, gentle, and warm, like early spring sunlight in a quiet tatami room.
+
+OUTPUT: Highest available resolution (4K), 9:16 vertical aspect ratio. Crisp, print-ready flat artwork. No frame, no scroll mounting, no mockup, no room scene.
+```
+
+### 生成のコツ
+- 羊が可愛くなりすぎたら「dignified adult sheep, realistic proportions, not cute, no chibi style」を足す。
+- 梅が桃色になったら「pure white plum petals, no pink」を足す。
+- 朱印まで赤く見えて気になる場合は、朱印を省いて生成し、後から小さな朱印画像を重ねる。
+- 掛軸版は上の余白を延ばさず、9:16のまま本紙にしてもよい(梅と羊の間の余白が、もともと縦に長い)。
