@@ -266,3 +266,64 @@ OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat
 - 商品名の例: 【初正月・出産祝い】羊の親子のアートポスター 2027 未年 和モダン A4/A3 デジタルアート(AIを用いた作品)
 - タグ: 初正月 / 出産祝い / 未年 / 和モダン / アートポスター(「干支」は商品名と説明文に残し、タグからは外す)
 - 出品前の確認: minneで「初正月 ポスター」「出産祝い ポスター」を人気順に検索し、上位のお気に入り数とレビュー件数を「干支 ポスター」と比べる。干支より強ければ、この軸で出品する。
+
+---
+
+## 改訂3: 未の追加3案
+
+| 案 | 絵柄 | 物語 |
+|---|---|---|
+| G | 初日の出を見つめる子羊 | 生まれて初めて見る元日の朝の光 |
+| H | 子羊と、羊毛から紡がれる一本の糸 | 羊毛が糸になり、余白を横切ってこの子の一年を紡いでいく |
+| J | 雪の上に続く、子羊の小さな足あと | 余白を雪原に見立てる。足あとは「はじめの一歩」 |
+
+#### G 初日の出を見つめる子羊
+```
+Create an original Japanese sumi-e style art print for a baby's first New Year (hatsu-shogatsu) in 2027, the Year of the Sheep.
+
+SUBJECT: A single small lamb sitting quietly with its legs tucked under, awake, looking toward a soft rising New Year sun (hatsuhinode). The sun is a small, pale apricot circle painted as a faint watercolor wash with soft bleeding edges, sitting low just above a barely suggested horizon line. Paint the lamb with soft, warm diluted sumi ink (usuzumi); render the wool with layered dry-brush strokes and gentle ink bleeding on washi so it feels fluffy and warm. Avoid hard outlines. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the lamb in the lower third, left of center, facing right. Place the small pale sun on the right, slightly above the lamb's eye level. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Lamb in warm grey-brown ink tones (#8A7F72). Sun in pale apricot (#E8B89A), clearly lighter than the seal. The seal is the only strong color.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, quiet, hopeful, the first gentle light of a child's very first New Year morning.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+#### H 羊毛から紡がれる一本の糸
+```
+Create an original Japanese sumi-e style art print for a baby's first New Year (hatsu-shogatsu) in 2027, the Year of the Sheep.
+
+SUBJECT: A single small lamb curled up and sleeping. From the edge of its fluffy wool, one fine continuous thread gently unwinds and drifts across the empty space in a loose, graceful curve, ending in a small round ball of hand-spun yarn. Paint the lamb with soft, warm diluted sumi ink (usuzumi); render the wool with layered dry-brush strokes and gentle ink bleeding on washi so it feels fluffy and warm. Avoid hard outlines. Draw the thread as one thin, calm brush line. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the lamb in the lower third, left of center. The thread travels from the lamb to the right in a low, gentle curve and ends at a small yarn ball on the lower right, above the seal. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Lamb in warm grey-brown ink tones (#8A7F72). Thread and yarn ball in soft madder red (#B86B5A), thin and delicate. The seal is the only strong color.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, tender, quiet, a child's first year being gently spun into a story.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+#### J 雪の上に続く小さな足あと
+```
+Create an original Japanese sumi-e style art print for a baby's first New Year (hatsu-shogatsu) in 2027, the Year of the Sheep.
+
+SUBJECT: A single small lamb standing in soft fresh snow, turning its head back over its shoulder. Behind it, a short trail of tiny hoof prints crosses the snow, painted as small, pale grey ink dabs. The snow is not drawn; the blank washi paper itself is the snow. Paint the lamb with soft, warm diluted sumi ink (usuzumi); render the wool with layered dry-brush strokes and gentle ink bleeding on washi so it feels fluffy and warm. Avoid hard outlines. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the lamb in the lower third, right of center, looking back to the left. The footprints start near the lower-left and lead in a gentle diagonal to the lamb. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Lamb in warm grey-brown ink tones (#8A7F72). Footprints in very pale grey. The seal is the only strong color.
+
+JAPANESE LETTERING: In the lower left, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, gentle, hopeful, a child's very first steps into the new year.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
