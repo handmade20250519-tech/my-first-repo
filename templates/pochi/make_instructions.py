@@ -10,7 +10,7 @@ from reportlab.pdfgen import canvas
 from make_pochi_template import FLAP, FRONT_W, FRONT_H, TOP, BOTTOM, NET_W, NET_H, FONT_PATH
 
 OUT = Path(__file__).parent / "pochi_howto.pdf"
-SHOP = "(ショップ名)"
+SHOP = "うちの子あるある"
 W, H = A4
 pdfmetrics.registerFont(TTFont("IPAG", FONT_PATH))
 
