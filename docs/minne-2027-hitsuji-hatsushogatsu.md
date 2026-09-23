@@ -55,9 +55,13 @@ OUTPUT: Highest available resolution (4K), 2:3 vertical aspect ratio. Crisp, pri
 ## STEP5 minne出品文
 
 ### 商品名
-【2027年 初正月】眠る子羊と小松のアートポスター 未年 干支 和モダン 出産祝い 名入れなし A4/A3
+【2027年 初正月】眠る子羊と小松のアートポスター 未年 干支 和モダン 出産祝い 名入れなし A4/A3 デジタルアート(AIを用いた作品)
+
+> minneでは「デジタルアート(AIを用いた作品)」と明記した作品が実際に販売されている(ユーザーが確認)。同じ表記を商品名の末尾と説明文の冒頭に入れる。
 
 ### 説明文
+※本作品はデジタルアート(AIを用いた作品)です。
+
 はじめてのお正月を迎える赤ちゃんのお部屋のために、1枚の絵を設計しました。
 
 2027年の干支は「未(ひつじ)」です。2026年生まれの子どもたちが最初に迎えるお正月の干支でもあります。
@@ -121,3 +125,85 @@ OUTPUT: Highest available resolution (4K), 2:3 vertical aspect ratio. Crisp, pri
 - [ ] minneの最新ガイドラインで、生成AIを使った作品の扱いと表記ルールを確認する
 - [ ] STEP2の検証(「干支 ポスター」上位20件のお気に入り数とレビュー件数、「未 ポスター」の出品数)を実施する
 - [ ] A4とA3で試し刷りし、朱印の字形と生成りの色が出ているかを確認する
+
+---
+
+## 改訂(出品前チェックを受けて)
+
+### ユーザーが確認した結果
+1. minneでは「デジタルアート(AIを用いた作品)」と明記した作品が販売されている → 商品名と説明文に同じ表記を追加した
+2. 「干支 ポスター」の売れ行きは良くない印象
+
+### 自己批判の追記
+- STEP2で「未年のポスターが無い=供給が薄い」と読んだのは誤りだった可能性が高い。そもそも**需要が無いから誰も出していない**、という読み方を検討しなかった。
+- 販売の証拠として使った「再販×4」は干支の**置物**のもので、ポスターの証拠ではなかった。それをポスターの需要へ広げて解釈していた。
+- 結論: 「干支ポスター」という括りは需要の証拠が弱い。狙い(初正月の記念、ぬくもり、朱印のみ)は残し、**干支に頼らない絵柄**と比べる。
+
+### 比較用の絵柄(文字なし・落款風の朱印のみ・同じ配色と余白ルール)
+条件をそろえるため、4案すべてで地色(生成り #F3EBDD)、薄墨、朱印、余白60%以上を共通にする。
+
+| 案 | 絵柄 | 干支への依存 | 飾れる期間 | 証拠 |
+|---|---|---|---|---|
+| A(基準) | 眠る子羊と小松 | あり | 1年 | 弱い(干支ポスターの売れ行きが悪い) |
+| B | 雪うさぎと南天 | なし | 12〜2月 | 無し。検証が必要 |
+| C | 椿とメジロの親子 | なし | 12〜3月 | 椿のA4ポスターに「再販」表記がある。ただし椿は供給が多い |
+| D | 鶴の親子 | なし | 通年(出産祝いにも) | 無し。検証が必要 |
+
+各案の朱印の字: B「福」、C「春」、D「寿」(Aは「未」)。
+
+#### B 雪うさぎと南天
+```
+Create an original Japanese sumi-e style art print celebrating a baby's first New Year.
+
+SUBJECT: A single small traditional "yuki-usagi" (snow rabbit): a round mound of fresh snow shaped like a rabbit, with two green nandina (nanten) leaves as ears and two tiny red nandina berries as eyes, resting on a small plain wooden tray. Paint the snow with soft, warm grey diluted sumi ink washes and gentle bleeding on washi so it looks soft and round, not icy. Add a small sprig of nandina with a few red berries beside it. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the snow rabbit in the lower third, slightly left of center, facing right toward the open space. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Snow in warm grey-brown ink tones (#8A7F72). Nandina leaves in muted green (#7F8F6A), berries in soft vermilion.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「福」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, playful, tender, like a quiet snowy morning at home with a baby.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+#### C 椿とメジロの親子
+```
+Create an original Japanese sumi-e style art print celebrating a baby's first New Year.
+
+SUBJECT: One branch of winter camellia (tsubaki) with a single open red camellia blossom and one bud, and two Japanese white-eyes (mejiro) perched close together on the branch: one adult and one smaller fluffy fledgling leaning against it. Paint the birds with soft dry-brush strokes so they look round and fluffy, in muted olive green with the characteristic white eye-ring. Camellia leaves in diluted sumi with a hint of green. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. The branch enters from the lower left edge and rises gently toward the center; the birds sit in the lower-middle third, facing right toward the open space. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements except the entering branch at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Ink in warm grey-brown tones (#8A7F72). Birds in muted olive (#8C9460). Camellia in soft, slightly faded crimson, not saturated.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「春」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, gentle, protective, a parent and child sharing the first light of the new year.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+#### D 鶴の親子
+```
+Create an original Japanese sumi-e style art print celebrating a baby's first New Year.
+
+SUBJECT: A red-crowned crane (tancho) parent standing calmly, gently lowering its long neck toward a small fluffy crane chick nestled against its body. Paint the parent's body with soft, warm diluted sumi washes, the neck and tail feathers in deeper ink, and the chick with soft dry-brush strokes so it looks downy and warm. A tiny touch of vermilion only on the parent's crown. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the crane and chick in the lower third, slightly left of center, with the parent's head turned toward the chick and the open space on the right. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Ink in warm grey-brown tones (#8A7F72). The crown and the seal are the only vermilion accents.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「寿」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, serene, protective, a quiet wish for a long and healthy life.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+### 比べ方(試し刷りの前に)
+1. 4案をそれぞれ3〜4枚ずつ生成する。
+2. スマホで縮小表示して比べる(minneの一覧で見える大きさ)。小さくしても何の絵か分かり、温かく見える案を残す。
+3. 残った案で、minneの「椿 ポスター」「雪うさぎ」「鶴 ポスター」を人気順に検索し、上位のお気に入り数とレビュー件数を記録する。干支ポスターと同じやり方で売れ行きを比べる。
+4. 証拠が一番強い1〜2案だけを試し刷りする。
