@@ -24,7 +24,7 @@
 ### 全体のルール
 | 項目 | 内容 |
 |---|---|
-| 絵柄 | 細いペン線に、やわらかい水彩の色を重ねたイラスト。表情が伝わり、家庭のプリンターでもトナー印刷でもきれいに出る |
+| 絵柄 | **デフォルメしたイラスト**(ユーザーの希望で変更)。頭を大きく、体と足を短く、目は点か小さな楕円。犬種の見分けどころ(耳の形、毛の色と模様、鼻の長さ、しっぽ)だけを残して少し強調する。やわらかい焦げ茶の線と、平らな色塗り |
 | 背景 | 無地の白。1枚に1匹だけ描く(あとでCanvaでぽち袋の型に並べるため) |
 | 大きさ | どの犬も猫も、画面の中で同じくらいの大きさにそろえる |
 | ユーモア | 犬種・猫種の「あるある」を1つだけ描く。やりすぎず、愛情のある笑いにする |
@@ -45,9 +45,9 @@
 Create an original, warm and humorous illustration of a single animal for a Japanese gift envelope (pochi-bukuro).
 
 SUBJECT: [BREED LINE]
-The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Accurate breed features (coat, ears, muzzle, body proportions) so the breed is clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in the simplified style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
-STYLE: Fine, slightly loose ink pen lines with soft watercolor washes. Gentle, warm colors. Expressive face and body language. Simple, clean shapes that stay readable when printed small (about 5 cm tall).
+STYLE: Cute, simplified cartoon illustration with deformed (chibi-like) proportions: a big round head, a small soft body, short stubby legs, and simple dot or small oval eyes. Keep only the few features that make the breed instantly recognizable (ear shape, coat color and markings, muzzle length, tail) and exaggerate them slightly. Clean, smooth outlines in a soft dark brown, flat colors with gentle shading, warm and friendly palette. Simple shapes that stay readable when printed small (about 5 cm tall).
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background, no floor, no shadow except a very light one under the animal, no props unless described above.
 
@@ -97,7 +97,8 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 | ブリティッシュ・ショートヘア | まん丸の顔で、無表情に座る | A british shorthair cat with a very round face sitting still, looking straight ahead with a completely neutral, unimpressed expression. |
 
 ### 生成のコツ
-- 表情が人間くさくなりすぎたら「realistic animal anatomy, no human-like expressions」を足す。
+- デフォルメしすぎて犬種が分からなくなったら、その犬種の見分けどころを一文足す(例: 「long body and very short legs」「curled tail and triangle ears」)。
+- 人間のようなポーズや表情になりすぎたら「animal-like pose, no human clothing, no human gestures」を足す(イタグレのセーターなど、指示したものは除く)。
 - 犬種の特徴が弱いときは、その犬種の見分けどころ(ダックスの胴、コーギーの短い足など)を一文足す。
 - 画風がばらつかないよう、**共通指示文は変えずに、[BREED LINE]だけ差し替える**。同じチャットで続けて作ると画風がそろいやすい。
 
