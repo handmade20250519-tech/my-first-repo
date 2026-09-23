@@ -187,3 +187,44 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - まだくっついて見える → 「a visible empty space between the two sheep」を足す。
 - 離れすぎて他人同士に見える → 「their bodies angled slightly toward each other」を強め、隙間を「about one third of a body length」に縮める。
 - 視線がばらばらになる → 「both sheep look at the same plum blossom」を足す。
+
+---
+
+## 改訂3: 向かい合う二頭(色紙版)
+
+### ユーザーの指摘
+- 梅を見上げる構図は人間くさくてよくない
+- 向かい合っているが少し離れていて、思い合っている構図にする
+
+### 変更点
+| 項目 | 改訂2 | 改訂3 |
+|---|---|---|
+| 向き | 二頭とも梅を見上げる | **二頭が向かい合う。** 頭はやや低く、羊らしい自然な姿勢で、穏やかに相手の方を向く |
+| 距離 | 体の半分 | **羊一頭分ほど**の間を空ける。触れない |
+| 奥行き | 手前と奥 | 左の羊を少し手前(わずかに大きく低い位置)、右の羊を少し奥(わずかに小さく高い位置)に置く。鏡に映した形にしない |
+| 梅 | 視線の先 | 左上に添えるだけ。羊は梅を見ない。季節を示す脇役 |
+| 余白 | 視線の通り道 | **二頭の間の空白**が絵の中心。言葉にしない思いの距離 |
+| 人間くささの排除 | ─ | 見上げる、首をかしげる、寄りかかるといった人間的な仕草を禁止する |
+
+#### 色紙版(改訂3)
+```
+Create an original Japanese nihonga-style painting on warm washi paper, for display in a traditional tokonoma alcove or Japanese tatami room. A calm, gentle New Year picture for 2027, the Year of the Sheep.
+
+SUBJECT: Two adult sheep resting on the ground with their legs folded, facing each other across a small distance. Between them is a clear empty gap of about one sheep's body length; they do NOT touch. Their heads are held naturally and slightly lowered, as real sheep rest, and each is calmly facing the other with softly open eyes, a quiet and gentle mutual presence. Natural animal posture only: no looking up, no head tilting, no leaning, no human-like gestures or expressions. The sheep on the left sits slightly closer to the viewer (a little lower in the picture and a little larger); the sheep on the right sits slightly farther away (a little higher and a little smaller), so they are not mirror images. Paint the sheep with soft gofun white (#F7F1E6) for the wool and a few gentle strokes of warm diluted sumi ink (#7A6E62) for the faces, legs and shading; soft edges, no hard outlines. Beneath them, only a very faint, soft wash of pale yellow ochre (#D9C39A) suggesting the ground; no horizon line, no landscape. From the upper left edge, one slender branch of white plum blossoms (hakubai) reaches a little way into the picture as a quiet seasonal accent: a few white five-petal flowers with pale yellow stamens and two or three small buds, the branch painted in light warm grey ink. The sheep do not look at the plum. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Square canvas. The two sheep sit in the lower third of the canvas: the left sheep around 30% from the left edge, the right sheep around 68% from the left edge, with the empty gap between them near the horizontal center. The empty space between the two sheep is the heart of the picture. The plum branch enters from the upper-left edge and reaches no further than one quarter into the canvas. Leave about 65% of the canvas as empty negative space (Japanese "ma"). Keep the sheep and the seal within the central 80% of the width so the image can be trimmed to shikishi proportions (242×272 mm).
+
+COLOR: Warm kinari washi paper background (#EFE6D3) with a subtle, natural paper fiber texture. Only soft, warm, quiet colors: gofun white, warm grey ink, pale yellow ochre, pale yellow stamens. Absolutely no red or pink washes, no red bleeding, no sunset, no cool colors.
+
+JAPANESE LETTERING: In the lower-right corner, below and to the right of the right sheep, one small square vermilion-orange (#D0643C) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, crisp white lines on flat vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Peaceful, gentle, and warm; an understated bond between two companions who have spent many years together, resting quietly a little apart and facing each other.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
+```
+
+### 生成のコツ(改訂3)
+- 二頭が見つめ合いすぎて睨み合いに見える → 「soft, relaxed expressions, eyes half-lowered」を足す。
+- 離れすぎて無関係に見える → 間を「about two thirds of a body length」に縮める。
+- 左右対称になる → 「asymmetric, one sheep nearer and one farther」を繰り返し足す。
+- 人間的な表情になる → 「realistic sheep anatomy and expressions, no anthropomorphism」を足す。
