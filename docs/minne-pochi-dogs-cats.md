@@ -1,0 +1,108 @@
+# 「犬のこと、わかってるね」ぽち袋 設計書
+
+## 狙い(STEP3の回答)
+- 買う人: **B 犬好き・猫好きの友人や家族への、ちょっとした贈り物**(A 飼い主本人が使う場合も含む)
+- ユーモア: 犬種ごとの「あるある」のしぐさ。のんきな犬種はへそ天、神経質な犬種は真剣な顔など、「犬のことをわかっているな」と感じさせる笑い
+- セット: 犬メジャーセット/犬レアセット/猫セットの3つ
+
+## ターゲットの判断: Bで良い。Cは今回のぽち袋には合わない
+- **B(贈り物)にしておけば、A(自分で使う)も自然に取れる。** 贈り物として選ばれる見た目にしておけば、自分用に買う人も困らない。
+- **C(トリミングサロン・動物病院)は、ぽち袋とは合わない。** お店がお客さんにお金を包んで渡す場面はほとんどない。お店に合うのは、来店のお礼カードや誕生日カードのほう。→ Cは、ぽち袋が売れてから「お店用メッセージカード」として別に考える。
+- **Bで作るときの決まりごと:** 開けた瞬間に笑えること。犬種がひと目で分かること。袋が並んでいるだけで楽しいこと。
+
+## 犬種を選んだ根拠
+- 犬: ジャパンケネルクラブの2025年の犬籍登録で、1位トイ・プードル(69,342頭)、2位チワワ。小型犬の人気が続いている([JKC 犬種別犬籍登録頭数](https://www.jkc.or.jp/registr-statistics/)、[みんなのブリーダー](https://www.min-breeder.com/magazine/15594))。
+- 猫: アニコム損保の2026年猫種ランキングは1位スコティッシュ・フォールド。上位10種は前年と同じ([アニコム損保](https://www.anicom-sompo.co.jp/news-release/2025/20260219/))。一方で、日本の飼い猫の約75%は雑種という紹介もある([Flowens Cat](https://cat.flowens.jp/blog/neko-ninki-ranking))。→ **猫セットは、毛柄(茶トラ、三毛など)を中心に、人気の猫種を少し混ぜる。**
+
+---
+
+## STEP4 デザイン設計
+
+### コンセプト
+**犬好きの友だちに渡す、「うちの子もそれやる!」と笑える一枚**
+
+### 全体のルール
+| 項目 | 内容 |
+|---|---|
+| 絵柄 | 細いペン線に、やわらかい水彩の色を重ねたイラスト。表情が伝わり、家庭のプリンターでもトナー印刷でもきれいに出る |
+| 背景 | 無地の白。1枚に1匹だけ描く(あとでCanvaでぽち袋の型に並べるため) |
+| 大きさ | どの犬も猫も、画面の中で同じくらいの大きさにそろえる |
+| ユーモア | 犬種・猫種の「あるある」を1つだけ描く。やりすぎず、愛情のある笑いにする |
+| 袋の形を生かす | 胴長のダックスは袋の横いっぱい、猫は袋の中に入っている、など。袋の形とあるあるを重ねる |
+| 文字 | 絵の中には入れない。「ありがとう」「おめでとう」「おとしだま」などは、**Canvaで後から入れる**(AIは文字を崩しやすいため。データ版では買った人が書き換えられる) |
+
+### 作り方の流れ
+1. Geminiで、1匹ずつ白い背景の絵を作る(下の共通指示文+犬種ごとの一文)
+2. Canvaで背景を消し、ぽち袋の展開図(切り線・折り線入り)に配置する
+3. 文字をCanvaで入れる
+4. データ版: A4に展開図を並べたPDF+作り方の説明をZIPにしてダウンロード販売
+5. 印刷版(反応を見てから): 全員が1枚に並ぶ柄を1つ作り、羽車で100枚刷る
+
+### Gemini(Nano Banana Pro)用 共通指示文
+`[BREED LINE]` の部分を、下の表の一文に差し替えて使う。
+
+```
+Create an original, warm and humorous illustration of a single animal for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: [BREED LINE]
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Accurate breed features (coat, ears, muzzle, body proportions) so the breed is clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: Fine, slightly loose ink pen lines with soft watercolor washes. Gentle, warm colors. Expressive face and body language. Simple, clean shapes that stay readable when printed small (about 5 cm tall).
+
+COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background, no floor, no shadow except a very light one under the animal, no props unless described above.
+
+TEXT: No text, letters, numbers, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
+### 犬メジャーセット(10種)
+| 犬種 | あるある | [BREED LINE] に入れる一文 |
+|---|---|---|
+| トイ・プードル | トリミング直後の、ちょっと得意げなすまし顔 | A toy poodle freshly groomed, standing proudly with its nose slightly up and eyes half closed, looking very pleased with itself. |
+| チワワ | 小さく震えているのに、目だけは強気 | A chihuahua trembling slightly, tiny body tense, but staring forward with huge, fierce, determined eyes. |
+| ミニチュア・ダックスフンド | 胴が長すぎて、袋の横いっぱいに伸びる | A miniature dachshund stretched out lying flat on its belly, its extremely long body extended horizontally, looking up with a relaxed, satisfied face. Wide horizontal composition inside the square. |
+| 柴犬 | 散歩の帰り道、踏ん張って動かない | A shiba inu firmly planting all four legs and leaning back, refusing to move, with a stubborn, unimpressed face (no leash visible, no person). |
+| ポメラニアン | 毛が爆発して、ほぼ丸いかたまり | A pomeranian so fluffy it looks like an almost perfect round ball of fur, with tiny paws and a small happy face peeking out. |
+| フレンチ・ブルドッグ | へそ天で、いびきをかいて爆睡 | A french bulldog sleeping deeply on its back, belly up, legs in the air, bat ears flopped, mouth slightly open as if snoring. |
+| ゴールデン・レトリーバー | 靴下をくわえて、誇らしげに持ってくる | A golden retriever proudly carrying a single striped sock in its mouth, tail wagging, with a big joyful expression. |
+| シベリアン・ハスキー | 空を見上げて、何か文句を言っている | A siberian husky sitting with its head tilted up, mouth open in a dramatic "talking" howl, with an exaggerated, theatrical face. |
+| ウェルシュ・コーギー | ふせのとき、後ろ足がカエルのように伸びる | A welsh corgi lying flat in a "frog splat" pose, both short back legs stretched straight out behind, round fluffy rear visible, looking back over its shoulder. |
+| ビーグル | 鼻を地面につけて、においに夢中 | A beagle with its nose pressed to the ground, completely absorbed in a scent, ears dangling forward, tail straight up. |
+
+### 犬レアセット(8種)
+| 犬種 | あるある | [BREED LINE] に入れる一文 |
+|---|---|---|
+| ボルゾイ | 優雅なはずが、長い顔で真顔のまま変な寝相 | A borzoi lying on its side with its long legs tangled in an awkward way, long elegant face completely serious and deadpan. |
+| グレート・デーン | 自分を小型犬だと思って、人の膝に乗ろうとする | A great dane trying to sit on a small cushion far too small for it, its huge body overflowing, with an innocent face as if it thinks it is a small dog. |
+| セント・バーナード | よだれを垂らして、のんびり寝そべる | A saint bernard lying down calmly with a sleepy, gentle face and a small, comical drip of drool from its jowls. |
+| バーニーズ・マウンテン・ドッグ | 大きな体で、甘えて仰向け | A bernese mountain dog rolling on its back, big fluffy body twisted, paws curled, begging for a belly rub with a sweet face. |
+| イタリアン・グレーハウンド | 寒がりで、セーターを着て震える | An italian greyhound wearing a cozy knitted sweater, thin legs trembling slightly, with a delicate, slightly worried face. |
+| アフガン・ハウンド | 長い毛がなびいて、前が見えていない | An afghan hound with long silky hair flowing dramatically over its face so it can barely see, holding a proud, elegant pose. |
+| サモエド | いつもにっこり、口角が上がった顔 | A samoyed with its famous smile, corners of the mouth turned up, fluffy white coat, sitting happily with eyes squinting in joy. |
+| ニューファンドランド | 水が大好き。濡れてぺたんこ | A newfoundland dog completely soaking wet, its thick fur flattened, looking proud and satisfied as if it just had a great swim. |
+
+### 猫セット(10種)
+| 毛柄・猫種 | あるある | [BREED LINE] に入れる一文 |
+|---|---|---|
+| 茶トラ | 人なつこく、へそ天で撫でを待つ | An orange tabby cat lying on its back with its belly up, paws curled, looking relaxed and friendly. |
+| キジトラ | 箱(袋)に入って、満足げ | A brown mackerel tabby cat sitting snugly inside a small paper envelope that is clearly too small, with a satisfied face. |
+| 三毛 | 前足を折りたたんだ香箱座りで、じっと見る | A calico cat sitting in a neat "loaf" pose with paws tucked under, calmly and knowingly staring forward. |
+| 黒猫 | 暗いところで、目だけ光っている | A black cat curled up so its body blends into a dark shadow, with only its two bright round eyes clearly visible. |
+| ハチワレ | 顔を前足に押しつけた「ごめん寝」 | A black-and-white tuxedo cat sleeping with its face pressed down into its paws in an apologetic-looking pose. |
+| サバトラ | 液体のように、狭いところにぴったり収まる | A silver mackerel tabby cat poured like liquid into a round bowl, its body perfectly filling the shape. |
+| スコティッシュ・フォールド | 足を投げ出して座る「スコ座り」 | A scottish fold cat sitting upright like a person with its back legs stretched out in front and its belly showing, looking calm. |
+| マンチカン | 短い足で、精いっぱい立ち上がる | A munchkin cat standing up on its short hind legs, stretching as tall as it can, with a curious, determined face. |
+| ラグドール | 抱っこされると、ぐにゃりと力が抜ける | A ragdoll cat completely limp and relaxed, draped as if being held (no person visible), eyes half closed in bliss. |
+| ブリティッシュ・ショートヘア | まん丸の顔で、無表情に座る | A british shorthair cat with a very round face sitting still, looking straight ahead with a completely neutral, unimpressed expression. |
+
+### 生成のコツ
+- 表情が人間くさくなりすぎたら「realistic animal anatomy, no human-like expressions」を足す。
+- 犬種の特徴が弱いときは、その犬種の見分けどころ(ダックスの胴、コーギーの短い足など)を一文足す。
+- 画風がばらつかないよう、**共通指示文は変えずに、[BREED LINE]だけ差し替える**。同じチャットで続けて作ると画風がそろいやすい。
+
+---
+
+## この先
+- セットごとの価格、データ版の中身(展開図の枚数・サイズ)、出品文(STEP5)は、試作の絵を見てから決める。
+- 印刷版は、データ版で売れたセットだけを、羽車で「全員が1枚に並ぶ柄」として100枚刷る。
