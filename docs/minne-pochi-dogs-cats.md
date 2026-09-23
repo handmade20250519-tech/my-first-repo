@@ -85,6 +85,26 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 | サモエド | いつもにっこり「サモエドスマイル」。ただし換毛期は抜け毛がすごく、「もう1匹作れる」ほどの毛の山ができる。それでも本人は満面の笑み | A samoyed sitting happily with its famous "samoyed smile": corners of the mouth turned up, eyes squeezed into joyful crescents. Right beside it sits a huge, soft heap of its own shed white fur, almost as big as the dog itself, as happens during shedding season, when owners joke they could make a second dog. The fur heap is just a fluffy mound with no face, no eyes and no legs. A few loose tufts of fur float in the air. The dog looks completely unbothered and proud. Classic samoyed features: thick fluffy pure white double coat, upright triangle ears, black nose and lips, plumed tail curled over the back. Because the dog is white on a white background, draw it with the soft dark-brown outline and very light cream shading so its shape stays clear. |
 | ニューファンドランド | 水難救助の犬で、水が大好き。水を見ると「救助」に飛び込む。上がってくると、ふかふかの毛がぺたんこになって別の犬のように細く見えるのに、本人は任務を終えた誇らしげな顔 | A newfoundland dog that has just climbed out of the water after a proud "rescue mission": standing on a small simple puddle, holding a small floating ring toy gently in its mouth as if it has just saved it. Its usually huge fluffy coat is completely soaking wet and plastered flat against its body, making it look surprisingly slim and a little silly, with water dripping from its ears, chin and belly and a few water droplets around it. Its face is full of pride and satisfaction, chest out, tail swinging, like a hero returning from duty. Classic newfoundland features: very large sturdy body, broad massive head, short square muzzle, small drop ears, webbed paws, thick coat (flattened here because it is wet). Coat color: black. The ring toy and the puddle are plain, soft solid colors. |
 
+### 猫用の共通指示文(猫に見えなかったため追加)
+犬用の共通指示文は「鼻の長さ(muzzle length)」など犬向けの言葉が入っていて、猫が犬やクマのように描かれやすい。猫は、画風の部分(線の色、平らな色塗り、頭の大きいデフォルメ)はそのままにして、**猫らしさを決める特徴を必ず描く**指示を足したこの文を使う。
+
+```
+Create an original, warm and humorous illustration of a single cat for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: [BREED LINE]
+The humor must feel affectionate and true to life, the kind of moment real cat owners instantly recognize. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+THIS IS A CAT, NOT A DOG: always include clear cat features: small triangular pointed ears on top of the head, a tiny pink triangle nose right between the eyes with no protruding snout or muzzle, three thin whiskers on each cheek, a small cat mouth shaped like a soft "ω", a long flexible tail, and small round paws. Flat, round cat face.
+
+STYLE: Cute, simplified cartoon illustration with deformed (chibi-like) proportions: a big round head, a small soft body, and simple dot or small oval eyes. Keep the coat color and markings accurate so the pattern or breed is recognizable, and exaggerate them slightly. Clean, smooth outlines in a soft dark brown, flat colors with gentle shading, warm and friendly palette. Simple shapes that stay readable when printed small (about 5 cm tall).
+
+COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background, no floor, no shadow except a very light one under the cat, no props unless described above.
+
+TEXT: No text, letters, numbers, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
 ### 猫セット(10種)
 | 毛柄・猫種 | あるある | [BREED LINE] に入れる一文 |
 |---|---|---|
