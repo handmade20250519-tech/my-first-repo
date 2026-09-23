@@ -285,6 +285,8 @@ The humor must feel affectionate and true to life, the kind of moment real guine
 
 THIS IS A GUINEA PIG, NOT A HAMSTER, RABBIT OR MOUSE: a plump, loaf-shaped body that is wider than tall, NO visible tail at all, a big rounded blunt nose (Roman nose) with no pointed snout, small droopy petal-shaped ears on the sides of the head, round eyes set on the sides of the face, and tiny short legs mostly hidden under the body. No neck: the head flows straight into the body.
 
+THE MOUTH IS THE MOST IMPORTANT FEATURE: a small rounded pink nose with two tiny nostrils, then one long, thin vertical line (the split upper lip) running straight down from the nose to the mouth, ending in a small closed mouth shaped like an upside-down "Y" (like the Japanese character 人), with a tiny soft rounded lower lip just below it. Keep a clear gap between the nose and the mouth. The mouth stays almost closed at all times, even when squeaking: NEVER draw a wide-open mouth, NO visible tongue, NO visible teeth.
+
 STYLE: Cute, simplified cartoon illustration with deformed (chibi-like) proportions: a big round head, a small soft body, short stubby legs, and simple dot or small oval eyes. Keep only the few features that make the animal instantly recognizable (body shape, ear shape, coat color and patches, coat texture) and exaggerate them slightly. Clean, smooth outlines in a soft dark brown, flat colors with gentle shading, warm and friendly palette. Simple shapes that stay readable when printed small (about 5 cm tall).
 
 COMPOSITION: One guinea pig only, centered, filling about 70% of the canvas width, with generous empty space around it. Plain pure white background, no floor, no shadow except a very light one under the animal, no props unless described above.
@@ -294,12 +296,14 @@ TEXT: No text, letters, numbers, signatures or watermarks anywhere.
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 
+※口元がモルモットのいちばんの可愛さ(ユーザーの指摘)。鼻から縦に伸びる一本線と、逆Y字(人の字)の閉じた口を必ず描かせる。鳴くときも口はほとんど開けない。
+
 ※犬猫は「画面の高さの70%」だが、モルモットは横長なので「幅の70%」にしている。
 
 ### あるある候補(仮。ユーザーの実体験で差し替える)
 | あるある | [SCENE LINE] に入れる一文 |
 |---|---|
-| 野菜の袋の音でプイプイ叫ぶ | A short-haired guinea pig with tortoiseshell-and-white patches (orange, black and white), standing up on its hind legs with its mouth wide open, loudly squeaking for food, with small curved "sound lines" near its mouth, eyes shining with excitement. |
+| 野菜の袋の音でぷいーぷいー鳴く(口はほとんど開けない) | A short-haired guinea pig with tortoiseshell-and-white patches (orange, black and white), standing up on its hind legs with its head tilted slightly up, squeaking for food with its mouth almost closed (the lips only very slightly parted), a few small curved "sound lines" near its face, eyes shining with excitement. |
 | ポップコーンジャンプ | A short-haired cream-and-white guinea pig in the middle of a happy "popcorning" jump: all four tiny feet off the ground, body twisted slightly in mid-air, eyes closed with joy, a few small motion lines under it. |
 | 牧草をくわえたまま固まる | An Abyssinian guinea pig with messy swirled rosettes in its brown-and-white coat, frozen still with a long strand of hay sticking out of its mouth, staring straight ahead with a blank, serious face. |
 | 袋から顔だけ出す | A long-haired (Peruvian-style) guinea pig with flowing silky hair, only its head and front paws poking out from the opening of an opaque paper envelope, hair spilling over the edge, looking out cautiously. The rest of the body is hidden inside the envelope. |
