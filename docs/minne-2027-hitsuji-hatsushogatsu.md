@@ -207,3 +207,62 @@ OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat
 2. スマホで縮小表示して比べる(minneの一覧で見える大きさ)。小さくしても何の絵か分かり、温かく見える案を残す。
 3. 残った案で、minneの「椿 ポスター」「雪うさぎ」「鶴 ポスター」を人気順に検索し、上位のお気に入り数とレビュー件数を記録する。干支ポスターと同じやり方で売れ行きを比べる。
 4. 証拠が一番強い1〜2案だけを試し刷りする。
+
+---
+
+## 改訂2: 干支「未」で確定
+
+### ユーザーの判断
+- B(雪うさぎ)は採用しない。うさぎは卯年を連想させ、来年の干支「未」とずれるため
+- CとDは良いが、干支の「未」でいきたい
+
+### 方針
+干支ポスターの売れ行きが悪いという確認結果を受け、次の2点を変える。**どちらも仮説で、まだ検証していない。**
+1. **絵柄:** C・Dの良さ(親子・椿)を羊に移し、「干支の絵」ではなく「この子の最初の一年の記念」に見えるようにする。
+2. **売り方:** 商品名とタグの軸を「干支ポスター」から「初正月の記念・出産祝い」へ移す。干支は副キーワードにする。
+
+### 比較する3案(すべて朱印「未」、配色と余白のルールは共通)
+| 案 | 絵柄 | ねらい |
+|---|---|---|
+| A(基準) | 眠る子羊と小松 | 最初の案 |
+| E | 羊の親子(Dの構図を羊で描く) | 親子のぬくもり。贈り物として選ばれやすくするため |
+| F | 椿の枝の下で眠る子羊(Cの椿を借りる) | 椿のポスターには「再販」の証拠がある。冬から春まで飾れる |
+
+#### E 羊の親子
+```
+Create an original Japanese sumi-e style art print for a baby's first New Year (hatsu-shogatsu) in 2027, the Year of the Sheep.
+
+SUBJECT: A mother sheep lying down calmly, with a small fluffy lamb curled up asleep against her side. The mother gently turns her head toward the lamb. Paint both with soft, warm diluted sumi ink (usuzumi); render the wool with layered dry-brush strokes and gentle ink bleeding on washi so it feels fluffy and warm. Avoid hard outlines. The lamb's wool is lighter and softer than the mother's. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. Place the pair in the lower third, slightly left of center, with the open space on the right. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the entire upper half completely empty. Keep all elements at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Sheep in warm grey-brown ink tones (#8A7F72). The only strong color is one vermilion seal.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, tender, protective, peaceful. Soft winter morning light in a room where a baby is sleeping.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+#### F 椿の下で眠る子羊
+```
+Create an original Japanese sumi-e style art print for a baby's first New Year (hatsu-shogatsu) in 2027, the Year of the Sheep.
+
+SUBJECT: A single small lamb curled up and sleeping peacefully under a low branch of winter camellia (tsubaki). The branch has one open camellia blossom and one bud; one fallen camellia petal lies softly near the lamb. Paint the lamb with soft, warm diluted sumi ink (usuzumi); render the wool with layered dry-brush strokes and gentle ink bleeding on washi so it feels fluffy and warm. Avoid hard outlines. Camellia leaves in diluted sumi with a hint of green. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Vertical poster. The camellia branch enters from the left edge just above the lamb and arches gently over it. Place the lamb in the lower third, slightly left of center, facing right toward the open space. Leave 60–65% of the canvas as empty negative space (Japanese "ma"), keeping the entire upper half completely empty. Keep all elements except the entering branch at least 8% from every edge for trimming to A-series proportions.
+
+COLOR: Warm off-white kinari washi background (#F3EBDD) with subtle paper fiber texture. Lamb in warm grey-brown ink tones (#8A7F72). Camellia in soft, slightly faded crimson, not saturated; this and the seal are the only warm red accents.
+
+JAPANESE LETTERING: In the lower right, one small square vermilion (#C8553D) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, white lines on vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Warm, quiet, gentle, hopeful. A peaceful winter morning in a room where a baby is sleeping.
+
+OUTPUT: Highest available resolution (4K), 2:3 vertical. Crisp, print-ready flat artwork for an A4/A3 poster. No frame, no mockup, no room scene.
+```
+
+### 売り方の変更案
+- 商品名の例: 【初正月・出産祝い】羊の親子のアートポスター 2027 未年 和モダン A4/A3 デジタルアート(AIを用いた作品)
+- タグ: 初正月 / 出産祝い / 未年 / 和モダン / アートポスター(「干支」は商品名と説明文に残し、タグからは外す)
+- 出品前の確認: minneで「初正月 ポスター」「出産祝い ポスター」を人気順に検索し、上位のお気に入り数とレビュー件数を「干支 ポスター」と比べる。干支より強ければ、この軸で出品する。
