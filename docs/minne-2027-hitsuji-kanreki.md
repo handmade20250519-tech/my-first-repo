@@ -362,3 +362,22 @@ Make the left sheep clearly smaller. Scale down the whole left sheep (head, body
 
 Do not change anything else: keep the right sheep, the left sheep's lowered head angle and eyes, the style, colors, paper, plum branch and seal exactly as they are. After shrinking, move the left sheep slightly to the right so the gap between the two sheep stays about the width of one sheep's head.
 ```
+
+---
+
+## 改訂8: 左の羊の目を開け、70%に縮める
+
+### ユーザーの指摘
+- 改訂7で左の羊が目をつぶってしまった。目は開ける
+- 80%では大きさの差が分かりにくい。70%にする
+
+### 修正指示(改訂8・同じチャットで送る)
+```
+Please fix two things on the left sheep only:
+
+1. Its eyes are now closed. This is wrong. Open its eyes: calm, softly open eyes with visible dark pupils, the same eye shape as the right sheep. Keep its head lowered at the current angle; only the eyes change. It should look peaceful and content, not sleepy and not sad.
+
+2. It is still not small enough. Scale down the whole left sheep (head, body and legs together) so that its width is about 70% of the right sheep's width. The size difference must be obvious at first glance.
+
+Do not change anything else: keep the right sheep, the style, colors, paper, plum branch and seal exactly as they are. After shrinking, move the left sheep slightly to the right so the gap between the two sheep stays about the width of one sheep's head.
+```
