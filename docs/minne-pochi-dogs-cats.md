@@ -285,7 +285,12 @@ The humor must feel affectionate and true to life, the kind of moment real guine
 
 THIS IS A GUINEA PIG, NOT A HAMSTER, RABBIT OR MOUSE: a plump, loaf-shaped body that is wider than tall, NO visible tail at all, a big rounded blunt nose (Roman nose) with no pointed snout, small droopy petal-shaped ears on the sides of the head, round eyes set on the sides of the face, and tiny short legs mostly hidden under the body. No neck: the head flows straight into the body.
 
-THE MOUTH IS THE MOST IMPORTANT FEATURE: a small rounded pink nose with two tiny nostrils, then one long, thin vertical line (the split upper lip) running straight down from the nose to the mouth, ending in a small closed mouth shaped like an upside-down "Y" (like the Japanese character 人), with a tiny soft rounded lower lip just below it. Keep a clear gap between the nose and the mouth. The mouth stays almost closed at all times, even when squeaking: NEVER draw a wide-open mouth, NO visible tongue, NO visible teeth.
+THE NOSE AND MOUTH ARE THE MOST IMPORTANT FEATURES (guinea pig fans love them, so they must be true to real anatomy):
+- The whole muzzle is a big, soft, puffy rounded bulge, wide like a small bun, filling the lower center of the face. It is wider than the space between the eyes.
+- The nose sits on the upper part of this bulge: a small pale pink area with two tiny comma-shaped slit nostrils, angled like an upside-down V.
+- A short thin vertical line runs down from between the nostrils to the upper lip, which is split into two small rounded puffy lobes, one on each side of the line.
+- Under the lobes, the mouth is a short, gently curved horizontal line with a small, soft, slightly pouting rounded lower lip below it. The mouth sits at the very bottom of the muzzle, close to the chin.
+- NOT a cat face: no tiny triangle nose, no "ω" cat mouth, no rabbit "Y" mouth. Mouth almost closed: no wide-open mouth, no teeth, no tongue.
 
 STYLE: Cute, simplified cartoon illustration with deformed (chibi-like) proportions: a big round head, a small soft body, short stubby legs, and simple dot or small oval eyes. Keep only the few features that make the animal instantly recognizable (body shape, ear shape, coat color and patches, coat texture) and exaggerate them slightly. Clean, smooth outlines in a soft dark brown, flat colors with gentle shading, warm and friendly palette. Simple shapes that stay readable when printed small (about 5 cm tall).
 
@@ -296,7 +301,9 @@ TEXT: No text, letters, numbers, signatures or watermarks anywhere.
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 
-※口元がモルモットのいちばんの可愛さ(ユーザーの指摘)。鼻から縦に伸びる一本線と、逆Y字(人の字)の閉じた口を必ず描かせる。鳴くときも口はほとんど開けない。
+※口元がモルモットのいちばんの可愛さ(ユーザーの指摘)。線だけで描かせると猫やうさぎの口になる。**鼻から口までが、ふっくら丸く盛り上がった大きなふくらみ**であることを必ず描かせる。
+※横向きだと口元が隠れる。**口元を見せる絵は正面向き**にする。
+※言葉だけで形が合わないときは、ユーザー自身のモルモットの写真を参考画像としてGeminiに渡す(自分の子の写真なので権利の問題はない)。まず正面の「顔の基準の絵」を1枚作り、以降の場面はその絵を参考画像にして顔をそろえる。
 
 ※犬猫は「画面の高さの70%」だが、モルモットは横長なので「幅の70%」にしている。
 
