@@ -253,3 +253,46 @@ MOOD: Peaceful, gentle, and warm; an understated bond between two companions who
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
 ```
+
+---
+
+## 改訂5: さらに近づけ、左の羊を俯き加減に(色紙版)
+
+### ユーザーの指摘
+- 改訂4でも見た目が変わらない。羊同士をもう少し近づける
+- 左側の羊の顔を少し俯き加減にする
+
+### 変更点
+- 二頭の間は、割合の言葉だけではGeminiが守らないため、**位置を数値で固定**する。左の羊 40%、右の羊 62%。間は羊の頭ひとつ分ほど
+- 左の羊: 頭を少し下げ、目線をやや下に落とす(控えめな俯き加減)。体と顔の向きは右の羊へ向けたまま
+- 右の羊: 頭の高さは自然なまま、穏やかに左の羊の方を向く
+
+### Geminiの使い方
+同じチャットで指示文を貼り直すと、前の画像の構図がそのまま残りやすい。
+- **方法1(前の画像を直す):** 同じチャットで、下の「修正指示」だけを送る
+- **方法2(作り直す):** 新しいチャットを開き、「色紙版(改訂5)」の全文を貼る
+
+#### 修正指示(方法1)
+```
+Edit this image. Keep the style, colors, paper, plum branch and seal exactly the same. Change only the two sheep:
+1. Move the two sheep noticeably closer together. The gap between them should be only about the width of one sheep's head. They still do not touch.
+2. Lower the head of the left sheep slightly, with its gaze cast gently downward, a modest, shy posture, while its body and face still turn toward the right sheep.
+3. The right sheep keeps its natural head height and calmly faces the left sheep.
+```
+
+#### 色紙版(改訂5・方法2)
+```
+Create an original Japanese nihonga-style painting on warm washi paper, for display in a traditional tokonoma alcove or Japanese tatami room. A calm, gentle New Year picture for 2027, the Year of the Sheep.
+
+SUBJECT: Two adult sheep resting on the ground with their legs folded, facing each other, close together as a pair. The gap between them is only about the width of one sheep's head; they do NOT touch. The left sheep holds its head slightly lowered, with its gaze cast gently downward, a modest, shy posture, while its body and face still turn toward the right sheep. The right sheep holds its head at a natural height and calmly faces the left sheep with softly open eyes. A quiet, gentle mutual presence. Natural animal posture only: no looking up, no head tilting, no leaning, no human-like gestures or expressions. The left sheep sits slightly closer to the viewer (a little lower in the picture and a little larger); the right sheep sits slightly farther away (a little higher and a little smaller), so they are not mirror images. Paint the sheep with soft gofun white (#F7F1E6) for the wool and a few gentle strokes of warm diluted sumi ink (#7A6E62) for the faces, legs and shading; soft edges, no hard outlines. Beneath them, only a very faint, soft wash of pale yellow ochre (#D9C39A) suggesting the ground; no horizon line, no landscape. From the upper left edge, one slender branch of white plum blossoms (hakubai) reaches a little way into the picture as a quiet seasonal accent: a few white five-petal flowers with pale yellow stamens and two or three small buds, the branch painted in light warm grey ink. The sheep do not look at the plum. Original design only: do NOT depict any existing character or mascot, and do NOT imitate any specific artist's style.
+
+COMPOSITION: Square canvas. The two sheep sit in the lower third of the canvas: the center of the left sheep is at about 40% from the left edge, and the center of the right sheep is at about 62% from the left edge. The small empty space between the two sheep is the heart of the picture. The plum branch enters from the upper-left edge and reaches no further than one quarter into the canvas. Leave about 65% of the canvas as empty negative space (Japanese "ma"). Keep the sheep and the seal within the central 80% of the width so the image can be trimmed to shikishi proportions (242×272 mm).
+
+COLOR: Warm kinari washi paper background (#EFE6D3) with a subtle, natural paper fiber texture. Only soft, warm, quiet colors: gofun white, warm grey ink, pale yellow ochre, pale yellow stamens. Absolutely no red or pink washes, no red bleeding, no sunset, no cool colors.
+
+JAPANESE LETTERING: In the lower-right corner, below and to the right of the right sheep, one small square vermilion-orange (#D0643C) artist seal (rakkan), about 4% of the canvas width, with the single kanji 「未」 carved in seal-script (tensho) style, crisp white lines on flat vermilion, slightly uneven hand-stamped edge. No other text, letters, numbers, signatures or watermarks.
+
+MOOD: Peaceful, gentle, and warm; an understated bond between two companions who have spent many years together, resting quietly close to each other and facing each other.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready flat artwork. No frame, no mockup, no room scene.
+```
