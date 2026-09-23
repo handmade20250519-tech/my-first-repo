@@ -66,7 +66,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 | ポメラニアン | 毛が爆発して、ほぼ丸いかたまり | A pomeranian so fluffy it looks like an almost perfect round ball of fur, with tiny paws and a small happy face peeking out. |
 | フレンチ・ブルドッグ | へそ天で、いびきをかいて爆睡 | A french bulldog sleeping deeply on its back, belly up, legs in the air, bat ears flopped, mouth slightly open as if snoring. |
 | ゴールデン・レトリーバー | 靴下をくわえて、誇らしげに持ってくる | A golden retriever proudly carrying a single striped sock in its mouth, tail wagging, with a big joyful expression. |
-| シベリアン・ハスキー | 空を見上げて、何か文句を言っている | A siberian husky sitting with its head tilted up, mouth open in a dramatic "talking" howl, with an exaggerated, theatrical face. |
+| シベリアン・ハスキー | おしゃべりで大げさ。「だめ」と言われると、ひっくり返って「ウーワウー」と口答えする | A siberian husky throwing a dramatic little tantrum after being told "no": flopped over on its side and back, legs kicking in the air, head thrown back, mouth open in a long complaining "awoo-woo" talking-back howl, eyebrows raised in exaggerated outrage. A few small curved sound lines near its mouth (lines only, no letters). Classic husky features: black and white coat with the distinctive white face mask and dark cap, upright triangle ears, fluffy sickle-shaped tail, small oval eyes in light icy blue. |
 | ウェルシュ・コーギー | ふせのとき、後ろ足がカエルのように伸びる | A welsh corgi lying flat in a "frog splat" pose, both short back legs stretched straight out behind, round fluffy rear visible, looking back over its shoulder. |
 | ビーグル | 鼻を地面につけて、においに夢中 | A beagle with its nose pressed to the ground, completely absorbed in a scent, ears dangling forward, tail straight up. |
 
