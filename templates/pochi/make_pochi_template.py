@@ -5,7 +5,7 @@
   pochi_lines_A4.png  印刷用の線だけ(背景透明、300dpi)
   pochi_guide_A4.pdf  試し刷り用の案内つきの型(実寸)
   pochi_print_A4.png  売るデータ用。組み立てたあと線が目立たない版(背景透明、300dpi)
-                      ・切り線はごく薄い細線
+                      ・切り線ははっきりした灰色。型の外側だけに引くので、線の上を切れば袋に線が残らない
                       ・折り線は袋の上に引かず、型の外側に短い目印だけ
                       ・のりしろの印は、組み立てると②の下に隠れる①の端だけ
 """
@@ -176,16 +176,21 @@ def draw_print_png():
     """組み立てたときに線が目立たない、売るデータ用の版。"""
     img = Image.new("RGBA", (p(PAGE_W), p(PAGE_H)), (255, 255, 255, 0))
     d = ImageDraw.Draw(img)
-    cut = (200, 200, 200, 255)   # ごく薄いグレー
-    mark = (170, 170, 170, 255)
+    cut = (120, 120, 120, 255)   # 切り線: 印刷してはっきり見える灰色(薄すぎて切る場所が分からなかったため濃くした)
+    mark = (120, 120, 120, 255)
     for ox, oy in nets():
         fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
         fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
         # のりしろ(①の外側の端)。②を貼ると下に隠れるので、印刷しても見えない
         d.rectangle([p(ox + 0.6), p(fy0 + 3.6), p(ox + 5.5), p(fy1 - 3.6)], fill=(235, 235, 235, 255))
-        # 切り線: ごく薄く細い線
-        pts = outline(ox, oy)
-        d.line([(p(x), p(y)) for x, y in pts] + [(p(pts[0][0]), p(pts[0][1]))], fill=cut, width=2)
+        # 切り線: 型の外側だけに引く。線の上を切れば、袋には線が残らない
+        pts = [(p(x), p(y)) for x, y in outline(ox, oy)]
+        layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(layer).line(pts + [pts[0]], fill=cut, width=p(0.8), joint="curve")
+        inside = Image.new("L", img.size, 0)
+        ImageDraw.Draw(inside).polygon(pts, fill=255)
+        layer.putalpha(Image.composite(Image.new("L", img.size, 0), layer.getchannel("A"), inside))
+        img.alpha_composite(layer)
         # 折り線の目印: 型の外側に短い線だけ(袋の上には線を引かない)
         L = 3.0
         ticks = [
@@ -195,7 +200,7 @@ def draw_print_png():
             ((ox - 1, fy1), (ox - 1 - L, fy1)), ((ox + NET_W + 1, fy1), (ox + NET_W + 1 + L, fy1)),
         ]
         for a, b in ticks:
-            d.line([(p(a[0]), p(a[1])), (p(b[0]), p(b[1]))], fill=mark, width=3)
+            d.line([(p(a[0]), p(a[1])), (p(b[0]), p(b[1]))], fill=mark, width=p(0.3))
     return img
 
 
