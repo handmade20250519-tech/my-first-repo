@@ -31,7 +31,7 @@ NET_W, NET_H = FRONT_W + 2 * FLAP, TOP + FRONT_H + BOTTOM
 GAP_X = (PAGE_W - 2 * NET_W) / 3
 OFF_Y = (PAGE_H - NET_H) / 2 + 6
 SAFE = 4       # おもての安全域
-LID_IN = 2     # ふた④の付け根を左右それぞれ細くする幅。袋の口に差し込みやすくする(厚い紙で押し込むとしわになったため)
+LID_IN = 2     # ふた④の付け根を左右それぞれ細くする幅(差し込み式を試した名残。形として自然なので残す)
 LID_TIP = 6    # ふた④の先を左右それぞれ細くする幅
 
 
@@ -122,7 +122,7 @@ def draw_png(guide):
                "ぽち袋の型(A4横・2枚どり) 仕上がり 64×95mm ── 実線=切る  点線=折る  灰色=のりしろ  青=Canvaでの配置の目安(印刷しない)",
                font=f_s, fill=(60, 60, 60, 255), anchor="mm")
         d.text((p(PAGE_W / 2), p(PAGE_H - 7)),
-               "一万円札を三つ折り(約53×76mm)にして入る大きさ。①②の順に折り、①ののりしろに②を貼る。③を折り上げて貼る。④は袋の口に差し込む。",
+               "一万円札を三つ折り(約53×76mm)にして入る大きさ。①②の順に折り、①ののりしろに②を貼る。③を折り上げて貼る。④はシールなどで留める。",
                font=f_s, fill=(60, 60, 60, 255), anchor="mm")
     return img
 
@@ -138,7 +138,7 @@ def draw_pdf(path):
 
     c.setFont("IPAG", 7)
     c.drawCentredString(*xy(PAGE_W / 2, 9), "ぽち袋の型(A4横・2枚どり) 仕上がり 64×95mm ── 実線=切る 点線=折る 灰色=のりしろ")
-    c.drawCentredString(*xy(PAGE_W / 2, PAGE_H - 7), "①②の順にうしろへ折り、①ののりしろに②を貼る。③を折り上げて貼る。④は袋の口に差し込む。")
+    c.drawCentredString(*xy(PAGE_W / 2, PAGE_H - 7), "①②の順にうしろへ折り、①ののりしろに②を貼る。③を折り上げて貼る。④はシールなどで留める。")
     for ox, oy in nets():
         fx0, fy0 = ox + FLAP, oy + TOP
         c.setFillGray(0.88)
