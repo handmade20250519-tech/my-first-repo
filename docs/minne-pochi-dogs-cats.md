@@ -332,3 +332,43 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - 短毛の三毛(オレンジ・黒・白)、クリーム×白、ヒマラヤン(白い体に黒い鼻と耳)
 - アビシニアン(つむじがたくさんある)、長毛(ペルビアンやシェルティ)、テディ(もこもこ)
 - **ユーザーの子の毛色を1枚目にする**のがいちばん強い(本人が「似ている」と判断できるため)。
+
+---
+
+## 画風の試作: 絵画風(ユーザーの提案)
+
+### ユーザーの考え
+- ぽち袋は日本ならではの袋なので、アニメのイラストのような絵ではなく、少し絵画風にしたい。
+- まずワイヤーヘアード・ダックスフンドで試す。
+
+### 方針
+- **墨の線+淡い水彩(淡彩)**で、和紙に描いたような落ち着いた絵にする。ぽち袋の「和」と合う。
+- 体つきは、写実にはしない。頭を少し大きく、体をまるく、という**やわらかいデフォルメは残す**。目はアニメの大きな目ではなく、小さく自然な目にする。
+- **背景は白のまま**にする。紙の質感を背景全体に入れると、Canvaで背景を消せなくなるため。紙の風合いは、絵の中(毛の塗り)にだけ出す。
+- **特定の画家の作風はまねしない。** 「日本画のような」「水墨淡彩のような」という技法の言葉だけで指定する。
+
+### 注意: 採用するなら、全部の絵をこの画風で作り直す
+- ショップの中で画風が混ざると、統一感がなくなる(「同じ画風で統一は厳守」の決まり)。
+- 試作が良ければ、この共通指示文の [BREED LINE] に、これまでの犬種の一文を入れて作り直す。一文の中の「cartoon」のような言葉は、そのとき外す。
+- 猫は、この画風の文に、猫用の「THIS IS A CAT, NOT A DOG」の段落を足して使う。
+
+### 共通指示文(絵画風)
+```
+Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: [BREED LINE]
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A delicate Japanese-style painting in the manner of traditional ink-and-light-color painting (sumi ink with soft transparent watercolor washes), as if hand-painted on washi paper. Fine sumi ink outlines with natural variation in thickness, some lines fading softly; soft, transparent pigment washes with gentle bleeding edges; fur suggested with fine, light brush strokes. Muted, natural, traditional Japanese colors. Gently simplified, rounded proportions (a slightly large head, a compact soft body), but NOT anime or cartoon: small natural eyes with a tiny highlight, no thick uniform outlines, no flat cel shading, no glossy digital look. Keep the painting simple and readable when printed small (about 5 cm tall).
+
+COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+
+TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
+### ワイヤーヘアード・ダックスフンド
+| あるある | [BREED LINE] に入れる一文 |
+|---|---|
+| 散歩から帰ると、もじゃもじゃのひげと眉毛に、草や小さな葉っぱをいっぱいつけている。本人は気づかず得意顔 | A wirehaired miniature dachshund just back from a walk, standing proudly in profile facing left, head turned toward the viewer with a satisfied, dignified expression, completely unaware that its bushy beard and eyebrows are full of tiny bits of grass and a few small green leaves caught in the wiry hair. Classic wirehaired dachshund features: extremely long low body, very short legs, a long muzzle with a thick scruffy beard and mustache, bushy eyebrows, soft drop ears, and a harsh, wiry coat shown with short rough brush strokes. Coat color: wild boar (a mix of grizzled black, grey and warm brown hairs, lighter tan on the legs and muzzle). |
