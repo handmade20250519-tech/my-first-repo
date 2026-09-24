@@ -1,4 +1,4 @@
-"""データ版に入れる「作り方とご利用について」(A4縦・2ページ)のPDFを作る。"""
+"""データ版に入れる「作り方とご利用について」(A4縦・3ページ)のPDFを作る。"""
 from pathlib import Path
 
 from reportlab.lib.pagesizes import A4
@@ -6,8 +6,10 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
+from reportlab.lib.utils import ImageReader
+from PIL import Image, ImageOps
 
-from make_pochi_template import FLAP, FRONT_W, FRONT_H, TOP, BOTTOM, NET_W, NET_H, FONT_PATH
+from make_pochi_template import FONT_PATH
 
 OUT = Path(__file__).parent / "pochi_howto.pdf"
 SHOP = "うちの子あるある"
@@ -51,39 +53,62 @@ def lines(c, x, y, rows, size=9.5, lead=15, width=170 * mm):
     return y - len(out) * lead
 
 
-def net(c, x, y, s, fold=None, glue=None, shade_front=False):
-    """展開図を縮尺sで描く。x, yは左下(pt)。"""
-    def P(px, py):  # 型の座標(mm、左上原点)→PDF座標
-        return x + px * s, y + (NET_H - py) * s
-    fx0, fx1 = FLAP, FLAP + FRONT_W
-    fy0, fy1 = TOP, TOP + FRONT_H
-    pts = [(fx0 + 3, 0), (fx1 - 3, 0), (fx1, fy0), (NET_W, fy0 + 3), (NET_W, fy1 - 3), (fx1, fy1),
-           (fx1 - 3, NET_H), (fx0 + 3, NET_H), (fx0, fy1), (0, fy1 - 3), (0, fy0 + 3), (fx0, fy0)]
-    if glue:
-        c.setFillColorRGB(0.88, 0.88, 0.88)
-        for gx0, gy0, gx1, gy1 in glue:
-            a, b = P(gx0, gy1), P(gx1, gy0)
-            c.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], stroke=0, fill=1)
-    if shade_front:
-        c.setFillColorRGB(0.97, 0.93, 0.88)
-        a, b = P(fx0, fy1), P(fx1, fy0)
-        c.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], stroke=0, fill=1)
+STEPS = [
+    ("1", "薄い線に沿って切り取ります。",
+     "型の外にある短い線(折り目の目印)は切り落としてかまいません。先に次の2を済ませてから切ると楽です。"),
+    ("2", "折り目をつけます。",
+     "袋には折り線を印刷していません。型の外にある向かい合う目印どうしを定規で結び、なぞって軽く筋をつけてから折ります。"),
+    ("3", "左右をうしろへ折ります。",
+     "①(左)を先に折り、灰色の細い帯(のりしろ)にのりを付けて、②(右)を重ねて貼ります。"),
+    ("4", "下をうしろへ折り上げて貼ります。",
+     "③(下)の裏側にのりを付けて、袋のうしろに貼ります。"),
+    ("5", "お金を入れて、ふたを閉じます。",
+     "④(上)を折り、シールなどで留めてください。"),
+]
+
+# 工程写真の枠(横4:3)。photos/step1.jpg〜step5.jpg(または .png)があれば差し込む
+PHOTO_DIR = Path(__file__).parent / "photos"
+PHOTO_W, PHOTO_H = 76 * mm, 57 * mm
+CARD_H = PHOTO_H + 8 * mm
+
+
+def find_photo(n):
+    for ext in (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"):
+        f = PHOTO_DIR / f"step{n}{ext}"
+        if f.exists():
+            return f
+    return None
+
+
+def photo(c, x, y, n):
+    """x, yは枠の左下。写真があれば枠いっぱいに(はみ出しは中央で切って)入れる。無ければ差し替え用の枠を描く。"""
+    f = find_photo(n)
+    if f:
+        im = Image.open(f)
+        im = ImageOps.exif_transpose(im).convert("RGB")
+        im = ImageOps.fit(im, (1520, 1140), Image.LANCZOS)
+        c.drawImage(ImageReader(im), x, y, PHOTO_W, PHOTO_H)
+        c.setStrokeColorRGB(*LINE)
+        c.setLineWidth(0.5)
+        c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=0)
+        return
+    c.setFillColorRGB(0.96, 0.95, 0.93)
     c.setStrokeColorRGB(*LINE)
     c.setLineWidth(0.8)
+    c.setDash(4, 3)
+    c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=1)
     c.setDash()
-    pth = c.beginPath()
-    pth.moveTo(*P(*pts[0]))
-    for q in pts[1:]:
-        pth.lineTo(*P(*q))
-    pth.close()
-    c.drawPath(pth, stroke=1, fill=0)
-    if fold:
-        c.setStrokeColorRGB(*ACCENT)
-        c.setDash(3, 2)
-        for (ax, ay), (bx, by) in fold:
-            c.line(*P(ax, ay), *P(bx, by))
-        c.setDash()
-    return P
+    text(c, x + PHOTO_W / 2, y + PHOTO_H / 2 + 4, f"工程写真 {n}", 11, LINE, center=True)
+    text(c, x + PHOTO_W / 2, y + PHOTO_H / 2 - 12, f"photos/step{n}.jpg(横4:3)", 8, LINE, center=True)
+
+
+def step_card(c, top, n, head, body):
+    """topはカードの上端。左に写真、右に番号と説明。"""
+    photo(c, 20 * mm, top - PHOTO_H, n)
+    tx = 20 * mm + PHOTO_W + 7 * mm
+    text(c, tx, top - 16, n, 16, ACCENT)
+    text(c, tx + 8 * mm, top - 16, head, 10.5)
+    lines(c, tx, top - 34, [body], 9, 13.5)
 
 
 def page1(c):
@@ -104,45 +129,18 @@ def page1(c):
 
     y -= 10
     text(c, 20 * mm, y, "■ 組み立て方", 11.5)
-    steps = [
-        ("1", "薄い線に沿って切り取ります。",
-         "型の外にある短い線(折り目の目印)は切り落としてかまいません。先に次の2を済ませてから切ると楽です。"),
-        ("2", "折り目をつけます。",
-         "袋には折り線を印刷していません。型の外にある向かい合う目印どうしを定規で結び、なぞって軽く筋をつけてから折ります。"),
-        ("3", "左右をうしろへ折ります。",
-         "①(左)を先に折り、灰色の細い帯(のりしろ)にのりを付けて、②(右)を重ねて貼ります。"),
-        ("4", "下をうしろへ折り上げて貼ります。",
-         "③(下)の裏側にのりを付けて、袋のうしろに貼ります。"),
-        ("5", "お金を入れて、ふたを閉じます。",
-         "④(上)を折り、シールなどで留めてください。"),
-    ]
-    for i, (n, head, body) in enumerate(steps):
-        top = y - 14 - i * 64
-        text(c, 20 * mm, top, n, 16, ACCENT)
-        text(c, 28 * mm, top, head, 10.5)
-        lines(c, 28 * mm, top - 14, [body], 9, 12.5, width=113 * mm)
-        fx0, fx1 = FLAP, FLAP + FRONT_W
-        fy0, fy1 = TOP, TOP + FRONT_H
-        fold = None
-        glue = None
-        if n == "2":
-            fold = [((fx0, fy0), (fx0, fy1)), ((fx1, fy0), (fx1, fy1)), ((fx0, fy0), (fx1, fy0)), ((fx0, fy1), (fx1, fy1))]
-        if n == "3":
-            fold = [((fx0, fy0), (fx0, fy1)), ((fx1, fy0), (fx1, fy1))]
-            glue = [(0.5, fy0 + 3.5, 5.5, fy1 - 3.5)]
-        if n == "4":
-            fold = [((fx0, fy1), (fx1, fy1))]
-        if n == "5":
-            fold = [((fx0, fy0), (fx1, fy0))]
-        mini = 0.42
-        P = net(c, W - 20 * mm - NET_W * mini, top - NET_H * mini + 8, mini, fold, glue, shade_front=True)
-        c.setFillColorRGB(*INK)
-        c.setFont("IPAG", 6.5)
-        c.drawCentredString(*P(FLAP / 2, TOP + FRONT_H / 2), "①")
-        c.drawCentredString(*P(FLAP + FRONT_W + FLAP / 2, TOP + FRONT_H / 2), "②")
-        c.drawCentredString(*P(FLAP + FRONT_W / 2, TOP + FRONT_H + BOTTOM / 2), "③")
-        c.drawCentredString(*P(FLAP + FRONT_W / 2, TOP / 2 + 2), "④")
-    y = y - 14 - len(steps) * 64
+    text(c, W / 2, 15 * mm, SHOP, 9, (0.5, 0.5, 0.5), center=True)
+    for i, step in enumerate(STEPS[:2]):
+        step_card(c, y - 10 - i * CARD_H, *step)
+
+
+def page_steps(c):
+    """組み立て方の続き(3〜5)。"""
+    y = H - 25 * mm
+    text(c, 20 * mm, y, "■ 組み立て方(つづき)", 11.5)
+    for i, step in enumerate(STEPS[2:]):
+        step_card(c, y - 10 - i * CARD_H, *step)
+    y = y - 10 - 3 * CARD_H - 6
     lines(c, 20 * mm, y, ["※ 絵柄によっては、しっぽなどが袋のうしろへ回り込むデザインになっています。折り目はそのままで大丈夫です。"], 8.5, 12)
     text(c, W / 2, 15 * mm, SHOP, 9, (0.5, 0.5, 0.5), center=True)
 
@@ -182,6 +180,8 @@ def page2(c):
 if __name__ == "__main__":
     c = canvas.Canvas(str(OUT), pagesize=A4)
     page1(c)
+    c.showPage()
+    page_steps(c)
     c.showPage()
     page2(c)
     c.showPage()
