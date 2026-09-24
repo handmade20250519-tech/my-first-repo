@@ -373,7 +373,9 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 |---|---|
 | 散歩から帰ると、もじゃもじゃのひげと眉毛に、草や小さな葉っぱをいっぱいつけている。本人は気づかず得意顔 | A wirehaired miniature dachshund just back from a walk, standing proudly in profile facing left, head turned toward the viewer with a satisfied, dignified expression, completely unaware that its bushy beard and eyebrows are full of tiny bits of grass and a few small green leaves caught in the wiry hair. Classic wirehaired dachshund features: extremely long low body, very short legs, a long muzzle with a thick scruffy beard and mustache, bushy eyebrows, soft drop ears, and a harsh, wiry coat shown with short rough brush strokes. Coat color: wild boar (a mix of grizzled black, grey and warm brown hairs, lighter tan on the legs and muzzle). |
 
-### 絵画風 第2版: 少し漫画っぽく(ユーザーの希望)
+### 絵画風 第2版: 少し漫画っぽく(ユーザーの希望) → 採用
+**決定: この画風で行く。** 犬26種の完成した指示文は `docs/minne-pochi-dogs-painterly.md` にまとめた。この設計書の前半の犬の表は、前の画風の記録として残す。
+
 第1版を「とてもいい」と評価。そのうえで、もう少し漫画っぽくしたい。変えたのは STYLE の段落だけ。
 - デフォルメを強くする(頭は体の3分の1くらい、体はもっとまるく)
 - 表情をはっきり(得意げに閉じた目、ほんのり赤いほっぺなど)
