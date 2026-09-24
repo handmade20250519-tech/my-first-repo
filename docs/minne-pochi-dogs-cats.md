@@ -372,3 +372,14 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 | あるある | [BREED LINE] に入れる一文 |
 |---|---|
 | 散歩から帰ると、もじゃもじゃのひげと眉毛に、草や小さな葉っぱをいっぱいつけている。本人は気づかず得意顔 | A wirehaired miniature dachshund just back from a walk, standing proudly in profile facing left, head turned toward the viewer with a satisfied, dignified expression, completely unaware that its bushy beard and eyebrows are full of tiny bits of grass and a few small green leaves caught in the wiry hair. Classic wirehaired dachshund features: extremely long low body, very short legs, a long muzzle with a thick scruffy beard and mustache, bushy eyebrows, soft drop ears, and a harsh, wiry coat shown with short rough brush strokes. Coat color: wild boar (a mix of grizzled black, grey and warm brown hairs, lighter tan on the legs and muzzle). |
+
+### 絵画風 第2版: 少し漫画っぽく(ユーザーの希望)
+第1版を「とてもいい」と評価。そのうえで、もう少し漫画っぽくしたい。変えたのは STYLE の段落だけ。
+- デフォルメを強くする(頭は体の3分の1くらい、体はもっとまるく)
+- 表情をはっきり(得意げに閉じた目、ほんのり赤いほっぺなど)
+- 墨で描いた簡単な漫画の記号を少しだけ使ってよい(動きの線、得意顔のきらりなど)
+- 墨の輪郭を少し太く、迷いなく。ただし筆の太さの変化と、淡い水彩の塗りは残す
+
+```
+STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). A few simple manga-style marks drawn with the same brush and ink are allowed when they help the humor (short motion lines, a tiny sparkle, a small sweat drop). NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+```
