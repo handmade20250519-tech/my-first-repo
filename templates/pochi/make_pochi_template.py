@@ -24,13 +24,15 @@ DPI = 300
 PX = DPI / 25.4  # 1mmあたりのピクセル数
 
 PAGE_W, PAGE_H = 297, 210
-FLAP = 35      # 左右の折り返し(うしろで6mm重なる)
+FLAP = 37      # 左右の折り返し(うしろで10mm重なる。6mmでは両面テープがはみ出したため広げた)
 FRONT_W, FRONT_H = 64, 95
 TOP, BOTTOM = 20, 25
 NET_W, NET_H = FRONT_W + 2 * FLAP, TOP + FRONT_H + BOTTOM
 GAP_X = (PAGE_W - 2 * NET_W) / 3
 OFF_Y = (PAGE_H - NET_H) / 2 + 6
 SAFE = 4       # おもての安全域
+OVERLAP = 2 * FLAP - FRONT_W   # うしろで①と②が重なる幅
+GLUE_W = OVERLAP - 2           # のりしろの印の幅(重なりより少し狭くして、②の下に確実に隠す)
 LID_IN = 2     # ふた④の付け根を左右それぞれ細くする幅(差し込み式を試した名残。形として自然なので残す)
 LID_TIP = 6    # ふた④の先を左右それぞれ細くする幅
 
@@ -92,8 +94,8 @@ def draw_png(guide):
         fx0, fy0 = ox + FLAP, oy + TOP
         if guide:
             glue = (225, 225, 225, 255)
-            # のりしろ: 左の折り返しの外側6mm、底のふた全体
-            d.rectangle([p(ox + 0.4), p(fy0 + 3.4), p(ox + 6), p(fy0 + FRONT_H - 3.4)], fill=glue)
+            # のりしろ: 左の折り返しの外側、底のふた全体
+            d.rectangle([p(ox + 0.4), p(fy0 + 3.4), p(ox + 0.4 + GLUE_W), p(fy0 + FRONT_H - 3.4)], fill=glue)
             d.polygon([(p(fx0 + 0.4), p(fy0 + FRONT_H + 0.4)), (p(fx0 + FRONT_W - 0.4), p(fy0 + FRONT_H + 0.4)),
                        (p(fx0 + FRONT_W - 3.2), p(oy + NET_H - 0.4)), (p(fx0 + 3.2), p(oy + NET_H - 0.4))], fill=glue)
             # おもての安全域と、絵・文字の目安
@@ -142,7 +144,7 @@ def draw_pdf(path):
     for ox, oy in nets():
         fx0, fy0 = ox + FLAP, oy + TOP
         c.setFillGray(0.88)
-        c.rect(*xy(ox + 0.4, fy0 + FRONT_H - 3.4), (5.6) * mm, (FRONT_H - 6.8) * mm, stroke=0, fill=1)
+        c.rect(*xy(ox + 0.4, fy0 + FRONT_H - 3.4), GLUE_W * mm, (FRONT_H - 6.8) * mm, stroke=0, fill=1)
         pth = c.beginPath()
         pth.moveTo(*xy(fx0 + 0.4, fy0 + FRONT_H + 0.4))
         for pt in [(fx0 + FRONT_W - 0.4, fy0 + FRONT_H + 0.4), (fx0 + FRONT_W - 3.2, oy + NET_H - 0.4), (fx0 + 3.2, oy + NET_H - 0.4)]:
@@ -182,7 +184,7 @@ def draw_print_png():
         fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
         fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
         # のりしろ(①の外側の端)。②を貼ると下に隠れるので、印刷しても見えない
-        d.rectangle([p(ox + 0.6), p(fy0 + 3.6), p(ox + 5.5), p(fy1 - 3.6)], fill=(235, 235, 235, 255))
+        d.rectangle([p(ox + 0.6), p(fy0 + 3.6), p(ox + 0.6 + GLUE_W), p(fy1 - 3.6)], fill=(235, 235, 235, 255))
         # 切り線: 型の外側だけに引く。線の上を切れば、袋には線が残らない
         pts = [(p(x), p(y)) for x, y in outline(ox, oy)]
         layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
