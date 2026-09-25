@@ -35,3 +35,9 @@ OUTPUT: Highest available resolution, 1:1 aspect ratio. Crisp artwork.
 ### できたら確かめること
 - スマホの画面で、1cmくらいの大きさに縮めて見ても、犬と猫だと分かるか
 - 丸く切り取っても、耳や前足が欠けないか
+
+### できたアイコン
+- Geminiで作った絵(2000×2000px)を、700KB以下にするため1000×1000pxのJPEGにした(minneの上限700KB)。
+- `shop/icon_zoom.jpg`(おすすめ・約120KB): 顔を大きく切り出した版。小さく表示しても犬と猫が分かる。
+- `shop/icon_full.jpg`(約70KB): 元の構図のまま縮めた版。小さいと顔が見えにくい。
+- `shop/icon_preview.png`: 丸く切ったときの見え方(上: 大きめ、下: 1cmくらい)。
