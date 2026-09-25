@@ -73,3 +73,39 @@ OUTPUT: Highest available resolution, 1:1 aspect ratio. Crisp artwork.
 | **動物あるある観察家**(おすすめ) | 商品の種類にも動物の種類にも縛られない。ショップ名とつながり、覚えてもらいやすい。自分がしていること(観察して、テーマを決める)を正直に表している | 何を売っているかは伝わらない(ショップ名と商品で伝わるので問題は小さい) |
 | 動物と暮らす紙ものデザイナー | 何を作っているかが分かる | 紙以外の商品(画像データなど)に広げると合わなくなる |
 | うちの子あるある係 | やわらかく、親しみやすい | ショップ名と重なる |
+
+## 4. カバー画像
+
+### 条件(minne)
+- 1100×280px以上推奨(横:縦 = 約4:1のとても横長)、8MB以内、JPEG・PNG・GIF
+- 仕上げは **2200×560px のJPEG** にする(推奨の2倍。高精細な画面でもぼやけない)
+- スマホでは左右が切れる可能性がある(未確認)。→ 大事なものは中央に寄せる
+
+### 考え方
+- アイコン(1つの袋に柴犬とキジトラ)と同じ画風・同じ背景色(#F4EFE6)にして、並んだときにひと続きに見えるようにする。
+- 「いろいろな犬種・猫の柄がいる店」だと、ひと目で伝える。→ **ぽち袋が横一列に並び、それぞれの袋から違う子が顔を出している**絵。
+- 動物は5匹まで。多いとAIが崩しやすく、1匹ずつが小さくなる。
+- 文字は入れない(入れるならCanvaで、店名だけを小さく)。
+
+### 作り方A(おすすめ): 商品の絵をCanvaで並べる
+- すでに作った商品の絵(背景を消したもの)を、2200×560pxのデザインに横一列に並べる。背景は #F4EFE6。
+- 良い点: 商品とまったく同じ絵なので、カバーを見て商品を開いた人が「この絵だ」と分かる。AIの崩れを心配しなくてよい。
+- 並べる子の例(左から): トイ・プードル、茶トラ、柴犬(中央)、キジトラ、ダックス。人気の犬種と猫の柄を交互に。
+
+### 作り方B: Geminiで1枚の絵として作る
+```
+Create an original, warm and gently humorous painting for a wide banner (cover image) of a Japanese online shop that sells pet-themed pochi-bukuro gift envelopes.
+
+SUBJECT: Five small Japanese pochi-bukuro paper envelopes standing upright in one neat horizontal row, evenly spaced, each plain cream color with a small red noshi-style curl mark in its upper right corner. From the opening at the top of each envelope, a different pet pokes out its head and front paws, squeezed in and looking pleased, as if each envelope were its own cozy bed. From left to right: a toy poodle with an apricot teddy-bear cut; an orange tabby cat; a red shiba inu with cream-white cheeks (in the center); a brown mackerel tabby cat; a black-and-tan smooth miniature dachshund with long floppy ears. Each animal has a different, affectionate expression (proud, sleepy, smug, curious, happy). The envelopes are fully opaque: nothing shows through them. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+THE CATS MUST LOOK LIKE CATS: small triangular pointed ears, a tiny pink triangle nose with no protruding muzzle, three thin whiskers on each cheek, a small cat mouth shaped like a soft "ω", almond-shaped cat eyes with narrow slit pupils, a flat round cat face.
+
+STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges. Muted, natural, traditional Japanese colors. Cute, deformed proportions with big round heads. NO sweat drops. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes.
+
+COMPOSITION: Very wide horizontal banner. The row of five envelopes is centered and spans about 70% of the width, and the envelopes and animals fill about 60% of the height, leaving calm empty space above, below and at both ends. Keep every animal fully inside the central area. Plain, soft warm off-white background (#F4EFE6) with no texture, no frame, no floor, no other objects.
+
+TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution, 21:9 aspect ratio. Crisp artwork.
+```
+- Geminiの一番横長(21:9)で作り、あとで上下を切って4:1(2200×560px)にする。上下の余白を多めに取らせているのはそのため。
