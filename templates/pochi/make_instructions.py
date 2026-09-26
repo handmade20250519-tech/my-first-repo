@@ -1,4 +1,5 @@
 """データ版に入れる「作り方とご利用について」(A4縦・3ページ)のPDFを作る。"""
+import io
 from pathlib import Path
 
 from reportlab.lib.pagesizes import A4
@@ -66,9 +67,9 @@ STEPS = [
      "④(上)をうしろへ折り、シールや両面テープで留めてください。厚い紙は、ふたが開いてきやすいので、留めるのがおすすめです。"),
 ]
 
-# 工程写真の枠(横4:3)。photos/step1.jpg〜step5.jpg(または .png)があれば差し込む
+# 工程写真の枠(正方形)。photos/step1.jpg〜step5.jpg(または .png)があれば、縦横比を保って枠の中に収める。無い工程は文字だけにする
 PHOTO_DIR = Path(__file__).parent / "photos"
-PHOTO_W, PHOTO_H = 76 * mm, 57 * mm
+PHOTO_W, PHOTO_H = 62 * mm, 62 * mm
 CARD_H = PHOTO_H + 8 * mm
 
 
@@ -81,34 +82,33 @@ def find_photo(n):
 
 
 def photo(c, x, y, n):
-    """x, yは枠の左下。写真があれば枠いっぱいに(はみ出しは中央で切って)入れる。無ければ差し替え用の枠を描く。"""
-    f = find_photo(n)
-    if f:
-        im = Image.open(f)
-        im = ImageOps.exif_transpose(im).convert("RGB")
-        im = ImageOps.fit(im, (1520, 1140), Image.LANCZOS)
-        c.drawImage(ImageReader(im), x, y, PHOTO_W, PHOTO_H)
-        c.setStrokeColorRGB(*LINE)
-        c.setLineWidth(0.5)
-        c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=0)
-        return
-    c.setFillColorRGB(0.96, 0.95, 0.93)
+    """x, yは枠の左下。写真を縦横比を保ったまま枠の中に収める(切り取らない)。"""
+    im = ImageOps.exif_transpose(Image.open(find_photo(n))).convert("RGB")
+    im.thumbnail((900, 900), Image.LANCZOS)
+    box = 900
+    bg = Image.new("RGB", (box, box), (246, 244, 240))
+    fit = ImageOps.contain(im, (box, box), Image.LANCZOS)
+    bg.paste(fit, ((box - fit.width) // 2, (box - fit.height) // 2))
+    buf = io.BytesIO()
+    bg.save(buf, "JPEG", quality=85)  # JPEGのまま埋め込んで、PDFを軽くする
+    buf.seek(0)
+    c.drawImage(ImageReader(buf), x, y, PHOTO_W, PHOTO_H)
     c.setStrokeColorRGB(*LINE)
-    c.setLineWidth(0.8)
-    c.setDash(4, 3)
-    c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=1)
-    c.setDash()
-    text(c, x + PHOTO_W / 2, y + PHOTO_H / 2 + 4, f"工程写真 {n}", 11, LINE, center=True)
-    text(c, x + PHOTO_W / 2, y + PHOTO_H / 2 - 12, f"photos/step{n}.jpg(横4:3)", 8, LINE, center=True)
+    c.setLineWidth(0.5)
+    c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=0)
 
 
 def step_card(c, top, n, head, body):
-    """topはカードの上端。左に写真、右に番号と説明。"""
-    photo(c, 20 * mm, top - PHOTO_H, n)
-    tx = 20 * mm + PHOTO_W + 7 * mm
+    """topはカードの上端。写真があれば左に写真、右に番号と説明。無ければ説明だけ。"""
+    if find_photo(n):
+        photo(c, 20 * mm, top - PHOTO_H, n)
+        tx = 20 * mm + PHOTO_W + 7 * mm
+    else:
+        tx = 20 * mm
     text(c, tx, top - 16, n, 16, ACCENT)
     text(c, tx + 8 * mm, top - 16, head, 10.5)
     lines(c, tx, top - 34, [body], 9, 13.5)
+    return top - (CARD_H if find_photo(n) else 22 * mm)
 
 
 def page1(c):
@@ -131,17 +131,19 @@ def page1(c):
     y -= 10
     text(c, 20 * mm, y, "■ 組み立て方", 11.5)
     text(c, W / 2, 15 * mm, SHOP, 9, (0.5, 0.5, 0.5), center=True)
-    for i, step in enumerate(STEPS[:2]):
-        step_card(c, y - 10 - i * CARD_H, *step)
+    top = y - 10
+    for step in STEPS[:2]:
+        top = step_card(c, top, *step)
 
 
 def page_steps(c):
     """組み立て方の続き(3〜5)。"""
     y = H - 25 * mm
     text(c, 20 * mm, y, "■ 組み立て方(つづき)", 11.5)
-    for i, step in enumerate(STEPS[2:]):
-        step_card(c, y - 10 - i * CARD_H, *step)
-    y = y - 10 - 3 * CARD_H - 6
+    top = y - 10
+    for step in STEPS[2:]:
+        top = step_card(c, top, *step)
+    y = top - 6
     lines(c, 20 * mm, y, ["※ 絵柄によっては、しっぽなどが袋のうしろへ回り込むデザインになっています。折り目はそのままで大丈夫です。"], 8.5, 12)
     text(c, W / 2, 15 * mm, SHOP, 9, (0.5, 0.5, 0.5), center=True)
 
