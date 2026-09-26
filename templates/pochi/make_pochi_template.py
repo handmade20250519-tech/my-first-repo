@@ -24,14 +24,16 @@ DPI = 300
 PX = DPI / 25.4  # 1mmあたりのピクセル数
 
 PAGE_W, PAGE_H = 297, 210
-FLAP = 37      # 左右の折り返し(うしろで10mm重なる。6mmでは両面テープがはみ出したため広げた)
+FLAP_L = 44    # ①左の折り返し(先に折る。のりしろ付き)
+FLAP_R = 32    # ②右の折り返し(上に重ねる)。袋の幅64mmのちょうど半分なので、うしろの合わせ目が真ん中にくる
+# うしろの重なりは 44+32-64 = 12mm。10mm幅の両面テープでも1mmほどはみ出したため(ユーザーの試作)、10mm→12mmにした
 FRONT_W, FRONT_H = 64, 95
 TOP, BOTTOM = 20, 25
-NET_W, NET_H = FRONT_W + 2 * FLAP, TOP + FRONT_H + BOTTOM
+NET_W, NET_H = FLAP_L + FRONT_W + FLAP_R, TOP + FRONT_H + BOTTOM
 GAP_X = (PAGE_W - 2 * NET_W) / 3
 OFF_Y = (PAGE_H - NET_H) / 2 + 6
 SAFE = 4       # おもての安全域
-OVERLAP = 2 * FLAP - FRONT_W   # うしろで①と②が重なる幅
+OVERLAP = FLAP_L + FLAP_R - FRONT_W   # うしろで①と②が重なる幅
 GLUE_W = OVERLAP - 2           # のりしろの印の幅(重なりより少し狭くして、②の下に確実に隠す)
 LID_IN = 2     # ふた④の付け根を左右それぞれ細くする幅(差し込み式を試した名残。形として自然なので残す)
 LID_TIP = 6    # ふた④の先を左右それぞれ細くする幅
@@ -39,12 +41,12 @@ LID_TIP = 6    # ふた④の先を左右それぞれ細くする幅
 
 def outline(ox, oy):
     """切り線(外形)の頂点。ox, oyは展開図の左上(mm)。"""
-    fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
+    fx0, fx1 = ox + FLAP_L, ox + FLAP_L + FRONT_W
     fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
     return [
         (fx0 + LID_TIP, oy), (fx1 - LID_TIP, oy),     # ふた(上)。口に差し込めるよう袋より細い
         (fx1 - LID_IN, fy0), (fx1, fy0),
-        (fx1 + FLAP, fy0 + 3), (fx1 + FLAP, fy1 - 3),  # 右の折り返し
+        (fx1 + FLAP_R, fy0 + 3), (fx1 + FLAP_R, fy1 - 3),  # 右の折り返し
         (fx1, fy1),
         (fx1 - 3, oy + NET_H), (fx0 + 3, oy + NET_H),  # 底
         (fx0, fy1),
@@ -54,7 +56,7 @@ def outline(ox, oy):
 
 
 def folds(ox, oy):
-    fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
+    fx0, fx1 = ox + FLAP_L, ox + FLAP_L + FRONT_W
     fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
     return [((fx0, fy0), (fx0, fy1)), ((fx1, fy0), (fx1, fy1)),
             ((fx0 + LID_IN, fy0), (fx1 - LID_IN, fy0)), ((fx0, fy1), (fx1, fy1))]
@@ -91,7 +93,7 @@ def draw_png(guide):
     f_m = ImageFont.truetype(FONT_PATH, p(3.4))
     line = (150, 150, 150, 255)
     for ox, oy in nets():
-        fx0, fy0 = ox + FLAP, oy + TOP
+        fx0, fy0 = ox + FLAP_L, oy + TOP
         if guide:
             glue = (225, 225, 225, 255)
             # のりしろ: 左の折り返しの外側、底のふた全体
@@ -110,8 +112,8 @@ def draw_png(guide):
             d.text((p(fx0 + FRONT_W / 2), p(fy0 + 15)), "文字の範囲", font=f_m, fill=blue, anchor="mm")
             d.text((p(fx0 + FRONT_W / 2), p(fy0 + 62)), "絵を置く範囲", font=f_m, fill=blue, anchor="mm")
             gray = (110, 110, 110, 255)
-            d.text((p(ox + FLAP / 2 + 3), p(fy0 + FRONT_H / 2)), "うしろへ折る\n①", font=f_s, fill=gray, anchor="mm", align="center")
-            d.text((p(fx0 + FRONT_W + FLAP / 2), p(fy0 + FRONT_H / 2)), "うしろへ折る\n②", font=f_s, fill=gray, anchor="mm", align="center")
+            d.text((p(ox + FLAP_L / 2 + 3), p(fy0 + FRONT_H / 2)), "うしろへ折る\n①", font=f_s, fill=gray, anchor="mm", align="center")
+            d.text((p(fx0 + FRONT_W + FLAP_R / 2), p(fy0 + FRONT_H / 2)), "うしろへ折る\n②", font=f_s, fill=gray, anchor="mm", align="center")
             d.text((p(ox + 3.2), p(fy0 + 12)), "の\nり", font=f_s, fill=gray, anchor="mm", align="center")
             d.text((p(fx0 + FRONT_W / 2), p(fy0 + FRONT_H + 12)), "のりしろ ③うしろへ折って貼る", font=f_s, fill=gray, anchor="mm")
             d.text((p(fx0 + FRONT_W / 2), p(oy + 10)), "ふた ④", font=f_s, fill=gray, anchor="mm")
@@ -142,7 +144,7 @@ def draw_pdf(path):
     c.drawCentredString(*xy(PAGE_W / 2, 9), "ぽち袋の型(A4横・2枚どり) 仕上がり 64×95mm ── 実線=切る 点線=折る 灰色=のりしろ")
     c.drawCentredString(*xy(PAGE_W / 2, PAGE_H - 7), "①②の順にうしろへ折り、①ののりしろに②を貼る。③を折り上げて貼る。④はシールなどで留める。")
     for ox, oy in nets():
-        fx0, fy0 = ox + FLAP, oy + TOP
+        fx0, fy0 = ox + FLAP_L, oy + TOP
         c.setFillGray(0.88)
         c.rect(*xy(ox + 0.4, fy0 + FRONT_H - 3.4), GLUE_W * mm, (FRONT_H - 6.8) * mm, stroke=0, fill=1)
         pth = c.beginPath()
@@ -166,8 +168,8 @@ def draw_pdf(path):
             c.line(*xy(*a), *xy(*b))
         c.setFillGray(0.35)
         c.setFont("IPAG", 6)
-        c.drawCentredString(*xy(ox + FLAP / 2 + 3, fy0 + FRONT_H / 2), "① うしろへ折る")
-        c.drawCentredString(*xy(fx0 + FRONT_W + FLAP / 2, fy0 + FRONT_H / 2), "② うしろへ折る")
+        c.drawCentredString(*xy(ox + FLAP_L / 2 + 3, fy0 + FRONT_H / 2), "① うしろへ折る")
+        c.drawCentredString(*xy(fx0 + FRONT_W + FLAP_R / 2, fy0 + FRONT_H / 2), "② うしろへ折る")
         c.drawCentredString(*xy(fx0 + FRONT_W / 2, fy0 + FRONT_H + 12), "③ のりしろ")
         c.drawCentredString(*xy(fx0 + FRONT_W / 2, oy + 10), "④ ふた")
     c.showPage()
@@ -181,7 +183,7 @@ def draw_print_png():
     cut = (120, 120, 120, 255)   # 切り線: 印刷してはっきり見える灰色(薄すぎて切る場所が分からなかったため濃くした)
     mark = (120, 120, 120, 255)
     for ox, oy in nets():
-        fx0, fx1 = ox + FLAP, ox + FLAP + FRONT_W
+        fx0, fx1 = ox + FLAP_L, ox + FLAP_L + FRONT_W
         fy0, fy1 = oy + TOP, oy + TOP + FRONT_H
         # のりしろ(①の外側の端)。②を貼ると下に隠れるので、印刷しても見えない
         d.rectangle([p(ox + 0.6), p(fy0 + 3.6), p(ox + 0.6 + GLUE_W), p(fy1 - 3.6)], fill=(235, 235, 235, 255))
@@ -194,12 +196,12 @@ def draw_print_png():
         layer.putalpha(Image.composite(Image.new("L", img.size, 0), layer.getchannel("A"), inside))
         img.alpha_composite(layer)
         # 折り線の目印: 型の外側に短い線だけ(袋の上には線を引かない)
-        L = 3.0
+        L = 2.5   # 用紙の端に近いので短め(型の外0.8mmから2.5mm)
         ticks = [
-            ((fx0, oy - 1), (fx0, oy - 1 - L)), ((fx1, oy - 1), (fx1, oy - 1 - L)),          # 左右の折り目(上端の外)
-            ((fx0, oy + NET_H + 1), (fx0, oy + NET_H + 1 + L)), ((fx1, oy + NET_H + 1), (fx1, oy + NET_H + 1 + L)),
-            ((ox - 1, fy0), (ox - 1 - L, fy0)), ((ox + NET_W + 1, fy0), (ox + NET_W + 1 + L, fy0)),  # 上下の折り目(左右の外)
-            ((ox - 1, fy1), (ox - 1 - L, fy1)), ((ox + NET_W + 1, fy1), (ox + NET_W + 1 + L, fy1)),
+            ((fx0, oy - 0.8), (fx0, oy - 0.8 - L)), ((fx1, oy - 0.8), (fx1, oy - 0.8 - L)),          # 左右の折り目(上端の外)
+            ((fx0, oy + NET_H + 0.8), (fx0, oy + NET_H + 0.8 + L)), ((fx1, oy + NET_H + 0.8), (fx1, oy + NET_H + 0.8 + L)),
+            ((ox - 0.8, fy0), (ox - 0.8 - L, fy0)), ((ox + NET_W + 0.8, fy0), (ox + NET_W + 0.8 + L, fy0)),  # 上下の折り目(左右の外)
+            ((ox - 0.8, fy1), (ox - 0.8 - L, fy1)), ((ox + NET_W + 0.8, fy1), (ox + NET_W + 0.8 + L, fy1)),
         ]
         for a, b in ticks:
             d.line([(p(a[0]), p(a[1])), (p(b[0]), p(b[1]))], fill=mark, width=p(0.3))
