@@ -13,6 +13,7 @@
 - 前の画風の言葉を外した: 小道具の「平らな色」→「淡い水彩の色」、黒猫の「輪郭と灰色のハイライト」→「墨の輪郭と灰色の淡い塗り」、ブリティッシュ・ショートヘアとサバトラの「大きな目」→「丸い目」
 
 ## 共通指示文(ひな形)
+新しい種類を足すときは、[BREED LINE] に場面の一文、[NAME] に英語の名前(2か所)を入れる。
 ```
 Create an original, warm and gently humorous painting of a single cat for a Japanese gift envelope (pochi-bukuro).
 
@@ -25,7 +26,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "[NAME]" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: [NAME]. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
