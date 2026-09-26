@@ -55,10 +55,10 @@ def lines(c, x, y, rows, size=9.5, lead=15, width=170 * mm):
 
 
 STEPS = [
-    ("1", "薄い線に沿って切り取ります。",
-     "型の外にある短い線(折り目の目印)は切り落としてかまいません。先に次の2を済ませてから切ると楽です。"),
-    ("2", "折り目をつけます。",
-     "袋には折り線を印刷していません。切り取った型の角(くびれている所)どうしを定規で結び、なぞって軽く筋をつけてから折ります。型の外にある短い目印も、同じ位置を示しています。筋は、竹串や爪楊枝の先を定規に沿って当てて引くと、きれいにつきます。紙が破れないよう、力を入れすぎないでください。"),
+    ("1", "折り目をつけます(切る前に)。",
+     "袋には折り線を印刷していません。写真のピンクの矢印の先にある、型の外の短い線が折る位置の目印です。向かい合う目印どうしを定規で結び、爪楊枝や竹串の先でなぞって筋をつけます。紙が破れないよう、力を入れすぎないでください。"),
+    ("2", "薄い線に沿って切り取ります。",
+     "型の外にある目印は、一緒に切り落としてかまいません。切り取ったら、1でつけた筋に沿って折ります。"),
     ("3", "左右をうしろへ折ります。",
      "①(左)を先に折り、灰色の細い帯(のりしろ)にスティックのりか両面テープを付けて、②(右)を重ねて貼ります。"),
     ("4", "下をうしろへ折り上げて貼ります。",
@@ -81,28 +81,34 @@ def find_photo(n):
     return None
 
 
+def photo_width(n):
+    """高さは固定。横長の写真は枠を横に広げる(最大100mm)。縦長は正方形の枠に収める。"""
+    im = ImageOps.exif_transpose(Image.open(find_photo(n)))
+    return min(max(PHOTO_H * im.width / im.height, PHOTO_W), 100 * mm)
+
+
 def photo(c, x, y, n):
     """x, yは枠の左下。写真を縦横比を保ったまま枠の中に収める(切り取らない)。"""
+    w = photo_width(n)
     im = ImageOps.exif_transpose(Image.open(find_photo(n))).convert("RGB")
-    im.thumbnail((900, 900), Image.LANCZOS)
-    box = 900
-    bg = Image.new("RGB", (box, box), (246, 244, 240))
-    fit = ImageOps.contain(im, (box, box), Image.LANCZOS)
-    bg.paste(fit, ((box - fit.width) // 2, (box - fit.height) // 2))
+    bw, bh = int(900 * w / PHOTO_H), 900
+    bg = Image.new("RGB", (bw, bh), (246, 244, 240))
+    fit = ImageOps.contain(im, (bw, bh), Image.LANCZOS)
+    bg.paste(fit, ((bw - fit.width) // 2, (bh - fit.height) // 2))
     buf = io.BytesIO()
     bg.save(buf, "JPEG", quality=85)  # JPEGのまま埋め込んで、PDFを軽くする
     buf.seek(0)
-    c.drawImage(ImageReader(buf), x, y, PHOTO_W, PHOTO_H)
+    c.drawImage(ImageReader(buf), x, y, w, PHOTO_H)
     c.setStrokeColorRGB(*LINE)
     c.setLineWidth(0.5)
-    c.rect(x, y, PHOTO_W, PHOTO_H, stroke=1, fill=0)
+    c.rect(x, y, w, PHOTO_H, stroke=1, fill=0)
 
 
 def step_card(c, top, n, head, body):
     """topはカードの上端。写真があれば左に写真、右に番号と説明。無ければ説明だけ。"""
     if find_photo(n):
         photo(c, 20 * mm, top - PHOTO_H, n)
-        tx = 20 * mm + PHOTO_W + 7 * mm
+        tx = 20 * mm + photo_width(n) + 7 * mm
     else:
         tx = 20 * mm
     text(c, tx, top - 16, n, 16, ACCENT)
