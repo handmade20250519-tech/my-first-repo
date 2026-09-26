@@ -76,7 +76,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 ```
 Create an original, warm and gently humorous painting of a single cat for a Japanese gift envelope (pochi-bukuro).
 
-SUBJECT: A calico cat sitting in a neat "loaf" pose with all paws tucked under, looking relaxed, but giving a sharp sideways glance toward the viewer with one eyebrow raised, the tip of its tail flicking, clearly saying "not now." Classic calico features: white base coat with distinct patches of orange and black, especially on the head, back and tail.
+SUBJECT: A calico cat sitting in a neat "loaf" pose with all paws tucked under, looking relaxed, but giving a sharp sideways glance toward the viewer with one eyebrow raised, the tip of its tail flicking (the cat has exactly ONE tail, rising from behind its back, with only the tip flicking), clearly saying "not now." Classic calico features: white base coat with distinct patches of orange and black, especially on the head, back and tail.
 The humor must feel affectionate and true to life, the kind of moment real cat owners instantly recognize. Even in this painterly style, the coat pattern or breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
 THIS IS A CAT, NOT A DOG: always include clear cat features: small triangular pointed ears on top of the head, a tiny pink triangle nose right between the eyes with no protruding snout or muzzle, three thin whiskers on each cheek, a small cat mouth shaped like a soft "ω", a long flexible tail, and small round paws. Flat, round cat face.
