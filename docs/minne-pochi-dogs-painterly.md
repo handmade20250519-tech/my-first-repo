@@ -11,6 +11,7 @@
 - 背景は白、紙の質感は背景に入れない(Canvaで背景を消すため)
 
 ## 前の版から直したところ
+- 絵の下に、英語の犬種名を筆文字で小さく入れる指示にした(ユーザーの希望)。つづりは指示文の中で指定。生成後につづりを必ず確かめる
 - 画風の段落(STYLE)を絵画風 第2版に差し替えた
 - 犬種ごとの一文から、前の画風の言葉を外した: 「焦げ茶の輪郭」→「墨の輪郭」、小道具の「平らな色」→「淡い水彩の色」、チワワ・ヨークシャー・テリア・シーズーの「大きなキラキラした目」→「筆で描いた黒い目」
 - ワイヤーヘアード・ダックスフンドを追加(全26種)
@@ -52,7 +53,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Toy Poodle" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Toy Poodle. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -70,7 +71,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Chihuahua" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Chihuahua. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -88,7 +89,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Miniature Dachshund" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Miniature Dachshund. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -106,7 +107,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Wirehaired Dachshund" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Wirehaired Dachshund. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -124,7 +125,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Shiba Inu" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Shiba Inu. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -142,7 +143,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Pomeranian" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Pomeranian. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -160,7 +161,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "French Bulldog" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: French Bulldog. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -178,7 +179,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Golden Retriever" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Golden Retriever. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -196,7 +197,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Siberian Husky" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Siberian Husky. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -214,7 +215,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Welsh Corgi" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Welsh Corgi. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -232,7 +233,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Beagle" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Beagle. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -250,7 +251,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "West Highland White Terrier" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: West Highland White Terrier. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -268,7 +269,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Jack Russell Terrier" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Jack Russell Terrier. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -286,7 +287,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Border Collie" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Border Collie. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -304,7 +305,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Miniature Schnauzer" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Miniature Schnauzer. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -322,7 +323,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Yorkshire Terrier" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Yorkshire Terrier. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -340,7 +341,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Shih Tzu" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Shih Tzu. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -358,7 +359,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Maltese" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Maltese. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -378,7 +379,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Borzoi" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Borzoi. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -396,7 +397,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Great Dane" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Great Dane. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -414,7 +415,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Saint Bernard" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Saint Bernard. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -432,7 +433,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Bernese Mountain Dog" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Bernese Mountain Dog. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -450,7 +451,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Italian Greyhound" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Italian Greyhound. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -468,7 +469,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Afghan Hound" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Afghan Hound. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -486,7 +487,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Samoyed" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Samoyed. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -504,7 +505,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Newfoundland" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Newfoundland. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
