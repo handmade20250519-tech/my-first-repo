@@ -3,6 +3,7 @@
 犬と同じ画風(**水墨淡彩+少し漫画っぽく**)。各猫の見出しの下の文を、そのまま全部コピーしてGeminiに貼る。
 
 ## 犬の版との違い
+- 犬と同じく、絵の下に英語の名前を筆文字で小さく入れる(毛柄は Orange Tabby、Brown Tabby、Calico、Black Cat、Tuxedo Cat、Silver Tabby)。生成後につづりを必ず確かめる
 - 画風の段落の前に、猫らしさを必ず描かせる段落(THIS IS A CAT, NOT A DOG)を入れている
 - **汗のしずくを描かない**指示を入れた(犬の絵でほとんどの顔に汗が付いたため。ユーザーの指摘)。漫画の記号は、動きの線ときらりだけ
 - キジトラは、目が猫らしく見えなかった(ユーザーの指摘)ので、猫の目の形(アーモンド形、緑の瞳、縦に細い瞳孔、細い墨のアイライン)をはっきり書いた → **うまくいった(ユーザー確認)**。ほかの猫で目が猫らしくないときも、同じ目の指定を足す
@@ -43,7 +44,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Orange Tabby" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Orange Tabby. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -63,7 +64,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Brown Tabby" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Brown Tabby. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -83,7 +84,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Calico" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Calico. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -103,7 +104,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Black Cat" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Black Cat. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -123,7 +124,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Tuxedo Cat" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Tuxedo Cat. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -143,7 +144,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Silver Tabby" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Silver Tabby. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -163,7 +164,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Scottish Fold" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Scottish Fold. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -183,7 +184,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Munchkin" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Munchkin. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -203,7 +204,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "Ragdoll" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Ragdoll. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -223,7 +224,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "British Shorthair" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: British Shorthair. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
@@ -243,7 +244,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One cat only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the cat. No props unless described above.
 
-TEXT: No text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the name "American Shorthair" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: American Shorthair. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
