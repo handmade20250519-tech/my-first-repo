@@ -9,7 +9,7 @@ D = Path("/tmp/claude-0/-home-user-my-first-repo/02cb9a5c-e2c2-5947-887e-aad52a1
 FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
 BG, INK = (244, 239, 230), (60, 52, 48)
 S = 2000
-ITEMS = [("78.jpg", "のしのみ"), ("59.png", "おとしだま"), ("79.jpg", "ありがとう"),
+ITEMS = [("78.jpg", "のしのみ"), ("81.jpg", "おとしだま"), ("79.jpg", "ありがとう"),
          ("80.jpg", "おめでとう"), ("76.jpg", "こころばかり"), ("77.jpg", "無地(手書き用)")]
 
 
