@@ -10,13 +10,13 @@ from make_listing_variants import front
 ROOT = Path(__file__).parent
 IMG = Path("/tmp/claude-0/-home-user-my-first-repo/02cb9a5c-e2c2-5947-887e-aad52a1618eb/images")
 FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
-QUAD = [(562, 540), (857, 499), (1008, 962), (704, 1008)]
+QUAD = [(573, 489), (890, 466), (975, 970), (668, 1007)]
 
 
 def main():
-    scene = Image.open(IMG / "82.jpg").convert("RGB")
+    scene = Image.open(IMG / "83.jpg").convert("RGB")
     W, H = scene.size
-    env = front(IMG / "81.jpg")
+    env = Image.open(IMG / "84.png").convert("RGB").crop((28, 28, 421, 616))
     # 紙の色を場面の紙に合わせる(真っ白→生成り)
     e = np.asarray(env).astype(float) * np.array([218/245, 207/245, 190/245])
     env = Image.fromarray(np.clip(e, 0, 255).astype("uint8"))
@@ -33,9 +33,9 @@ def main():
     wa = np.asarray(warped).astype(float) * light[..., None]
     # 手(肌色)は元の画像のまま残す
     r, g, b = s[..., 0], s[..., 1], s[..., 2]
-    skin = (r > 120) & (r - b > 38) & (g - b < 48) & (r - g > 15) & (g > 0.6 * r)
+    skin = (r > 120) & (r - b > 48) & (g - b < 48) & (r - g > 22) & (g > 0.6 * r)
     yy, xx = np.mgrid[0:H, 0:W]
-    core = (xx > 720) & (xx < 930) & (yy > 540) & (yy < 940)   # 袋の絵の部分(犬のオレンジを手と見間違えないように)
+    core = ((xx > 700) & (xx < 900) & (yy > 520) & (yy < 890)) | ((xx > 680) & (xx < 905) & (yy > 880) & (yy < 952))   # 袋の絵の部分(犬のオレンジを手と見間違えないように)
     skin &= ~core
     # 袋の外から続いている肌色だけを指とみなす(袋の中の影を指と間違えないように)
     from scipy import ndimage
