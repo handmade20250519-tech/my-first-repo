@@ -33,7 +33,7 @@ def front(path):
     return im.crop((int(x0 + pad), int(y0 + pad), int(x0 + 64 * k - pad), int(y0 + 95 * k - pad)))
 
 
-def main():
+def main(items=ITEMS, out="listing_shiba_3.jpg"):
     c = Image.new("RGBA", (S, S), BG + (255,))
     d = ImageDraw.Draw(c)
     f = lambda n: ImageFont.truetype(FONT, n)
@@ -41,7 +41,7 @@ def main():
     d.text((S / 2, 215), "使いたいページだけ印刷できます", font=f(50), fill=INK, anchor="mm")
     w, h, gx, gy, top = 468, 695, 110, 160, 290
     left = (S - 3 * w - 2 * gx) // 2
-    for i, (fn, label) in enumerate(ITEMS):
+    for i, (fn, label) in enumerate(items):
         im = front(D / fn).resize((w, h), Image.LANCZOS)
         x = left + (i % 3) * (w + gx)
         y = top + (i // 3) * (h + gy)
@@ -51,7 +51,7 @@ def main():
         c.paste(im, (x, y))
         d.rectangle((x, y, x + w, y + h), outline=(215, 208, 198), width=2)
         d.text((x + w / 2, y + h + 55), label, font=f(46), fill=INK, anchor="mm")
-    c.convert("RGB").save(ROOT / "listing_shiba_3.jpg", quality=90)
+    c.convert("RGB").save(ROOT / out, quality=90)
 
 
 if __name__ == "__main__":
