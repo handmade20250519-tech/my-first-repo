@@ -38,3 +38,7 @@ d.text((110, S - 120), "のし・文字違い 6種入り", font=f(56), fill=INK)
 d.text((S - 60, 50), "デザイン見本", font=f(44), fill=INK, anchor="ra")
 c.convert("RGB").save(ROOT / "listing_frenchie_1.jpg", quality=90)
 print("done")
+
+mv.main([("92.png", "のしのみ"), ("93.png", "おとしだま"), ("94.png", "ありがとう"),
+         ("95.png", "おめでとう"), ("96.png", "こころばかり"), ("91.png", "無地(手書き用)")],
+        "listing_frenchie_3.jpg")
