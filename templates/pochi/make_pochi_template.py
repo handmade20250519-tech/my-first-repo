@@ -200,9 +200,15 @@ def draw_print_png():
         ticks = [
             ((fx0, oy - 0.8), (fx0, oy - 0.8 - L)), ((fx1, oy - 0.8), (fx1, oy - 0.8 - L)),          # 左右の折り目(上端の外)
             ((fx0, oy + NET_H + 0.8), (fx0, oy + NET_H + 0.8 + L)), ((fx1, oy + NET_H + 0.8), (fx1, oy + NET_H + 0.8 + L)),
-            ((ox - 0.8, fy0), (ox - 0.8 - L, fy0)), ((ox + NET_W + 0.8, fy0), (ox + NET_W + 0.8 + L, fy0)),  # 上下の折り目(左右の外)
-            ((ox - 0.8, fy1), (ox - 0.8 - L, fy1)), ((ox + NET_W + 0.8, fy1), (ox + NET_W + 0.8 + L, fy1)),
         ]
+        # 上下の折り目の目印(左右)。用紙の端の側は、プリンターの印刷できない余白に入って消えるので(ユーザーの試し刷り)、
+        # 型の内側に短く引く。左の袋の左端は①ののりしろ(②の下に隠れる)、右の袋の右端は②の端(折り目の上)になる
+        page_left = ox < GAP_X * 1.5
+        page_right = ox + NET_W > PAGE_W - GAP_X * 1.5
+        for fy in (fy0, fy1):
+            ticks.append(((ox + 0.8, fy), (ox + 0.8 + L, fy)) if page_left else ((ox - 0.8, fy), (ox - 0.8 - L, fy)))
+            ticks.append(((ox + NET_W - 0.8, fy), (ox + NET_W - 0.8 - L, fy)) if page_right
+                         else ((ox + NET_W + 0.8, fy), (ox + NET_W + 0.8 + L, fy)))
         for a, b in ticks:
             d.line([(p(a[0]), p(a[1])), (p(b[0]), p(b[1]))], fill=mark, width=p(0.3))
     return img
