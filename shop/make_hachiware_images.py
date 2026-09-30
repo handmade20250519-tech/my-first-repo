@@ -39,3 +39,7 @@ d.text((S - 60, 50), "デザイン見本", font=f(44), fill=INK, anchor="ra")
 c.convert("RGB").save(ROOT / "listing_hachiware_1.jpg", quality=90)
 print("done")
 
+
+mv.main([("99.jpg", "のしのみ"), ("100.jpg", "おとしだま"), ("101.jpg", "ありがとう"),
+         ("102.jpg", "おめでとう"), ("103.jpg", "こころばかり"), ("98.png", "無地(手書き用)")],
+        "listing_hachiware_3.jpg")
