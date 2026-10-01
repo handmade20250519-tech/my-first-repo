@@ -41,7 +41,7 @@ print("done")
 
 
 # 6種類の画像は、おめでとう・こころばかりの画像がそろってから作る
-if len(sys.argv) > 2:
+if len(sys.argv) > 2:  # 例: python3 make_toypoodle_images.py 111.jpg 110.jpg
     mv.main([("107.jpg", "のしのみ"), ("108.jpg", "おとしだま"), ("109.jpg", "ありがとう"),
              (sys.argv[1], "おめでとう"), (sys.argv[2], "こころばかり"), ("106.jpg", "無地(手書き用)")],
             "listing_toypoodle_3.jpg")
