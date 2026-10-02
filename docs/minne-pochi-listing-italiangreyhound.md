@@ -81,3 +81,9 @@ uchinoko-aruaru_italiangreyhound_pochi.zip
 1. shop/listing_italiangreyhound_1.jpg(デザイン見本)
 2. shop/listing_italiangreyhound_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
+
+## 場面の写真(AIのイメージ画像)を使う場合
+- 画像の上(右下などに小さく)に入れる: 「※AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。」
+- 説明文の「ご注意」の、作り方の画像の行の次に、この1行を足す:
+  `・お部屋などの写真は、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じですが、紙の質感や色は、お使いのプリンターや用紙によって変わります。`
+- 場面の写真の袋は、Geminiが絵を描き変えることがあるので、本物の袋の表に貼り替えてから使う(shop/make_scene_japanesemix.py)
