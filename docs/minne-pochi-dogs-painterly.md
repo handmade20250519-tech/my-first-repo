@@ -511,3 +511,60 @@ TEXT: Write only the breed name "Newfoundland" once, in small, simple, neat hand
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+## ミックス犬(MIX)
+日本でいちばん多く飼われているのはMIX(ユーザーが調べた)。まずは3種類。どれも純血種ではないので、「純血種に見えない」ように指示文で書いている。
+
+### 日本の雑種(MIX)
+あるある: 散歩の時間は時計より正確。時間が近づくと、自分でリードをくわえて玄関にきちんとおすわりし、しっぽを振りながら「まだ?」と見上げる
+
+```
+Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A medium-sized Japanese mixed-breed dog sitting neatly and upright, holding its own red walking leash in its mouth, looking up with bright hopeful eyes and a happy expression, as if saying "Isn't it time for our walk yet?". It is waiting on the spot, perfectly on time, as it does every day. Its tail is wagging, shown with two or three short curved motion lines beside the tail only. Typical look of the friendly mixed-breed dogs common in Japan: a sturdy, medium build, a short smooth coat, a medium-length muzzle, semi-erect ears with the tips softly folded forward, and a loosely curled tail. It must NOT look like a Shiba Inu or any specific pure breed: keep the folded ear tips and the slightly longer muzzle. Coat color: warm reddish-tan with a white chest, white muzzle and white paws. The leash is a simple plain red strap.
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+
+COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+
+TEXT: Write only the breed name "Mixed Breed" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Mixed Breed. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
+### チワプー(チワワ×トイ・プードル)
+あるある: 名前を呼ぶと、くりっとした目でこちらを見て、こてんと首をかしげる。「なあに?」のその顔が見たくて、何度も呼んでしまう
+
+```
+Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A chipoo, a small mixed-breed dog that is a cross between a chihuahua and a toy poodle, sitting and tilting its head far to one side, looking straight at the viewer with round, curious dark eyes, as if its name has just been called and it is asking "What is it?". Mouth closed in a small, innocent expression. Typical chipoo look: a tiny body, a round apple-shaped head, a short muzzle, large ears that stand half up with soft wavy fringe, and a soft, slightly wavy, fluffy coat that is looser than a poodle's tight curls. It must look like a mix of both breeds, NOT a pure chihuahua and NOT a pure toy poodle. Coat color: light caramel tan, a little darker on the ears. No props.
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+
+COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+
+TEXT: Write only the breed name "Chipoo" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Chipoo. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
+
+### マルプー(マルチーズ×トイ・プードル)
+あるある: トリミング前は毛がのびて、まん丸の綿毛のかたまりに。目は前髪に埋もれて、黒い鼻とつぶらな目がちょこんとのぞくだけ。本人はいたってご機嫌
+
+```
+Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A maltipoo, a small mixed-breed dog that is a cross between a maltese and a toy poodle, sitting contentedly, right before its grooming appointment. Its coat has grown so long and fluffy that its whole body looks like one round, soft ball of cotton. Its long fluffy bangs almost cover its eyes: only its small black button nose and two little dark eyes peek out from the fluff. A happy, carefree expression, with a faint pink blush on the cheeks. Typical maltipoo look: a tiny body, a round head, soft floppy ears that blend into the fluffy coat, and a soft, wavy-to-loosely-curly coat. Coat color: soft creamy white. It must look like one single dog, with a clear head, ears and front paws visible under the fluff. No props.
+The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+
+COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+
+TEXT: Write only the breed name "Maltipoo" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Maltipoo. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
