@@ -19,7 +19,7 @@ def front(path):
     g = (a.max(axis=2) < 180) & (a.min(axis=2) > 80) & ((a.max(axis=2) - a.min(axis=2)) < 25)
     H, W = g.shape
     best = (0, 0, 0)
-    for y in range(int(H * 0.1), int(H * 0.4)):
+    for y in range(int(H * 0.03), int(H * 0.4)):
         xs = np.nonzero(g[y, : W // 2])[0]
         if len(xs) < 100:
             continue
