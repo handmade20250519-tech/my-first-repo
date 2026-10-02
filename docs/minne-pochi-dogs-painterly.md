@@ -528,7 +528,7 @@ STYLE: A charming, slightly comic Japanese-style painting that mixes traditional
 
 COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
 
-TEXT: Write only the breed name "Mixed Breed" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Mixed Breed. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Japanese Mix" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Japanese Mix. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
