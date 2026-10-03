@@ -110,6 +110,8 @@ for im, label in [(nt, "展開図(赤=組み立てると隠れる絵)"), (fr, "�
     d.rectangle((x - 1, 99, x + im.width, 100 + im.height), outline=(180, 170, 160))
     d.text((x, 40), label, font=f, fill=(60, 52, 48))
     x += im.width + pad
+fr.save(Path(__file__).parent / "check" / f"front_{tag}.png")
+bk.save(Path(__file__).parent / "check" / f"back_{tag}.png")  # 場面写真に貼る用
 out = Path(__file__).parent / "check" / f"wrap_{tag}.png"
 c.save(out)
 print(out, "隠れる絵のピクセル数:", int(hidden.sum()), "front box", x0, y0, x1, y1)
