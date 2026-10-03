@@ -88,3 +88,4 @@ uchinoko-aruaru_greatdane_pochi.zip
 1. shop/listing_greatdane_1.jpg(デザイン見本)
 2. shop/listing_greatdane_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_greatdane_2_note.jpg(場面写真。左にうしろ・右におもてを並べて、裏に回ったおしりとしっぽがつながって見える。AIのイメージ画像の注記入り。ユーザーが採用)
