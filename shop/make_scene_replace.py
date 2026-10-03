@@ -11,7 +11,7 @@ import make_listing_variants as mv
 # 名前: (場面の画像, 袋の表に使う無地のページ, 袋の四隅[左上・右上・右下・左下])
 SCENES = {
     "japanesemix_1": ("128.jpg", "122.jpg", [(273, 230), (586, 227), (601, 694), (272, 698)]),
-    "americanshorthair_1": ("137.jpg", "131.jpg", [(318, 224), (647, 224), (652, 729), (308, 729)]),
+    "americanshorthair_1": ("138.jpg", "131.jpg", [(480, 423), (783, 419), (795, 870), (476, 871)]),
 }
 name = sys.argv[1] if len(sys.argv) > 1 else "japanesemix_1"
 scene_fn, FRONT, QUAD = SCENES[name]
@@ -47,7 +47,8 @@ yy, xx = np.mgrid[0:H, 0:W]
 G = np.stack([np.ones_like(xx), xx, yy, xx * xx, xx * yy, yy * yy], -1).astype(float)
 light = np.stack([G @ k[ch] for ch in range(3)], -1) / 255.0
 wf = np.asarray(warped).astype(float) / 255.0
-wbg = np.asarray(front).astype(float).max() / 255.0
+fa = np.asarray(front).astype(float)
+wbg = np.median(fa[fa.min(axis=2) > 200], axis=0) / 255.0  # 袋の紙の白
 shaded = np.clip(wf / wbg * light, 0, 1) * 255
 # 紙の質感(細かなざらつき)
 rng = np.random.default_rng(1)
