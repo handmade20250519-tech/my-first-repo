@@ -1,4 +1,5 @@
-"""Geminiの場面写真の袋に、本物の袋の表(Canvaの無地ページ)を貼り直す。
+"""使い方: python3 make_scene_replace.py americanshorthair_1
+Geminiの場面写真の袋に、本物の袋の表(Canvaの無地ページ)を貼り直す。
 Geminiが袋の絵を描き変えてしまうため。"""
 import sys
 from pathlib import Path
@@ -7,9 +8,14 @@ from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, str(Path(__file__).parent))
 import make_listing_variants as mv
 
-SCENE = mv.D / "128.jpg"
-FRONT = "122.jpg"
-QUAD = [(273, 230), (586, 227), (601, 694), (272, 698)]  # 左上・右上・右下・左下
+# 名前: (場面の画像, 袋の表に使う無地のページ, 袋の四隅[左上・右上・右下・左下])
+SCENES = {
+    "japanesemix_1": ("128.jpg", "122.jpg", [(273, 230), (586, 227), (601, 694), (272, 698)]),
+    "americanshorthair_1": ("137.jpg", "131.jpg", [(318, 224), (647, 224), (652, 729), (308, 729)]),
+}
+name = sys.argv[1] if len(sys.argv) > 1 else "japanesemix_1"
+scene_fn, FRONT, QUAD = SCENES[name]
+SCENE = mv.D / scene_fn
 
 
 def coeffs(dst, src):
@@ -49,5 +55,5 @@ grain = Image.fromarray((rng.normal(128, 10, (H, W))).clip(0, 255).astype(np.uin
 shaded = np.clip(shaded + (np.asarray(grain).astype(float)[..., None] - 128) * 0.35, 0, 255)
 al = (np.asarray(mask).astype(float) / 255.0)[..., None]
 out = a * (1 - al) + shaded * al
-Image.fromarray(out.astype(np.uint8)).save(Path(__file__).parent / "scene_japanesemix_1.jpg", quality=92)
+Image.fromarray(out.astype(np.uint8)).save(Path(__file__).parent / f"scene_{name}.jpg", quality=92)
 print("done")
