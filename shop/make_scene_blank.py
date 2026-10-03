@@ -13,8 +13,9 @@ HERE = Path(__file__).parent
 # 名前: (場面の画像, [(貼る絵, 袋の四隅[左上・右上・右下・左下]), ...])
 SCENES = {
     "greatdane_2": ("154.jpg", [
-        (HERE / "check/front_greatdane_final.png", [(203, 265), (470, 265), (472, 683), (201, 683)]),
-        (HERE / "check/back_greatdane_final.png", [(502, 265), (765, 265), (770, 683), (500, 683)]),
+        # 左にうしろ、右におもて(ユーザーの案)。うしろの右端のしっぽと、おもての左端のおしりがつながって見える
+        (HERE / "check/back_greatdane_final.png", [(203, 265), (470, 265), (472, 683), (201, 683)]),
+        (HERE / "check/front_greatdane_final.png", [(502, 265), (765, 265), (770, 683), (500, 683)]),
     ]),
 }
 
