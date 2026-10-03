@@ -137,3 +137,10 @@
 ## ミックス犬の英語の名前
 - 袋には英語圏での呼び名を入れる(チワプー→Chipoo、マルプー→Maltipoo、日本の雑種→Japanese Mix)
 - 日本の呼び方と違う名前は、「間違い?」と思われないように、説明文の「※画像は…」の一文の次に、1行あけて説明を入れる(ユーザーの希望)。例: 「袋に入れた名前は、英語の「Maltipoo(マルチプー)」です。日本では「マルプー」と呼ぶのが一般的ですが、英語ではマルチーズ(Maltese)とプードル(Poodle)を合わせて「Maltipoo」と呼びます。」
+
+## のりしろ③を短くした型(_b21)
+- 絵が左の折り返し①にはみ出す構図(グレート・デーン)で、試作したら③がしっぽを隠した。③を25mm→21mmにした型を作った
+- ファイル: pochi_guide_A4_b21.png(Canvaの下敷き)、pochi_guide_A4_b21.pdf(試し刷り)、pochi_print_A4_b21.png(売るデータ用の線)、pochi_lines_A4_b21.png
+- 作り方: `POCHI_BOTTOM=21 python3 make_pochi_template.py`
+- 袋のおもての位置は今までの型と同じ。今までのCanvaのデザインもそのまま重なる
+- はみ出す構図は shop/check_wraparound.py で検証できる(`POCHI_BOTTOM=21 python3 check_wraparound.py 画像 名前 x0,y0,x1,y1`)。①の絵は、折り目から32mm以内、おもての下から(③の高さ+2mm)より上に置く

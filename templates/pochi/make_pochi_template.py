@@ -9,6 +9,7 @@
                       ・折り線は袋の上に引かず、型の外側に短い目印だけ
                       ・のりしろの印は、組み立てると②の下に隠れる①の端だけ
 """
+import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -29,9 +30,15 @@ FLAP_R = 32    # ②右の折り返し(上に重ねる)。袋の幅64mmのちょ
 # うしろの重なりは 44+32-64 = 12mm。10mm幅の両面テープでも1mmほどはみ出したため(ユーザーの試作)、10mm→12mmにした
 FRONT_W, FRONT_H = 64, 95
 TOP, BOTTOM = 20, 25
+# 底ののりしろ③の高さは、環境変数 POCHI_BOTTOM で変えられる(例: POCHI_BOTTOM=21)。
+# 絵が①にはみ出す構図(グレート・デーン)で、③が①のしっぽを隠したため(ユーザーの試作)、4mm短い版を作った。
+# 袋のおもての位置は変えない(今までのCanvaのデザインがそのまま重なるように)。
+BOTTOM_STD = BOTTOM
+BOTTOM = int(os.environ.get("POCHI_BOTTOM", BOTTOM))
+SUFFIX = "" if BOTTOM == BOTTOM_STD else f"_b{BOTTOM}"
 NET_W, NET_H = FLAP_L + FRONT_W + FLAP_R, TOP + FRONT_H + BOTTOM
 GAP_X = (PAGE_W - 2 * NET_W) / 3
-OFF_Y = (PAGE_H - NET_H) / 2 + 6
+OFF_Y = (PAGE_H - (TOP + FRONT_H + BOTTOM_STD)) / 2 + 6  # おもての位置は③の高さに関係なく同じ
 SAFE = 4       # おもての安全域
 OVERLAP = FLAP_L + FLAP_R - FRONT_W   # うしろで①と②が重なる幅
 GLUE_W = OVERLAP - 2           # のりしろの印の幅(重なりより少し狭くして、②の下に確実に隠す)
@@ -215,8 +222,8 @@ def draw_print_png():
 
 
 if __name__ == "__main__":
-    draw_print_png().save(OUT / "pochi_print_A4.png", dpi=(DPI, DPI))
-    draw_png(True).convert("RGB").save(OUT / "pochi_guide_A4.png", dpi=(DPI, DPI))
-    draw_png(False).save(OUT / "pochi_lines_A4.png", dpi=(DPI, DPI))
-    draw_pdf(OUT / "pochi_guide_A4.pdf")
+    draw_print_png().save(OUT / f"pochi_print_A4{SUFFIX}.png", dpi=(DPI, DPI))
+    draw_png(True).convert("RGB").save(OUT / f"pochi_guide_A4{SUFFIX}.png", dpi=(DPI, DPI))
+    draw_png(False).save(OUT / f"pochi_lines_A4{SUFFIX}.png", dpi=(DPI, DPI))
+    draw_pdf(OUT / f"pochi_guide_A4{SUFFIX}.pdf")
     print("done")

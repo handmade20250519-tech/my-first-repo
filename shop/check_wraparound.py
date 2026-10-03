@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, str(Path(__file__).parent))
 import make_listing_variants as mv
 
-FLAP_L, FLAP_R, FRONT_W, FRONT_H, TOP, BOTTOM = 44, 32, 64, 95, 20, 25
+FLAP_L, FLAP_R, FRONT_W, FRONT_H, TOP, BOTTOM = 44, 32, 64, 95, 20, int(__import__("os").environ.get("POCHI_BOTTOM", 25))
 LID_IN, LID_TIP = 2, 6
 FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
 R = 10  # 出力の1mmあたりのピクセル
