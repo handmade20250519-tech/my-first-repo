@@ -16,7 +16,7 @@ ITEMS = [("78.jpg", "のしのみ"), ("81.jpg", "おとしだま"), ("79.jpg", "
 def front(path):
     im = Image.open(path).convert("RGB")
     a = np.asarray(im).astype(int)
-    g = (a.max(axis=2) < 180) & (a.min(axis=2) > 80) & ((a.max(axis=2) - a.min(axis=2)) < 25)
+    g = (a.max(axis=2) < 200) & (a.min(axis=2) > 80) & ((a.max(axis=2) - a.min(axis=2)) < 25)
     H, W = g.shape
     best = (0, 0, 0)
     for y in range(int(H * 0.03), int(H * 0.4)):
