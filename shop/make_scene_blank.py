@@ -19,6 +19,9 @@ SCENES = {
     ]),
 }
 
+# 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
+CROP = {"greatdane_2": (52, 0, 907, 855)}
+
 
 def coeffs(dst, src):
     A, B = [], []
@@ -50,5 +53,8 @@ for art_path, quad in items:
     res = np.clip(warped / paper * light * white, 0, 255)
     al = (np.asarray(mask.filter(ImageFilter.GaussianBlur(0.7))).astype(float) / 255)[..., None]
     out = out * (1 - al) + res * al
-Image.fromarray(out.astype(np.uint8)).save(HERE / f"scene_{name}.jpg", quality=92)
+res_im = Image.fromarray(out.astype(np.uint8))
+if name in CROP:  # Geminiの画面のボタン(編集・共有)が写っているとき、正方形に切り取って外す
+    res_im = res_im.crop(CROP[name])
+res_im.save(HERE / f"scene_{name}.jpg", quality=92)
 print("done", f"scene_{name}.jpg")
