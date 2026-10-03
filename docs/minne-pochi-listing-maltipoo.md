@@ -80,13 +80,6 @@ uchinoko-aruaru_maltipoo_pochi.zip
 - 絵はクリームがかった白の毛色。ほかの毛色(アプリコット、レッドなど)の要望があれば、別の出品にする
 - 袋の名前は英語の「Maltipoo」(英語圏での呼び名。日本の「マルプー」は作品名とタグで伝える)
 
-## ZIPの名前
-uchinoko-aruaru_maltipoo_pochi.zip
-
-## 確かめること(出品前)
-- 絵は赤茶色に白(胸・口のまわり・足先)の、耳の先が折れた中型の雑種。柴犬らしい白いまろ眉は消してある
-- 黒・白・ぶち・たれ耳など、ほかの見た目の雑種の要望があれば、別の出品にする
-
 ## 商品画像
 1. shop/listing_maltipoo_1.jpg(デザイン見本)
 2. shop/listing_maltipoo_3.jpg(6種類)
