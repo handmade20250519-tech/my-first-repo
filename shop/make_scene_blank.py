@@ -17,6 +17,9 @@ SCENES = {
         (HERE / "check/back_greatdane_final.png", [(203, 265), (470, 265), (472, 683), (201, 683)]),
         (HERE / "check/front_greatdane_final.png", [(502, 265), (765, 265), (770, 683), (500, 683)]),
     ]),
+    "chatora_1": ("159.jpg", [
+        ("155.jpg", [(648, 516), (886, 517), (885, 884), (639, 885)]),  # 無地のページの袋の表
+    ]),
 }
 
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
@@ -37,7 +40,8 @@ scene = Image.open(mv.D / scene_fn).convert("RGB")
 W, H = scene.size
 out = np.asarray(scene).astype(float)
 for art_path, quad in items:
-    art = Image.open(art_path).convert("RGB")
+    # 文字列ならCanvaのスクリーンショット(袋の表を切り出す)、Pathなら絵そのもの
+    art = (mv.front(mv.D / art_path) if isinstance(art_path, str) else Image.open(art_path)).convert("RGB")
     aw, ah = art.size
     aa = np.asarray(art).astype(float)
     paper = np.median(aa[aa.min(2) > 200], axis=0)  # 絵の紙の白
