@@ -83,11 +83,11 @@
 - 袋の名前「Munchkin」の色は黄緑(#82D75C くらい)。毛色に合わせるルールの例外で、ユーザーがあえて選んだ(マンチカンのイタズラっぽさ、興味があちこちに飛んでいく感じを出すため)。印刷したときに薄く見えないかは、試し刷りで確かめる
 
 ## 場面写真(Geminiのプロンプト)
-袋は真っ白で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。袋が大きすぎたら、Geminiに「袋だけ20%小さく、ほかはそのまま」と頼む。
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。袋が大きすぎたら、Geminiに「袋だけ20%小さく、ほかはそのまま」と頼む。
 ```
 A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft morning light: a low light-wood table with a small ceramic dish of mikan oranges and a cup of green tea, softly blurred in the background.
 
-On the table, one small vertical Japanese pochi-bukuro money envelope stands upright, propped against the tea cup. The envelope is 6.4 cm wide and 9.5 cm tall, made of plain matte white paper. Its front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It takes up about 20% of the image width, in the center-right of the frame.
+On the table, one small closed Japanese pochi-bukuro money envelope stands upright, propped against the tea cup. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It takes up about 20% of the image width, in the center-right of the frame.
 
 Next to the envelope, on the left, a real cream-and-light-brown tabby Munchkin cat stands up on its short hind legs like a meerkat, front paws held together in front of its chest, looking up curiously at something out of frame above. Even standing up, the cat is only a little taller than the envelope. Natural fur, real cat, not a cartoon.
 
