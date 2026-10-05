@@ -101,6 +101,5 @@ uchinoko-aruaru_munchkin_pochi.zip
 1. shop/listing_munchkin_1.jpg(デザイン見本)
 2. shop/listing_munchkin_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
-4. shop/scene_munchkin_1_note.jpg(場面写真。注記なしは scene_munchkin_1.jpg)
-   - Geminiの袋は本物より細長かった(幅:高さ=0.58、本物は0.67)。絵がつぶれないよう、幅に合わせて袋の下にそろえた。袋の上に白い余白が多めに見える
-
+4. shop/scene_munchkin_2_note.jpg(場面写真。ふたを閉じた袋の版。注記なしは scene_munchkin_2.jpg)
+   - 前の版 scene_munchkin_1(ふたの線が出た袋・細長い袋)は使わない

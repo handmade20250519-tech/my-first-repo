@@ -24,6 +24,9 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "munchkin_2": ("7.jpg", [  # ふたを閉じた表側の袋(プロンプトを直した版)。形が本物とほぼ同じなので、そのまま貼る
+        ("1.jpg", [(665, 735), (844, 735), (848, 1005), (665, 1005)]),
+    ]),
     "munchkin_1": ("5.jpg", [
         # Geminiの袋が本物より細長い(幅:高さ=0.58、本物は0.67)。絵がつぶれないように、
         # 絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした(check/front_munchkin_pad.png)
@@ -37,7 +40,7 @@ SCENES = {
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
-SMOOTH = {"munchkin_1": 20}
+SMOOTH = {"munchkin_1": 20, "munchkin_2": 8}
 
 
 def coeffs(dst, src):
@@ -60,7 +63,8 @@ for art_path, quad in items:
     aa = np.asarray(art).astype(float)
     paper = np.median(aa[aa.min(2) > 200], axis=0)  # 絵の紙の白
     warped = np.asarray(art.transform((W, H), Image.PERSPECTIVE,
-                                      coeffs(quad, [(0, 0), (aw, 0), (aw, ah), (0, ah)]), Image.BICUBIC)).astype(float)
+                                      coeffs(quad, [(0, 0), (aw, 0), (aw, ah), (0, ah)]), Image.BICUBIC,
+                                      fillcolor=tuple(int(v) for v in paper))).astype(float)  # 絵の外は紙の白(黒い線を出さない)
     mask = Image.new("L", (W, H), 0)
     ImageDraw.Draw(mask).polygon(quad, fill=255)
     inner = np.asarray(mask.filter(ImageFilter.MinFilter(5))) > 0
@@ -78,7 +82,8 @@ for art_path, quad in items:
                     c = np.cumsum(np.pad(x, [(r + 1, r) if a == ax else (0, 0) for a in range(x.ndim)], mode="edge"), axis=ax)
                     x = (np.take(c, range(2 * r + 1, c.shape[ax]), axis=ax) - np.take(c, range(0, c.shape[ax] - 2 * r - 1), axis=ax)) / (2 * r + 1)
             return x
-        light = np.where(m > 0, blur(light * m) / np.maximum(blur(m), 1e-3), light)
+        bm = blur(m)  # 袋のふち(内側の外)も、内側の光でうめる
+        light = np.where(bm > 0.05, blur(light * m) / np.maximum(bm, 1e-3), light)
     res = np.clip(warped / paper * light * white, 0, 255)
     al = (np.asarray(mask.filter(ImageFilter.GaussianBlur(0.7))).astype(float) / 255)[..., None]
     out = out * (1 - al) + res * al
