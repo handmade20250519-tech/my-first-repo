@@ -1,6 +1,7 @@
 """Geminiに「白紙の袋」で作ってもらった場面写真に、本物の袋の絵を貼る。
 白紙の袋の明るさ(影・紙のざらつき)をそのまま絵にかけるので、光が自然になる。
 使い方: python3 make_scene_blank.py greatdane_1"""
+import os
 import sys
 from pathlib import Path
 import numpy as np
@@ -8,6 +9,9 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).parent))
 import make_listing_variants as mv
+
+if os.environ.get("IMG_DIR"):  # この会話で受け取った画像の場所
+    mv.D = Path(os.environ["IMG_DIR"])
 
 HERE = Path(__file__).parent
 # 名前: (場面の画像, [(貼る絵, 袋の四隅[左上・右上・右下・左下]), ...])
@@ -20,6 +24,11 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "munchkin_1": ("5.jpg", [
+        # Geminiの袋が本物より細長い(幅:高さ=0.58、本物は0.67)。絵がつぶれないように、
+        # 絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした(check/front_munchkin_pad.png)
+        (HERE / "check/front_munchkin_pad.png", [(1140, 822), (1516, 822), (1515, 1482), (1132, 1482)]),
+    ]),
     "chatora_1": ("159.jpg", [
         ("155.jpg", [(648, 516), (886, 517), (885, 884), (639, 885)]),  # 無地のページの袋の表
     ]),
@@ -27,6 +36,8 @@ SCENES = {
 
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
+# 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
+SMOOTH = {"munchkin_1": 20}
 
 
 def coeffs(dst, src):
@@ -57,6 +68,17 @@ for art_path, quad in items:
     sc = np.asarray(scene.filter(ImageFilter.GaussianBlur(1.2))).astype(float)
     white = np.percentile(sc[inner], 99, axis=0)
     light = sc / white
+    if name in SMOOTH:  # 袋の内側だけで光をならす(ふちの影や、となりの物の色を混ぜない)
+        m = inner.astype(float)[..., None]
+        r = SMOOTH[name]
+
+        def blur(x):  # 箱形のぼかしを2回(ガウスぼかしに近い)
+            for _ in range(2):
+                for ax in (0, 1):
+                    c = np.cumsum(np.pad(x, [(r + 1, r) if a == ax else (0, 0) for a in range(x.ndim)], mode="edge"), axis=ax)
+                    x = (np.take(c, range(2 * r + 1, c.shape[ax]), axis=ax) - np.take(c, range(0, c.shape[ax] - 2 * r - 1), axis=ax)) / (2 * r + 1)
+            return x
+        light = np.where(m > 0, blur(light * m) / np.maximum(blur(m), 1e-3), light)
     res = np.clip(warped / paper * light * white, 0, 255)
     al = (np.asarray(mask.filter(ImageFilter.GaussianBlur(0.7))).astype(float) / 255)[..., None]
     out = out * (1 - al) + res * al
