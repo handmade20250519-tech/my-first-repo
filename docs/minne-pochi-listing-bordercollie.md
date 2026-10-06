@@ -102,4 +102,5 @@ uchinoko-aruaru_bordercollie_pochi.zip
 1. shop/listing_bordercollie_1.jpg(デザイン見本)
 2. shop/listing_bordercollie_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_bordercollie_1_note.jpg(場面写真。注記なしは scene_bordercollie_1.jpg)
 
