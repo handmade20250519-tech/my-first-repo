@@ -95,6 +95,18 @@ Behind the envelope, on the left and slightly further back, a real black-and-whi
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
 
+## おもてとうしろを並べた場面写真(Geminiのプロンプト)
+グレート・デーンと同じ並び(左にうしろ、右におもて)。袋は2つとも真っ白で作ってもらい、
+左に shop/check/back_bordercollie.png、右に shop/check/front_bordercollie.png を貼る(`make_scene_blank.py`)。
+うしろの絵は `IMG_DIR=… python3 check_wraparound.py 8.jpg bordercollie 334,380,769,1025` で作った。うしろに見えるのはしっぽの先だけ(約6mm)なので、目立ちにくい
+```
+A bright, warm flat-lay photo taken from directly above, square 1:1. A simple Japanese New Year table setting: soft natural light, a light washi paper mat, a few mikan oranges and a small pine sprig near the edges of the frame, softly lit with gentle shadows.
+
+In the center, two identical small Japanese pochi-bukuro money envelopes lie flat side by side, with a small gap between them. Each envelope is a clean, flat, plain rectangle of matte white paper with crisp square corners, exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. Both envelopes are COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark, no flap, no fold lines, no seams. Both are perfectly straight, upright (long side vertical), the same size, at the same height, not tilted and not rotated, with all four corners of each clearly visible and not covered by anything. Together the two envelopes take up about 60% of the image width.
+
+No people, no hands, no text anywhere in the image. Photorealistic, calm muted colors.
+```
+
 ## ZIPの名前
 uchinoko-aruaru_bordercollie_pochi.zip
 
@@ -103,4 +115,5 @@ uchinoko-aruaru_bordercollie_pochi.zip
 2. shop/listing_bordercollie_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
 4. shop/scene_bordercollie_1_note.jpg(場面写真。注記なしは scene_bordercollie_1.jpg)
+5. (予定)おもてとうしろを並べた場面写真
 

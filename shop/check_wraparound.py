@@ -10,6 +10,9 @@ from PIL import Image, ImageDraw, ImageFont
 sys.path.insert(0, str(Path(__file__).parent))
 import make_listing_variants as mv
 
+if __import__("os").environ.get("IMG_DIR"):  # この会話で受け取った画像の場所
+    mv.D = Path(__import__("os").environ["IMG_DIR"])
+
 FLAP_L, FLAP_R, FRONT_W, FRONT_H, TOP, BOTTOM = 44, 32, 64, 95, 20, int(__import__("os").environ.get("POCHI_BOTTOM", 25))
 LID_IN, LID_TIP = 2, 6
 FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
