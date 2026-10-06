@@ -30,6 +30,26 @@ out = a / np.maximum(p, 1) * 250  # 紙を白(250)にそろえる
 # 線(折り返しのふち)は少し濃くして、はっきり見せる
 gray = out.mean(2, keepdims=True)
 out = np.where(gray < 235, out - (235 - gray) * 0.6, out)
-res = Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
+out = np.clip(out, 0, 255)
+
+# 写真のふちに残った線(袋のふちの影)と、小さなごみ・点を消す。
+# ERASE: 消す四角(x0, y0, x1, y1、ピクセル)。ふたの線・合わせ目・しっぽは残す
+ERASE = {"bordercollie": [(0, 0, 5, 870), (629, 690, W, 880), (634, 590, W, 690)]}
+# うめる色 = まわりの紙の色(線や点を消してから、なめらかにした紙)
+fill = np.asarray(Image.fromarray(out.astype(np.uint8)).filter(ImageFilter.MaxFilter(7))
+                  .filter(ImageFilter.GaussianBlur(6))).astype(float)
+for x0, y0, x1, y1 in ERASE.get(tag, []):
+    out[y0:y1, x0:x1] = fill[y0:y1, x0:x1]
+from scipy import ndimage
+dark = out.mean(2) < 170  # はっきり暗い点だけ(紙の繊維の模様は残す)
+lab, n = ndimage.label(ndimage.binary_dilation(dark, iterations=2))
+size = ndimage.sum(dark, lab, range(1, n + 1))
+ext = ndimage.find_objects(lab)
+for i, (sz, sl) in enumerate(zip(size, ext)):
+    h, w = sl[0].stop - sl[0].start, sl[1].stop - sl[1].start
+    if max(h, w) < 25:  # 線より小さい点・ごみ
+        m = ndimage.binary_dilation(lab[sl] == i + 1, iterations=1)
+        out[sl][m] = fill[sl][m]
+res = Image.fromarray(out.astype(np.uint8))
 res.save(HERE / "check" / f"back_{tag}_photo.png")
 print("done", f"check/back_{tag}_photo.png")
