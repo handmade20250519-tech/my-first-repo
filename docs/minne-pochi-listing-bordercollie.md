@@ -115,5 +115,6 @@ uchinoko-aruaru_bordercollie_pochi.zip
 2. shop/listing_bordercollie_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
 4. shop/scene_bordercollie_1_note.jpg(場面写真。注記なしは scene_bordercollie_1.jpg)
-5. (予定)おもてとうしろを並べた場面写真
+5. shop/scene_bordercollie_2_note.jpg(おもて=おとしだま、うしろ=ユーザーが撮った組み立てた袋の写真を整えたもの。注記なしは scene_bordercollie_2.jpg)
+   - うしろの写真の整え方: `IMG_DIR=… python3 shop/clean_back_photo.py 16.jpg bordercollie "90,93 903,93 967,1322 95,1324"`(まっすぐにして、部屋の暗さ・しわの影を消し、紙を白くそろえる)
 
