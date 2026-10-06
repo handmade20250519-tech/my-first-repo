@@ -83,6 +83,18 @@
 - しっぽの回り込み: しっぽの先が、袋のおもての左の折り目から約6mm、左の折り返し①にはみ出している(Canvaの画面から測った)。①の折り目から30mm以内なので、組み立てると袋のうしろで見える。高さは袋の底から約31〜35mmで、のりしろ③(底から25mm)にも隠れない。型はふつうの型(25mm)でよい
 - ボーダーコリーは中型犬。説明文では「大型犬」と書かず、「ふさふさのしっぽの先が、袋のうしろまで続いている」と書いた
 
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A bright, cozy Japanese living room in soft morning light, on a light-wood floor with a plain, light-colored rug. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 15% of the image width.
+
+Behind the envelope, on the left and slightly further back, a real black-and-white Border Collie crouches low in its classic herding "eye" pose: front legs stretched forward, head low, staring intently at three small balls (yellow, blue and red) lined up neatly in a row on the rug in front of its paws. Natural fur, real dog, not a cartoon. The dog does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
 ## ZIPの名前
 uchinoko-aruaru_bordercollie_pochi.zip
 
