@@ -24,6 +24,10 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "kuroneko_1": ("21.jpg", [
+        # Geminiの袋が本物より細長い(幅:高さ=0.59)。絵がつぶれないよう、幅に合わせて下にそろえ、上の余りは紙の白(check/front_kuroneko_pad.png)
+        (HERE / "check/front_kuroneko_pad.png", [(951, 689), (1127, 689), (1126, 991), (946, 990)]),
+    ]),
     "bordercollie_2": ("14.jpg", [
         # 左にうしろ(ユーザーが撮った組み立てた袋の写真を clean_back_photo.py で整えたもの)、右におもて(おとしだま)
         (HERE / "check/back_bordercollie_photo.png", [(234, 341), (599, 341), (599, 912), (234, 912)]),
@@ -48,7 +52,7 @@ SCENES = {
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
-SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8}
+SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8}
 
 
 def coeffs(dst, src):
