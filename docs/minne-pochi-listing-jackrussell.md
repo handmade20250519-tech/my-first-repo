@@ -3,10 +3,10 @@
 柴犬のひな形(`minne-pochi-listing-shiba.md`)から、犬種名・あるある・ファイル名・タグ1つを差し替えたもの。
 
 ## 商品名
-【ダウンロード】疲れ知らずのジャンプ ジャックラッセルテリアのぽち袋 印刷して作る のし付き6種 お年玉袋(AIを用いた作品)
+ジャックラッセルテリアのぽち袋 終わらないボール遊び｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
 
 ## 価格(仮)
-300円
+500円
 - 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
 - **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
@@ -14,7 +14,7 @@
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-ジャックラッセルテリア / ぽち袋 / お年玉袋 / ダウンロード / 犬好き
+ジャックラッセルテリア / ジャックラッセル / ぽち袋 / お年玉袋 / 犬好き
 
 ## 説明文
 ```
@@ -25,10 +25,13 @@
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
+※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
+
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・jackrussell_pochi.pdf(A4横・6ページ、1枚に2つ分)
+・jackrussell_pochi.pdf(A4横・6ページ)
+ 1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
 ・howto.pdf(作り方とご利用について、A4・3ページ)
@@ -53,6 +56,7 @@
 ・ご自身で使う分は、何枚でも印刷できます。データを人に渡すこと、印刷したものを販売することはできません。
 ・のしはお祝いごとの印です。お見舞いやお悔やみには、1ページ目(のしも文字もなし)をお使いください。
 ・お使いの画面やプリンターによって、色の見え方が少し変わります。
+・作り方の画像は、柴犬のぽち袋で撮影したものです。組み立て方は同じです。
 
 ━━━━━━━━━━
 ■ 絵について
@@ -71,5 +75,28 @@
 
 
 ## 確かめること(出品前)
-- 商品名とタグは「ジャックラッセルテリア」(検索では「・」を入れない人が多い)。タグを増やせるなら「ジャックラッセル」も入れる
+- 商品名とタグは「ジャックラッセルテリア」(検索では「・」を入れない人が多い)。タグの2つ目に「ジャックラッセル」を入れた
 - 絵は白に茶と黒のぶち、毛の短いスムース。毛のかたいラフ・ブロークンの要望があれば、別の出品にする
+- 絵を確かめた: 宙に浮かぶボールに向かって、真上へ高くジャンプしている(足もとに動きの線)。説明文の「ボールを見たら、バネのように真上へぴょーん」と合っている
+- 袋の名前「Jack Russell Terrier」は青(#5672F6 くらい)。毛色(白・茶・黒)とは別の色。白い紙の上で読める濃さはある
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A bright Japanese living room in soft morning light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real smooth-coated Jack Russell Terrier (white with tan and black patches on the head) leaps high straight up into the air, all four paws off the floor, eyes locked on a small white ball floating just above its nose. Full of energy, ears flying. Real dog, not a cartoon. The dog does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
+## ZIPの名前
+uchinoko-aruaru_jackrussell_pochi.zip
+
+## 商品画像
+1. shop/listing_jackrussell_1.jpg(デザイン見本)
+2. shop/listing_jackrussell_3.jpg(6種類)
+3. shop/listing_shiba_4.jpg(作り方)
+
