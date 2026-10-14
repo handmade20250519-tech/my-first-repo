@@ -97,6 +97,6 @@ uchinoko-aruaru_yorkie_pochi.zip
 
 ## 商品画像
 1. shop/listing_yorkie_1.jpg(デザイン見本)
-2. shop/listing_yorkie_3.jpg(6種類。こころばかりの画像が届いてから作る: `python3 shop/make_yorkie_images.py <こころばかりの画像>`)
+2. shop/listing_yorkie_3.jpg(6種類。`python3 shop/make_yorkie_images.py 37.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
 
