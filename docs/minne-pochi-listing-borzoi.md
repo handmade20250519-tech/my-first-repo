@@ -98,5 +98,5 @@ uchinoko-aruaru_borzoi_pochi.zip
 
 ## 商品画像
 1. shop/listing_borzoi_1.jpg(デザイン見本)
-2. shop/listing_borzoi_3.jpg(6種類。おめでとう・こころばかりの画像が届いてから作る: `python3 shop/make_borzoi_images.py <おめでとう> <こころばかり>`)
+2. shop/listing_borzoi_3.jpg(6種類。`python3 shop/make_borzoi_images.py 44.jpg 43.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
