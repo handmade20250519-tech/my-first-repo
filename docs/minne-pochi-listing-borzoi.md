@@ -102,3 +102,4 @@ uchinoko-aruaru_borzoi_pochi.zip
 3. shop/listing_shiba_4.jpg(作り方)
 4. shop/scene_borzoi_1_note.jpg(場面写真。注記なしは scene_borzoi_1.jpg)
    - Geminiの袋が本物より少し細長かった(幅:高さ=0.64)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
+- おもて・うしろを並べた画像は作らない(左右両方にはみ出すので3枚必要になる。はみ出しは説明文で伝えれば十分、とユーザーが判断)
