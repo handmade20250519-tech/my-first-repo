@@ -24,6 +24,10 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "borzoi_1": ("45.jpg", [
+        # Geminiの袋が本物より少し細長い(幅:高さ=0.64)。絵は幅に合わせて下にそろえ、上の余りは紙の白(check/front_borzoi_pad.png)
+        (HERE / "check/front_borzoi_pad.png", [(913, 764), (1056, 765), (1057, 990), (910, 988)]),
+    ]),
     "yorkie_1": ("38.jpg", [
         # Geminiの袋が本物より細長い(幅:高さ=0.58)。絵は幅に合わせて下にそろえ、上の余りは紙の白(check/front_yorkie_pad.png)
         (HERE / "check/front_yorkie_pad.png", [(822, 689), (1040, 689), (1041, 1066), (819, 1066)]),
@@ -64,7 +68,7 @@ SCENES = {
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
-SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8}
+SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8, "borzoi_1": 6}
 
 
 def coeffs(dst, src):

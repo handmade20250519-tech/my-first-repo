@@ -100,3 +100,5 @@ uchinoko-aruaru_borzoi_pochi.zip
 1. shop/listing_borzoi_1.jpg(デザイン見本)
 2. shop/listing_borzoi_3.jpg(6種類。`python3 shop/make_borzoi_images.py 44.jpg 43.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_borzoi_1_note.jpg(場面写真。注記なしは scene_borzoi_1.jpg)
+   - Geminiの袋が本物より少し細長かった(幅:高さ=0.64)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
