@@ -98,4 +98,5 @@ uchinoko-aruaru_mike_pochi.zip
 1. shop/listing_mike_1.jpg(デザイン見本)
 2. shop/listing_mike_3.jpg(6種類。`python3 shop/make_mike_images.py 54.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_mike_1_note.jpg(場面写真。注記なしは scene_mike_1.jpg。袋の形が本物とほぼ同じだったので、そのまま貼れた)
 
