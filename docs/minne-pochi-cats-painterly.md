@@ -73,11 +73,12 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 
 ## 三毛
 あるある: 気が強くてマイペース。香箱座りでくつろいでいるが、撫でようとすると横目で「今はだめ」
+- 作り直し(ユーザーの判断): 1回目はしっぽが長すぎ、表情が意地悪そうだった。しっぽを短く体に沿わせ、表情を「眠そうな半目で少しすねた、かわいい『今はだめ』」に変えた。眉・しかめ顔・にらみは描かないと明記した
 
 ```
 Create an original, warm and gently humorous painting of a single cat for a Japanese gift envelope (pochi-bukuro).
 
-SUBJECT: A calico cat sitting in a neat "loaf" pose with all paws tucked under, looking relaxed, but giving a sharp sideways glance toward the viewer with one eyebrow raised, the tip of its tail flicking (the cat has exactly ONE tail: it wraps neatly around the side of the loaf-shaped body toward the front paws, lying on the floor, and only its very tip is lifted and flicking, shown with two small motion lines; nothing rises from behind its back), clearly saying "not now." Classic calico features: white base coat with distinct patches of orange and black, especially on the head, back and tail.
+SUBJECT: A plump calico cat sitting in a neat, round "loaf" pose with all four paws tucked under, cozy and relaxed. It glances sideways toward the viewer with half-closed, sleepy-looking eyes and a tiny pout, ears turned slightly to the side: a mildly reluctant, pouty, endearing "not now" look, like a spoiled cat who does not feel like being petted right now. The expression is cute and a little sulky, NOT angry and NOT mean: no furrowed brows, no raised eyebrow, no frown lines between the eyes, no glaring, no narrowed evil eyes. Rosy pink cheeks. The cat has exactly ONE SHORT tail: it is tucked tightly against the side of the round body and curls around to the front paws; only about half of it is visible, and it never extends beyond the outline of the body. Only the very tip of the tail is lifted slightly and flicking, shown with two small motion lines. Nothing rises from behind its back. Classic calico features: white base coat with distinct patches of orange and black, especially on the head, back and tail.
 The humor must feel affectionate and true to life, the kind of moment real cat owners instantly recognize. Even in this painterly style, the coat pattern or breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
 THIS IS A CAT, NOT A DOG: always include clear cat features: small triangular pointed ears on top of the head, a tiny pink triangle nose right between the eyes with no protruding snout or muzzle, three thin whiskers on each cheek, a small cat mouth shaped like a soft "ω", a long flexible tail, and small round paws. Flat, round cat face.
