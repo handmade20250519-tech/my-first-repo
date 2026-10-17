@@ -98,6 +98,6 @@ uchinoko-aruaru_britishshorthair_pochi.zip
 
 ## 商品画像
 1. shop/listing_british_1.jpg(デザイン見本)
-2. shop/listing_british_3.jpg(6種類。こころばかりの画像が届いてから作る: `python3 shop/make_british_images.py <こころばかり>`)
+2. shop/listing_british_3.jpg(6種類。`python3 shop/make_british_images.py 71.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
 
