@@ -99,4 +99,6 @@ uchinoko-aruaru_ragdoll_pochi.zip
 1. shop/listing_ragdoll_1.jpg(デザイン見本)
 2. shop/listing_ragdoll_3.jpg(6種類。`python3 shop/make_ragdoll_images.py 62.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_ragdoll_1_note.jpg(場面写真。注記なしは scene_ragdoll_1.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.61)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 
