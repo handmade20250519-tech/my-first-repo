@@ -3,10 +3,10 @@
 柴犬のひな形(`minne-pochi-listing-shiba.md`)を猫用にしたもの(テーマの書き方を「猫の柄・猫種ごと」に、タグの「犬好き」を「猫好き」に変えた)。
 
 ## 商品名
-【ダウンロード】今はだめの横目 三毛猫のぽち袋 印刷して作る のし付き6種 お年玉袋(AIを用いた作品)
+三毛猫のぽち袋 今はだめの半目｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
 
 ## 価格(仮)
-300円
+500円
 - 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
 - **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
@@ -14,21 +14,24 @@
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-三毛猫 / ぽち袋 / お年玉袋 / ダウンロード / 猫好き
+三毛猫 / 三毛 / ぽち袋 / お年玉袋 / 猫好き
 
 ## 説明文
 ```
-香箱座りでくつろいでいるのに、撫でようと手を伸ばすと、横目でじろり。眉をひそめて、「今はだめ」。
+香箱座りでくつろいでいるのに、撫でようと手を伸ばすと、半目でちらり。しっぽの先だけぱたぱたさせて、「今はだめ」。
 三毛猫と暮らす人なら、きっと何度も言われている「今はだめ」の顔を、ぽち袋にしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
+※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
+
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・mike_pochi.pdf(A4横・6ページ、1枚に2つ分)
+・mike_pochi.pdf(A4横・6ページ)
+ 1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
 ・howto.pdf(作り方とご利用について、A4・3ページ)
@@ -53,6 +56,7 @@
 ・ご自身で使う分は、何枚でも印刷できます。データを人に渡すこと、印刷したものを販売することはできません。
 ・のしはお祝いごとの印です。お見舞いやお悔やみには、1ページ目(のしも文字もなし)をお使いください。
 ・お使いの画面やプリンターによって、色の見え方が少し変わります。
+・作り方の画像は、柴犬のぽち袋で撮影したものです。組み立て方は同じです。
 
 ━━━━━━━━━━
 ■ 絵について
@@ -72,3 +76,26 @@
 
 ## 確かめること(出品前)
 - タグは検索で多い「三毛猫」にした
+- 絵は作り直した版(しっぽ短め・ふつうの体つき・ほっぺの赤みなし)。半目で横を見て、しっぽの先だけ動いている。説明文を「横目でじろり。眉をひそめて」から「半目でちらり。しっぽの先だけぱたぱた」に直した(新しい絵は眉をひそめていないため)
+- 袋の名前「Calico」は黄土色(#CA7C0F くらい)。三毛のオレンジに合っていて、白い紙の上でも読める
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real calico cat (white with orange and black patches) sits in a neat loaf pose on a soft cushion, paws tucked under, tail curled along its side. It gives the camera a sleepy, half-closed sideways glance, as if saying "not now". Natural, healthy cat size. Real cat, not a cartoon. The cat does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
+## ZIPの名前
+uchinoko-aruaru_mike_pochi.zip
+
+## 商品画像
+1. shop/listing_mike_1.jpg(デザイン見本)
+2. shop/listing_mike_3.jpg(6種類。こころばかりの画像が届いてから作る: `python3 shop/make_mike_images.py <こころばかり>`)
+3. shop/listing_shiba_4.jpg(作り方)
+
