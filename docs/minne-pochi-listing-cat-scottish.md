@@ -78,7 +78,7 @@
 - 絵は折れ耳、シルバータビー(灰色のしま)。立ち耳のスコの要望があれば、別の出品にする
 - タグの2つ目に「スコ」を入れた
 - 絵は作り直した版(ふつうの体つき、まんまるの目で「なあに?」の顔)。説明文の「おじさんのように」「くつろぎきった顔」を、絵に合わせて「ちょこんと座る」「まんまるの目で『なあに?』」に直した
-- **袋の名前が「ScottishFold」と、あいだの空白がない。** 正しくは「Scottish Fold」(ユーザーに確認中)
+- 袋の名前はユーザーが「Scottish Fold」(空白あり)に直した(81〜85.jpg)。おめでとうのページは、右の袋の名前の位置が左とずれている(ユーザーに伝えた)
 - 袋の名前の色は灰色がかった茶色。白い紙の上で読める
 - 絵のタッチが写実的で、墨の線がほとんどない(ブリティッシュと同じ)
 
@@ -99,7 +99,7 @@ uchinoko-aruaru_scottishfold_pochi.zip
 
 ## 商品画像
 1. shop/listing_scottish_1.jpg(デザイン見本)
-2. shop/listing_scottish_3.jpg(6種類。`python3 shop/make_scottish_images.py 79.jpg` で作った)
+2. shop/listing_scottish_3.jpg(6種類。直したこころばかりが届いたら作り直す: `python3 shop/make_scottish_images.py <こころばかり>`。いまの画像は空白なしの古い版)
 3. shop/listing_shiba_4.jpg(作り方)
-4. shop/scene_scottish_1_note.jpg(場面写真。注記なしは scene_scottish_1.jpg。名前を「Scottish Fold」に直したら、無地のページを差しかえて作り直す)
+4. shop/scene_scottish_1_note.jpg(場面写真。注記なしは scene_scottish_1.jpg。名前を直した無地のページ 81.jpg で作り直した)
 

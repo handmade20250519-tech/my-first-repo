@@ -30,8 +30,8 @@ def put(im, x, y):
     c.alpha_composite(im, (x, y))
 
 
-put(card("75.jpg", 1250, -6), 1000, 300)
-put(card("76.jpg", 1450, 3), 230, 230)
+put(card("82.jpg", 1250, -6), 1000, 300)
+put(card("83.jpg", 1450, 3), 230, 230)
 badge = Image.open(ROOT.parent / "templates/listing/badge_download.png")
 badge = badge.resize((int(badge.width * 1.25), int(badge.height * 1.25)), Image.LANCZOS)
 c.alpha_composite(badge, (S - badge.width - 90, S - badge.height - 90))
@@ -42,7 +42,7 @@ c.convert("RGB").save(ROOT / "listing_scottish_1.jpg", quality=90)
 
 # 6種類の画像は、こころばかりの画像がそろってから作る(例: python3 make_scottish_images.py <こころばかり>)
 if len(sys.argv) > 1:
-    mv.main([("75.jpg", "のしのみ"), ("76.jpg", "おとしだま"), ("77.jpg", "ありがとう"),
-             ("78.jpg", "おめでとう"), (sys.argv[1], "こころばかり"), ("74.jpg", "無地(手書き用)")],
+    mv.main([("82.jpg", "のしのみ"), ("83.jpg", "おとしだま"), ("84.jpg", "ありがとう"),
+             ("85.jpg", "おめでとう"), (sys.argv[1], "こころばかり"), ("81.jpg", "無地(手書き用)")],
             "listing_scottish_3.jpg")
 print("done")
