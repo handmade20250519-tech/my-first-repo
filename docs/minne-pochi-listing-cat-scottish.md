@@ -101,4 +101,5 @@ uchinoko-aruaru_scottishfold_pochi.zip
 1. shop/listing_scottish_1.jpg(デザイン見本)
 2. shop/listing_scottish_3.jpg(6種類。`python3 shop/make_scottish_images.py 79.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
+4. shop/scene_scottish_1_note.jpg(場面写真。注記なしは scene_scottish_1.jpg。名前を「Scottish Fold」に直したら、無地のページを差しかえて作り直す)
 
