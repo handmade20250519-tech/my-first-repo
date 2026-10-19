@@ -95,5 +95,5 @@ uchinoko-aruaru_samoyed_pochi.zip
 
 ## 商品画像
 1. shop/listing_samoyed_1.jpg(デザイン見本)
-2. shop/listing_samoyed_3.jpg(6種類。こころばかりの画像が届いてから作る: `python3 shop/make_samoyed_images.py <こころばかり>`)
+2. shop/listing_samoyed_3.jpg(6種類。`python3 shop/make_samoyed_images.py 93.jpg` で作った)
 3. shop/listing_shiba_4.jpg(作り方)
