@@ -13,7 +13,7 @@ FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
 S = 2000
 NAMES = ["shiba", "toypoodle", "wire", "frenchie", "italiangreyhound", "japanesemix", "maltipoo", "chipoo",
          "greatdane", "bordercollie", "jackrussell", "yorkie", "afghan", "borzoi", "samoyed", "hachiware",
-         "americanshorthair", "chatora", "munchkin", "kuroneko", "mike", "ragdoll", "british", "scottish"]
+         "americanshorthair", "chatora", "munchkin", "kuroneko", "mike", "ragdoll", "british", "scottish", "chihuahua"]
 f = lambda n: ImageFont.truetype(FONT, n)
 
 
@@ -29,8 +29,9 @@ def cells(name):
     return out
 
 
-def make(name):
-    noshi, otoshi = cells(name)
+def make(name, imgs=None):
+    """imgs: (のしのみ, おとしだま) の袋の表。省くと6種類の画像から切り出す"""
+    noshi, otoshi = imgs or cells(name)
     c = Image.new("RGBA", (S, S), BG + (255,))
     d = ImageDraw.Draw(c)
 
@@ -55,6 +56,7 @@ def make(name):
     c.convert("RGB").save(ROOT / f"listing_{name}_1.jpg", quality=90)
 
 
-for n in (sys.argv[1:] or NAMES):
-    make(n)
-    print("done", n)
+if __name__ == "__main__":
+    for n in (sys.argv[1:] or NAMES):
+        make(n)
+        print("done", n)
