@@ -97,5 +97,5 @@ uchinoko-aruaru_chihuahua_pochi.zip
 ## 商品画像
 1. shop/listing_chihuahua_1.jpg(デザイン見本。`python3 shop/make_chihuahua_images.py` で作った)
 2. 場面写真(注記つき)。Geminiの写真が届いたら作る
-3. shop/listing_chihuahua_3.jpg(6種類)。こころばかりの画像が届いたら `python3 shop/make_chihuahua_images.py <こころばかり>` で作る
+3. shop/listing_chihuahua_3.jpg(6種類。`python3 shop/make_chihuahua_images.py 110.jpg` で作った)
 4. shop/listing_shiba_4.jpg(作り方)
