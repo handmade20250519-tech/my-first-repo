@@ -71,6 +71,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
   - しっぽは後ろ足のあいだに巻き込む。足のまわりに震えの線
   - ほっぺの赤みは描かない
 - 作り直し2回目(ユーザーの判断): 顔が怖すぎた(眉間のしわ、下がった眉、歯が見えてうなっているよう)。口は小さな丸い「o」で歯・牙は見せない、眉間はつるっとしてしわなし、目は大きく少しうるんで「ちょっと不安そう」、眉は描くなら困り眉、と明記した
+- **採用(ユーザーの判断): ChatGPTで描いた絵を使う。** Geminiの2回目より、困り顔でけなげに吠える感じが出ていた。顔をこちらに向けた大きな目、大きな耳、淡い茶色+白い胸・足・おでこの線、足のぷるぷる線、巻き込んだしっぽ。ほかの犬種より線が細く、毛がふわっとした描き方。口の中に小さな牙が少し見えるが、怖くはないのでそのままにする。説明文の「画像生成AIを使って」はそのまま当てはまる
 
 ```
 Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
