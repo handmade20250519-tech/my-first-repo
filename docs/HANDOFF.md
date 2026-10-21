@@ -27,7 +27,7 @@
 - 作ったものは必ずコミットしてプッシュする(ブランチ claude/minne-japanese-art-strategy-ygtrx5)
 
 ## 1種類ずつの出品の流れ(いまのやり方)
-1. ユーザーがGeminiで絵を作り、Canvaで6ページを作る(のりしろ・型は `templates/pochi/`)
+1. ユーザーがGeminiで絵を作り、Canvaで6ページを作る(のりしろ・型は `templates/pochi/`)。共通マスターの使い方は `docs/canva-pochi-master.md`
 2. ユーザーが6ページのスクリーンショットを送る(2ページ分を1枚にまとめた画像のときは、左右に切って使う)
    - **新しいやり方(試し中):** CanvaのPDFを1つ添付してもらい、`python3 shop/make_from_pdf.py <PDF> <名前>` で1枚目・6種類の画像・文字なしの袋(check/front_<名前>_blank.png)を作る。ページの順番は問わない(文字とのしの赤で見分ける)。袋の表が64×95mmかも確かめる。すでにある画像は `--overwrite` を付けないと上書きしない
 3. 出品文: `docs/minne-pochi-listing-<名前>.md` を作る。いちばん新しい形の見本は `minne-pochi-listing-chipoo.md`(犬)、`minne-pochi-listing-cat-chatora.md`(猫)
