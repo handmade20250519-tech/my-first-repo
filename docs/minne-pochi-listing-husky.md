@@ -105,5 +105,6 @@ uchinoko-aruaru_husky_pochi.zip
    - Geminiの袋が本物より細長かった(幅:高さ=0.63)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした。袋は画面の幅の約12%で、プロンプトの25%より小さい
 3. shop/listing_husky_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
+5. shop/listing_husky_5.jpg(組み立てた「おもて」と「うら」を並べ、うらに回ったしっぽを赤い丸で囲んだ。`python3 shop/make_back_listing.py husky しっぽ` で作った。check/front_husky.png・back_husky.png は check_wraparound.py の計算で作った図で、写真ではない)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> husky --overwrite` で、作り直したPDFから作り直した。袋の表は6ページとも64×95mm。PDFの中の名前は6ページとも「Siberian Husky」
 - make_from_pdf.py は、絵がページの真ん中の高さにかかると袋の線を見つけられなかったので、縦にずっと続く線だけを使うように直した(チワワ・キジトラのPDFでも同じ結果になることを確かめた)
