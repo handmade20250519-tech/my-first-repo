@@ -94,7 +94,8 @@ uchinoko-aruaru_shihtzu_pochi.zip
 
 ## 商品画像
 1. shop/listing_shihtzu_1.jpg(デザイン見本)
-2. 場面写真(注記つき)。Geminiの写真が届いたら作る
+2. shop/scene_shihtzu_1_note.jpg(場面写真。注記なしは scene_shihtzu_1.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.60)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_shihtzu_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> shihtzu` で作った。袋の表は6ページとも64×95mm。PDFの中の名前は6ページとも「Shih Tzu」
