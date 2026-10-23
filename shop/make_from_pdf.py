@@ -43,8 +43,13 @@ def front(page):
     a = np.asarray(page.convert("L")).astype(int)
     dark = a < 200
     H, W = a.shape
-    # まん中の高さで、袋の外形の縦線(左の袋の左はし・右はし、右の袋の左はし)を探す
-    runs = groups(np.nonzero(dark[H // 2])[0])
+    # 袋の外形の縦線(左の袋の左はし・右はし、右の袋の左はし)を探す。
+    # 1行だけで探すと、絵がその高さにかかったとき(大型犬など)に絵の線をまちがえるので、
+    # ページの高さの33〜70%でずっと続いている縦線だけを使う
+    band = dark[int(H * .33):int(H * .70)]
+    runs = groups(np.nonzero(band.sum(axis=0) > band.shape[0] * .9)[0])
+    if len(runs) < 3:
+        raise SystemExit(f"袋の外形の縦線が{len(runs)}本しか見つからない。展開図の形が変わっていないか確かめる")
     xl, xr, xn = runs[0], runs[1], runs[2]
     # ふたの上のはし(袋のまん中あたりの、いちばん上の線)より上に、表の左右を示すトンボがある
     xc = (xl + xr) // 2
