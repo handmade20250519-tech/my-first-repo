@@ -101,7 +101,8 @@ uchinoko-aruaru_husky_pochi.zip
 
 ## 商品画像
 1. shop/listing_husky_1.jpg(デザイン見本)
-2. 場面写真(注記つき)。Geminiの写真が届いたら作る(うしろの絵は shop/check/back_husky.png)
+2. shop/scene_husky_1_note.jpg(場面写真。注記なしは scene_husky_1.jpg。うしろの絵は shop/check/back_husky.png)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.63)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした。袋は画面の幅の約12%で、プロンプトの25%より小さい
 3. shop/listing_husky_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> husky --overwrite` で、作り直したPDFから作り直した。袋の表は6ページとも64×95mm。PDFの中の名前は6ページとも「Siberian Husky」
