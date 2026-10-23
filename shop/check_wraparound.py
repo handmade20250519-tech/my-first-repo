@@ -1,7 +1,7 @@
 """はみ出す構図の検証: Canvaの型の上に置いた絵を、組み立てたときの
 おもて・うしろの見え方にして、隠れる部分を赤で示す。
 使い方: python3 check_wraparound.py 145.png greatdane [x0,y0,x1,y1]
-(底ののりしろが21mmの型は POCHI_BOTTOM=21、白黒・灰色の動物は POCHI_GRAY_ART=1 を付ける)
+(底ののりしろが21mmの型は POCHI_BOTTOM=21、白黒・灰色の動物や、薄い影がある絵は POCHI_GRAY_ART=1 を付ける。のりしろの灰色の帯と型の線も赤くなるので、絵の上の赤だけを見る)
 画像はCanvaの型(案内つき)の左の袋1つ分。袋のおもての四角を自動で探す。"""
 import sys
 from pathlib import Path
@@ -80,7 +80,7 @@ uy, ux = np.mgrid[-TOP * R:(FRONT_H + BOTTOM) * R, -FLAP_L * R:(FRONT_W + FLAP_R
 art = sample(ux, uy)
 is_art = ((art.max(2) - art.min(2)) > 18) | (art.max(2) < 90)
 if __import__("os").environ.get("POCHI_GRAY_ART"):  # 白黒・灰色の動物(ハスキーなど)は、色の薄い灰色の毛も絵に数える。型の線も赤くなるので、線の上の赤は無視する
-    is_art = (art.min(2) < 225) & ~((art.max(2) - art.min(2) < 12) & (art.min(2) > 200))
+    is_art = art.min(2) < 245  # 薄い影も数える(ハスキーで、薄い影がのりしろに隠れたのを見落としたため)
 hidden = np.zeros(ux.shape, bool)
 for i, (_, poly, _, _) in enumerate(layers):
     m = inside(poly, ux, uy)
