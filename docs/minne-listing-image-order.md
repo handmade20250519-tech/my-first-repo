@@ -33,6 +33,7 @@
 | □ | ハスキー(書き直して出品) | listing_husky_1.jpg | scene_husky_1_note.jpg |
 | □ | シーズー(書き直して出品) | listing_shihtzu_1.jpg | scene_shihtzu_1_note.jpg |
 | □ | ラブラドール(新しく出品) | listing_labrador_1.jpg | scene_labrador_1_note.jpg |
+| □ | サビ猫(新しく出品) | listing_sabi_1.jpg | 場面写真はまだ |
 | □ | ハチワレ | listing_hachiware_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
