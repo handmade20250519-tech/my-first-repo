@@ -37,7 +37,7 @@
 | □ | シェルティ(新しく出品) | listing_sheltie_1.jpg | scene_sheltie_1_note.jpg |
 | □ | ノルウェージャン(新しく出品) | listing_norwegian_1.jpg | scene_norwegian_1_note.jpg |
 | □ | パグ(新しく出品) | listing_pug_1.jpg | scene_pug_1_note.jpg |
-| □ | 秋田犬(新しく出品) | listing_akita_1.jpg | 場面写真はまだ |
+| □ | 秋田犬(新しく出品) | listing_akita_1.jpg | scene_akita_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
