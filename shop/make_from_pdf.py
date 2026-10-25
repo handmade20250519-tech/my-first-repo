@@ -73,6 +73,7 @@ def kind(text, im):
         if w in flat:
             return w
     a = np.asarray(im).astype(int)
+    a = a[: a.shape[0] * 2 // 5]  # のしは袋の上のほう。絵や名前の赤っぽい色(秋田犬など)を数えない
     red = ((a[..., 0] > 150) & (a[..., 1] < 90) & (a[..., 2] < 90)).sum()
     return "のしのみ" if red > 200 else "無地(手書き用)"
 
