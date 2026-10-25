@@ -35,7 +35,7 @@
 | □ | ラブラドール(新しく出品) | listing_labrador_1.jpg | scene_labrador_1_note.jpg |
 | □ | サビ猫(新しく出品) | listing_sabi_1.jpg | scene_sabi_1_note.jpg |
 | □ | シェルティ(新しく出品) | listing_sheltie_1.jpg | scene_sheltie_1_note.jpg |
-| □ | ノルウェージャン(新しく出品) | listing_norwegian_1.jpg | 場面写真はまだ |
+| □ | ノルウェージャン(新しく出品) | listing_norwegian_1.jpg | scene_norwegian_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
