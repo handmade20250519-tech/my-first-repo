@@ -84,10 +84,12 @@ A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft
 
 On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
 
-On the left, a real Bedlington Terrier (soft pale blue-gray curly lamb-like coat, pear-shaped head with a fluffy topknot, long ears ending in silky tassels) stands on the floor next to a small plain cream-white plush toy lamb that looks just like it, tilting its head with a puzzled, innocent expression. Real dog, not a cartoon. The dog and the toy do not touch or cover the envelope.
+On the left, a real Bedlington Terrier (soft pale blue-gray curly lamb-like coat, pear-shaped head with a fluffy topknot, long ears ending in silky tassels) stands on the floor, tilting its head with a puzzled, innocent expression. Next to it sits a small stuffed toy SHEEP (a baby lamb plush toy), clearly a sheep and NOT a dog: a round, fluffy cream-white woolly body, a short rounded sheep face, two small leaf-shaped ears sticking out sideways from the head (NOT long hanging dog ears), short straight legs with small dark hooves, no tail visible. The joke is that the dog's curly coat looks like the lamb's wool. Real dog, not a cartoon. The dog and the toy sheep do not touch or cover the envelope.
 
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
+
+- 1回目の写真では、ぬいぐるみが羊ではなくベドリントンのぬいぐるみになった(「that looks just like it」と書いたため)。「そっくり」の言葉を消し、羊の特徴(横に出た小さな耳、短く丸い顔、ひづめ、垂れ耳ではない)を書いて作り直した
 
 ## ZIPの名前
 uchinoko-aruaru_bedlington_pochi.zip
