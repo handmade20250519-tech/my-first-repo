@@ -1,12 +1,12 @@
 # 出品文(STEP5) サバトラのぽち袋 データ版
 
-柴犬のひな形(`minne-pochi-listing-shiba.md`)を猫用にしたもの(テーマの書き方を「猫の柄・猫種ごと」に、タグの「犬好き」を「猫好き」に変えた)。
+猫の新しい形(500円)。前の版(300円・【ダウンロード】で始まる商品名)から書き直した。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作った。
 
 ## 商品名
-【ダウンロード】夜中の運動会 サバトラ猫のぽち袋 印刷して作る のし付き6種 お年玉袋(AIを用いた作品)
+サバトラのぽち袋 夜中の運動会｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
 
 ## 価格(仮)
-300円
+500円
 - 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
 - **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
@@ -14,21 +14,26 @@
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-サバトラ / ぽち袋 / お年玉袋 / ダウンロード / 猫好き
+サバトラ / サバトラ猫 / ぽち袋 / お年玉袋 / 猫好き
 
 ## 説明文
 ```
-昼間はあんなにおとなしいのに、夜中になると急に全力疾走。しっぽをふくらませて、理由もなく家じゅうを走り回る。
-サバトラと暮らす人なら、きっと毎晩開かれている「夜中の運動会」を、ぽち袋にしました。
+昼間はおとなしく寝てばかりなのに、夜中になると突然スイッチが入る。月の出ている静かな夜、しっぽをふくらませて、目をまんまるにして部屋じゅうを全力疾走。
+サバトラと暮らす人なら、きっと何度も起こされている「夜中の運動会」を、ぽち袋にしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
+※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
+
+袋の英字「Silver Tabby」は、英語でサバトラのことです。
+
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・sabatora_pochi.pdf(A4横・6ページ、1枚に2つ分)
+・sabatora_pochi.pdf(A4横・6ページ)
+ 1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
 ・howto.pdf(作り方とご利用について、A4・3ページ)
@@ -53,6 +58,7 @@
 ・ご自身で使う分は、何枚でも印刷できます。データを人に渡すこと、印刷したものを販売することはできません。
 ・のしはお祝いごとの印です。お見舞いやお悔やみには、1ページ目(のしも文字もなし)をお使いください。
 ・お使いの画面やプリンターによって、色の見え方が少し変わります。
+・作り方の画像は、柴犬のぽち袋で撮影したものです。組み立て方は同じです。
 
 ━━━━━━━━━━
 ■ 絵について
@@ -68,7 +74,30 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。多頭飼いの方の組み合わせのご相談もどうぞ。
 ```
 
-
-
 ## 確かめること(出品前)
-- 「夜中の運動会」はどの猫にもあるあるだが、絵の猫の柄に合わせてサバトラにしている
+- 絵を確かめた: 銀色に黒いしまのサバトラが、目をまんまるにして走っている。しっぽはふくらみ、まわりに動きの線、上に三日月。説明文の「月の出ている静かな夜」「しっぽをふくらませて、目をまんまるにして」「全力疾走」と合っている
+- 袋の名前は「Silver Tabby」(こげ茶の書体)。18か所とも正しいつづり。日本の呼び方(サバトラ)と違うので、名前の説明を入れた(キジトラ・サビ猫と同じ)
+- **このPDFだけ、縦書きの文字(おとしだま など)が黒ではなくこげ茶**(ほかの種類は黒)。ユーザーに伝えた。わざと変えたのならそのままでよい
+- 絵が漫画っぽく(ほっぺの赤み、動きの線)、ほかの猫より少しかわいい寄り。ユーザーが選んだ絵
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room at night, softly lit by moonlight through the window and one warm floor lamp, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame, softly lit by the lamp so it is clearly visible, and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real silver tabby cat (silvery-white coat with bold black stripes) is dashing across the floor in a burst of night-time energy, tail puffed up, eyes wide and round. A slight motion blur shows its speed. Natural, healthy cat size. Real cat, not a cartoon. The cat does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
+## ZIPの名前
+uchinoko-aruaru_sabatora_pochi.zip
+
+## 商品画像
+1. shop/listing_sabatora_1.jpg(デザイン見本)
+2. 場面写真(注記つき)。Geminiの写真が届いたら作る
+3. shop/listing_sabatora_3.jpg(6種類)
+4. shop/listing_shiba_4.jpg(作り方)
+- 1と3は `python3 shop/make_from_pdf.py <PDF> sabatora` で作った。袋の表は6ページとも64×95mm
