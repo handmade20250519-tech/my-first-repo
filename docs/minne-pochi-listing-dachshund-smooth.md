@@ -1,12 +1,12 @@
-# 出品文(STEP5) ミニチュア・ダックスフンド(スムース)のぽち袋 データ版
+# 出品文(STEP5) ミニチュアダックスフンド(スムース)のぽち袋 データ版
 
-柴犬のひな形(`minne-pochi-listing-shiba.md`)から、犬種名・あるある・ファイル名・タグ1つを差し替えたもの。
+犬の新しい形(500円)。前の版(300円・【ダウンロード】で始まる商品名)から書き直した。絵は漫画っぽさを減らし、目をやわらかくした指示文(`minne-pochi-dogs-painterly.md` のスムースダックス)で作った。
 
 ## 商品名
-【ダウンロード】毛布にもぐる ミニチュアダックスのぽち袋 印刷して作る のし付き6種 お年玉袋(AIを用いた作品)
+ミニチュアダックスのぽち袋 毛布にもぐってぬくぬく｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
 
 ## 価格(仮)
-300円
+500円
 - 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
 - **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
@@ -14,21 +14,24 @@
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-ダックスフンド / ぽち袋 / お年玉袋 / ダウンロード / 犬好き
+ミニチュアダックス / ダックスフンド / ぽち袋 / お年玉袋 / 犬好き
 
 ## 説明文
 ```
-毛布があれば、とりあえずもぐる。長い胴の形に毛布がふくらんで、はしから顔だけ出して満足げ。
-ダックスと暮らす人なら、きっと毎日見ている「毛布の中の長い山」を、ぽち袋にしました。
+寒い日は、毛布の中にもぐりこむのが大好き。長い胴の形に毛布がこんもり山になって、しっぽの先だけちょこんと外に。顔だけ出して、ぬくぬく満足そうにこちらを見ている。
+ミニチュアダックスと暮らす人なら、きっと毎日見ている「毛布の中の長い山」を、ぽち袋にしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
+※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
+
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・dachshund_smooth_pochi.pdf(A4横・6ページ、1枚に2つ分)
+・dachshund_pochi.pdf(A4横・6ページ)
+ 1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
 ・howto.pdf(作り方とご利用について、A4・3ページ)
@@ -53,6 +56,7 @@
 ・ご自身で使う分は、何枚でも印刷できます。データを人に渡すこと、印刷したものを販売することはできません。
 ・のしはお祝いごとの印です。お見舞いやお悔やみには、1ページ目(のしも文字もなし)をお使いください。
 ・お使いの画面やプリンターによって、色の見え方が少し変わります。
+・作り方の画像は、柴犬のぽち袋で撮影したものです。組み立て方は同じです。
 
 ━━━━━━━━━━
 ■ 絵について
@@ -68,8 +72,28 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。多頭飼いの方の組み合わせのご相談もどうぞ。
 ```
 
-
-
 ## 確かめること(出品前)
-- 絵はスムース(毛の短いタイプ)、ブラック&タン。ほかの毛色(レッド、クリームなど)の要望があれば、毛色違いを別の出品にする
-- スムースとワイヤーは別々の出品にする。説明文の最後で、もう一方の出品を紹介するとよい
+- 絵を確かめた: ブラック&タンのダックスが、クリーム色の毛布にもぐって長い山になり、しっぽの先だけ外に出ている。顔を出して、やわらかい目でこちらを見ている。説明文と合っている
+- **最初のPDFは、袋12か所の名前が「Miniature Dackhshund」とつづりが違っていた**(正しくは Dachshund。ページ左下は正しかった)。直したPDFを送ってもらってから画像を作る
+- ワイヤーダックスは「ワイヤーダックス」で出品済み。こちらはスムースだが、日本では「ミニチュアダックス」でよく探されるので、商品名は「ミニチュアダックス」にした
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room on a cold winter afternoon in soft light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real black-and-tan smooth miniature dachshund has burrowed under a soft cream-colored blanket on the floor. The blanket forms one long, low bump showing its long body, with just the tip of its tail sticking out at the far end. Only its head pokes out of the near end, chin resting on its paws, with soft, gentle eyes looking cozy and content. Real dog, not a cartoon. The dog and the blanket do not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
+## ZIPの名前
+uchinoko-aruaru_dachshund_pochi.zip
+
+## 商品画像
+1. shop/listing_dachshund_1.jpg(デザイン見本)。名前を直したPDFが届いたら作る
+2. 場面写真(注記つき)。Geminiの写真が届いたら作る
+3. shop/listing_dachshund_3.jpg(6種類)。名前を直したPDFが届いたら作る
+4. shop/listing_shiba_4.jpg(作り方)
