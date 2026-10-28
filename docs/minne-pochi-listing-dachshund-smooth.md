@@ -74,7 +74,7 @@
 
 ## 確かめること(出品前)
 - 絵を確かめた: ブラック&タンのダックスが、クリーム色の毛布にもぐって長い山になり、しっぽの先だけ外に出ている。顔を出して、やわらかい目でこちらを見ている。説明文と合っている
-- **最初のPDFは、袋12か所の名前が「Miniature Dackhshund」とつづりが違っていた**(正しくは Dachshund。ページ左下は正しかった)。直したPDFを送ってもらってから画像を作る
+- **最初のPDFは、袋12か所の名前が「Miniature Dackhshund」とつづりが違っていた**(正しくは Dachshund。ページ左下は正しかった)。直したPDFを送ってもらい、18か所(袋12+ページ左下6)すべて「Miniature Dachshund」になっていることを確かめてから画像を作った
 - ワイヤーダックスは「ワイヤーダックス」で出品済み。こちらはスムースだが、日本では「ミニチュアダックス」でよく探されるので、商品名は「ミニチュアダックス」にした
 
 ## 場面写真(Geminiのプロンプト)
@@ -93,7 +93,8 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_dachshund_pochi.zip
 
 ## 商品画像
-1. shop/listing_dachshund_1.jpg(デザイン見本)。名前を直したPDFが届いたら作る
+1. shop/listing_dachshund_1.jpg(デザイン見本)
 2. 場面写真(注記つき)。Geminiの写真が届いたら作る
-3. shop/listing_dachshund_3.jpg(6種類)。名前を直したPDFが届いたら作る
+3. shop/listing_dachshund_3.jpg(6種類)
+- 1と3は `python3 shop/make_from_pdf.py <PDF> dachshund` で作った。袋の表は6ページとも64×95mm
 4. shop/listing_shiba_4.jpg(作り方)
