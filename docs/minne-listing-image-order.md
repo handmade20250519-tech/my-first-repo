@@ -43,7 +43,7 @@
 | □ | ウエスティ(書き直して出品) | listing_westie_1.jpg | scene_westie_1_note.jpg |
 | □ | ミニチュアダックス(スムース) | listing_dachshund_1.jpg | scene_dachshund_1_note.jpg |
 | □ | ポメラニアン | listing_pomeranian_1.jpg | scene_pomeranian_1_note.jpg |
-| □ | サバトラ | listing_sabatora_1.jpg | 場面写真はまだ |
+| □ | サバトラ | listing_sabatora_1.jpg | scene_sabatora_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
