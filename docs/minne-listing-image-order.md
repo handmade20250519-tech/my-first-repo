@@ -47,6 +47,7 @@
 | □ | ゴールデンレトリバー | listing_golden_1.jpg | scene_golden_1_note.jpg |
 | □ | ビーグル | listing_beagle_1.jpg | scene_beagle_1_note.jpg |
 | □ | コーギー | listing_corgi_1.jpg | scene_corgi_1_note.jpg |
+| □ | 白猫 | listing_whitecat_1.jpg | scene_whitecat_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
