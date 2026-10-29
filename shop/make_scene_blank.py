@@ -24,6 +24,10 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "whitecat_1": ("162.jpg", [
+        # Geminiの袋は本物と同じ形(幅:高さ=0.665)なので、そのまま貼る
+        (HERE / "check/front_whitecat_blank.png", [(950, 685), (1161, 687), (1159, 1002), (946, 1001)]),
+    ]),
     "corgi_1": ("160.jpg", [
         # Geminiの袋が本物より細長い(幅:高さ=0.66)。絵は幅に合わせて下にそろえ、上の余りは紙の白(check/front_corgi_pad.png)
         (HERE / "check/front_corgi_pad.png", [(946, 706), (1151, 706), (1151, 1020), (943, 1017)]),
@@ -167,7 +171,7 @@ SCENES = {
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
-SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8, "borzoi_1": 6, "mike_1": 8, "ragdoll_1": 8, "british_1": 8, "scottish_1": 6, "samoyed_1": 6, "chihuahua_1": 6, "kijitora_1": 6, "cavalier_1": 6, "husky_1": 6, "shihtzu_1": 6, "labrador_1": 6, "sabi_1": 6, "sheltie_1": 6, "norwegian_1": 6, "pug_1": 6, "akita_1": 6, "russianblue_1": 6, "bedlington_1": 6, "westie_1": 6, "dachshund_1": 6, "pomeranian_1": 6, "sabatora_1": 6, "golden_1": 6, "beagle_1": 6, "corgi_1": 6}
+SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8, "borzoi_1": 6, "mike_1": 8, "ragdoll_1": 8, "british_1": 8, "scottish_1": 6, "samoyed_1": 6, "chihuahua_1": 6, "kijitora_1": 6, "cavalier_1": 6, "husky_1": 6, "shihtzu_1": 6, "labrador_1": 6, "sabi_1": 6, "sheltie_1": 6, "norwegian_1": 6, "pug_1": 6, "akita_1": 6, "russianblue_1": 6, "bedlington_1": 6, "westie_1": 6, "dachshund_1": 6, "pomeranian_1": 6, "sabatora_1": 6, "golden_1": 6, "beagle_1": 6, "corgi_1": 6, "whitecat_1": 6}
 
 
 def coeffs(dst, src):

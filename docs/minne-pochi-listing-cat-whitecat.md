@@ -97,7 +97,8 @@ uchinoko-aruaru_whitecat_pochi.zip
 
 ## 商品画像
 1. shop/listing_whitecat_1.jpg(デザイン見本)
-2. shop/scene_whitecat_1_note.jpg(場面写真。注記なしは scene_whitecat_1.jpg)(まだ。Geminiの写真を待っている)
+2. shop/scene_whitecat_1_note.jpg(場面写真。注記なしは scene_whitecat_1.jpg)
+   - Geminiの袋は本物と同じ形(幅:高さ=0.665)だったので、絵をそのまま貼った
 3. shop/listing_whitecat_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> whitecat` で作った
