@@ -94,7 +94,8 @@ uchinoko-aruaru_schnauzer_pochi.zip
 
 ## 商品画像
 1. shop/listing_schnauzer_1.jpg(デザイン見本)
-2. shop/scene_schnauzer_1_note.jpg(場面写真。注記なしは scene_schnauzer_1.jpg)(まだ。Geminiの写真を待っている)
+2. shop/scene_schnauzer_1_note.jpg(場面写真。注記なしは scene_schnauzer_1.jpg)
+   - Geminiの袋が本物より少し細長かった(幅:高さ=0.66)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_schnauzer_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> schnauzer` で作った
