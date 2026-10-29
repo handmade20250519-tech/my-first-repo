@@ -97,7 +97,8 @@ uchinoko-aruaru_stbernard_pochi.zip
 
 ## 商品画像
 1. shop/listing_stbernard_1.jpg(デザイン見本)
-2. shop/scene_stbernard_1_note.jpg(場面写真。注記なしは scene_stbernard_1.jpg)(まだ。Geminiの写真を待っている)
+2. shop/scene_stbernard_1_note.jpg(場面写真。注記なしは scene_stbernard_1.jpg)
+   - Geminiの袋は本物とほぼ同じ形(幅:高さ=0.67)だったので、絵をそのまま貼った
 3. shop/listing_stbernard_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> stbernard` で作った
