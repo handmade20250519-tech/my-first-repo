@@ -1,6 +1,6 @@
 # 出品文(STEP5) セント・バーナードのぽち袋 データ版
 
-犬の新しい形(500円)。絵は「写生の水墨画」として書き直した指示文(`minne-pochi-dogs-painterly.md` のセント・バーナード)で作った。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作る。
+犬の新しい形(500円)。絵は「写生の水墨画」として書き直した指示文(`minne-pochi-dogs-painterly.md` のセント・バーナード)で作った。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作った。
 
 ## 商品名
 セント・バーナードのぽち袋 雪の上でとろける至福の顔｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
@@ -76,8 +76,9 @@
 - 絵を確かめた: 茶と白のセント・バーナード(成犬)が、雪の上で前足にあごをのせて寝そべり、目をやわらかく閉じている(顔はやさしい)。鼻の上に雪の結晶、口のはしに小さなよだれのしずく。漫画っぽさはない。説明文と合っている
 - 袋の名前は「Saint Bernard」(茶色の丸い書体)。18か所とも正しいつづり
 - 絵は横に広く、袋の左右の折り目をこえて回りこむ。ユーザーが1枚印刷して組み立て、折りこむ部分が絵に重ならず大丈夫だと確かめた
-- **最初に届いたPDFは、3ページ目(おとしだま)に袋の型(外形の線・トンボ・のりしろ)がなかった。** 直したPDFを待っている
-- 縦書きの文字(おとしだま など)が、ほかの犬より左に寄っている(犬の頭をよけたためと思われる。ユーザーに確認)
+- 最初に届いたPDFは、3ページ目(おとしだま)に袋の型(外形の線・トンボ・のりしろ)がなかった。直したPDFで6ページともそろった
+- 縦書きの文字(おとしだま など)は、犬の頭をよけて、ほかの犬より左に寄せてある
+- 袋の表は6ページとも64×95mm。縦書きの文字は黒
 
 ## 場面写真(Geminiのプロンプト)
 袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
@@ -95,7 +96,8 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_stbernard_pochi.zip
 
 ## 商品画像
-1. shop/listing_stbernard_1.jpg(デザイン見本)(まだ。直したPDFを待っている)
-2. shop/scene_stbernard_1_note.jpg(場面写真。注記なしは scene_stbernard_1.jpg)(まだ)
-3. shop/listing_stbernard_3.jpg(6種類)(まだ)
+1. shop/listing_stbernard_1.jpg(デザイン見本)
+2. shop/scene_stbernard_1_note.jpg(場面写真。注記なしは scene_stbernard_1.jpg)(まだ。Geminiの写真を待っている)
+3. shop/listing_stbernard_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
+- 1と3は `python3 shop/make_from_pdf.py <PDF> stbernard` で作った
