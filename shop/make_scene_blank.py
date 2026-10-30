@@ -24,6 +24,13 @@ SCENES = {
     "chipoo_1": ("165.jpg", [  # Geminiで袋を小さくした版(164.jpgは袋が大きすぎた)
         ("160.jpg", [(517, 548), (757, 548), (760, 936), (515, 939)]),
     ]),
+    "shiba_postcard": ("172.jpg", [
+        # ポストカード2種の場面。立てたカード(絵いっぱい)は、下がスタンドに入って見えない。
+        # 見えている部分の幅:高さ=350:475 から、カードの上から約92%だけを貼る(check/postcard_shiba_full_visible.png)
+        (HERE / "check/postcard_shiba_full_visible.png", [(255, 232), (604, 232), (608, 707), (257, 707)]),
+        # 机に置いたカード(手紙用)。奥のふちがカードの上、手前のふちが下(縦向きのカードをななめ上から見ている)
+        (HERE / "check/postcard_shiba_letter.png", [(724, 708), (1084, 752), (977, 1098), (502, 1002)]),
+    ]),
     "shiba_1": ("170.jpg", [
         # 新しい絵(2回目の拒否柴)。Geminiの袋は本物とほぼ同じ形(幅:高さ=0.67)なので、そのまま貼る
         (HERE / "check/front_shiba_blank.png", [(994, 766), (1148, 767), (1146, 1003), (989, 999)]),
@@ -187,7 +194,7 @@ SCENES = {
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
-SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8, "borzoi_1": 6, "mike_1": 8, "ragdoll_1": 8, "british_1": 8, "scottish_1": 6, "samoyed_1": 6, "chihuahua_1": 6, "kijitora_1": 6, "cavalier_1": 6, "husky_1": 6, "shihtzu_1": 6, "labrador_1": 6, "sabi_1": 6, "sheltie_1": 6, "norwegian_1": 6, "pug_1": 6, "akita_1": 6, "russianblue_1": 6, "bedlington_1": 6, "westie_1": 6, "dachshund_1": 6, "pomeranian_1": 6, "sabatora_1": 6, "golden_1": 6, "beagle_1": 6, "corgi_1": 6, "whitecat_1": 6, "schnauzer_1": 6, "maltese_1": 6, "stbernard_1": 6, "shiba_1": 6}
+SMOOTH = {"munchkin_1": 20, "munchkin_2": 8, "bordercollie_1": 8, "kuroneko_1": 8, "afghan_1": 6, "jackrussell_1": 8, "yorkie_1": 8, "borzoi_1": 6, "mike_1": 8, "ragdoll_1": 8, "british_1": 8, "scottish_1": 6, "samoyed_1": 6, "chihuahua_1": 6, "kijitora_1": 6, "cavalier_1": 6, "husky_1": 6, "shihtzu_1": 6, "labrador_1": 6, "sabi_1": 6, "sheltie_1": 6, "norwegian_1": 6, "pug_1": 6, "akita_1": 6, "russianblue_1": 6, "bedlington_1": 6, "westie_1": 6, "dachshund_1": 6, "pomeranian_1": 6, "sabatora_1": 6, "golden_1": 6, "beagle_1": 6, "corgi_1": 6, "whitecat_1": 6, "schnauzer_1": 6, "maltese_1": 6, "stbernard_1": 6, "shiba_1": 6, "shiba_postcard": 6}
 
 
 def coeffs(dst, src):
