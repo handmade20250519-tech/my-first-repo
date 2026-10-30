@@ -1,12 +1,17 @@
 """場面写真(AIのイメージ画像)の右下に、小さく注記を入れる。
-使い方: python3 add_ai_note.py scene_americanshorthair_1.jpg"""
+使い方: python3 add_ai_note.py scene_americanshorthair_1.jpg
+        python3 add_ai_note.py --card scene_shiba_postcard.jpg  (ポストカードの場面。「袋」を「カード」にする)"""
 import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 FONT = "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf"
 TEXT = "※AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。"
-for fn in sys.argv[1:]:
+args = sys.argv[1:]
+if "--card" in args:
+    args.remove("--card")
+    TEXT = TEXT.replace("袋の絵柄", "カードの絵柄")
+for fn in args:
     p = Path(__file__).parent / fn
     im = Image.open(p).convert("RGBA")
     W, H = im.size
