@@ -107,9 +107,12 @@ uchinoko-aruaru_shiba_pochi.zip(中身: shiba_pochi.pdf、shiba_postcard_full.pd
 
 ## 商品画像
 1. shop/listing_shiba_1.jpg(デザイン見本)
-2. shop/scene_shiba_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_shiba_1_note.jpg(場面写真。注記なしは scene_shiba_1.jpg)
+   - Geminiの袋は本物とほぼ同じ形(幅:高さ=0.67)だったので、絵をそのまま貼った
 3. shop/listing_shiba_3.jpg(6種類)
-4. ポストカードの見本(まだ。もとの絵を待っている)
+4. shop/listing_shiba_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py shiba`)
 5. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> shiba --overwrite` で作った
-- ポストカードは `shop/make_postcard.py` で作る。もとの絵(Canvaに入れる前の画像)が必要(PDFの中の絵は小さすぎる)
+- ポストカード: shop/postcard/postcard_shiba_full.pdf、postcard_shiba_letter.pdf。もとの絵(Geminiの画像、1500×1500、和紙のような背景)から
+  `python3 shop/make_postcard.py <絵> shiba full --label "Shiba Inu"`(letter も同じ)で作った。絵の「Shiba Inu」は消して、絵いっぱいにだけ Klee One で入れ直した
+- ZIPに入れるときは、ポストカードのファイル名を shiba_postcard_full.pdf・shiba_postcard_letter.pdf にする
