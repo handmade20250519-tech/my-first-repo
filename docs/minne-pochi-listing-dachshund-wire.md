@@ -92,5 +92,5 @@ uchinoko-aruaru_wire_pochi.zip(中身: wire_pochi.pdf、wire_postcard_full.pdf�
 2. ユーザーが自分で作った場面写真(リポジトリにない)
 3. shop/listing_wire_3.jpg(6種類)
 4. shop/listing_wire_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py wire yoko`)
-5. ポストカードの場面写真(まだ。横向きのハガキの写真を待っている)
+5. shop/scene_wire_postcard_note.jpg(ポストカードの場面写真。横向きのハガキの机の写真。注記なしは scene_wire_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
