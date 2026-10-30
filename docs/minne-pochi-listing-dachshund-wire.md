@@ -89,7 +89,7 @@ uchinoko-aruaru_wire_pochi.zip(中身: wire_pochi.pdf、wire_postcard_full.pdf�
 
 ## 商品画像
 1. shop/listing_wire_1.jpg(デザイン見本)
-2. ユーザーが自分で作った場面写真(リポジトリにない)
+2. shop/scene_wire_1_note.jpg(場面写真。本物のワイヤーダックスが写った写真に作り直した。注記なしは scene_wire_1.jpg)
 3. shop/listing_wire_3.jpg(6種類)
 4. shop/listing_wire_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py wire yoko`)
 5. shop/scene_wire_postcard_note.jpg(ポストカードの場面写真。横向きのハガキの机の写真。注記なしは scene_wire_postcard.jpg)
