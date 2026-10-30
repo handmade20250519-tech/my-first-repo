@@ -29,8 +29,8 @@ MM = DPI / 25.4
 LAYOUT = {
     "full": {"size": (100, 148), "width": 83, "left": None, "bottom": None},
     "letter": {"size": (100, 148), "width": 41, "left": 7, "bottom": 16},
-    "full_yoko": {"size": (148, 100), "width": 128, "left": None, "bottom": None},
-    "letter_yoko": {"size": (148, 100), "width": 70, "left": 8, "bottom": 10},
+    "full_yoko": {"size": (148, 100), "width": 128, "left": None, "bottom": None, "max_block": 74},
+    "letter_yoko": {"size": (148, 100), "width": 70, "left": 8, "bottom": 10, "max_block": 40},
 }
 FONT = ROOT / "fonts" / "KleeOne-SemiBold-latin.woff"  # OFL。商品に使ってよい
 LABEL_MM = 5.5  # 名前の文字の大きさ(フォントの大きさ)
@@ -96,15 +96,19 @@ def main(src, name, kind, label=None):
     art = im.crop(art_box(im))
     w = round(lay["width"] * MM)
     h = round(art.height * w / art.width)
+    show_label = label and kind.startswith("full")
+    font = ImageFont.truetype(str(FONT), round(LABEL_MM * MM))
+    lh = font.getbbox("Ag")[3] if show_label else 0
+    extra = round(LABEL_GAP * MM) + lh if show_label else 0
+    if "max_block" in lay and h + extra > lay["max_block"] * MM:  # 横長でない絵は、高さに合わせて小さくする
+        h = round(lay["max_block"] * MM) - extra
+        w = round(art.width * h / art.height)
     if art.width < w * 0.9:
         print(f"注意: もとの絵が小さい(絵の幅 {art.width}px。{DPI}dpiでは {w}px ほしい)。少しぼやけるかもしれない")
     art = art.resize((w, h), Image.LANCZOS)
     page = Image.new("RGB", (round(W_MM * MM), round(H_MM * MM)), "white")
     d = ImageDraw.Draw(page)
-    show_label = label and kind.startswith("full")
-    font = ImageFont.truetype(str(FONT), round(LABEL_MM * MM))
-    lh = font.getbbox("Ag")[3] if show_label else 0
-    block = h + (round(LABEL_GAP * MM) + lh if show_label else 0)  # 絵と名前を合わせた高さ
+    block = h + extra  # 絵と名前を合わせた高さ
     x = (page.width - w) // 2 if lay["left"] is None else round(lay["left"] * MM)
     y = (page.height - block) // 2 if lay["bottom"] is None else page.height - block - round(lay["bottom"] * MM)
     page.paste(art, (x, y))

@@ -29,7 +29,7 @@ def main(name, yoko=False):
     d.text((S / 2, 120), "ポストカード 2種類付き", font=ex.f(96), fill=ex.INK, anchor="mm")
     d.text((S / 2, 230), "はがき用紙にそのまま印刷できます(100×148mm)", font=ex.f(50), fill=ex.INK, anchor="mm")
     suffix = "_yoko" if yoko else ""
-    cards = [(card(ROOT / "postcard" / f"postcard_{name}_{k}{suffix}.pdf", 760 if yoko else 1300), label)
+    cards = [(card(ROOT / "postcard" / f"postcard_{name}_{k}{suffix}.pdf", 680 if yoko else 1300), label)
              for k, label in (("full", "飾る・贈る"), ("letter", "お手紙に"))]
     if yoko:  # 横長は上下に並べる
         y = 330
@@ -37,7 +37,7 @@ def main(name, yoko=False):
             x = (S - im.width) // 2
             ex.shadow_paste(c, im, x, y)
             d.text((S / 2, y + im.height + 45), label, font=ex.f(56), fill=ex.INK, anchor="mm")
-            y += im.height + 130
+            y += im.height + 150
     else:
         gap = 120
         x = (S - sum(im.width for im, _ in cards) - gap) // 2
