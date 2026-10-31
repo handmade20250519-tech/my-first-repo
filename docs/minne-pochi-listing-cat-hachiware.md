@@ -104,9 +104,12 @@ uchinoko-aruaru_hachiware_pochi.zip(中身: hachiware_pochi.pdf、hachiware_post
 
 ## 商品画像
 1. shop/listing_hachiware_1.jpg(デザイン見本)
-2. shop/scene_hachiware_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_hachiware_1_note.jpg(場面写真。注記なしは scene_hachiware_1.jpg)
+   - Geminiの袋が本物より太かった(幅:高さ=0.72)。絵がのびないように、左右に紙の白を足した
 3. shop/listing_hachiware_3.jpg(6種類)
-4. shop/listing_hachiware_postcard.jpg(ポストカード2種の見本)(まだ。もとの絵を待っている)
-5. ポストカードの場面写真(まだ)
+4. shop/listing_hachiware_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py hachiware yoko`)
+5. shop/scene_hachiware_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真をワイヤーダックスと使い回した。注記なしは scene_hachiware_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> hachiware --overwrite` で作った
+- ポストカードは横向き: shop/postcard/postcard_hachiware_full_yoko.pdf、postcard_hachiware_letter_yoko.pdf。もとの絵(2000×1091、和紙のような背景)から
+  `python3 shop/make_postcard.py <絵> hachiware full_yoko --label "Tuxedo Cat"`(letter_yoko も同じ)。ZIPでは hachiware_postcard_full.pdf・hachiware_postcard_letter.pdf に名前を変える
