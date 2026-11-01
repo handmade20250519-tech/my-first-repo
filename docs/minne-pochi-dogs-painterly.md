@@ -44,18 +44,22 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 
 ### トイ・プードル
 あるある: 賢くて、ほめられるのが大好き。トリミング帰りは、つま先立ちで跳ねるように歩き、「見て見て」と得意顔
+- 作り直し(ユーザーの依頼): 最初に出品した絵が漫画っぽかった。柴犬・ハチワレなどと同じ墨絵の書き方(「ユーモラス」「デフォルメ」「表情豊か」を外し、「本物の犬を見て描いた水墨淡彩」と書く。かわいさは場面だけで出す)に作り直した
+- 前は「目を閉じて得意げににっこり」だった。閉じた目のにっこりは漫画っぽくなるので、開いたやさしい丸い目で、あごを上げた姿勢で得意顔を出す
+- テディベアカットは本物のトリミングの形として書き、くるくるの毛は細い筆で描くようにした
 
 ```
-Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
 
-SUBJECT: A toy poodle just back from the groomer, prancing on the tips of its toes with a light, bouncy step, one front paw lifted mid-stride. Chin raised high, eyes closed in a smug little smile, clearly waiting to be told how beautiful it is. Freshly trimmed teddy-bear cut: round fluffy head, round muzzle, fluffy round ears, tidy round legs, small pom-pom tail. A tiny ribbon clipped on one ear, as groomers often add. Coat color: soft apricot, with tight curly texture shown by small brush-drawn curls along the outline.
-The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+SUBJECT: A real adult Toy Poodle just back from the groomer, prancing proudly on the tips of its toes with a light, bouncy step, one front paw lifted mid-stride. Its chin is raised and its head held high, clearly waiting to be told how beautiful it is. Its eyes are open: soft, round, gentle, shiny dark brown dog eyes, bright and happy (NOT narrowed, NOT glaring, NOT closed). Its mouth is closed. Freshly trimmed "teddy bear" cut, as real groomers do it: a neatly rounded fluffy head, a short rounded muzzle, fluffy rounded ears, tidy rounded legs, a small pom-pom tail. A tiny ribbon clipped on one ear, as groomers often add. Realistic Toy Poodle anatomy and proportions, exactly like a real dog: a normal-sized head, a small elegant body, slender legs. Coat: soft apricot, with a tight curly texture painted with fine, small brush strokes.
+The charm comes only from the real-life moment (a freshly groomed poodle showing off), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
-STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with strong variation in thickness; some edges are left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the curly fur painted with layered washes and fine brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii, NOT a plush toy: no oversized head, no big shiny anime eyes, no smile line, no blush, no closed curved eyes, no thin even pen outlines, no motion lines, no sparkles, no symbols of any kind. Keep the painting readable when printed small (about 5 cm tall).
 
-COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+COMPOSITION: One dog only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the dog.
 
-TEXT: Write only the breed name "Toy Poodle" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Toy Poodle. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Toy Poodle" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Toy Poodle. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
