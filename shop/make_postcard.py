@@ -27,8 +27,8 @@ MM = DPI / 25.4
 # タイプごとの紙の大きさと配置(mm)。left・bottom が None なら紙の真ん中
 # full: 絵の幅83mm。letter: 絵の幅41mmで、左から7mm・下から16mm(ユーザーのCanvaの配置)
 LAYOUT = {
-    "full": {"size": (100, 148), "width": 83, "left": None, "bottom": None},
-    "letter": {"size": (100, 148), "width": 41, "left": 7, "bottom": 16},
+    "full": {"size": (100, 148), "width": 83, "left": None, "bottom": None, "max_block": 112},
+    "letter": {"size": (100, 148), "width": 41, "left": 7, "bottom": 16, "max_block": 52},
     "full_yoko": {"size": (148, 100), "width": 128, "left": None, "bottom": None, "max_block": 74},
     "letter_yoko": {"size": (148, 100), "width": 70, "left": 8, "bottom": 10, "max_block": 40},
 }
@@ -54,8 +54,12 @@ def whiten(im):
     # 和紙の繊維(細い筋)や小さな点は、まだ灰色に残る。絵・影・文字のような大きなかたまりだけを残して、ほかは白にする
     dark = a.min(axis=2) < 240
     lab, n = ndimage.label(ndimage.binary_dilation(dark, iterations=4))  # 文字は1語が1つのかたまりになる
-    size = ndimage.sum(dark, lab, index=np.arange(1, n + 1))  # かたまりの中の、もとの濃い画素の数
-    keep = np.isin(lab, np.nonzero(size > 600)[0] + 1)
+    idx = np.arange(1, n + 1)
+    size = ndimage.sum(dark, lab, index=idx)  # かたまりの中の、もとの濃い画素の数
+    mins = ndimage.minimum(a.min(axis=2), lab, index=idx)  # かたまりの中でいちばん濃い色
+    # 繊維はうすい色(いちばん濃くても190〜235くらい)。絵と文字には墨の濃い線がある。
+    # 大きくてうすいかたまり(はなれた影など)は残す(トイプードルで、大きめの繊維が残ったので足した)
+    keep = np.isin(lab, idx[((size > 600) & (mins < 150)) | (size > 20000)])
     keep = ndimage.binary_dilation(keep, iterations=8)
     a[~keep] = 255
     return Image.fromarray(a.astype(np.uint8))
