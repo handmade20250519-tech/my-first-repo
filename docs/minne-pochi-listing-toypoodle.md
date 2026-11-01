@@ -1,29 +1,33 @@
-# 出品文(STEP5) トイ・プードルのぽち袋 データ版
+# 出品文(STEP5) トイプードルのぽち袋+ポストカード データ版
 
-柴犬のひな形(`minne-pochi-listing-shiba.md`)から、犬種名・あるある・ファイル名・タグ1つを差し替えたもの。
+犬の新しい形(500円)に、ポストカード2種を足した版(柴犬と同じ形)。絵は墨絵の書き方に直した指示文(`minne-pochi-dogs-painterly.md` のトイ・プードル。3回目でうれしい顔に)で作り直した。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作った。
 
 ## 商品名
-トイプードルのぽち袋 トリミング帰りのドヤ顔｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+トイプードルのぽち袋とポストカード トリミング帰りのごきげん顔｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+- 前は「ドヤ顔」だった。絵をうれしい顔に作り直したので「ごきげん顔」にした
+- minneの商品名の文字数の上限に入るか、出品の画面で確かめる。入らないときは「｜お年玉・お礼に」を外す
 
 ## 価格(仮)
 500円
-- 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
-- **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
 ## 発送
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-トイプードル / トリミング / ぽち袋 / お年玉袋 / 犬好き
+トイプードル / トリミング / ぽち袋 / ポストカード / お年玉袋
+- 前の「犬好き」を「ポストカード」にした
 
 ## 説明文
 ```
-トリミングから帰ってきた日は、つま先立ちで跳ねるように歩いて、あごを上げて「見て見て」の得意顔。
-トイ・プードルと暮らす人なら、きっと知っている「ほめられ待ち」の顔を、ぽち袋にしました。
+トリミング帰りは、ふわふわの毛がまんまる。つま先で弾むように歩いてきて、口をあけてにっこり。「見て見て、かわいくなったでしょ!」と、うれしくてたまらない様子です。
+トイプードルと暮らす人なら、きっと知っている「トリミング帰りのごきげん顔」を、ぽち袋とポストカードにしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
+ポストカードは、飾ったり、お手紙に使ったりできます。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
+
+※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
 
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
@@ -32,9 +36,12 @@
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
+・toypoodle_postcard_full.pdf(ポストカード・絵を大きく入れたもの、ハガキの大きさ)
+・toypoodle_postcard_letter.pdf(ポストカード・手紙用。すみに小さく絵を入れ、文字を書くところを広くとったもの)
 ・howto.pdf(作り方とご利用について、A4・3ページ)
 
-仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ぽち袋の仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ポストカードの大きさ:100×148mm(はがきと同じ大きさです)
 
 ━━━━━━━━━━
 ■ 作り方
@@ -45,6 +52,8 @@
 貼るときは、スティックのり(固形のり)か両面テープをお使いください。液体のりは、水分でインクがにじむことがあります(とくにインクジェットプリンター)。
 ふたは、シールや両面テープで留めてください。
 詳しくは、中に入っている説明書をご覧ください。
+
+ポストカードは、はがき用紙に「実寸(100%)」で印刷するだけで使えます(切る必要はありません)。プリンターの用紙の設定は「はがき」を選んでください。
 
 ━━━━━━━━━━
 ■ ご注意
@@ -70,19 +79,32 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。多頭飼いの方の組み合わせのご相談もどうぞ。
 ```
 
-
 ## 確かめること(出品前)
-- 絵の毛色はアプリコット。ほかの毛色(レッド、ブラウン、ホワイトなど)も欲しいという声があれば、毛色違いを別の出品にする
-- 絵が「トリミング帰り・あごを上げた得意顔」になっているか。違う場面なら、説明文の最初の2行を絵に合わせて直す
+- 絵を確かめた(作り直した絵): アプリコットのトイプードル(成犬)が、テディベアカットでこちらへ弾むように歩いてくる。口をあけて舌を少し出し、うれしそうな顔。耳に小さなピンクのリボン。漫画っぽさはない。説明文と合っている
+- 袋の名前は「Toy Poodle」(ピンクの丸い書体)。18か所とも正しいつづり。縦書きの文字は黒
+- 袋の表は6ページとも64×95mm
+- 前の場面写真(ユーザーが自分で作ったもの)は、前の絵なので使わない
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese entryway (genkan) in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the wooden floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real apricot toy poodle with a fresh, fluffy teddy-bear cut and a tiny pink ribbon on one ear, just home from the groomer, trots happily toward the camera on the floor with a big happy dog smile: mouth open, a little pink tongue showing, head slightly tilted, bright joyful eyes. Real dog, not a cartoon. The dog does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
 
 ## ZIPの名前
-uchinoko-aruaru_toypoodle_pochi.zip
+uchinoko-aruaru_toypoodle_pochi.zip(中身: toypoodle_pochi.pdf、toypoodle_postcard_full.pdf、toypoodle_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
 1. shop/listing_toypoodle_1.jpg(デザイン見本)
-2. shop/listing_toypoodle_3.jpg(6種類)
-3. shop/listing_shiba_4.jpg(作り方)
-
-## 説明文に入れる一文(ユーザーの決まり)
-説明文の「絵は、墨と淡い水彩で…落ち着いた色にしています。」の段落の次に、1行あけてこの一文を入れる:
-`※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。`
+2. shop/scene_toypoodle_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+3. shop/listing_toypoodle_3.jpg(6種類)
+4. shop/listing_toypoodle_postcard.jpg(ポストカード2種の見本)(まだ。もとの絵を待っている)
+5. ポストカードの場面写真(まだ)
+6. shop/listing_shiba_4.jpg(作り方)
+- 1と3は `python3 shop/make_from_pdf.py <PDF> toypoodle --overwrite` で作った
