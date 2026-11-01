@@ -51,6 +51,7 @@
 | □ | ミニチュア・シュナウザー | listing_schnauzer_1.jpg | scene_schnauzer_1_note.jpg |
 | □ | マルチーズ | listing_maltese_1.jpg | scene_maltese_1_note.jpg |
 | □ | セント・バーナード | listing_stbernard_1.jpg | scene_stbernard_1_note.jpg |
+| □ | バーニーズ | listing_bernese_1.jpg | scene_bernese_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | scene_hachiware_1_note.jpg |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
