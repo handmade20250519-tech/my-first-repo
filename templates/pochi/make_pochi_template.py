@@ -32,6 +32,7 @@ FRONT_W, FRONT_H = 64, 95
 TOP, BOTTOM = 20, 25
 # 底ののりしろ③の高さは、環境変数 POCHI_BOTTOM で変えられる(例: POCHI_BOTTOM=21)。
 # 絵が①にはみ出す構図(グレート・デーン)で、③が①のしっぽを隠したため(ユーザーの試作)、4mm短い版を作った。
+# さらに超大型犬用に15mmの版(POCHI_BOTTOM=15)も作った。市販の両面テープは幅10mmが多く、15mmあれば足りる(ユーザーが紙で試して問題なし、2026-11-01)。
 # 袋のおもての位置は変えない(今までのCanvaのデザインがそのまま重なるように)。
 BOTTOM_STD = BOTTOM
 BOTTOM = int(os.environ.get("POCHI_BOTTOM", BOTTOM))
