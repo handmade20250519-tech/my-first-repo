@@ -102,9 +102,12 @@ uchinoko-aruaru_bernese_pochi.zip(中身: bernese_pochi.pdf、bernese_postcard_f
 
 ## 商品画像
 1. shop/listing_bernese_1.jpg(デザイン見本)
-2. shop/scene_bernese_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_bernese_1_note.jpg(場面写真。注記なしは scene_bernese_1.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.61)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_bernese_3.jpg(6種類)
-4. shop/listing_bernese_postcard.jpg(ポストカード2種の見本)(まだ。もとの絵を待っている)
-5. ポストカードの場面写真(まだ)
+4. shop/listing_bernese_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py bernese`)
+5. shop/scene_bernese_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真を柴犬と使い回した。注記なしは scene_bernese_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> bernese` で作った
+- ポストカードは縦向き: shop/postcard/postcard_bernese_full.pdf、postcard_bernese_letter.pdf。もとの絵(2000×2000)から
+  `python3 shop/make_postcard.py <絵> bernese full --label "Bernese Mountain Dog"`(letter も同じ)。ZIPでは bernese_postcard_full.pdf・bernese_postcard_letter.pdf に名前を変える
