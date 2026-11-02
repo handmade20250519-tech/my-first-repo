@@ -574,24 +574,26 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 
 ### ニューファンドランド
 あるある: 水難救助の犬で、水が大好き。水を見ると「救助」に飛び込む。上がってくると、ふかふかの毛がぺたんこになって別の犬のように細く見えるのに、本人は任務を終えた誇らしげな顔
+- 作り直し(出品前に): 前の指示文は「漫画っぽさ」をまぜる書き方だった。バーニーズ・トイプードルなどと同じ墨絵の書き方(「ユーモラス」「デフォルメ」「表情豊か」を外し、「本物の犬を見て描いた水墨淡彩」と書く。かわいさは場面だけで出す)に作り直した
+- 黒い毛は、墨のこさの変化で毛並みを出す(ハチワレ・バーニーズと同じ)。ぬれてぺたんこの毛は、細い筆のすじと光るつやで描く
+- 誇らしげな顔は、胸を張って頭を上げた姿勢と、やさしい丸い目で出す(にっこり・閉じた目は漫画っぽくなるので外した)
+- 水たまりと水しぶきは、足もとの小さな水たまりと、毛から落ちるしずくだけにした
 
 ```
-Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
 
-SUBJECT: A newfoundland dog that has just climbed out of the water after a proud "rescue mission": standing on a small simple puddle, holding a small floating ring toy gently in its mouth as if it has just saved it. Its usually huge fluffy coat is completely soaking wet and plastered flat against its body, making it look surprisingly slim and a little silly, with water dripping from its ears, chin and belly and a few water droplets around it. Its face is full of pride and satisfaction, chest out, tail swinging, like a hero returning from duty. Classic newfoundland features: very large sturdy body, broad massive head, short square muzzle, small drop ears, webbed paws, thick coat (flattened here because it is wet). Coat color: black. The ring toy and the puddle are plain, soft watercolor colors.
-The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+SUBJECT: A real adult Newfoundland dog that has just climbed out of the water after a proud "rescue mission", standing on a small, shallow puddle, gently holding a small floating ring toy in its mouth as if it has just saved it. Its usually huge, fluffy coat is completely soaking wet and plastered flat against its body, making it look surprisingly slim, with water dripping from its ears, chin and belly in a few clear drops. It stands tall with its chest out and its head held high, looking proud and satisfied, like a hero returning from duty. Its eyes are open: soft, round, gentle dark brown eyes, calm and proud (NOT narrowed, NOT glaring, NOT closed). Realistic Newfoundland anatomy and proportions, exactly like a real dog: a normal-sized broad, massive head, a short square muzzle, small drop ears, a very large sturdy body, big webbed paws, a long tail. Coat: black. Paint the wet black fur with layered sumi ink of varying darkness and fine streaky brush strokes with a few glossy highlights, so the flattened wet fur and the shape of the body stay clear, NOT a flat solid black shape. The ring toy is a soft muted red-and-white; the puddle is a pale blue-gray wash.
+The charm comes only from the real-life moment (a huge dog that looks surprisingly skinny when wet, proudly back from its "rescue"), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
-STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. More deformed, cute proportions: the head about one third of the body height, a round soft body, short stubby legs. Clear, simple, expressive face with a comical expression (for example proudly closed eyes, a faint pink blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with strong variation in thickness; some edges are left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big shiny anime eyes, no smile line, no blush, no closed curved eyes, no thin even pen outlines, no motion lines, no sweat drops, no sparkles, no symbols of any kind. The only water drops are the ones dripping from the fur. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
 
-COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
+COMPOSITION: One dog only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only the small puddle under the dog.
 
-TEXT: Write only the breed name "Newfoundland" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Newfoundland. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Newfoundland" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Newfoundland. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
-
-## ミックス犬(MIX)
-日本でいちばん多く飼われているのはMIX(ユーザーが調べた)。まずは3種類。どれも純血種ではないので、「純血種に見えない」ように指示文で書いている。
 
 ### 日本の雑種(MIX)
 あるある: 散歩の時間は時計より正確。時間が近づくと、自分でリードをくわえて玄関にきちんとおすわりし、しっぽを振りながら「まだ?」と見上げる
