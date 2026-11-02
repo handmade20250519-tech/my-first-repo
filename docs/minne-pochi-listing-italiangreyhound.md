@@ -103,9 +103,12 @@ uchinoko-aruaru_italiangreyhound_pochi.zip(中身: italiangreyhound_pochi.pdf、
 
 ## 商品画像
 1. shop/listing_italiangreyhound_1.jpg(デザイン見本)
-2. shop/scene_italiangreyhound_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_italiangreyhound_1_note.jpg(場面写真。注記なしは scene_italiangreyhound_1.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.64)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_italiangreyhound_3.jpg(6種類)
-4. shop/listing_italiangreyhound_postcard.jpg(ポストカード2種の見本)(まだ。もとの絵を待っている)
-5. ポストカードの場面写真(まだ)
+4. shop/listing_italiangreyhound_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py italiangreyhound yoko`)
+5. shop/scene_italiangreyhound_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真をワイヤーダックスと使い回した。注記なしは scene_italiangreyhound_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> italiangreyhound --overwrite` で作った
+- ポストカードは横向き: shop/postcard/postcard_italiangreyhound_full_yoko.pdf、postcard_italiangreyhound_letter_yoko.pdf。もとの絵(1500×1500、和紙のような背景)から
+  `python3 shop/make_postcard.py <絵> italiangreyhound full_yoko --label "Italian Greyhound"`(letter_yoko も同じ)。ZIPでは italiangreyhound_postcard_full.pdf・italiangreyhound_postcard_letter.pdf に名前を変える

@@ -16,7 +16,7 @@
 | □ | トイプードル | listing_toypoodle_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | ワイヤーダックス | listing_wire_1.jpg | scene_wire_1_note.jpg |
 | □ | フレンチブルドッグ | listing_frenchie_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
-| □ | イタリアングレーハウンド | listing_italiangreyhound_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
+| □ | イタリアングレーハウンド | listing_italiangreyhound_1.jpg | scene_italiangreyhound_1_note.jpg |
 | □ | 日本の雑種 | listing_japanesemix_1.jpg | scene_japanesemix_1_note.jpg |
 | □ | マルプー | listing_maltipoo_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | チワプー | listing_chipoo_1.jpg | scene_chipoo_1_note.jpg |
