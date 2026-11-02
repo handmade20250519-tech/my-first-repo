@@ -44,8 +44,7 @@ def whiten(im):
     a = np.asarray(im).astype(float)
     border = np.concatenate([a[:20].reshape(-1, 3), a[-20:].reshape(-1, 3), a[:, :20].reshape(-1, 3), a[:, -20:].reshape(-1, 3)])
     bg = np.median(border, axis=0)
-    if bg.min() >= 254:  # もともと真っ白(ラブラドールなど)。何もしない
-        return im
+    # 背景がほぼ白でも、うすい繊維が入っていることがある(ニューファンドランド)ので、いつも下の処理をする
     a = np.clip(a * 255 / bg, 0, 255)
     # 紙の細かいむら(ざらざら)も残ると、ハガキの白との境目が四角く見えるので、ほぼ白のところを白にそろえる。
     # 236より暗いところ(絵・影)はそのまま、236〜250はなめらかに白へ近づける
@@ -62,6 +61,10 @@ def whiten(im):
     keep = np.isin(lab, idx[((size > 600) & (mins < 150)) | (size > 20000)])
     keep = ndimage.binary_dilation(keep, iterations=8)
     a[~keep] = 255
+    # 絵につながって残った繊維(ごくうすい筋)も白にする。絵の線や色から少しはなれた、ほぼ白(225以上)のところだけ
+    # (ニューファンドランドで、絵のまわりにうすい四角が見えたので足した)
+    near = ndimage.binary_dilation(a.min(axis=2) < 215, iterations=12)
+    a[~near & (a.min(axis=2) >= 225)] = 255
     return Image.fromarray(a.astype(np.uint8))
 
 
@@ -82,7 +85,7 @@ def strip_name(im):
     idx = np.nonzero(a.sum(axis=1) > 8)[0]
     segs = np.split(idx, np.nonzero(np.diff(idx) > H * 0.02)[0] + 1)
     last = segs[-1]
-    cols = np.nonzero(a[last[0]:last[-1] + 1].any(axis=0))[0]
+    cols = np.nonzero(a[last[0]:last[-1] + 1].sum(axis=0) > 2)[0]  # 紙の小さな点を数えない(ニューファンドランドで横に広く見えた)
     if len(segs) < 2 or len(last) > H * 0.07 or cols[-1] - cols[0] > W * 0.6:
         raise SystemExit("絵の下に名前らしい文字が見つからない。絵を確かめる")
     out = np.asarray(im).copy()
