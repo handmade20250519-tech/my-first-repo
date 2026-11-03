@@ -1,31 +1,34 @@
-# 出品文(STEP5) 茶トラのぽち袋 データ版
+# 出品文(STEP5) 茶トラのぽち袋+ポストカード データ版
 
-柴犬のひな形(`minne-pochi-listing-shiba.md`)を猫用にしたもの(テーマの書き方を「猫の柄・猫種ごと」に、タグの「犬好き」を「猫好き」に変えた)。
+猫の新しい形(500円)に、ポストカード2種を足した版(柴犬と同じ形)。絵は墨絵の書き方に直した指示文(`minne-pochi-cats-painterly.md` の茶トラ)で作り直した。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作った。
 
 ## 商品名
-茶トラ猫のぽち袋 ごはんの無言の圧｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+茶トラ猫のぽち袋とポストカード ごはんの無言の圧｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+- minneの商品名の文字数の上限に入るか、出品の画面で確かめる。入らないときは「｜お年玉・お礼に」を外す
 
 ## 価格(仮)
 500円
-- 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
-- **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
 ## 発送
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-茶トラ / 茶トラ猫 / ぽち袋 / お年玉袋 / 猫好き
+茶トラ / 茶トラ猫 / ぽち袋 / ポストカード / 猫好き
+- 前の「お年玉袋」を「ポストカード」にした
 
 ## 説明文
 ```
-ごはんの時間が近づくと、空のお皿の前にきちんと座り、前足でお皿のふちをちょん。何も言わずに、半目でじっとこちらを見つめてくる。
-茶トラと暮らす人なら、きっと毎日かけられている「無言の圧」を、ぽち袋にしました。
+ごはんの時間が近づくと、空のお皿の前にきちんと座り、前足でお皿のふちをちょん。何も言わずに、まんまるの目でじっとこちらを見上げてきます。
+茶トラと暮らす人なら、きっと毎日かけられている「ごはんの無言の圧」を、ぽち袋とポストカードにしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
+ポストカードは、飾ったり、お手紙に使ったりできます。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
 ※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
+
+袋の英字「Orange Tabby」は、英語で茶トラのことです。
 
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
@@ -34,9 +37,12 @@
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
+・chatora_postcard_full.pdf(ポストカード・絵を大きく入れたもの、ハガキの大きさ)
+・chatora_postcard_letter.pdf(ポストカード・手紙用。すみに小さく絵を入れ、文字を書くところを広くとったもの)
 ・howto.pdf(作り方とご利用について、A4・3ページ)
 
-仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ぽち袋の仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ポストカードの大きさ:100×148mm(はがきと同じ大きさです)
 
 ━━━━━━━━━━
 ■ 作り方
@@ -47,6 +53,8 @@
 貼るときは、スティックのり(固形のり)か両面テープをお使いください。液体のりは、水分でインクがにじむことがあります(とくにインクジェットプリンター)。
 ふたは、シールや両面テープで留めてください。
 詳しくは、中に入っている説明書をご覧ください。
+
+ポストカードは、はがき用紙に「実寸(100%)」で印刷するだけで使えます(切る必要はありません)。プリンターの用紙の設定は「はがき」を選んでください。
 
 ━━━━━━━━━━
 ■ ご注意
@@ -72,15 +80,35 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。多頭飼いの方の組み合わせのご相談もどうぞ。
 ```
 
-
-
 ## 確かめること(出品前)
-- 絵は茶トラ(オレンジに縞)。袋の名前は英語の「Orange Tabby」(英語圏での茶トラの呼び方)
+- 絵を確かめた(作り直した絵): 茶トラ(成猫)が空の灰色のお皿の前にきちんと座り、前足をお皿のふちにのせて、まんまるの目でこちらを見上げている。顔はやさしい。漫画っぽさはない
+- 前の説明文の「半目でじっと」を「まんまるの目でじっとこちらを見上げて」に直した(絵に合わせた)
+- 袋の名前は「Orange Tabby」(オレンジの丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm
+- 英字の名前の説明を入れた(キジトラ・ハチワレと同じ)
+- 前の場面写真(scene_chatora_1)は前の絵なので使わない
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese kitchen corner in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real adult orange tabby cat (warm orange with darker stripes, cream-white chin and chest) sits neatly upright on the floor in front of an empty gray ceramic food bowl, one front paw resting on the rim of the bowl, looking up at the camera with big, round, hopeful amber eyes, silently waiting for dinner. Real cat, not a cartoon. The cat and the bowl do not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
 
 ## ZIPの名前
-uchinoko-aruaru_chatora_pochi.zip
+uchinoko-aruaru_chatora_pochi.zip(中身: chatora_pochi.pdf、chatora_postcard_full.pdf、chatora_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
 1. shop/listing_chatora_1.jpg(デザイン見本)
-2. shop/listing_chatora_3.jpg(6種類)
-3. shop/listing_shiba_4.jpg(作り方)
+2. shop/scene_chatora_1_note.jpg(場面写真)(まだ。新しいGeminiの写真を待っている)
+3. shop/listing_chatora_3.jpg(6種類)
+4. shop/listing_chatora_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py chatora`)
+5. shop/scene_chatora_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真を柴犬と使い回した。注記なしは scene_chatora_postcard.jpg)
+6. shop/listing_shiba_4.jpg(作り方)
+- 1と3は `python3 shop/make_from_pdf.py <PDF> chatora --overwrite` で作った
+- ポストカードは縦向き: shop/postcard/postcard_chatora_full.pdf、postcard_chatora_letter.pdf。もとの絵(2000×2000)から
+  `python3 shop/make_postcard.py <絵> chatora full --label "Orange Tabby"`(letter も同じ)。ZIPでは chatora_postcard_full.pdf・chatora_postcard_letter.pdf に名前を変える
