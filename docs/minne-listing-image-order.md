@@ -53,6 +53,7 @@
 | □ | セント・バーナード | listing_stbernard_1.jpg | scene_stbernard_1_note.jpg |
 | □ | バーニーズ | listing_bernese_1.jpg | scene_bernese_1_note.jpg |
 | □ | ニューファンドランド | listing_newfoundland_1.jpg | scene_newfoundland_1_note.jpg |
+| □ | スフィンクス | listing_sphynx_1.jpg | scene_sphynx_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | scene_hachiware_1_note.jpg |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |

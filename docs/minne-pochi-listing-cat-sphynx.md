@@ -82,7 +82,7 @@
 ## 確かめること(出品前)
 - 絵を確かめた(2回目の絵): ピンクベージュに灰色のぶちのスフィンクスが、香箱座りで毛布にくるまり、顔と前足だけ出して、目をやわらかく閉じている。顔はやさしい。体は大人の猫の大きさ(1回目は体が小さすぎた)。漫画っぽさはない
 - 袋の英字は「Sphynx」(猫の種類の正しいつづり。「Sphinx」ではない)。説明文に一文入れた
-- ぽち袋のPDFはまだ(ユーザーが作っている)。届いたら、名前のつづり・大きさ・文字の色を確かめる
+- 袋の名前は「Sphynx」(灰色がかった茶色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm
 
 ## 場面写真(Geminiのプロンプト)
 袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
@@ -100,11 +100,12 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_sphynx_pochi.zip(中身: sphynx_pochi.pdf、sphynx_postcard_full.pdf、sphynx_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
-1. shop/listing_sphynx_1.jpg(デザイン見本)(まだ。PDFを待っている)
-2. shop/scene_sphynx_1_note.jpg(場面写真)(まだ)
-3. shop/listing_sphynx_3.jpg(6種類)(まだ)
+1. shop/listing_sphynx_1.jpg(デザイン見本)
+2. shop/scene_sphynx_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+3. shop/listing_sphynx_3.jpg(6種類)
 4. shop/listing_sphynx_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py sphynx yoko`)
 5. shop/scene_sphynx_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真を使い回した。注記なしは scene_sphynx_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - ポストカードは横向き: shop/postcard/postcard_sphynx_full_yoko.pdf、postcard_sphynx_letter_yoko.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> sphynx full_yoko --label "Sphynx"`(letter_yoko も同じ)。ZIPでは sphynx_postcard_full.pdf・sphynx_postcard_letter.pdf に名前を変える
+- 1と3は `python3 shop/make_from_pdf.py <PDF> sphynx` で作った
