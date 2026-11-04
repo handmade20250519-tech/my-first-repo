@@ -291,7 +291,11 @@ def coeffs(dst, src):
 
 name = sys.argv[1]
 scene_fn, items = SCENES[name]
-scene = Image.open(mv.D / scene_fn).convert("RGB")
+# 使い回す写真(ポストカードの机など)は templates/scenes に保存してある。会話の画像フォルダになければそちらを使う
+scene_path = mv.D / scene_fn
+if not scene_path.exists():
+    scene_path = HERE.parent / "templates" / "scenes" / scene_fn
+scene = Image.open(scene_path).convert("RGB")
 W, H = scene.size
 out = np.asarray(scene).astype(float)
 for art_path, quad in items:
