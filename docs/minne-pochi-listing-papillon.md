@@ -98,7 +98,8 @@ uchinoko-aruaru_papillon_pochi.zip(中身: papillon_pochi.pdf、papillon_postcar
 
 ## 商品画像
 1. shop/listing_papillon_1.jpg(デザイン見本)
-2. shop/scene_papillon_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_papillon_1_note.jpg(場面写真。注記なしは scene_papillon_1.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.58)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_papillon_3.jpg(6種類)
 4. shop/listing_papillon_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py papillon`)
 5. ポストカードの場面写真(まだ。新しい作業場所では、縦向きの机の写真(もとは172.jpg)が消えていたので、ユーザーに送り直してもらう)
