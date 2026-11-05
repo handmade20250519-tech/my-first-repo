@@ -264,3 +264,28 @@ TEXT: Write only the name "American Shorthair" once, in small, simple, neat hand
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+## 茶白
+あるある: 人なつこくて甘えん坊。日だまりでおなかを上に向けた「へそ天」で、白いおなかを見せて無防備に眠る
+- 新しく足した種類(2026-11-05)。はじめから墨絵の書き方で書いた
+- 寝ているので、目はやわらかく閉じた目(白猫・スフィンクスと同じ書き方)
+- 茶白の柄(背中と頭はオレンジのしま、おなか・胸・あご・足先は白)がわかるように、おなかを見せる形にした
+- 袋の名前は「Orange and White Cat」(英語で茶白のこと)
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real cat for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult orange-and-white cat fast asleep on its back in a patch of warm sunlight, in a completely relaxed "belly-up" pose: its soft white belly turned up to the sky, its front paws curled loosely near its chest, its hind legs relaxed and slightly open, its head tilted to one side, its tail lying loosely beside it. It looks totally trusting and happy, without a care in the world. Its face is sweet, soft and peaceful: its eyes are gently closed in blissful contentment, drawn as soft relaxed curves like a cat dozing happily (NOT half-open, NOT narrowed). Its mouth is small and relaxed. Realistic cat anatomy and proportions, exactly like a real adult cat: a normal-sized head, a healthy body (NOT fat, NOT chubby), a long tail. Coat: an orange-and-white cat: warm orange with soft darker orange stripes on the top of the head, ears, back and tail; a clean white belly, chest, chin, muzzle and paws. The sunlight is only a soft pale-yellow wash on the floor under the cat.
+The charm comes only from the real-life moment (a friendly cat sleeping belly-up in the sun), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+THIS IS A CAT, NOT A DOG: small triangular pointed ears on top of the head, a small pink nose right between the eyes with no protruding snout or muzzle, thin whiskers, a small closed cat mouth, small round paws with pink paw pads. Closed cat eyes: two soft, gently curved lines, relaxed and peaceful.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real cats, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the fur painted with layered washes and fine brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round eyes, no "ω" mouth, no smile line, no blush, no thin even pen outlines, no motion lines, no "Zzz", no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One cat only, centered, filling about 65% of the canvas width, with generous empty space around it. Plain pure white background with no paper texture, no frame; only the soft pale wash of sunlight under the cat and a very faint ink wash shadow.
+
+TEXT: Write only the name "Orange and White Cat" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the cat, about 6% of the canvas height, on a single line. Spell it exactly: Orange and White Cat. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
