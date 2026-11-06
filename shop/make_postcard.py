@@ -58,12 +58,13 @@ def whiten(im):
     mins = ndimage.minimum(a.min(axis=2), lab, index=idx)  # かたまりの中でいちばん濃い色
     # 繊維はうすい色(いちばん濃くても190〜235くらい)。絵と文字には墨の濃い線がある。
     # 大きくてうすいかたまり(はなれた影など)は残す(トイプードルで、大きめの繊維が残ったので足した)
+    shadow = np.isin(lab, idx[(size > 20000) & (mins >= 150)])  # 濃い線のない大きなかたまり = はなれた影
     keep = np.isin(lab, idx[((size > 600) & (mins < 150)) | (size > 20000)])
     keep = ndimage.binary_dilation(keep, iterations=8)
     a[~keep] = 255
     # 絵につながって残った繊維(ごくうすい筋)も白にする。絵の線や色から少しはなれた、ほぼ白(225以上)のところだけ
-    # (ニューファンドランドで、絵のまわりにうすい四角が見えたので足した)
-    near = ndimage.binary_dilation(a.min(axis=2) < 215, iterations=12)
+    # (ニューファンドランドで、絵のまわりにうすい四角が見えたので足した)。はなれた影は消さない(ビションの跳ねた影が消えたため)
+    near = ndimage.binary_dilation(a.min(axis=2) < 215, iterations=12) | ndimage.binary_dilation(shadow, iterations=4)
     a[~near & (a.min(axis=2) >= 225)] = 255
     return Image.fromarray(a.astype(np.uint8))
 

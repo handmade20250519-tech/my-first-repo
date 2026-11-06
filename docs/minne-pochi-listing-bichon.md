@@ -98,9 +98,13 @@ uchinoko-aruaru_bichon_pochi.zip(中身: bichon_pochi.pdf、bichon_postcard_full
 
 ## 商品画像
 1. shop/listing_bichon_1.jpg(デザイン見本)
-2. shop/scene_bichon_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+2. shop/scene_bichon_1_note.jpg(場面写真。注記なしは scene_bichon_1.jpg。もとの写真は templates/scenes/204.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.57)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_bichon_3.jpg(6種類)
-4. shop/listing_bichon_postcard.jpg(ポストカード2種の見本)(まだ。もとの絵を待っている)
-5. ポストカードの場面写真(まだ)
+4. shop/listing_bichon_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py bichon yoko`)
+5. shop/scene_bichon_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真。注記なしは scene_bichon_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> bichon` で作った
+- ポストカードは横向き: shop/postcard/postcard_bichon_full_yoko.pdf、postcard_bichon_letter_yoko.pdf。もとの絵(2000×2000)から
+  `python3 shop/make_postcard.py <絵> bichon full_yoko --label "Bichon Frise"`(letter_yoko も同じ)。ZIPでは bichon_postcard_full.pdf・bichon_postcard_letter.pdf に名前を変える
+- 最初は、跳ねた犬の下のはなれた影が、繊維を消す処理でほとんど消えた。道具を直して、濃い線のない大きなかたまり(はなれた影)は残すようにした
