@@ -56,6 +56,7 @@
 | □ | スフィンクス | listing_sphynx_1.jpg | scene_sphynx_1_note.jpg |
 | □ | パピヨン | listing_papillon_1.jpg | scene_papillon_1_note.jpg |
 | □ | 茶白 | listing_chashiro_1.jpg | scene_chashiro_1_note.jpg |
+| □ | ビション・フリーゼ | listing_bichon_1.jpg | scene_bichon_1_note.jpg |
 | □ | ハチワレ | listing_hachiware_1.jpg | scene_hachiware_1_note.jpg |
 | □ | アメリカンショートヘア | listing_americanshorthair_1.jpg | scene_americanshorthair_1_note.jpg |
 | □ | 茶トラ | listing_chatora_1.jpg | scene_chatora_1_note.jpg |
