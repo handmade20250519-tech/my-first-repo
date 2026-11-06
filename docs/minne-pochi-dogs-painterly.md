@@ -648,3 +648,27 @@ TEXT: Write only the breed name "Maltipoo" once, in small, simple, neat hand-let
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+### ビション・フリーゼ
+あるある: お風呂とトリミングのあとは、白い毛がまんまるのわたあめのよう。うれしくて、ふわふわの体で部屋じゅうを走り回る(ビション・ブリッツ)
+- 新しく足した種類(2026-11-06)。はじめから墨絵の書き方で書いた
+- 白い犬なので、マルチーズ・白猫と同じく、墨の線と淡い灰色の影で形を出す
+- 顔が怖くならないように、目はまんまるの黒い目、口は少し開けてうれしそう(トイプードルでうれしい顔がよかった)
+- 走り回る様子は、動きの線ではなく、弾む姿勢(前足をそろえて前へ、耳と毛がふわっと浮く)で出す
+- 袋の名前は「Bichon Frise」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Bichon Frise just after a bath and grooming, its fluffy white coat trimmed into a soft, perfectly round "cotton candy" shape, joyfully bounding across the floor in a happy burst of energy (the famous "bichon blitz"): both front paws reaching forward together in mid-bounce, its round fluffy head and ears lifted, its plumed tail curled up over its back, the fluffy coat bouncing softly. Its eyes are open: round, shiny black eyes, bright and joyful (NOT narrowed, NOT glaring). Its mouth is slightly open in a happy dog smile with a little pink tongue showing. Realistic Bichon Frise anatomy and proportions, exactly like a real dog: a normal-sized round head, a short muzzle with a small black button nose, drop ears hidden in the fluffy fur, a small sturdy body, short legs, a plumed tail. Coat: pure white, soft, curly and fluffy. Because the dog is white on a white background, paint its shape with soft sumi ink lines and very light gray washes so it stays clear.
+The charm comes only from the real-life moment (a freshly groomed, cotton-candy dog bounding around with joy), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with strong variation in thickness; some edges are left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the fluffy curly coat suggested with layered pale gray washes and fine, small brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii, NOT a plush toy: no oversized head, no big shiny anime eyes, no cartoon-drawn smile line (the open-mouthed smile must look like a real dog's), no blush, no closed curved eyes, no thin even pen outlines, no motion lines, no speed lines, no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 65% of the canvas width, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "Bichon Frise" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Bichon Frise. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
