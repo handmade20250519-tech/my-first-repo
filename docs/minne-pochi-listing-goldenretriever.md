@@ -1,6 +1,6 @@
 # 出品文(STEP5) ゴールデン・レトリーバーのぽち袋+ポストカード データ版
 
-2026-11-07: ポストカード2種を足した(柴犬と同じ形)。商品名・タグ・説明文をポストカード入りに直した。ポストカードはもとの絵を待っている。
+2026-11-07: ポストカード2種を足した(柴犬と同じ形)。商品名・タグ・説明文をポストカード入りに直した。ポストカードは縦向きで作った。
 
 犬の新しい形(500円)。前の版(300円・【ダウンロード】で始まる商品名)から書き直した。絵は漫画っぽさを減らした指示文(`minne-pochi-dogs-painterly.md` のゴールデン)で作った。Canvaの共通マスターで作り、画像はPDFから `shop/make_from_pdf.py` で作った。
 
@@ -109,3 +109,6 @@ uchinoko-aruaru_golden_pochi.zip
 3. shop/listing_golden_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> golden` で作った。袋の表は6ページとも64×95mm
+- 2026-11-07 ポストカードを足した: 4番目に shop/listing_golden_postcard.jpg(ポストカード2種)、5番目に shop/scene_golden_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真)を入れ、作り方はその後にする
+- ポストカードは縦向き: shop/postcard/postcard_golden_full.pdf、postcard_golden_letter.pdf。もとの絵(2000×2000)から
+  `python3 shop/make_postcard.py <絵> golden full --label "Golden Retriever"`(letter も同じ)。ZIPでは golden_postcard_full.pdf・golden_postcard_letter.pdf に名前を変える
