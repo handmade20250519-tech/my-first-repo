@@ -82,7 +82,7 @@
 - 絵を確かめた(作り直した絵): 白い長い毛に、耳がうすいアプリコット色のマルプー(成犬)が座って、前髪の下から丸い黒い目でこちらを見ている。前の絵のほおの赤み・にっこりの口・太い線はなくなり、漫画っぽさはない
 - 新しい絵は、目が前髪に「うもれる」ほどではなく、前髪の下からのぞいている。説明文を「のびた前髪の下から、つぶらな黒い目でじっとこちらを見つめています」に直した
 - 前の場面写真(ユーザーが自分で作ったもの)は前の絵なので使わない
-- ぽち袋のPDFはまだ(ユーザーが作っている)。届いたら、名前のつづり・大きさ・文字の色を確かめる
+- 袋の名前は「Maltipoo」(水色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm
 
 ## 場面写真(Geminiのプロンプト)
 袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
@@ -100,11 +100,12 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_maltipoo_pochi.zip(中身: maltipoo_pochi.pdf、maltipoo_postcard_full.pdf、maltipoo_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
-1. shop/listing_maltipoo_1.jpg(デザイン見本)(まだ。新しいPDFを待っている)
-2. shop/scene_maltipoo_1_note.jpg(場面写真)(まだ)
-3. shop/listing_maltipoo_3.jpg(6種類)(まだ)
+1. shop/listing_maltipoo_1.jpg(デザイン見本)
+2. shop/scene_maltipoo_1_note.jpg(場面写真)(まだ。新しいGeminiの写真を待っている)
+3. shop/listing_maltipoo_3.jpg(6種類)
 4. shop/listing_maltipoo_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py maltipoo`)
 5. shop/scene_maltipoo_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真。注記なしは scene_maltipoo_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - ポストカードは縦向き: shop/postcard/postcard_maltipoo_full.pdf、postcard_maltipoo_letter.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> maltipoo full --label "Maltipoo"`(letter も同じ)。ZIPでは maltipoo_postcard_full.pdf・maltipoo_postcard_letter.pdf に名前を変える
+- 1と3は `python3 shop/make_from_pdf.py <PDF> maltipoo --overwrite` で作った
