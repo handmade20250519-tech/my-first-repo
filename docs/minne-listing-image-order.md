@@ -18,7 +18,7 @@
 | □ | フレンチブルドッグ | listing_frenchie_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
 | □ | イタリアングレーハウンド | listing_italiangreyhound_1.jpg | scene_italiangreyhound_1_note.jpg |
 | □ | 日本の雑種 | listing_japanesemix_1.jpg | scene_japanesemix_1_note.jpg |
-| □ | マルプー | listing_maltipoo_1.jpg | ユーザーが自分で作った場面写真(リポジトリにない) |
+| □ | マルプー | listing_maltipoo_1.jpg | scene_maltipoo_1_note.jpg |
 | □ | チワプー | listing_chipoo_1.jpg | scene_chipoo_1_note.jpg |
 | □ | グレートデーン | listing_greatdane_1.jpg | scene_greatdane_2_note.jpg |
 | □ | ボーダーコリー | listing_bordercollie_1.jpg | scene_bordercollie_1_note.jpg / scene_bordercollie_2_note.jpg |

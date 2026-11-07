@@ -101,7 +101,8 @@ uchinoko-aruaru_maltipoo_pochi.zip(中身: maltipoo_pochi.pdf、maltipoo_postcar
 
 ## 商品画像
 1. shop/listing_maltipoo_1.jpg(デザイン見本)
-2. shop/scene_maltipoo_1_note.jpg(場面写真)(まだ。新しいGeminiの写真を待っている)
+2. shop/scene_maltipoo_1_note.jpg(場面写真。注記なしは scene_maltipoo_1.jpg。もとの写真は templates/scenes/213.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.61)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_maltipoo_3.jpg(6種類)
 4. shop/listing_maltipoo_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py maltipoo`)
 5. shop/scene_maltipoo_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真。注記なしは scene_maltipoo_postcard.jpg)
