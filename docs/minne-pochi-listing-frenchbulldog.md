@@ -82,7 +82,7 @@
 - 絵を確かめた(作り直した絵): 黒っぽいブリンドルに白い胸のフレブル(成犬)が、へそ天・カエル足で、目を閉じて舌の先を出して寝ている。前の絵の「Zzz」・鼻ちょうちん・太い線はなくなり、漫画っぽさはない
 - 説明文の「鼻ちょうちんまでふくらませている」を消した(新しい絵にはないため)
 - 前の場面写真(ユーザーが自分で作ったもの)は前の絵なので使わない
-- ぽち袋のPDFはまだ(ユーザーが作っている)。届いたら、名前のつづり・大きさ・文字の色を確かめる
+- 袋の名前は「French Bulldog」(灰色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm
 
 ## 場面写真(Geminiのプロンプト)
 袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
@@ -100,11 +100,12 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_frenchbulldog_pochi.zip(中身: frenchbulldog_pochi.pdf、frenchbulldog_postcard_full.pdf、frenchbulldog_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
-1. shop/listing_frenchbulldog_1.jpg(デザイン見本)(まだ。新しいPDFを待っている)
-2. shop/scene_frenchbulldog_1_note.jpg(場面写真)(まだ)
-3. shop/listing_frenchbulldog_3.jpg(6種類)(まだ)
+1. shop/listing_frenchbulldog_1.jpg(デザイン見本)
+2. shop/scene_frenchbulldog_1_note.jpg(場面写真)(まだ。新しいGeminiの写真を待っている)
+3. shop/listing_frenchbulldog_3.jpg(6種類)
 4. shop/listing_frenchbulldog_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py frenchbulldog yoko`)
 5. shop/scene_frenchbulldog_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真。注記なしは scene_frenchbulldog_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - ポストカードは横向き: shop/postcard/postcard_frenchbulldog_full_yoko.pdf、postcard_frenchbulldog_letter_yoko.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> frenchbulldog full_yoko --label "French Bulldog"`(letter_yoko も同じ)。ZIPでは frenchbulldog_postcard_full.pdf・frenchbulldog_postcard_letter.pdf に名前を変える
+- 1と3は `python3 shop/make_from_pdf.py <PDF> frenchbulldog --overwrite` で作った
