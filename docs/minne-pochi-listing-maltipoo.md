@@ -1,33 +1,32 @@
-# 出品文(STEP5) マルプー(マルチーズ×トイ・プードル)のぽち袋 データ版
+# 出品文(STEP5) マルプーのぽち袋+ポストカード データ版
 
-ほかの犬種は、【】の部分(犬種名・あるある・物語の一段落・タグ1つ)を差し替えるだけで使えるひな形。
+犬の新しい形(500円)に、ポストカード2種を足した版(柴犬と同じ形)。絵は墨絵の書き方に直した指示文(`minne-pochi-dogs-painterly.md` のマルプー)で作り直した(2026-11-07)。
 
 ## 商品名
-マルプーのぽち袋 トリミング前のもこもこ｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+マルプーのぽち袋とポストカード トリミング前のもこもこ｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
+- minneの商品名の文字数の上限に入るか、出品の画面で確かめる。入らないときは「｜お年玉・お礼に」を外す
 
 ## 価格(仮)
 500円
-- 理由: 1つのデータで6種類の文字違いが入り、個人で使う分は何枚でも印刷できる。紙のぽち袋5枚セット(数百円〜)より安く、気軽に試せる値段。
-- **出品前にminneで「ぽち袋 ダウンロード」を検索し、同じようなデータの価格を確かめる。** 相場が200円前後なら合わせる。
 
 ## 発送
 なし(ダウンロード販売。購入後すぐにダウンロードできる)
 
 ## タグ(5つ)
-マルプー / ミックス犬 / ぽち袋 / お年玉袋 / 犬好き
+マルプー / ミックス犬 / ぽち袋 / ポストカード / お年玉袋
+- 前の「犬好き」を「ポストカード」にした
 
 ## 説明文
 ```
-トリミングの前は、毛がのびて、まん丸の綿毛のかたまり。目は前髪にうもれて、黒い鼻とつぶらな目がちょこんとのぞくだけ。本人はいたってご機嫌です。
-マルプーと暮らす人なら、きっと見たことのある「もこもこ期」の姿を、ぽち袋にしました。
+トリミングの前は、ふわふわの毛がのびて、まるで綿毛のかたまり。のびた前髪の下から、つぶらな黒い目でじっとこちらを見つめています。本人はいたってご機嫌です。
+マルプーと暮らす人なら、きっと見たことのある「もこもこ期」の姿を、ぽち袋とポストカードにしました。
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
+ポストカードは、飾ったり、お手紙に使ったりできます。
 
 絵は、墨と淡い水彩で描いたような雰囲気に仕上げました。ぽち袋という和の袋に合うように、落ち着いた色にしています。
 
 ※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。
-
-袋に入れた名前は、英語の「Maltipoo(マルチプー)」です。日本では「マルプー」と呼ぶのが一般的ですが、英語ではマルチーズ(Maltese)とプードル(Poodle)を合わせて「Maltipoo」と呼びます。
 
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
@@ -36,9 +35,12 @@
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
+・maltipoo_postcard_full.pdf(ポストカード・絵を大きく入れたもの、ハガキの大きさ)
+・maltipoo_postcard_letter.pdf(ポストカード・手紙用。すみに小さく絵を入れ、文字を書くところを広くとったもの)
 ・howto.pdf(作り方とご利用について、A4・3ページ)
 
-仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ぽち袋の仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
+ポストカードの大きさ:100×148mm(はがきと同じ大きさです)
 
 ━━━━━━━━━━
 ■ 作り方
@@ -49,6 +51,8 @@
 貼るときは、スティックのり(固形のり)か両面テープをお使いください。液体のりは、水分でインクがにじむことがあります(とくにインクジェットプリンター)。
 ふたは、シールや両面テープで留めてください。
 詳しくは、中に入っている説明書をご覧ください。
+
+ポストカードは、はがき用紙に「実寸(100%)」で印刷するだけで使えます(切る必要はありません)。プリンターの用紙の設定は「はがき」を選んでください。
 
 ━━━━━━━━━━
 ■ ご注意
@@ -74,15 +78,33 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。多頭飼いの方の組み合わせのご相談もどうぞ。
 ```
 
+## 確かめること(出品前)
+- 絵を確かめた(作り直した絵): 白い長い毛に、耳がうすいアプリコット色のマルプー(成犬)が座って、前髪の下から丸い黒い目でこちらを見ている。前の絵のほおの赤み・にっこりの口・太い線はなくなり、漫画っぽさはない
+- 新しい絵は、目が前髪に「うもれる」ほどではなく、前髪の下からのぞいている。説明文を「のびた前髪の下から、つぶらな黒い目でじっとこちらを見つめています」に直した
+- 前の場面写真(ユーザーが自分で作ったもの)は前の絵なので使わない
+- ぽち袋のPDFはまだ(ユーザーが作っている)。届いたら、名前のつづり・大きさ・文字の色を確かめる
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real adult Maltipoo with a long, soft, wavy creamy-white coat and light apricot ears, grown fluffy just before its grooming, sits on the floor looking at the camera with round dark eyes peeking out from under its long fringe, calm and content. Real dog, not a cartoon. The dog does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
 
 ## ZIPの名前
-uchinoko-aruaru_maltipoo_pochi.zip
-
-## 確かめること(出品前)
-- 絵はクリームがかった白の毛色。ほかの毛色(アプリコット、レッドなど)の要望があれば、別の出品にする
-- 袋の名前は英語の「Maltipoo」(英語圏での呼び名。日本の「マルプー」は作品名とタグで伝える)
+uchinoko-aruaru_maltipoo_pochi.zip(中身: maltipoo_pochi.pdf、maltipoo_postcard_full.pdf、maltipoo_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
-1. shop/listing_maltipoo_1.jpg(デザイン見本)
-2. shop/listing_maltipoo_3.jpg(6種類)
-3. shop/listing_shiba_4.jpg(作り方)
+1. shop/listing_maltipoo_1.jpg(デザイン見本)(まだ。新しいPDFを待っている)
+2. shop/scene_maltipoo_1_note.jpg(場面写真)(まだ)
+3. shop/listing_maltipoo_3.jpg(6種類)(まだ)
+4. shop/listing_maltipoo_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py maltipoo`)
+5. shop/scene_maltipoo_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真。注記なしは scene_maltipoo_postcard.jpg)
+6. shop/listing_shiba_4.jpg(作り方)
+- ポストカードは縦向き: shop/postcard/postcard_maltipoo_full.pdf、postcard_maltipoo_letter.pdf。もとの絵(2000×2000)から
+  `python3 shop/make_postcard.py <絵> maltipoo full --label "Maltipoo"`(letter も同じ)。ZIPでは maltipoo_postcard_full.pdf・maltipoo_postcard_letter.pdf に名前を変える
