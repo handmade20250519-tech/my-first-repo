@@ -101,7 +101,8 @@ uchinoko-aruaru_frenchbulldog_pochi.zip(中身: frenchbulldog_pochi.pdf、french
 
 ## 商品画像
 1. shop/listing_frenchbulldog_1.jpg(デザイン見本)
-2. shop/scene_frenchbulldog_1_note.jpg(場面写真)(まだ。新しいGeminiの写真を待っている)
+2. shop/scene_frenchbulldog_1_note.jpg(場面写真。注記なしは scene_frenchbulldog_1.jpg。もとの写真は templates/scenes/210.jpg)
+   - Geminiの袋が本物より細長かった(幅:高さ=0.59)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 3. shop/listing_frenchbulldog_3.jpg(6種類)
 4. shop/listing_frenchbulldog_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py frenchbulldog yoko`)
 5. shop/scene_frenchbulldog_postcard_note.jpg(ポストカードの場面写真。横向きの机の写真。注記なしは scene_frenchbulldog_postcard.jpg)
