@@ -1,6 +1,6 @@
 # 出品文(STEP5) サモエドのぽち袋+ポストカード データ版
 
-2026-11-08: 絵を墨絵の書き方で作り直し(漫画っぽさを直した)、ポストカード2種(横向き)を足した。商品名・タグ・説明文をポストカード入りに直した。場面写真の部屋と犬は前のまま(ユーザーの判断)で、袋の絵だけ新しい絵に貼りかえる(白紙に戻した写真を templates/scenes/94.jpg に保存した)。ぽち袋のPDFを待っている。
+2026-11-08: 絵を墨絵の書き方で作り直し(漫画っぽさを直した)、ポストカード2種(横向き)を足した。商品名・タグ・説明文をポストカード入りに直した。場面写真の部屋と犬は前のまま(ユーザーの判断)で、袋の絵だけ新しい絵に貼りかえる(白紙に戻した写真を templates/scenes/94.jpg に保存した)。ぽち袋のPDFで1・3枚目を作り、場面写真の袋も新しい絵に貼りかえた。
 
 ほかの犬種と同じ新しい形(500円)。
 
@@ -112,3 +112,6 @@ uchinoko-aruaru_samoyed_pochi.zip
   `python3 shop/make_postcard.py <絵> samoyed full_yoko --label "Samoyed"`(letter_yoko も同じ)。ZIPでは samoyed_postcard_full.pdf・samoyed_postcard_letter.pdf に名前を変える
 - 最初は、うすい線で描いた毛の山が、繊維を消す処理でほとんど消えた。道具を直して、背景に繊維がない絵ではその処理をしないようにした
 - 新しいPDFが届いたら: `python3 shop/make_from_pdf.py <PDF> samoyed --overwrite` で1・3枚目を作り、`IMG_DIR=<空でもよい> python3 shop/make_scene_blank.py samoyed_1`(templates/scenes/94.jpg を使う。check/front_samoyed_pad.png は新しい袋の表から作り直す)で場面写真の袋を貼りかえる
+- 2026-11-08 新しいPDF: 袋の名前は「Samoyed」(水色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒(犬の頭をよけて右上)。袋の表は6ページとも64×95mm
+- 絵の左の影は袋の左の折り目を約3mm、右の毛の山は右の折り目を約6mmこえて、横の折りこみにかかる。組み立てると、毛の山の右はしは折り目で切れて見える(ユーザーに伝えた)
+- 場面写真の袋を新しい絵に貼りかえた(scene_samoyed_1.jpg・scene_samoyed_1_note.jpg)
