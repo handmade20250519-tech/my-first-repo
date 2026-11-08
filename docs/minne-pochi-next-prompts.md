@@ -211,23 +211,24 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 ```
 
 ## 狆(ちん)(犬・レア)
-あるある: 日本の古い犬。うれしいと、その場でくるくる回る  
+あるある: 「猫のような犬」と言われる。前足で顔をなでて、猫のように毛づくろいをする。品のいいすまし顔
 袋の名前: Japanese Chin
-- 表の「狆くるい」という言葉は、意味が合っているか確かめられていないので、指示文には入れていない。説明文に使うときは、使ってよい言葉か先に確かめる
+- 作り直し(出品前に、2026-11-08): 前の指示文は「くるくる回る」だったが、ポメラニアンと同じあるあるになるので、狆らしい「猫のような毛づくろい」に変えた。墨絵の書き方(「本物の犬を見て描いた水墨淡彩」。かわいさは場面だけで出す)で書いた
+- 「狆くるい」という言葉は、意味が合っているか確かめられていないので使わない
+- 黒い毛は、墨のこさの変化で毛並みを出す。目は大きく丸い黒い目(狆の特徴)で、やさしい表情
 
 ```
-Create an original, warm and gently humorous painting of a single animal for a Japanese gift envelope (pochi-bukuro).
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
 
-SUBJECT: A japanese chin spinning in happy little circles on the spot, the famous "chin spin", as it does when something wonderful is about to happen: body curved, front paws lifted, a few simple curved motion lines circling around it. Its face is joyful and elegant, eyes wide open, mouth closed in a small happy smile. Classic japanese chin features: a large round head with a broad, very short, flat face; large, round, dark, widely spaced eyes with a little white showing in the inner corners, which gives a gentle surprised look; small V-shaped ears covered with long silky feathering; a small dainty body; a plumed tail curled over the back. Coat color: black and white, with black ears and black patches around the eyes, a white blaze down the middle of the face, and a white muzzle and body.
-The humor must feel affectionate and true to life, the kind of moment real owners of this breed instantly recognize. Even in this painterly style, the breed must be clear at a glance. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+SUBJECT: A real adult Japanese Chin sitting elegantly and grooming itself just like a cat: it has lifted one small front paw and is gently stroking it over its face and ear, the way a cat washes its face, with a calm, refined, slightly prim expression. Its eyes are open: large, round, dark, gentle eyes with a little white showing in the inner corners, calm and content (NOT narrowed, NOT glaring). Its mouth is small and closed. Realistic Japanese Chin anatomy and proportions, exactly like a real dog: a normal-sized round head with a broad, very short, flat face, small V-shaped ears covered with long silky feathering, a small dainty body, slender legs with silky feathering, a plumed tail curled over the back. Coat: black and white, with black ears and black patches around the eyes, a white blaze down the middle of the face, and a white muzzle, chest and body; long, silky, flowing fur. Paint the black fur with layered sumi ink of varying darkness so the silky texture stays clear, NOT a flat solid black shape.
+The charm comes only from the real-life moment (a little dog that grooms its face just like a cat), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
 
-CUTE AND NATURAL: The face must look sweet, friendly and lovable, never angry, mean or scary: no furrowed brows, no frown lines between the eyes, no glaring, no bared teeth or fangs. No blush and no pink cheeks. A natural, healthy body (NOT fat, NOT chubby). The head faces in a natural direction for the pose. The tail has a natural length and stays close to the body unless described above. No people, no hands and no arms anywhere in the picture.
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with strong variation in thickness; some edges are left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the long silky coat painted with layered washes and fine, flowing brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii, NOT a cat: no oversized head, no big shiny anime eyes, no smile line, no blush, no thick uniform outlines, no thin even pen outlines, no motion lines, no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
 
-STYLE: A charming, slightly comic Japanese-style painting that mixes traditional ink-and-light-color painting with a playful manga feel, as if brush-painted on washi paper. Confident sumi ink outlines, a little bolder than a formal painting, with natural brush variation in thickness; soft, transparent watercolor washes with gentle bleeding edges; fur suggested with a few light brush strokes. Muted, natural, traditional Japanese colors. Deformed, cute proportions: the head about one third of the body height, a soft natural body, short legs. Clear, simple, expressive face (no blush on the cheeks). Do not add any extra manga symbols or marks: the only marks allowed are the ones described in SUBJECT. Keep the face, the head and the space around the head completely clean, with nothing drawn near them. NOT a glossy digital anime look: no flat cel shading, no uniform digital outlines, no big shiny anime eyes. Keep the painting simple and readable when printed small (about 5 cm tall).
+COMPOSITION: One dog only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the dog.
 
-COMPOSITION: One animal only, centered, filling about 70% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the animal. No props unless described above.
-
-TEXT: Write only the name "Japanese Chin" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the animal, about 6% of the canvas height, on a single line. Spell it exactly: Japanese Chin. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+TEXT: Write only the breed name "Japanese Chin" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Japanese Chin. No other text, letters, numbers, seals, signatures or watermarks anywhere.
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
