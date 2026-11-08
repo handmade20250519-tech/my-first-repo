@@ -50,8 +50,14 @@ def whiten(im):
     # 236より暗いところ(絵・影)はそのまま、236〜250はなめらかに白へ近づける
     t = np.clip((a.min(axis=2, keepdims=True) - 236) / 14, 0, 1)
     a = a * (1 - t) + 255 * t
-    # 和紙の繊維(細い筋)や小さな点は、まだ灰色に残る。絵・影・文字のような大きなかたまりだけを残して、ほかは白にする
+    # 和紙の繊維(細い筋)や小さな点は、まだ灰色に残る。絵・影・文字のような大きなかたまりだけを残して、ほかは白にする。
+    # ただし、背景に繊維がほとんどない絵(上・左右のはしの部分で、灰色の点が0.005%未満)では、この処理をしない
+    # (サモエドで、うすい線で描いた毛の山が消えてしまったため)
     dark = a.min(axis=2) < 240
+    H, W = dark.shape
+    band = np.concatenate([dark[:H // 8].ravel(), dark[:, :W // 10].ravel(), dark[:, -W // 10:].ravel()])
+    if band.mean() < 0.00005:
+        return Image.fromarray(a.astype(np.uint8))
     lab, n = ndimage.label(ndimage.binary_dilation(dark, iterations=4))  # 文字は1語が1つのかたまりになる
     idx = np.arange(1, n + 1)
     size = ndimage.sum(dark, lab, index=idx)  # かたまりの中の、もとの濃い画素の数
