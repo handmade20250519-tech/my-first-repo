@@ -84,7 +84,8 @@
 - 絵を確かめた: 黒白の狆(成犬)が座って、右の前足を上げて顔をなでている。大きな丸い茶色の目、すまし顔。漫画っぽさはない
 - 「狆くるい」という言葉は、意味が確かめられていないので使わない
 - 英字の名前の説明を入れた
-- ぽち袋のPDFはまだ(ユーザーが作っている)。届いたら、名前のつづり・大きさ・文字の色を確かめる
+- 袋の名前は「Japanese Chin」(黒の筆の書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm
+- 袋の絵は、もとの絵を左右反転して使っている(ポストカードはもとの向き)。どちらも自然なので、このままでよい(ユーザーに伝えた)
 
 ## 場面写真(Geminiのプロンプト)
 袋は真っ白で、ふたを閉じた表側だけ(ふたの線なし、幅:高さ=2:3)で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
@@ -102,11 +103,12 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 uchinoko-aruaru_chin_pochi.zip(中身: chin_pochi.pdf、chin_postcard_full.pdf、chin_postcard_letter.pdf、howto.pdf)
 
 ## 商品画像
-1. shop/listing_chin_1.jpg(デザイン見本)(まだ。PDFを待っている)
-2. shop/scene_chin_1_note.jpg(場面写真)(まだ)
-3. shop/listing_chin_3.jpg(6種類)(まだ)
+1. shop/listing_chin_1.jpg(デザイン見本)
+2. shop/scene_chin_1_note.jpg(場面写真)(まだ。Geminiの写真を待っている)
+3. shop/listing_chin_3.jpg(6種類)
 4. shop/listing_chin_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py chin`)
 5. shop/scene_chin_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真。注記なしは scene_chin_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - ポストカードは縦向き: shop/postcard/postcard_chin_full.pdf、postcard_chin_letter.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> chin full --label "Japanese Chin"`(letter も同じ)。ZIPでは chin_postcard_full.pdf・chin_postcard_letter.pdf に名前を変える
+- 1と3は `python3 shop/make_from_pdf.py <PDF> chin` で作った
