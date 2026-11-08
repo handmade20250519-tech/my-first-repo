@@ -81,6 +81,7 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - 「今はだめ」は、半目ではなく(にらんで見えやすい)、開いたやさしい目でちらりと横を見て、耳を少しうしろへ向け、しっぽの先だけ少し持ち上げる、という本物の猫のしぐさで出す。動きの線は描かない
 - 三毛の柄(白地に、オレンジと黒のはっきりしたぶち)を大事にする
 - 前の作り直し: 1回目はしっぽが長すぎ・表情が意地悪、2回目は太りすぎ・赤いほっぺ
+- 4回目(ユーザーの判断、2026-11-08): 漫画っぽさは消えたが、かわいさが少し足りなかった。今の絵をGeminiで直す文を出した: 目を少し大きく丸く、黒目(瞳孔)を大きく、顔を少しこちら向きにしてやわらかいほお、毛をふんわり、口元をやわらかく。漫画にはしない
 
 ```
 Create an original, warm Japanese ink-and-wash painting of a single real cat for a Japanese gift envelope (pochi-bukuro).
