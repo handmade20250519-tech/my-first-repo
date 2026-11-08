@@ -2,7 +2,7 @@
 
 柴犬のひな形(`minne-pochi-listing-shiba.md`)を猫用にしたもの(テーマの書き方を「猫の柄・猫種ごと」に、タグの「犬好き」を「猫好き」に変えた)。
 
-**2026-11-08 作り直し中:** 絵を墨絵の書き方で作り直し、ポストカードを足す。場面写真の部屋と猫は前のまま(ユーザーの判断)で、袋の絵だけ新しい絵に貼りかえる(白紙に戻した写真を templates/scenes/55.jpg に保存した)。
+**2026-11-08 作り直した:** 絵を墨絵の書き方で作り直し、ポストカードを足す。場面写真の部屋と猫は前のまま(ユーザーの判断)で、袋の絵だけ新しい絵に貼りかえる(白紙に戻した写真を templates/scenes/55.jpg に保存した)。
 
 ## 商品名
 三毛猫のぽち袋とポストカード 今はだめの横目｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
@@ -112,3 +112,4 @@ uchinoko-aruaru_mike_pochi.zip
 - ポストカードは縦向き: shop/postcard/postcard_mike_full.pdf、postcard_mike_letter.pdf。もとの絵(2000×2000)から `python3 shop/make_postcard.py <絵> mike full --label "Calico"`(letter も同じ)。ZIPでは mike_postcard_full.pdf・mike_postcard_letter.pdf に名前を変える
 - 商品画像: 4番目に shop/listing_mike_postcard.jpg、5番目に shop/scene_mike_postcard_note.jpg(縦向きの机の写真)、作り方はその後
 - 新しいPDFが届いたら: `python3 shop/make_from_pdf.py <PDF> mike --overwrite`。場面写真は templates/scenes/55.jpg(袋を白紙に戻したもの)に新しい袋の表を貼る(make_scene_blank.py の mike_1 を、check/front_mike_blank.png を使う形に直す)
+- 2026-11-08 新しいPDF: 袋の名前は「Calico」(灰色がかった茶色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm。1・3枚目を作り、場面写真の袋を新しい絵に貼りかえた
