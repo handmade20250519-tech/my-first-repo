@@ -99,3 +99,4 @@ uchinoko-aruaru_maltese_pochi.zip
 3. shop/listing_maltese_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> maltese` で作った
+- 2026-11-09 ポストカードを足した(縦向き): `python3 shop/make_postcard.py <絵> maltese full --label "Maltese"`(letter も同じ。AIの名前は明朝体だったので Klee One で入れ直した)。もとの絵は templates/originals/maltese.jpg。商品画像 shop/listing_maltese_postcard.jpg、机の写真 shop/scene_maltese_postcard_note.jpg。動画の下じき shop/video_base/maltese_video_base.png
