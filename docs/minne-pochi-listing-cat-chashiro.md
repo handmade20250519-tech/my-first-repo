@@ -22,7 +22,7 @@
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
 ポストカードは、飾ったり、お手紙に使ったりできます。
-あけおめ動画は、LINEやメールで新年のあいさつとして送れます。
+あけおめ動画は、すやすや眠る茶白のおなかが、寝息でゆっくりふくらむ動画です。LINEやメールで新年のあいさつとして送れます。
 
 絵は、墨と淡い水彩で描いたような、落ち着いた雰囲気に仕上げました。
 
@@ -70,7 +70,7 @@
 ━━━━━━━━━━
 ■ 絵について
 ━━━━━━━━━━
-この作品は、私がテーマ(猫の柄・猫種ごとの「あるある」)、場面、構図、色を考え、画像生成AIを使って絵を仕上げたデジタルアートです。あけおめ動画は、その絵にAIで動きをつけたものです。手描きの原画ではありません。
+この作品は、私がテーマ(猫の柄・猫種ごとの「あるある」)、場面、構図、色を考え、画像生成AIを使って絵を仕上げたデジタルアートです。あけおめ動画は、その絵をそのまま使い、デジタルで動きをつけたものです。手描きの原画ではありません。
 ぽち袋の型、文字の配置、作り方の説明書は、私が作りました。
 墨や水彩で描いたように見えますが、デジタルで作った絵です。実際の筆・墨・絵の具・和紙は使っていません。
 
@@ -113,4 +113,4 @@ uchinoko-aruaru_chashiro_pochi.zip(中身: Orange_and_White_Cat.pdf、postcard_c
 - 1と3は `python3 shop/make_from_pdf.py <PDF> chashiro` で作った
 - ポストカードは横向き: shop/postcard/postcard_chashiro_full_yoko.pdf、postcard_chashiro_letter_yoko.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> chashiro full_yoko --label "Orange and White Cat"`(letter_yoko も同じ)。ZIPでは chashiro_postcard_full.pdf・chashiro_postcard_letter.pdf に名前を変える
-- 2026-11-09 あけおめ動画を足した。横長の絵なので `shop/make_video_base.py <絵> chashiro --label "Orange and White Cat"` で縦長の下じきを作り、ユーザーがCanvaで動かした(絵のタッチは変わらなかった)。文字は `shop/make_greeting_video.py` → shop/greeting/chashiro_akeome.mp4。YouTube用は chashiro_akeome_mihon.mp4
+- 2026-11-09 あけおめ動画を足した。横長の絵なので `shop/make_video_base.py <絵> chashiro --label "Orange and White Cat"` で縦長の下じきを作り、ユーザーがCanvaで動かしたが、できた動画はほとんど動いていなかった(こちらの確認もれ。ユーザーが気づいた)。`shop/make_breath_video.py chashiro` で、寝息でおなかがふくらむ動画をこちらで作り直した。説明文は「デジタルで動きをつけた」。文字は `shop/make_greeting_video.py` → shop/greeting/chashiro_akeome.mp4。YouTube用は chashiro_akeome_mihon.mp4
