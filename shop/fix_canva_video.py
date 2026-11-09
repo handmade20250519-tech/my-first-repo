@@ -1,7 +1,8 @@
 """Canvaで動かした動画の、よくある困りごとを直す(文字を入れる前に使う)。
 - 最初の数コマだけ背景が白く、そのあと背景がうすい色(灰色・ピンク)になる → 最初のコマを外し、背景を白にそろえる
 - 途中で名前の文字が消える → 下じき画像と同じ場所に、名前を毎コマ入れ直す(--label)
-使い方: python3 fix_canva_video.py <動画> <名前> [--skip 2] [--label "Papillon"]
+使い方: python3 fix_canva_video.py <動画> <名前> [--skip 2] [--label "Papillon"] [--keep-bg]
+       --keep-bg: 背景の色をそのままにする(白い雪が降る動画など、白にすると消えてしまうもの)
        → video_base/<名前>_canva_fixed.mp4(このあと make_greeting_video.py に渡す)"""
 import subprocess
 import sys
@@ -25,7 +26,7 @@ def name_rows(name):
     return segs[-1][0], segs[-1][-1]
 
 
-def main(video, name, skip=2, label=None):
+def main(video, name, skip=2, label=None, keep_bg=False):
     with tempfile.TemporaryDirectory() as tmp:
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", video, f"{tmp}/f%03d.png"], check=True)
         fps = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=r_frame_rate",
@@ -34,7 +35,10 @@ def main(video, name, skip=2, label=None):
         # 背景の色: 動画のまん中あたりのコマの、左上のすみ
         mid = np.asarray(Image.open(frames[len(frames) // 2]).convert("RGB")).astype(float)
         bg = np.median(mid[40:120, 40:120].reshape(-1, 3), axis=0)
-        print("背景の色:", bg.astype(int), "→ 白にそろえる")
+        fill = tuple(int(v) for v in bg) if keep_bg else (255, 255, 255)
+        if keep_bg:
+            bg = np.array([255.0, 255.0, 255.0])
+        print("背景の色:", fill, "(そのまま)" if keep_bg else "→ 白にそろえる")
         if label:
             r0, r1 = name_rows(name)
             font = ImageFont.truetype(str(mp.FONT), vb.LABEL_PX)
@@ -45,7 +49,7 @@ def main(video, name, skip=2, label=None):
             im = Image.fromarray(a.astype(np.uint8))
             if label:
                 d = ImageDraw.Draw(im)
-                d.rectangle((0, r0 - 25, im.width, r1 + 25), fill="white")
+                d.rectangle((0, r0 - 25, im.width, r1 + 25), fill=fill)
                 d.text((im.width / 2, r0 - 2), label, font=font, fill=mp.INK, anchor="ma")
             im.save(out_dir / f"f{i:03d}.png")
         out = ROOT / "video_base" / f"{name}_canva_fixed.mp4"
@@ -57,6 +61,9 @@ def main(video, name, skip=2, label=None):
 if __name__ == "__main__":
     args = sys.argv[1:]
     opts = {}
+    if "--keep-bg" in args:
+        args.remove("--keep-bg")
+        opts["keep_bg"] = True
     for key in ("--skip", "--label"):
         if key in args:
             i = args.index(key)
