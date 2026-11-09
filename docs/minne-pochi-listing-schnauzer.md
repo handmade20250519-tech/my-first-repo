@@ -99,3 +99,4 @@ uchinoko-aruaru_schnauzer_pochi.zip
 3. shop/listing_schnauzer_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> schnauzer` で作った
+- 2026-11-09 ポストカードを足した(縦向き): `python3 shop/make_postcard.py <絵> schnauzer full --label "Miniature Schnauzer"`(letter も同じ)。もとの絵は 2000×1091 と小さく、絵の幅が488pxしかないので、ポストカードは少しぼやける(350dpiでは740px必要)。もとの絵は templates/originals/schnauzer.jpg。商品画像 shop/listing_schnauzer_postcard.jpg、机の写真 shop/scene_schnauzer_postcard_note.jpg。動画の下じき shop/video_base/schnauzer_video_base.png(--scale 0.88)
