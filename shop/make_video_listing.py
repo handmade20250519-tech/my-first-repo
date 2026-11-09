@@ -54,7 +54,7 @@ def main(name):
         x += p.width + gap
     d.text((S / 2, y + phones[0].height + 120), "縦長(スマホの画面サイズ)・5秒・くり返し再生・音なし",
            font=ex.f(54), fill=ex.INK, anchor="mm")
-    d.text((S / 2, y + phones[0].height + 220), "※動きの見本は、作品ページの動画でご覧いただけます",
+    d.text((S / 2, y + phones[0].height + 220), "スマホでもパソコンでも再生できる動画ファイル(MP4)です",
            font=ex.f(44), fill=ex.INK, anchor="mm")
     out = ROOT / f"listing_{name}_video.jpg"
     c.convert("RGB").save(out, quality=92)
