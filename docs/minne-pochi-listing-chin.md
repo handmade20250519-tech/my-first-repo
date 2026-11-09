@@ -34,7 +34,7 @@
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・chin_pochi.pdf(A4横・6ページ)
+・Chin.pdf(ぽち袋・A4横・6ページ)
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
@@ -105,7 +105,7 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 ```
 
 ## ZIPの名前
-uchinoko-aruaru_chin_pochi.zip(中身: chin_pochi.pdf、chin_postcard_full.pdf、chin_postcard_letter.pdf、chin_akeome.mp4、howto.pdf)
+uchinoko-aruaru_chin_pochi.zip(中身: Chin.pdf、chin_postcard_full.pdf、chin_postcard_letter.pdf、chin_akeome.mp4、howto.pdf)
 
 ## 商品画像
 1. shop/listing_chin_1.jpg(デザイン見本)
