@@ -102,3 +102,4 @@ uchinoko-aruaru_whitecat_pochi.zip
 3. shop/listing_whitecat_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> whitecat` で作った
+- 2026-11-09 ポストカードを足した(縦向き): もとの絵の右下にAIが描いた赤い落款(はんこ)があったので消してから `python3 shop/make_postcard.py <絵> whitecat full --label "White Cat"`(letter も同じ)。もとの絵は templates/originals/whitecat.jpg(落款あり)。商品画像 shop/listing_whitecat_postcard.jpg、机の写真 shop/scene_whitecat_postcard_note.jpg。動画の下じき shop/video_base/whitecat_video_base.png
