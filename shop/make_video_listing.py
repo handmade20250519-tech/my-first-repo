@@ -1,5 +1,5 @@
 """商品画像: あけおめ動画の見本。2000x2000。スマホ3台に、動画の3つの場面を並べて、動くことを見せる。
-make_greeting_video.py が作った greeting/greeting_<名前>_matome.mp4 から作る。
+make_greeting_video.py が作った greeting/<名前>_akeome.mp4 から作る。
 使い方: python3 make_video_listing.py chin   → listing_chin_video.jpg"""
 import subprocess
 import sys
@@ -36,7 +36,7 @@ def phone(screen, w):
 
 def main(name):
     S = ex.S
-    video = ROOT / "greeting" / f"greeting_{name}_matome.mp4"
+    video = ROOT / "greeting" / f"{name}_akeome.mp4"
     c = Image.new("RGBA", (S, S), ex.BG + (255,))
     d = ImageDraw.Draw(c)
     d.text((S / 2, 150), "動く「あけおめ動画」付き", font=ex.f(96), fill=ex.INK, anchor="mm")

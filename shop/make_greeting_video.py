@@ -3,8 +3,9 @@
 (LINEなどで最初の1コマが見本として表示されるため、そこにも文字が入っているほうがよい)。
 
 使い方: python3 make_greeting_video.py <動画> <名前> [言葉の種類…]   (言葉の種類を省くと matome だけ)
-作るもの: greeting/greeting_<名前>_<種類>.mp4/.gif、
-         YouTubeにのせる見本 greeting/greeting_<名前>_<種類>_mihon.mp4(「見本」の文字入り。そのまま使われないように)
+作るもの: greeting/<名前>_akeome.mp4(売るもの。ZIPにこの名前のまま入れる)と .gif、
+         YouTubeにのせる見本 greeting/<名前>_akeome_mihon.mp4(「見本」の文字入り。そのまま使われないように)
+         matome 以外の種類は <名前>_akeome_<種類>.mp4
 文字の書体は Klee One(fonts/KleeOne-SemiBold.ttf。OFLで商用可)。"""
 import subprocess
 import sys
@@ -58,6 +59,7 @@ def main(video, name, styles=("matome",)):
         size = Image.open(frames[0]).size
         mk = mihon(size)
         for style in styles:
+            base = f"{name}_akeome" if style == "matome" else f"{name}_akeome_{style}"
             ov = overlay(size, style)
             sd = tmp / style
             md = tmp / (style + "_mihon")
@@ -71,17 +73,17 @@ def main(video, name, styles=("matome",)):
                 im.convert("RGB").save(md / f.name)
             subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-framerate", fps, "-i", str(md / "f%03d.png"),
                             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "23", "-movflags", "+faststart", "-an",
-                            str(out / f"greeting_{name}_{style}_mihon.mp4")], check=True)
-            mp4 = out / f"greeting_{name}_{style}.mp4"
+                            str(out / f"{base}_mihon.mp4")], check=True)
+            mp4 = out / f"{base}.mp4"
             # 音は入れない(もとの動画は無音)
             subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-framerate", fps, "-i", str(sd / "f%03d.png"),
                             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", "-movflags", "+faststart", "-an",
                             str(mp4)], check=True)
-            gif = out / f"greeting_{name}_{style}.gif"
+            gif = out / f"{base}.gif"
             subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp4), "-vf",
                             f"fps={GIF_FPS},scale={GIF_W}:-1:flags=lanczos,hqdn3d=4:4:6:6,split[a][b];[a]palettegen=max_colors=64:stats_mode=diff[p];[b][p]paletteuse=dither=none:diff_mode=rectangle",
                             "-loop", "0", str(gif)], check=True)
-            Image.open(sd / frames[len(frames) // 2].name).save(out / f"greeting_{name}_{style}_still.jpg", quality=88)
+            Image.open(sd / frames[len(frames) // 2].name).save(out / f"{base}_still.jpg", quality=88)
             for p in (mp4, gif):
                 print(f"done: {p.name}({p.stat().st_size // 1024}KB)")
 

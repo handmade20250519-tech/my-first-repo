@@ -36,7 +36,7 @@
    - 説明文の「絵は、墨と淡い水彩で…」の段落の次に、必ずこの一文: `※画像は『かんたん4ステップ』以外、AIで作ったイメージ画像です。袋の絵柄は実際の商品と同じです。`
    - 日本の呼び方と違う英語の名前(Maltipoo、Chipoo)は、その次に名前の説明を入れる(ユーザーの希望)
    - 絵を見て、あるあるの文が絵と合っているか確かめる(合わなければ文を絵に合わせる)
-   - 購入時の注意点は柴犬と同じ。ファイル名は**ぽち袋が `<名前の最初を大文字>.pdf`(例: Chin.pdf。pochiは付けない。ユーザーの希望、2026-11-09)**、`howto.pdf`、ZIP `uchinoko-aruaru_<名前>_pochi.zip`
+   - 購入時の注意点は柴犬と同じ。**ZIPの中のファイル名は、ユーザーが名前を変えずに入れている形で書く(2026-11-09)**: ぽち袋はCanvaでダウンロードしたときの名前(例: Chin.pdf、Calico.pdf。毎回ユーザーに聞く)、`postcard_<名前>_full.pdf`・`postcard_<名前>_letter.pdf`(make_postcard.py が作ったまま)、`<名前>_akeome.mp4`(make_greeting_video.py が作ったまま)、`pochi_howto.pdf`。ZIP `uchinoko-aruaru_<名前>_pochi.zip`
 4. 商品画像: `shop/make_<名前>_images.py` を前の種類からコピーして画像の番号を変える → `listing_<名前>_1.jpg`(デザイン見本)、`listing_<名前>_3.jpg`(6種類)。3枚目は共通の `listing_shiba_4.jpg`(作り方)
 5. 場面写真(商品紹介の画像):
    - Geminiのプロンプトは**袋を真っ白(blank)にして作ってもらう**。Geminiは絵を描き変えてしまうので、本物の絵はあとで貼る
@@ -72,7 +72,7 @@
 
 ## スマホで送る動くあけおめ画像(2026-11-09から試している)
 - 年賀状は出す人が減っているので(ユーザーの判断)、スマホで送る動く画像をminneでダウンロード販売する
-- ユーザーがCanvaでぽち袋の絵を動かした縦長の動画(1080×1920、5秒、無音)を作り、こちらで文字を入れる: `python3 shop/make_greeting_video.py <動画> <名前>` → shop/greeting/greeting_<名前>_teinei / _casual の MP4 と GIF
+- ユーザーがCanvaでぽち袋の絵を動かした縦長の動画(1080×1920、5秒、無音)を作り、こちらで文字を入れる: `python3 shop/make_greeting_video.py <動画> <名前>` → shop/greeting/<名前>_akeome.mp4(売るもの)と <名前>_akeome_mihon.mp4(YouTube用)
 - 言葉は2種類(ユーザーが決めた): ていねい「あけましておめでとうございます/本年もよろしくお願いいたします」、親しい人向け「あけおめ！/今年もよろしくね」。書体は Klee One(日本語は fonts/KleeOne-SemiBold.ttf)
 - Canvaで作ったAIの動画は、規約を守れば商用利用できるとCanvaが案内している。Canvaの素材(写真・音楽など)を使った場合は別のルールなので、使わない。「AIを用いた作品」と書く
 - minneのダウンロード販売で動画ファイルを売れるか(形式・大きさ)は、出品の画面で確かめる

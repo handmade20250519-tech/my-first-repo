@@ -38,11 +38,11 @@
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
-・chin_postcard_full.pdf(ポストカード・絵を大きく入れたもの、ハガキの大きさ)
-・chin_postcard_letter.pdf(ポストカード・手紙用。すみに小さく絵を入れ、文字を書くところを広くとったもの)
+・postcard_chin_full.pdf(ポストカード・絵を大きく入れたもの、ハガキの大きさ)
+・postcard_chin_letter.pdf(ポストカード・手紙用。すみに小さく絵を入れ、文字を書くところを広くとったもの)
 ・chin_akeome.mp4(動くあけおめ動画。縦長・約5秒・音なし)
  「あけましておめでとうございます/今年もよろしくお願いします」の文字入り。目上の方にも、家族や友だちにも送れます
-・howto.pdf(作り方とご利用について、A4・3ページ)
+・pochi_howto.pdf(作り方とご利用について、A4・3ページ)
 
 ぽち袋の仕上がりの大きさ:64×95mm(一万円札を三つ折りにして入ります)
 ポストカードの大きさ:100×148mm(はがきと同じ大きさです)
@@ -105,7 +105,7 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 ```
 
 ## ZIPの名前
-uchinoko-aruaru_chin_pochi.zip(中身: Chin.pdf、chin_postcard_full.pdf、chin_postcard_letter.pdf、chin_akeome.mp4、howto.pdf)
+uchinoko-aruaru_chin_pochi.zip(中身: Chin.pdf、postcard_chin_full.pdf、postcard_chin_letter.pdf、chin_akeome.mp4、pochi_howto.pdf。どれも名前を変えずに入れる)
 
 ## 商品画像
 1. shop/listing_chin_1.jpg(デザイン見本)
@@ -116,7 +116,7 @@ uchinoko-aruaru_chin_pochi.zip(中身: Chin.pdf、chin_postcard_full.pdf、chin_
 5. shop/scene_chin_postcard_note.jpg(ポストカードの場面写真。縦向きの机の写真。注記なしは scene_chin_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
 - ポストカードは縦向き: shop/postcard/postcard_chin_full.pdf、postcard_chin_letter.pdf。もとの絵(2000×2000)から
-  `python3 shop/make_postcard.py <絵> chin full --label "Japanese Chin"`(letter も同じ)。ZIPでは chin_postcard_full.pdf・chin_postcard_letter.pdf に名前を変える
+  `python3 shop/make_postcard.py <絵> chin full --label "Japanese Chin"`(letter も同じ)。ZIPには名前を変えずに入れる
 - 1と3は `python3 shop/make_from_pdf.py <PDF> chin` で作った
-- 2026-11-09 動くあけおめ動画を足した(ユーザーの判断。ぽち袋・ハガキ・動画を全部セットで売る)。動画はユーザーがCanvaで作った狆の動く絵に、`shop/make_greeting_video.py` で「あけましておめでとうございます/今年もよろしくお願いします」を入れたもの(shop/greeting/greeting_chin_matome.mp4。ZIPでは chin_akeome.mp4 に名前を変える)
-- YouTubeにのせる見本: shop/greeting/greeting_chin_matome_mihon.mp4(「見本」の文字入り)。minneの作品ページにYouTubeの動画を埋めこめる
+- 2026-11-09 動くあけおめ動画を足した(ユーザーの判断。ぽち袋・ハガキ・動画を全部セットで売る)。動画はユーザーがCanvaで作った狆の動く絵に、`shop/make_greeting_video.py` で「あけましておめでとうございます/今年もよろしくお願いします」を入れたもの(shop/greeting/chin_akeome.mp4。名前を変えずにZIPへ)
+- YouTubeにのせる見本: shop/greeting/chin_akeome_mihon.mp4(「見本」の文字入り)。minneの作品ページにYouTubeの動画を埋めこめる
