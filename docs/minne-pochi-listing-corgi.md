@@ -99,3 +99,4 @@ uchinoko-aruaru_corgi_pochi.zip
 3. shop/listing_corgi_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> corgi` で作った。袋の表は6ページとも64×95mm
+- 2026-11-09 ポストカードを足した(横向き): もとの絵の名前は「和犬ウェルシュ・コーギー Welsh Corgi」とまちがって描かれていた(コーギーは和犬ではない)ので、「Welsh Corgi」だけを Klee One で入れ直した(ユーザーの指示): `python3 shop/make_postcard.py <絵> corgi full_yoko --label "Welsh Corgi"`(letter_yoko も同じ)。もとの絵は templates/originals/corgi.jpg。商品画像 shop/listing_corgi_postcard.jpg、机の写真 shop/scene_corgi_postcard_note.jpg。動画の下じき shop/video_base/corgi_video_base.png
