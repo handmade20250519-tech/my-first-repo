@@ -111,3 +111,4 @@ uchinoko-aruaru_newfoundland_pochi.zip(中身: newfoundland_pochi.pdf、newfound
 - ポストカードは縦向き: shop/postcard/postcard_newfoundland_full.pdf、postcard_newfoundland_letter.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> newfoundland full --label "Newfoundland"`(letter も同じ)。ZIPでは newfoundland_postcard_full.pdf・newfoundland_postcard_letter.pdf に名前を変える
 - もとの絵の背景はほぼ白だが、うすい繊維が入っていて、最初は絵のまわりにうすい四角が残った。道具を直して、いつも繊維を消すようにした
+- 2026-11-09 ぽち袋のCanvaのファイル名は Newfoundland.pdf(ユーザー)。動画の下じきは shop/video_base/newfoundland_video_base.png(--scale 0.87 で少し小さく)
