@@ -100,3 +100,4 @@ uchinoko-aruaru_beagle_pochi.zip
 3. shop/listing_beagle_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> beagle` で作った。袋の表は6ページとも64×95mm
+- 2026-11-11 ポストカードを足した(横向き): `python3 shop/make_postcard.py <絵> beagle full_yoko --label "Beagle"`(letter_yoko も同じ。AIの名前は筆の書体で大きく、名前を見つける高さの上限を 0.07→0.09 に上げた)。もとの絵は templates/originals/beagle.jpg。商品画像 shop/listing_beagle_postcard.jpg、机の写真 shop/scene_beagle_postcard_note.jpg。動画の下じき shop/video_base/beagle_video_base.png

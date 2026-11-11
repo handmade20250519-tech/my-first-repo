@@ -95,7 +95,7 @@ def strip_name(im):
     segs = np.split(idx, np.nonzero(np.diff(idx) > H * 0.02)[0] + 1)
     last = segs[-1]
     cols = np.nonzero(a[last[0]:last[-1] + 1].sum(axis=0) > 2)[0]  # 紙の小さな点を数えない(ニューファンドランドで横に広く見えた)
-    if len(segs) < 2 or len(last) > H * 0.07 or cols[-1] - cols[0] > W * 0.6:
+    if len(segs) < 2 or len(last) > H * 0.09 or cols[-1] - cols[0] > W * 0.6:
         raise SystemExit("絵の下に名前らしい文字が見つからない。絵を確かめる")
     out = np.asarray(im).copy()
     out[max(last[0] - 10, 0):last[-1] + 11] = 255
