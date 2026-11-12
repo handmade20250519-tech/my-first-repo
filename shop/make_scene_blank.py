@@ -108,10 +108,10 @@ SCENES = {
         (HERE / "check/postcard_beagle_full_yoko.png", [(320, 295), (877, 294), (878, 660), (322, 663)]),
         (HERE / "check/postcard_beagle_letter_yoko.png", [(440, 757), (1039, 812), (1002, 1069), (275, 983)]),
     ]),
-    "sabatora_postcard": ("174.jpg", [
-        # 横向きのポストカードの机の写真(templates/scenes/174.jpg)を使い回す
-        (HERE / "check/postcard_sabatora_full_yoko.png", [(320, 295), (877, 294), (878, 660), (322, 663)]),
-        (HERE / "check/postcard_sabatora_letter_yoko.png", [(440, 757), (1039, 812), (1002, 1069), (275, 983)]),
+    "sabatora_postcard": ("172.jpg", [
+        # 縦向きのポストカードの机の写真(柴犬と同じ)を使い回す。2026-11-12 墨絵の新しい絵で縦向きに作り直した
+        (HERE / "check/postcard_sabatora_full_visible.png", [(255, 232), (604, 232), (608, 707), (257, 707)]),
+        (HERE / "check/postcard_sabatora_letter.png", [(724, 708), (1084, 752), (977, 1098), (502, 1002)]),
     ]),
     "bichon_postcard": ("174.jpg", [
         # 横向きのポストカードの机の写真(templates/scenes/174.jpg)を使い回す
@@ -380,7 +380,7 @@ SCENES = {
 
 # 貼ったあと、もとの写真に戻す部分(カードの手前にある物)。多角形の頂点
 KEEP = {"wire_postcard": [[(381, 629), (819, 629), (819, 703), (381, 703)]]}
-KEEP["hachiware_postcard"] = KEEP["italiangreyhound_postcard"] = KEEP["sphynx_postcard"] = KEEP["chashiro_postcard"] = KEEP["bichon_postcard"] = KEEP["stbernard_postcard"] = KEEP["frenchbulldog_postcard"] = KEEP["samoyed_postcard"] = KEEP["british_postcard"] = KEEP["corgi_postcard"] = KEEP["beagle_postcard"] = KEEP["sabatora_postcard"] = KEEP["wire_postcard"]
+KEEP["hachiware_postcard"] = KEEP["italiangreyhound_postcard"] = KEEP["sphynx_postcard"] = KEEP["chashiro_postcard"] = KEEP["bichon_postcard"] = KEEP["stbernard_postcard"] = KEEP["frenchbulldog_postcard"] = KEEP["samoyed_postcard"] = KEEP["british_postcard"] = KEEP["corgi_postcard"] = KEEP["beagle_postcard"] = KEEP["wire_postcard"]
 # 切り取る範囲(左, 上, 右, 下)。下の角のボタンを外す
 CROP = {"greatdane_2": (52, 0, 907, 855)}
 # 白紙の袋に細い線(ふたの折り目など)が写っているとき、光をこの半径でならして線を消す
