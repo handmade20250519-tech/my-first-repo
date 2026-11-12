@@ -34,7 +34,10 @@ def main(video, name, skip=2, label=None, keep_bg=False):
         frames = sorted(Path(tmp).glob("f*.png"))[skip:]
         # 背景の色: 動画のまん中あたりのコマの、左上のすみ
         mid = np.asarray(Image.open(frames[len(frames) // 2]).convert("RGB")).astype(float)
-        bg = np.median(mid[40:120, 40:120].reshape(-1, 3), axis=0)
+        # 4すみ(と上下のまん中)のうち、いちばん明るい所を背景とする(しっぽなどが入っているすみをさけるため)
+        H, W = mid.shape[:2]
+        spots = [(40, 40), (40, W - 120), (H - 120, 40), (H - 120, W - 120), (40, W // 2 - 40), (H // 2, 40)]
+        bg = max((np.median(mid[y:y + 80, x:x + 80].reshape(-1, 3), axis=0) for y, x in spots), key=lambda c: c.mean())
         fill = tuple(int(v) for v in bg) if keep_bg else (255, 255, 255)
         if keep_bg:
             bg = np.array([255.0, 255.0, 255.0])
