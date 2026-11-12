@@ -103,3 +103,4 @@ uchinoko-aruaru_sabatora_pochi.zip
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> sabatora` で作った。袋の表は6ページとも64×95mm
 - 2026-11-12 ポストカードを足した(横向き): `python3 shop/make_postcard.py <絵> sabatora full_yoko --label "Silver Tabby"`(letter_yoko も同じ)。もとの絵は templates/originals/sabatora.jpg(漫画っぽい古い絵柄・動きの線あり。墨絵に作り直すかユーザーに聞いた)。商品画像 shop/listing_sabatora_postcard.jpg、机の写真 shop/scene_sabatora_postcard_note.jpg。動画の下じき shop/video_base/sabatora_video_base.png
+- 2026-11-12 絵を墨絵の新しい指示文で作り直した(ユーザー)。CanvaのPDFから `make_from_pdf.py <PDF> sabatora --overwrite` で listing_sabatora_1/3 と check/front_sabatora_blank.png を作り直した。場面写真のもと 156.jpg が消えていたので、前の scene_sabatora_1.jpg から袋を白紙に戻して templates/scenes/156.jpg に保存(make_desk_blank.fill_card)、front_sabatora_pad.png(幅:高さ=0.62)を作り直して貼り直した。前のポストカード・動画の下じき(古い絵)は使わない。新しいもとの絵が届いたら作り直す
