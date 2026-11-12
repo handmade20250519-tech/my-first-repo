@@ -102,3 +102,4 @@ uchinoko-aruaru_sabatora_pochi.zip
 3. shop/listing_sabatora_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> sabatora` で作った。袋の表は6ページとも64×95mm
+- 2026-11-12 ポストカードを足した(横向き): `python3 shop/make_postcard.py <絵> sabatora full_yoko --label "Silver Tabby"`(letter_yoko も同じ)。もとの絵は templates/originals/sabatora.jpg(漫画っぽい古い絵柄・動きの線あり。墨絵に作り直すかユーザーに聞いた)。商品画像 shop/listing_sabatora_postcard.jpg、机の写真 shop/scene_sabatora_postcard_note.jpg。動画の下じき shop/video_base/sabatora_video_base.png
