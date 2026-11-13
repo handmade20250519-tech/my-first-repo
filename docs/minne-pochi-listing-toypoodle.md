@@ -112,3 +112,4 @@ uchinoko-aruaru_toypoodle_pochi.zip(中身: toypoodle_pochi.pdf、toypoodle_post
 - ポストカードは縦向き: shop/postcard/postcard_toypoodle_full.pdf、postcard_toypoodle_letter.pdf。もとの絵(2000×2000、和紙のような背景)から
   `python3 shop/make_postcard.py <絵> toypoodle full --label "Toy Poodle"`(letter も同じ)。ZIPでは toypoodle_postcard_full.pdf・toypoodle_postcard_letter.pdf に名前を変える
 - 背景の和紙の繊維が大きめで、最初は消えずに残り、絵の範囲も広く取られて犬が小さくなった。繊維はうすい色なので、濃い線のないかたまりは消すようにした。縦長の絵は、ハガキの高さに合わせて大きさを決める(max_block)
+- 2026-11-13 動画の下じきを作った。もとの絵が残っていないので postcard_toypoodle_full.pdf を350dpiで画像にして `make_video_base.py <画像> toypoodle --label "Toy Poodle" --scale 0.87`(縦長の絵なので少し小さく)→ shop/video_base/toypoodle_video_base.png
