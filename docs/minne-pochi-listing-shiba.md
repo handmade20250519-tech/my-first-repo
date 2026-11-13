@@ -117,3 +117,4 @@ uchinoko-aruaru_shiba_pochi.zip(中身: shiba_pochi.pdf、shiba_postcard_full.pd
 - ポストカード: shop/postcard/postcard_shiba_full.pdf、postcard_shiba_letter.pdf。もとの絵(Geminiの画像、1500×1500、和紙のような背景)から
   `python3 shop/make_postcard.py <絵> shiba full --label "Shiba Inu"`(letter も同じ)で作った。絵の「Shiba Inu」は消して、絵いっぱいにだけ Klee One で入れ直した
 - ZIPに入れるときは、ポストカードのファイル名を shiba_postcard_full.pdf・shiba_postcard_letter.pdf にする
+- 2026-11-13 動画の下じきを作った。もとの絵が残っていなかったので、ポストカード(postcard_shiba_full.pdf)を350dpiで画像にしたものから `make_video_base.py <画像> shiba --label "Shiba Inu"` → shop/video_base/shiba_video_base.png
