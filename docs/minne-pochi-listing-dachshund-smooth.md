@@ -99,3 +99,4 @@ uchinoko-aruaru_dachshund_pochi.zip
 3. shop/listing_dachshund_3.jpg(6種類)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> dachshund` で作った。袋の表は6ページとも64×95mm
 4. shop/listing_shiba_4.jpg(作り方)
+- 2026-11-13 ポストカードを足した(横向き): `python3 shop/make_postcard.py <絵> dachshund full_yoko --label "Miniature Dachshund"`(letter_yoko も同じ)。もとの絵は templates/originals/dachshund.jpg(耳の毛が長めで、スムースよりロングに見える。ユーザーに伝えた)。商品画像 shop/listing_dachshund_postcard.jpg、机の写真 shop/scene_dachshund_postcard_note.jpg。動画の下じき shop/video_base/dachshund_video_base.png
