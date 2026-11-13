@@ -99,3 +99,4 @@ uchinoko-aruaru_pomeranian_pochi.zip
 3. shop/listing_pomeranian_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> pomeranian` で作った。袋の表は6ページとも64×95mm
+- 2026-11-13 墨絵の新しい指示文で絵を作り直した(ユーザー。前の絵は漫画っぽく1024pxと小さかった)。新しいもとの絵 templates/originals/pomeranian.jpg から、ポストカード(縦) `make_postcard.py <絵> pomeranian full/letter --label "Pomeranian"`、商品画像 listing_pomeranian_postcard.jpg、机の写真 scene_pomeranian_postcard_note.jpg、動画の下じき video_base/pomeranian_video_base.png。ぽち袋(Canva)も新しい絵で作り直してもらう
