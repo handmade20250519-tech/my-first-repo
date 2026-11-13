@@ -34,7 +34,7 @@
 ━━━━━━━━━━
 ■ 中身(ZIPファイル1つ)
 ━━━━━━━━━━
-・MiniatureDackhshund.pdf(ぽち袋・A4横・6ページ)
+・MiniatureDachshund.pdf(ぽち袋・A4横・6ページ)
  1ページに同じ袋が2つ入っています。使いたいページだけを印刷してください。
  1:のしも文字もなし(手書き用) 2:のしのみ 3:おとしだま
  4:ありがとう 5:おめでとう 6:こころばかり
@@ -100,7 +100,7 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 ```
 
 ## ZIPの名前
-uchinoko-aruaru_dachshund_pochi.zip(中身: MiniatureDackhshund.pdf、postcard_dachshund_full_yoko.pdf、postcard_dachshund_letter_yoko.pdf、dachshund_akeome.mp4、pochi_howto.pdf。どれも名前を変えずに入れる)
+uchinoko-aruaru_dachshund_pochi.zip(中身: MiniatureDachshund.pdf、postcard_dachshund_full_yoko.pdf、postcard_dachshund_letter_yoko.pdf、dachshund_akeome.mp4、pochi_howto.pdf。どれも名前を変えずに入れる)
 
 ## 商品画像
 1. shop/listing_dachshund_1.jpg(デザイン見本)
@@ -110,4 +110,4 @@ uchinoko-aruaru_dachshund_pochi.zip(中身: MiniatureDackhshund.pdf、postcard_d
 - 1と3は `python3 shop/make_from_pdf.py <PDF> dachshund` で作った。袋の表は6ページとも64×95mm
 4. shop/listing_shiba_4.jpg(作り方)
 - 2026-11-13 ポストカードを足した(横向き): `python3 shop/make_postcard.py <絵> dachshund full_yoko --label "Miniature Dachshund"`(letter_yoko も同じ)。もとの絵は templates/originals/dachshund.jpg(耳の毛が長めで、スムースよりロングに見える。ユーザーに伝えた)。商品画像 shop/listing_dachshund_postcard.jpg、机の写真 shop/scene_dachshund_postcard_note.jpg。動画の下じき shop/video_base/dachshund_video_base.png
-- 2026-11-13 あけおめ動画を足した(毛布から顔を上げ、しっぽをふる)。`shop/fix_canva_video.py <動画> dachshund`(背景を白に。名前は最後まで消えない)→ make_greeting_video.py。ぽち袋の名前はユーザーの指定で MiniatureDackhshund.pdf(つづりが Dachshund とちがうことを伝えた)。商品画像の並び: 1 listing_dachshund_1.jpg → 2 listing_dachshund_video.jpg → 3 listing_dachshund_3.jpg → 4 listing_dachshund_postcard.jpg → 5 scene_dachshund_1_note.jpg → 6 scene_dachshund_postcard_note.jpg → 7 listing_shiba_4.jpg
+- 2026-11-13 あけおめ動画を足した(毛布から顔を上げ、しっぽをふる)。`shop/fix_canva_video.py <動画> dachshund`(背景を白に。名前は最後まで消えない)→ make_greeting_video.py。ぽち袋の名前 MiniatureDachshund.pdf(はじめ Dackhshund とつづりがちがっていたのを、ユーザーが直した)。商品画像の並び: 1 listing_dachshund_1.jpg → 2 listing_dachshund_video.jpg → 3 listing_dachshund_3.jpg → 4 listing_dachshund_postcard.jpg → 5 scene_dachshund_1_note.jpg → 6 scene_dachshund_postcard_note.jpg → 7 listing_shiba_4.jpg
