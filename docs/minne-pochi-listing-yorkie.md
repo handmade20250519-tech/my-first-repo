@@ -102,3 +102,4 @@ uchinoko-aruaru_yorkie_pochi.zip
 4. shop/scene_yorkie_1_note.jpg(場面写真。注記なしは scene_yorkie_1.jpg)
    - Geminiの袋が本物より細長かった(幅:高さ=0.58)。絵は幅に合わせて袋の下にそろえ、上の余りは紙の白にした
 
+- 2026-11-15 ポストカードと動画の下じきを作った。お気に入りがついた絵なので絵柄は変えず(ユーザーの希望)、最小限の直しだけ: ほおの赤みを消し、しっぽの横の動きの線2本を消した(templates/originals/yorkie_1024_clean.png、もとは yorkie_original.jpg)。もとの絵が1024pxと小さいので2倍に拡大した yorkie.png から `make_postcard.py ... yorkie full/letter --label "Yorkshire Terrier"`(縦)。印刷すると少しやわらかく見える。ぽち袋の絵(Canva)は赤みと線が残ったまま。動画の下じき video_base/yorkie_video_base.png(--scale 0.87)。商品画像 listing_yorkie_postcard.jpg、机の写真 scene_yorkie_postcard_note.jpg
