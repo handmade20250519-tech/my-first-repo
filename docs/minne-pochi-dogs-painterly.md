@@ -689,3 +689,33 @@ TEXT: Write only the breed name "Bichon Frise" once, in small, simple, neat hand
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+### ヨークシャー・テリア(2026-11-15 作り直し・今の絵を見本にして描き直す)
+- お気に入りがついた今の絵(templates/originals/yorkie_original.jpg)の、顔の表情・姿・ポーズ・リボンはそのままにして、ほかの子と同じ墨絵の筆づかいに描き直す(ユーザーの希望)。漫画っぽい絵はCanvaで動かすと不自然になった
+- Geminiに今の絵を添付して、「この絵を見本に描き直す」形で頼む。添付できないときは下の全文の指示文を使う
+
+添付して頼む指示文:
+```
+Repaint the attached picture as a new original artwork. Keep exactly the same dog, the same pose, the same face and expression, the same proportions, the same red bow on the topknot and the same composition: a Yorkshire Terrier standing up on its hind legs with its two small front paws held together in front of its chest, begging to be picked up, looking up at the viewer with sweet dark eyes.
+Change ONLY the painting technique: make it a traditional Japanese sumi-e ink-and-light-color animal painting, as if carefully painted with a brush by a skilled painter on washi paper. Loose, confident brush strokes with natural variation in thickness; some edges left soft or open instead of fully outlined; the long silky coat painted with layered, transparent watercolor washes and fine brush strokes (steel blue-gray on the body, warm tan on the head, chest and legs); soft, gentle bleeding edges. Muted, natural, traditional Japanese colors.
+Remove the cartoon elements: no blush on the cheeks, no motion lines, no thick uniform black pen outlines. Keep the face sweet and true to the original, NOT more realistic and NOT older-looking.
+Plain pure white background, no paper texture, no frame; only a very faint pale ink wash shadow under the dog. Write only the name "Yorkshire Terrier" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog. No other text, seals or signatures.
+Highest available resolution (4K), 1:1 aspect ratio.
+```
+
+添付できないときの全文の指示文:
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Yorkshire Terrier standing up on its hind legs, front view, with its two small front paws held neatly together in front of its chest, asking to be picked up. Its long, straight, silky coat falls down both sides of its body; the hair on top of its head is gathered into a little topknot tied with a small red bow. Its face is sweet and hopeful: large, round, dark eyes looking up at the viewer, a small black nose, a little closed mouth, small upright pointed ears. Coat colors: steel blue-gray on the body and back, warm golden tan on the head, face, chest and legs. A small tail held up behind. Realistic Yorkshire Terrier anatomy, a small adult dog.
+The charm comes only from the real-life moment (a little dog standing up and begging to be held), NOT from a cartoon drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the long silky coat painted with layered washes and fine brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big shiny anime eyes, no blush on the cheeks, no thick uniform pen outlines, no motion lines, no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 65% of the canvas height, with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "Yorkshire Terrier" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Yorkshire Terrier. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
