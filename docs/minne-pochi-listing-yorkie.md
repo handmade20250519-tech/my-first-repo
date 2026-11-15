@@ -104,3 +104,4 @@ uchinoko-aruaru_yorkie_pochi.zip
 
 - 2026-11-15 ポストカードと動画の下じきを作った。お気に入りがついた絵なので絵柄は変えず(ユーザーの希望)、最小限の直しだけ: ほおの赤みを消し、しっぽの横の動きの線2本を消した(templates/originals/yorkie_1024_clean.png、もとは yorkie_original.jpg)。もとの絵が1024pxと小さいので2倍に拡大した yorkie.png から `make_postcard.py ... yorkie full/letter --label "Yorkshire Terrier"`(縦)。印刷すると少しやわらかく見える。ぽち袋の絵(Canva)は赤みと線が残ったまま。動画の下じき video_base/yorkie_video_base.png(--scale 0.87)。商品画像 listing_yorkie_postcard.jpg、机の写真 scene_yorkie_postcard_note.jpg
 - 2026-11-15 今の絵を見本に墨絵の筆づかいで描き直した絵(templates/originals/yorkie_v2.jpg、2000px)ができた。動画がうまく作れるか先に試すため、まず動画の下じきだけ作り直した(video_base/yorkie_video_base.png、--scale 0.87)。ポストカード・ぽち袋は動画を確かめてから新しい絵で作り直す(今の postcard_yorkie_* は古い絵)
+- 2026-11-15 あけおめ動画: ユーザーの動画の後半(77コマ目から)で前足を下ろす動きがいらないので切った。残りの約2.6秒を、前に進めてから逆向きに戻す形でつないで約5秒にした(最後と最初がつながる): ffmpeg trim 0-77 + reverse → `fix_canva_video.py` → make_greeting_video.py → shop/greeting/yorkie_akeome.mp4
