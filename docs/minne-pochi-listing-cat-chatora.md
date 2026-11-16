@@ -113,3 +113,4 @@ uchinoko-aruaru_chatora_pochi.zip(中身: chatora_pochi.pdf、chatora_postcard_f
 - 1と3は `python3 shop/make_from_pdf.py <PDF> chatora --overwrite` で作った
 - ポストカードは縦向き: shop/postcard/postcard_chatora_full.pdf、postcard_chatora_letter.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> chatora full --label "Orange Tabby"`(letter も同じ)。ZIPでは chatora_postcard_full.pdf・chatora_postcard_letter.pdf に名前を変える
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_chatora_full.pdf を350dpiで画像にして `make_video_base.py <画像> chatora --label "Orange Tabby" --scale 0.87`(縦長なので少し小さく)→ shop/video_base/chatora_video_base.png
