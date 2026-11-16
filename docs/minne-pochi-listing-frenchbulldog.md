@@ -110,3 +110,4 @@ uchinoko-aruaru_frenchbulldog_pochi.zip(中身: frenchbulldog_pochi.pdf、french
 - ポストカードは横向き: shop/postcard/postcard_frenchbulldog_full_yoko.pdf、postcard_frenchbulldog_letter_yoko.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> frenchbulldog full_yoko --label "French Bulldog"`(letter_yoko も同じ)。ZIPでは frenchbulldog_postcard_full.pdf・frenchbulldog_postcard_letter.pdf に名前を変える
 - 1と3は `python3 shop/make_from_pdf.py <PDF> frenchbulldog --overwrite` で作った
+- 2026-11-16 動画の下じきを作った(もとの絵 templates/originals/frenchbulldog.jpg): `make_video_base.py ... frenchbulldog --label "French Bulldog"` → shop/video_base/frenchbulldog_video_base.png
