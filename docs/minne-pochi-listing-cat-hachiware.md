@@ -113,3 +113,4 @@ uchinoko-aruaru_hachiware_pochi.zip(中身: hachiware_pochi.pdf、hachiware_post
 - 1と3は `python3 shop/make_from_pdf.py <PDF> hachiware --overwrite` で作った
 - ポストカードは横向き: shop/postcard/postcard_hachiware_full_yoko.pdf、postcard_hachiware_letter_yoko.pdf。もとの絵(2000×1091、和紙のような背景)から
   `python3 shop/make_postcard.py <絵> hachiware full_yoko --label "Tuxedo Cat"`(letter_yoko も同じ)。ZIPでは hachiware_postcard_full.pdf・hachiware_postcard_letter.pdf に名前を変える
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_hachiware_full_yoko.pdf を350dpiで画像にして `make_video_base.py <画像> hachiware --label "Tuxedo Cat"` → shop/video_base/hachiware_video_base.png
