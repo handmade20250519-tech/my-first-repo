@@ -111,3 +111,4 @@ uchinoko-aruaru_britishshorthair_pochi.zip
 - ポストカード: shop/postcard/postcard_british_full_yoko.pdf、postcard_british_letter_yoko.pdf。もとの絵(1254×1254)から `python3 shop/make_postcard.py <絵> british full_yoko --label "British Shorthair"`(letter_yoko も同じ)。ZIPでは britishshorthair_postcard_full.pdf・britishshorthair_postcard_letter.pdf に名前を変える
 - 絵が正方形に近いので、横向きの絵いっぱいでは約62×61mmと小さめ。縦向きなら約83×81mmにできる(ユーザーに伝えた)
 - 商品画像: 4番目に shop/listing_british_postcard.jpg、5番目に shop/scene_british_postcard_note.jpg(横向きの机の写真)、作り方はその後
+- 2026-11-16 動画の下じきを作った(お気に入りがついた今の絵のまま。ユーザーの判断)。もとの絵が残っていないので postcard_british_full_yoko.pdf を350dpiで画像にして `make_video_base.py <画像> british --label "British Shorthair"` → shop/video_base/british_video_base.png
