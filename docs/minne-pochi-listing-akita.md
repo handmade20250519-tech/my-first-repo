@@ -110,3 +110,4 @@ uchinoko-aruaru_akita_pochi.zip
 - 背景のすじを消す処理で、空に舞う小さな雪の結晶(うすい青灰色)も消えた(体の上の雪は残っている)。ユーザーに伝えた
 - 最初は名前の文字も消えた(絵が小さく、文字1つ1つが小さいため)。道具を直した
 - 商品画像: 4番目に shop/listing_akita_postcard.jpg、5番目に shop/scene_akita_postcard_note.jpg(縦向きの机の写真)、作り方はその後
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_akita_full.pdf を350dpiで画像にして `make_video_base.py <画像> akita --label "Akita"` → shop/video_base/akita_video_base.png
