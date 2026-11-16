@@ -34,10 +34,11 @@ def main(video, name, skip=2, label=None, keep_bg=False):
         frames = sorted(Path(tmp).glob("f*.png"))[skip:]
         # 背景の色: 動画のまん中あたりのコマの、左上のすみ
         mid = np.asarray(Image.open(frames[len(frames) // 2]).convert("RGB")).astype(float)
-        # 4すみ(と上下のまん中)のうち、いちばん明るい所を背景とする(しっぽなどが入っているすみをさけるため)
+        # 4すみと上・左のまん中の6か所の色のうち、まん中の明るさのものを背景とする
         H, W = mid.shape[:2]
         spots = [(40, 40), (40, W - 120), (H - 120, 40), (H - 120, W - 120), (40, W // 2 - 40), (H // 2, 40)]
-        bg = max((np.median(mid[y:y + 80, x:x + 80].reshape(-1, 3), axis=0) for y, x in spots), key=lambda c: c.mean())
+        cols = sorted((np.median(mid[y:y + 80, x:x + 80].reshape(-1, 3), axis=0) for y, x in spots), key=lambda c: c.mean())
+        bg = cols[len(cols) // 2]  # まん中の明るさの所(しっぽが入るすみも、白くぬけたすみも外す)
         fill = tuple(int(v) for v in bg) if keep_bg else (255, 255, 255)
         if keep_bg:
             bg = np.array([255.0, 255.0, 255.0])
@@ -49,6 +50,9 @@ def main(video, name, skip=2, label=None, keep_bg=False):
         out_dir.mkdir()
         for i, f in enumerate(frames):
             a = np.clip(np.asarray(Image.open(f).convert("RGB")).astype(float) * 255 / bg, 0, 255)
+            if not keep_bg:  # 背景の色むら(すみと中央で少しちがう)も、ほぼ白のところは白にそろえる
+                t = np.clip((a.min(axis=2, keepdims=True) - 236) / 12, 0, 1)
+                a = a * (1 - t) + 255 * t
             im = Image.fromarray(a.astype(np.uint8))
             if label:
                 d = ImageDraw.Draw(im)
