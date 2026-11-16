@@ -113,3 +113,4 @@ uchinoko-aruaru_maltipoo_pochi.zip(中身: maltipoo_pochi.pdf、maltipoo_postcar
 - ポストカードは縦向き: shop/postcard/postcard_maltipoo_full.pdf、postcard_maltipoo_letter.pdf。もとの絵(2000×2000)から
   `python3 shop/make_postcard.py <絵> maltipoo full --label "Maltipoo"`(letter も同じ)。ZIPでは maltipoo_postcard_full.pdf・maltipoo_postcard_letter.pdf に名前を変える
 - 1と3は `python3 shop/make_from_pdf.py <PDF> maltipoo --overwrite` で作った
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_maltipoo_full.pdf を350dpiで画像にして `make_video_base.py <画像> maltipoo --label "Maltipoo" --scale 0.85` → shop/video_base/maltipoo_video_base.png
