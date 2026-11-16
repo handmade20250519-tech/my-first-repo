@@ -85,3 +85,4 @@ uchinoko-aruaru_americanshorthair_pochi.zip
 1. shop/listing_americanshorthair_1.jpg(デザイン見本)
 2. shop/listing_americanshorthair_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
+- 2026-11-16 ポストカード(横向き)と動画の下じきを作った。漫画っぽい部分(しっぽの先・背中・腰のまわりの動きの線)だけ消した: templates/originals/americanshorthair.png(もとは americanshorthair_original.jpg)。`make_postcard.py ... americanshorthair full_yoko/letter_yoko --label "American Shorthair"`、商品画像 listing_americanshorthair_postcard.jpg、机の写真 scene_americanshorthair_postcard_note.jpg、動画の下じき video_base/americanshorthair_video_base.png。ぽち袋(Canva)には動きの線が残っている
