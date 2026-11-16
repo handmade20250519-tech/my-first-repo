@@ -22,7 +22,7 @@
 
 お年玉やちょっとしたお礼を渡すとき、袋を見た相手が「うちの子もこれやる!」と笑ってくれたら。そんな一枚になればうれしいです。
 ポストカードは、飾ったり、お手紙に使ったりできます。
-あけおめ動画は、日だまりで目をさまして、すっと顔を上げてこちらを見る動画です。LINEやメールで新年のあいさつとして送れます。
+あけおめ動画は、日だまりで目をさまして顔を上げ、またすやすや眠りにもどる動画です。LINEやメールで新年のあいさつとして送れます。
 動画の見本(YouTube):(ここにリンク)
 
 絵は、墨と淡い水彩で描いたような、落ち着いた雰囲気に仕上げました。
@@ -118,3 +118,4 @@ uchinoko-aruaru_italiangreyhound_pochi.zip(中身: ItalianGreyhound.pdf、postca
 - 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_italiangreyhound_full_yoko.pdf を350dpiで画像にして `make_video_base.py <画像> italiangreyhound --label "Italian Greyhound"` → shop/video_base/italiangreyhound_video_base.png
 - 2026-11-16 ぽち袋のCanvaのファイル名は ItalianGreyhound.pdf(ユーザー)
 - 2026-11-16 あけおめ動画を足した(眠っていたのが顔を上げてこちらを見る)。`shop/fix_canva_video.py <動画> italiangreyhound`(背景を白に。名前は最後まで消えない)→ make_greeting_video.py。ぽち袋の名前 ItalianGreyhound.pdf(ユーザー)。商品画像の並び: 1 listing_italiangreyhound_1.jpg → 2 listing_italiangreyhound_video.jpg → 3 listing_italiangreyhound_3.jpg → 4 listing_italiangreyhound_postcard.jpg → 5 scene_italiangreyhound_1_note.jpg → 6 scene_italiangreyhound_postcard_note.jpg → 7 listing_shiba_4.jpg
+- 2026-11-16 くり返し再生で、顔を上げた姿から眠った姿へ急に戻るのが気になる(ユーザー)。最初の2.5秒(顔を上げるまで)を、前に進めてから逆向きに戻して5秒にした(眠る→顔を上げる→また眠る)
