@@ -115,3 +115,4 @@ uchinoko-aruaru_samoyed_pochi.zip
 - 2026-11-08 新しいPDF: 袋の名前は「Samoyed」(水色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒(犬の頭をよけて右上)。袋の表は6ページとも64×95mm
 - 絵の左の影は袋の左の折り目を約3mm、右の毛の山は右の折り目を約6mmこえて、横の折りこみにかかる。組み立てると、毛の山の右はしは折り目で切れて見える(ユーザーに伝えた)
 - 場面写真の袋を新しい絵に貼りかえた(scene_samoyed_1.jpg・scene_samoyed_1_note.jpg)
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_samoyed_full_yoko.pdf を350dpiで画像にして `make_video_base.py <画像> samoyed --label "Samoyed"` → shop/video_base/samoyed_video_base.png
