@@ -94,3 +94,4 @@ uchinoko-aruaru_wire_pochi.zip(中身: wire_pochi.pdf、wire_postcard_full.pdf�
 4. shop/listing_wire_postcard.jpg(ポストカード2種の見本。`shop/make_postcard_listing.py wire yoko`)
 5. shop/scene_wire_postcard_note.jpg(ポストカードの場面写真。横向きのハガキの机の写真。注記なしは scene_wire_postcard.jpg)
 6. shop/listing_shiba_4.jpg(作り方)
+- 2026-11-16 動画の下じきを作った。漫画っぽい部分(頭の左上のきらきらと小さな線)だけ消し(templates/originals/wire_1024_clean.png、もとは wire_original.jpg)、1024pxなので2倍にした wire.png から `make_video_base.py ... wire --label "Wirehaired Dachshund"`。口の草は「あるある」なので残した。ポストカード・ぽち袋にはきらきらが残っている
