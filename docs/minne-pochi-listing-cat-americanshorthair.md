@@ -107,3 +107,4 @@ On the left, a real adult silver classic tabby American Shorthair cat (silver co
 
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
+- 2026-11-16 場面写真をアメショがいる形に作り直した(ユーザーがGeminiで作った templates/scenes/260.jpg)。ぽち袋のPDFから袋の表(check/front_americanshorthair_blank.png)を取り出し(listing_1/3 は前のものに戻した)、front_americanshorthair_pad.png(0.59)を貼った → shop/scene_americanshorthair_1_note.jpg
