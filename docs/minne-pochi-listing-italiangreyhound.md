@@ -112,3 +112,4 @@ uchinoko-aruaru_italiangreyhound_pochi.zip(中身: italiangreyhound_pochi.pdf、
 - 1と3は `python3 shop/make_from_pdf.py <PDF> italiangreyhound --overwrite` で作った
 - ポストカードは横向き: shop/postcard/postcard_italiangreyhound_full_yoko.pdf、postcard_italiangreyhound_letter_yoko.pdf。もとの絵(1500×1500、和紙のような背景)から
   `python3 shop/make_postcard.py <絵> italiangreyhound full_yoko --label "Italian Greyhound"`(letter_yoko も同じ)。ZIPでは italiangreyhound_postcard_full.pdf・italiangreyhound_postcard_letter.pdf に名前を変える
+- 2026-11-16 動画の下じきを作った。もとの絵が残っていないので postcard_italiangreyhound_full_yoko.pdf を350dpiで画像にして `make_video_base.py <画像> italiangreyhound --label "Italian Greyhound"` → shop/video_base/italiangreyhound_video_base.png
