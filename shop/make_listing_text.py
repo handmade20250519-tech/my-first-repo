@@ -96,7 +96,10 @@ def update_doc(doc, key, title_jp, catch, tags, pochi, yoko, ai_motion, cat, int
         raise SystemExit(f"説明文が長すぎる({n}文字)")
     p = DOCS / f"minne-pochi-listing-{doc}.md"
     s = p.read_text()
-    start, end = s.index("## 商品名"), s.index("## 確かめること")
+    start = s.index("## 商品名")
+    desc = s.index("## 説明文")
+    fence_end = s.index("```", s.index("```", desc) + 3) + 3  # 説明文のコードブロックの終わり
+    end = s.index("\n## ", fence_end) + 1  # 説明文のすぐ次の見出し(ZIPの名前など)は残す
     new = f"""## 商品名
 {title_jp}のぽち袋・ポストカード・あけおめ動画 {catch}｜お年玉・お礼に｜印刷して作るダウンロード版 のし付き6種(AIを用いた作品)
 - minneの商品名の文字数の上限に入るか、出品の画面で確かめる。入らないときは「｜お年玉・お礼に」を外す

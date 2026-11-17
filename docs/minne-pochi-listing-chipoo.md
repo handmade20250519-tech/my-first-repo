@@ -84,6 +84,9 @@
 ない犬種・猫の柄は、メッセージでリクエストをお寄せください。
 ```
 
+## ZIPの名前
+uchinoko-aruaru_chipoo_pochi.zip(中身: Chipoo.pdf、postcard_chipoo_full.pdf、postcard_chipoo_letter.pdf、chipoo_akeome.mp4、pochi_howto.pdf。どれも名前を変えずに入れる)
+
 ## 確かめること(出品前)
 - 絵はキャラメル色の毛色。ほかの毛色の要望があれば、別の出品にする
 - 袋の名前は英語の「Chipoo」(英語圏での呼び名。日本の「チワプー」は作品名とタグで伝え、説明文で違いを説明している)
