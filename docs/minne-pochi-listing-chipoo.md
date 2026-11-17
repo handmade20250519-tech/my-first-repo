@@ -98,3 +98,15 @@ uchinoko-aruaru_chipoo_pochi.zip(中身: Chipoo.pdf、postcard_chipoo_full.pdf�
 3. shop/listing_shiba_4.jpg(作り方)
 - 2026-11-17 ポストカード(縦)と動画の下じきを作った。墨絵で作り直した絵がマルプーとそっくりになったので、ユーザーの判断で前の絵(templates/originals/chipoo_original.jpg)に戻し、ほおの赤みだけ消した(chipoo.png。にっこり口と線はチワプーらしさとして残した)。`make_postcard.py ... chipoo full/letter --label "Chipoo"`、商品画像 listing_chipoo_postcard.jpg、机の写真 scene_chipoo_postcard_note.jpg、動画の下じき video_base/chipoo_video_base.png(--scale 0.9)。ぽち袋(Canva)には赤みが残っている
 - 2026-11-17 あけおめ動画を足した(耳をゆらして首をかしげ、しっぽをふる)。`shop/fix_canva_video.py <動画> chipoo`(背景を白に。名前は最後まで消えない)→ make_greeting_video.py。耳が大きくゆれる場面で、左の耳の先が画面のはしで少し切れる。ぽち袋は変えない(ユーザーの判断。Chipoo.pdf)。英字の読み方の一文(マルプーと同じ形)を入れた。商品画像の並び: 1 listing_chipoo_1.jpg → 2 listing_chipoo_video.jpg → 3 listing_chipoo_3.jpg → 4 listing_chipoo_postcard.jpg → 5 scene_chipoo_1_note.jpg → 6 scene_chipoo_postcard_note.jpg → 7 listing_shiba_4.jpg
+
+## 場面写真(Geminiのプロンプト・2026-11-17 作り直し)
+前の場面写真は犬が写っていなかったので、チワプーがいる場面に作り直す(ユーザーの希望)。袋は真っ白で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the floor, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It stands in the front right of the frame and takes up about 25% of the image width, large and easy to see.
+
+On the left, a real adult cream-apricot Chipoo (a small Chihuahua and Toy Poodle mix dog with a soft, fluffy, slightly wavy coat and wavy-furred ears) sits on the floor, looking at the camera and tilting its head to one side in a curious "what is it?" way, as if someone has just called its name, with large round dark eyes. Real dog, not a cartoon. The dog does not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
