@@ -110,3 +110,4 @@ On the left, a real adult cream-apricot Chipoo (a small Chihuahua and Toy Poodle
 
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
+- 2026-11-17 場面写真のもと(チワプーがいる写真)を templates/scenes/267.jpg に保存。袋の四すみ (932,744)(1099,744)(1094,1022)(931,1022)、幅:高さ=0.60。ぽち袋のPDFが届いたら front_chipoo_blank.png を取り出して貼る
