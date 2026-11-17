@@ -113,3 +113,4 @@ uchinoko-aruaru_mike_pochi.zip
 - 商品画像: 4番目に shop/listing_mike_postcard.jpg、5番目に shop/scene_mike_postcard_note.jpg(縦向きの机の写真)、作り方はその後
 - 新しいPDFが届いたら: `python3 shop/make_from_pdf.py <PDF> mike --overwrite`。場面写真は templates/scenes/55.jpg(袋を白紙に戻したもの)に新しい袋の表を貼る(make_scene_blank.py の mike_1 を、check/front_mike_blank.png を使う形に直す)
 - 2026-11-08 新しいPDF: 袋の名前は「Calico」(灰色がかった茶色の丸い書体)。18か所とも正しいつづり。縦書きの文字は黒。袋の表は6ページとも64×95mm。1・3枚目を作り、場面写真の袋を新しい絵に貼りかえた
+- 2026-11-17 動画の下じきを作った。もとの絵が残っていないので postcard_mike_full.pdf を350dpiで画像にして `make_video_base.py <画像> mike --label "Calico"` → shop/video_base/mike_video_base.png
