@@ -105,7 +105,7 @@ Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No pe
 ```
 
 ## ZIPの名前
-uchinoko-aruaru_stbernard_pochi.zip
+uchinoko-aruaru_stbernard_pochi.zip(中身: SaintBernard.pdf、postcard_stbernard_full_yoko.pdf、postcard_stbernard_letter_yoko.pdf、stbernard_akeome.mp4、pochi_howto.pdf。どれも名前を変えずに入れる)
 
 ## 商品画像
 1. shop/listing_stbernard_1.jpg(デザイン見本)
