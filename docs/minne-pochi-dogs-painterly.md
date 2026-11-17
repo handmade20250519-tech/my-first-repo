@@ -627,7 +627,8 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 
 ### チワプー(チワワ×トイ・プードル)
 あるある: 名前を呼ぶと、くりっとした目でこちらを見て、こてんと首をかしげる。「なあに?」のその顔が見たくて、何度も呼んでしまう
-- 作り直し(2026-11-17、ユーザーの判断): 前の絵は漫画っぽかった(ほおの赤み・にっこり口の線・太く均一な線)。お気に入りもついていないので、墨絵の書き方で書き直した。ポーズ(座って首をかしげる)とクリーム色はそのまま
+- 2026-11-17 下の指示文で作り直したが、マルプーとそっくりになったので、ユーザーの判断で前の絵に戻し、ほおの赤みだけ消した(templates/originals/chipoo.png)。下の指示文は使わない
+- (使わなかった案)作り直し: 前の絵は漫画っぽかった(ほおの赤み・にっこり口の線・太く均一な線)。お気に入りもついていないので、墨絵の書き方で書き直した。ポーズ(座って首をかしげる)とクリーム色はそのまま
 
 ```
 Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).

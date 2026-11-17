@@ -89,3 +89,4 @@ uchinoko-aruaru_chipoo_pochi.zip
 1. shop/listing_chipoo_1.jpg(デザイン見本)
 2. shop/listing_chipoo_3.jpg(6種類)
 3. shop/listing_shiba_4.jpg(作り方)
+- 2026-11-17 ポストカード(縦)と動画の下じきを作った。墨絵で作り直した絵がマルプーとそっくりになったので、ユーザーの判断で前の絵(templates/originals/chipoo_original.jpg)に戻し、ほおの赤みだけ消した(chipoo.png。にっこり口と線はチワプーらしさとして残した)。`make_postcard.py ... chipoo full/letter --label "Chipoo"`、商品画像 listing_chipoo_postcard.jpg、机の写真 scene_chipoo_postcard_note.jpg、動画の下じき video_base/chipoo_video_base.png(--scale 0.9)。ぽち袋(Canva)には赤みが残っている
