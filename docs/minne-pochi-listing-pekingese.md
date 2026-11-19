@@ -105,3 +105,4 @@ On the left, a real adult golden fawn Pekingese with a black face mask and a lon
 
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
+- 2026-11-19 場面写真: templates/scenes/278.jpg(ユーザーがGeminiで作った)に front_pekingese_pad.png(0.65)を貼った → shop/scene_pekingese_1_note.jpg。商品画像の並び: 1 listing_pekingese_1.jpg → 2 listing_pekingese_video.jpg → 3 listing_pekingese_3.jpg → 4 listing_pekingese_postcard.jpg → 5 scene_pekingese_1_note.jpg → 6 scene_pekingese_postcard_note.jpg → 7 listing_shiba_4.jpg
