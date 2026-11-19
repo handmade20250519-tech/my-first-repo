@@ -356,3 +356,24 @@ TEXT: Write only the name "Sphynx" once, in small, simple, neat hand-lettered br
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+## ペキニーズ(2026-11-19 新しく足す)
+あるある: 小さな体なのに、王様のように胸を張って、ゆうゆうと歩く。長い毛が床をなでて、まるでモップのよう。呼んでも急がない、マイペースな「王様歩き」
+- はじめから墨絵の書き方で書いた。ぽち袋・ポストカード・縦長の動画に収まるように、横に長くなりすぎない、ななめ前から歩いてくる形にした
+- 袋の名前は「Pekingese」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Pekingese walking slowly and proudly toward the viewer at a three-quarter angle, chest out and head held high like a little emperor, taking its time with great dignity. Its long, flowing double coat sweeps down to the floor and brushes along the ground like a soft mop, hiding its short legs; a full mane of fur frames its face like a small lion. Its plumed tail curls up over its back. Its face: a short flat muzzle with a small black nose, large round dark eyes, a calm, self-satisfied expression, and long feathered ears hanging down into the mane. Coat color: warm golden fawn with a darker black mask on the face. Realistic Pekingese anatomy and proportions, exactly like a real adult dog (NOT a puppy, NOT a cartoon).
+The charm comes only from the real-life moment (a tiny dog walking with royal confidence, its coat sweeping the floor), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the long fur painted with layered washes and fine flowing brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no crown, no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 65% of the canvas height and no more than 70% of the canvas width (a compact shape, NOT a long horizontal shape), with generous empty space around it. Plain pure white background with no paper texture, no frame, no floor; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "Pekingese" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Pekingese. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
