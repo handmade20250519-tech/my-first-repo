@@ -377,3 +377,25 @@ TEXT: Write only the breed name "Pekingese" once, in small, simple, neat hand-le
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+
+## ブルドッグ(2026-11-21 新しく足す)
+あるある: お散歩の途中で、どすんと座りこんで動かない。リードを引いても「今日はもう歩かない」と、がんこにすわったまま。たれたほっぺで、すました顔
+- フレブルの「へそ天」と重ならないように、すわりこみ(散歩拒否)にした。すわった形はたてに収まるので、ぽち袋・ポストカード・縦長の動画に入りやすい
+- ウエスティの動画は、耳の先が画面の上で切れた。頭の上の余白を多めにとるように書いた
+- 袋の名前は「Bulldog」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult English Bulldog that has plopped down and sat firmly on the ground in the middle of a walk, stubbornly refusing to take another step. It sits square and heavy on its haunches, front legs planted wide and straight, broad chest pushed forward, seen from the front at a slight three-quarter angle. Its face: a wide, wrinkled face with a short pushed-in muzzle, a black nose, droopy jowls and an underbite showing just a hint of lower teeth, small rose ears, and dark eyes looking slightly up and to the side with a calm, unbothered, "I am not moving" expression. A short leash attached to its collar lies loose and slack on the ground beside it. Coat: smooth short white coat with large warm fawn-brown patches. Realistic bulldog anatomy and proportions, stocky and low, exactly like a real adult dog (NOT a puppy, NOT a cartoon).
+The charm comes only from the real-life moment (a heavy, stubborn bulldog sitting down and refusing to walk), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the wrinkles and short coat painted with layered washes and fine brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no sweat drops, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 60% of the canvas height and no more than 65% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the head. Plain pure white background with no paper texture, no frame, no scenery; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "Bulldog" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Bulldog. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
