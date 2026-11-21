@@ -399,3 +399,4 @@ TEXT: Write only the breed name "Bulldog" once, in small, simple, neat hand-lett
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-21 絵ができた(templates/originals/bulldog.jpg、2000×2000)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像を作った。Geminiの動画は横長(16:9)で、正方形の絵を渡すと頭と足が切れたので、左右に白い余白を足して名前を消した横長の画像 shop/video_base/bulldog_gemini_16x9.png を作り、これを渡してもらう
