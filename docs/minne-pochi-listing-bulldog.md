@@ -88,5 +88,18 @@ uchinoko-aruaru_bulldog_pochi.zip(中身: Bulldog.pdf、postcard_bulldog_full.pd
 ## 商品画像
 - ポストカード(縦向き): `make_postcard.py templates/originals/bulldog.jpg bulldog full/letter --label "Bulldog"`。商品画像 shop/listing_bulldog_postcard.jpg、机の写真 shop/scene_bulldog_postcard_note.jpg
 - 2026-11-21 あけおめ動画: Geminiの動画(1280×720、24コマ/秒、10秒、音あり)。正方形の絵を渡すと頭と足が切れたので、横長の画像 shop/video_base/bulldog_gemini_16x9.png を渡して作ってもらった(元の動画は shop/video_base/bulldog_gemini_raw.mp4)。12〜131コマ目の5秒(正面 → ちらっと横 → ふんっと顔をそむける → 正面)を使い、30コマ/秒・音なしに。背景を白に、Geminiが入れた名前を外して Klee One で入れ直した → shop/video_base/bulldog_gemini_fixed.mp4 → make_greeting_video.py → listing_bulldog_video.jpg
-- ぽち袋の画像(listing_bulldog_1/3、場面写真)は、Bulldog.pdf が届いてから作る
+- 2026-11-21 ぽち袋のPDF(Bulldog.pdf、templates/pdf/)から listing_bulldog_1/3 と check/front_bulldog_blank.png を作った。6ページとも64×95mm。場面写真は、Geminiで袋が白い写真を作ってもらってから貼る
 - 商品画像の並び: 1 listing_bulldog_1.jpg → 2 listing_bulldog_video.jpg → 3 listing_bulldog_3.jpg → 4 listing_bulldog_postcard.jpg → 5 scene_bulldog_1_note.jpg → 6 scene_bulldog_postcard_note.jpg → 7 listing_shiba_4.jpg
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る(袋の表は check/front_bulldog_blank.png)。
+```
+A warm, natural lifestyle photo, square 1:1. A quiet residential sidewalk next to a low hedge and a small patch of grass, in soft late-afternoon light. The background is softly blurred.
+
+On a low, flat stone garden wall in the front right, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It takes up about 25% of the image width, large and easy to see.
+
+On the left, a real adult English Bulldog with a white coat and fawn patches has plopped down and sits firmly on the sidewalk, refusing to walk any further. Its leash lies slack on the ground beside it, and it looks away with a calm, stubborn, unbothered face. Real dog, not a cartoon. The dog and the leash do not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
