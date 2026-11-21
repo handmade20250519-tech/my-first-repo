@@ -89,6 +89,7 @@ uchinoko-aruaru_bulldog_pochi.zip(中身: Bulldog.pdf、postcard_bulldog_full.pd
 - ポストカード(縦向き): `make_postcard.py templates/originals/bulldog.jpg bulldog full/letter --label "Bulldog"`。商品画像 shop/listing_bulldog_postcard.jpg、机の写真 shop/scene_bulldog_postcard_note.jpg
 - 2026-11-21 あけおめ動画: Geminiの動画(1280×720、24コマ/秒、10秒、音あり)。正方形の絵を渡すと頭と足が切れたので、横長の画像 shop/video_base/bulldog_gemini_16x9.png を渡して作ってもらった(元の動画は shop/video_base/bulldog_gemini_raw.mp4)。12〜131コマ目の5秒(正面 → ちらっと横 → ふんっと顔をそむける → 正面)を使い、30コマ/秒・音なしに。背景を白に、Geminiが入れた名前を外して Klee One で入れ直した → shop/video_base/bulldog_gemini_fixed.mp4 → make_greeting_video.py → listing_bulldog_video.jpg
 - 2026-11-21 ぽち袋のPDF(Bulldog.pdf、templates/pdf/)から listing_bulldog_1/3 と check/front_bulldog_blank.png を作った。6ページとも64×95mm。場面写真は、Geminiで袋が白い写真を作ってもらってから貼る
+- 2026-11-21 場面写真: templates/scenes/282.jpg(ユーザーがGeminiで作った)に front_bulldog_pad.png(0.64)を貼った → shop/scene_bulldog_1_note.jpg
 - 商品画像の並び: 1 listing_bulldog_1.jpg → 2 listing_bulldog_video.jpg → 3 listing_bulldog_3.jpg → 4 listing_bulldog_postcard.jpg → 5 scene_bulldog_1_note.jpg → 6 scene_bulldog_postcard_note.jpg → 7 listing_shiba_4.jpg
 
 ## 場面写真(Geminiのプロンプト)
