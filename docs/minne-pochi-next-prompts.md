@@ -400,3 +400,25 @@ TEXT: Write only the breed name "Bulldog" once, in small, simple, neat hand-lett
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 - 2026-11-21 絵ができた(templates/originals/bulldog.jpg、2000×2000)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像を作った。Geminiの動画は横長(16:9)で、正方形の絵を渡すと頭と足が切れたので、左右に白い余白を足して名前を消した横長の画像 shop/video_base/bulldog_gemini_16x9.png を作り、これを渡してもらう
+
+## ダルメシアン(2026-11-22 新しく足す)
+あるある: 家族が帰ってくると、上くちびるを持ち上げて歯を見せ、にーっと笑う「ダルメシアン・スマイル」。知らない人には怒っているように見えるけれど、本人は大よろこび
+- すわった形にして、ぽち袋・ポストカード・縦長の動画に収まるようにした。笑い顔は、本物の犬の表情(まんがの笑い線ではない)と書いた
+- 袋の名前は「Dalmatian」
+- ほかの候補(ユーザー): ジャーマン・シェパード、ドーベルマン、メインクーン、シンガプーラ
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Dalmatian sitting upright, seen from the front at a slight three-quarter angle, greeting its family who just came home. It shows the famous Dalmatian "smile": its upper lip is drawn back to show its front teeth in a wide, toothy grin, ears relaxed slightly back, eyes softly narrowed with happiness, tail sweeping the floor behind it. This is a real dog's natural submissive grin, painted realistically, NOT a cartoon smile. Its coat: short, smooth white coat covered with many round black spots of different sizes, spots also on the ears and head; a black nose. Lean, athletic, elegant build with a deep chest and long legs. Realistic Dalmatian anatomy and proportions, exactly like a real adult dog (NOT a puppy, NOT a cartoon).
+The charm comes only from the real-life moment (a happy Dalmatian grinning to welcome its family home), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the spots painted with soft, slightly bleeding sumi ink. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no cartoon smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no hearts, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 60% of the canvas height and no more than 60% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the head. Plain pure white background with no paper texture, no torn paper edge, no frame, no scenery; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "Dalmatian" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Dalmatian. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
