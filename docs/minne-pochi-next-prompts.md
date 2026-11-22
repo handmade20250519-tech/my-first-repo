@@ -422,3 +422,4 @@ TEXT: Write only the breed name "Dalmatian" once, in small, simple, neat hand-le
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-22 絵ができた(templates/originals/dalmatian.jpg、2000×2000)。歯を見せる笑いではなく、口を開けて目を細めた「にっこり顔」になった(これでよい)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/dalmatian_gemini_16x9.png(名前を消した)を作った
