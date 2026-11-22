@@ -14,6 +14,7 @@ uchinoko-aruaru_dalmatian_pochi.zip(中身: x)
 ## 商品画像
 - ポストカード(縦向き): `make_postcard.py templates/originals/dalmatian.jpg dalmatian full/letter --label "Dalmatian"`。商品画像 shop/listing_dalmatian_postcard.jpg、机の写真 shop/scene_dalmatian_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/dalmatian_gemini_16x9.png
 - 2026-11-22 ぽち袋のPDF(Dalmatian.pdf、templates/pdf/)から listing_dalmatian_1/3 と check/front_dalmatian_blank.png を作った。6ページとも64×95mm。袋の名前は青の書体
+- 2026-11-22 場面写真: templates/scenes/285.jpg(ユーザーがGeminiで作った)に front_dalmatian_pad.png(0.61)を貼った → shop/scene_dalmatian_1_note.jpg
 - 商品画像の並び: 1 listing_dalmatian_1.jpg → 2 listing_dalmatian_video.jpg → 3 listing_dalmatian_3.jpg → 4 listing_dalmatian_postcard.jpg → 5 scene_dalmatian_1_note.jpg → 6 scene_dalmatian_postcard_note.jpg → 7 listing_shiba_4.jpg
 
 ## 場面写真(Geminiのプロンプト)
