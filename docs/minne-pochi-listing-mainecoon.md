@@ -89,4 +89,18 @@ uchinoko-aruaru_mainecoon_pochi.zip(中身: MaineCoon.pdf、postcard_mainecoon_f
 - ポストカード(縦向き): `make_postcard.py templates/originals/mainecoon.jpg mainecoon full/letter --label "Maine Coon"`。商品画像 shop/listing_mainecoon_postcard.jpg、机の写真 shop/scene_mainecoon_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/mainecoon_gemini_16x9.png
 - ぽち袋のPDF: ユーザーは「MainCoon.pdf」と名づけたが、袋の英字も「Main Coon」(e がない)だった。Canvaで「Maine Coon」・MaineCoon.pdf に直すようおすすめした。説明文は MaineCoon.pdf で書いた(直さないときは Main Coon / MainCoon.pdf に戻す)。今の listing_mainecoon_1/3 は「Main Coon」のPDFから作ったもの
 - 2026-11-23 あけおめ動画: Geminiの動画(shop/video_base/mainecoon_gemini_raw.mp4、1280×720、24コマ/秒、10秒)。背景はクリーム色、Geminiが下に「Maine Coon」を入れていたので、その上(高さ655)までを使い、背景を白に。48〜169コマ目(まばたき・耳・しっぽを大きくゆらす。はじめと終わりの形が近い)で約5秒・音なし。Klee One で名前を入れた → shop/video_base/mainecoon_gemini_fixed.mp4 → make_greeting_video.py → listing_mainecoon_video.jpg
+- 2026-11-23 直したPDF(袋の英字「Maine Coon」、templates/pdf/MaineCoon.pdf)から listing_mainecoon_1/3 と check/front_mainecoon_blank.png を作り直した。6ページとも64×95mm
 - 商品画像の並び: 1 listing_mainecoon_1.jpg → 2 listing_mainecoon_video.jpg → 3 listing_mainecoon_3.jpg → 4 listing_mainecoon_postcard.jpg → 5 scene_mainecoon_1_note.jpg → 6 scene_mainecoon_postcard_note.jpg → 7 listing_shiba_4.jpg
+
+## 場面写真(Geminiのプロンプト)
+袋は真っ白で作ってもらい、本物の絵はあとで `shop/make_scene_blank.py` で貼る(袋の表は check/front_mainecoon_blank.png)。
+```
+A warm, natural lifestyle photo, square 1:1. A cozy Japanese living room in soft afternoon light, with a light-wood floor. The background is softly blurred.
+
+On the floor in the front right, one small closed Japanese pochi-bukuro money envelope stands upright, propped against a small wooden box. We see only its FRONT side: one clean, flat, plain rectangle of matte white paper with crisp square corners. The flap is already closed and folded to the back, so NO flap, NO V-shaped fold, NO seam and NO fold lines are visible on the front. The rectangle is exactly 2:3 in width to height (6.4 cm wide, 9.5 cm tall), not narrower. The front is COMPLETELY BLANK: no drawing, no text, no pattern, no logo, no noshi mark. The envelope faces the camera straight on, flat and not tilted, with all four corners clearly visible and not covered by anything. It takes up about 25% of the image width, large and easy to see.
+
+On the left, a real adult Maine Coon cat (long-haired brown tabby with a white chest and paws, big tufted ears) sits squeezed into a small plain cardboard box that is much too small for it, its fluffy body bulging over the edges and its long bushy tail hanging out over the side. It looks at the camera with a calm, satisfied face. Real cat, not a cartoon. The cat, the box and the tail do not touch or cover the envelope.
+
+Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
+```
+
