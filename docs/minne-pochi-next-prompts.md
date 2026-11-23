@@ -423,3 +423,25 @@ TEXT: Write only the breed name "Dalmatian" once, in small, simple, neat hand-le
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 - 2026-11-22 絵ができた(templates/originals/dalmatian.jpg、2000×2000)。歯を見せる笑いではなく、口を開けて目を細めた「にっこり顔」になった(これでよい)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/dalmatian_gemini_16x9.png(名前を消した)を作った
+
+## メインクーン(2026-11-23 新しく足す)
+あるある: 大きな体なのに、小さな段ボール箱を見つけると入らずにはいられない。体も長いしっぽもはみ出しているのに、本人はすっぽり入ったつもりで満足顔
+- ノルウェージャン(もふもふで雪)と重ならないように、箱にした。箱にちょこんと入った形はたてに収まる
+- 袋の名前は「Maine Coon」
+- はじめから、Geminiの動画に渡しやすいように頭の上の余白を多めにとった
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real cat for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Maine Coon cat squeezed into a small, plain cardboard box that is clearly far too small for it. It sits upright inside the box, its big fluffy body bulging over the edges, its large paws resting on the rim, and its long, bushy tail hanging out over the side of the box. It looks at the viewer with a calm, completely satisfied expression, as if it fits perfectly. Its face: large, alert, tufted lynx-like ears, a full ruff of fur around the neck like a lion's mane, a broad muzzle, and big gentle amber eyes. Coat: long, shaggy brown tabby with a white chest and white paws. Realistic Maine Coon anatomy and proportions, large and sturdy, exactly like a real adult cat (NOT a kitten, NOT a cartoon). The box is plain brown cardboard with no printing.
+The charm comes only from the real-life moment (a huge cat proudly sitting in a box that is much too small), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real cats, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the long fur painted with layered washes and fine flowing brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no sweat drops, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One cat and one box only, centered, filling about 60% of the canvas height and no more than 65% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the ears. Plain pure white background with no paper texture, no torn paper edge, no card border, no frame, no scenery; only a very faint pale ink wash shadow under the box.
+
+TEXT: Write only the breed name "Maine Coon" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the box, about 6% of the canvas height, on a single line. Spell it exactly: Maine Coon. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
