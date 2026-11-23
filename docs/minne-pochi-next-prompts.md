@@ -445,3 +445,4 @@ TEXT: Write only the breed name "Maine Coon" once, in small, simple, neat hand-l
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-23 絵ができた(templates/originals/mainecoon.jpg)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/mainecoon_gemini_16x9.png を作った。ぽち袋のPDF(ユーザーの名前 MainCoon.pdf)は、袋の英字が「Main Coon」(e がない)だったので、Canvaで「Maine Coon」に直すかユーザーに聞いた。listing_mainecoon_1/3 は今のPDFから作ったもの(直したら作り直す)
