@@ -90,6 +90,7 @@ uchinoko-aruaru_mainecoon_pochi.zip(中身: MaineCoon.pdf、postcard_mainecoon_f
 - ぽち袋のPDF: ユーザーは「MainCoon.pdf」と名づけたが、袋の英字も「Main Coon」(e がない)だった。Canvaで「Maine Coon」・MaineCoon.pdf に直すようおすすめした。説明文は MaineCoon.pdf で書いた(直さないときは Main Coon / MainCoon.pdf に戻す)。今の listing_mainecoon_1/3 は「Main Coon」のPDFから作ったもの
 - 2026-11-23 あけおめ動画: Geminiの動画(shop/video_base/mainecoon_gemini_raw.mp4、1280×720、24コマ/秒、10秒)。背景はクリーム色、Geminiが下に「Maine Coon」を入れていたので、その上(高さ655)までを使い、背景を白に。48〜169コマ目(まばたき・耳・しっぽを大きくゆらす。はじめと終わりの形が近い)で約5秒・音なし。Klee One で名前を入れた → shop/video_base/mainecoon_gemini_fixed.mp4 → make_greeting_video.py → listing_mainecoon_video.jpg
 - 2026-11-23 直したPDF(袋の英字「Maine Coon」、templates/pdf/MaineCoon.pdf)から listing_mainecoon_1/3 と check/front_mainecoon_blank.png を作り直した。6ページとも64×95mm
+- 2026-11-23 場面写真: templates/scenes/288.jpg(ユーザーがGeminiで作った)に front_mainecoon_pad.png(0.61)を貼った → shop/scene_mainecoon_1_note.jpg
 - 商品画像の並び: 1 listing_mainecoon_1.jpg → 2 listing_mainecoon_video.jpg → 3 listing_mainecoon_3.jpg → 4 listing_mainecoon_postcard.jpg → 5 scene_mainecoon_1_note.jpg → 6 scene_mainecoon_postcard_note.jpg → 7 listing_shiba_4.jpg
 
 ## 場面写真(Geminiのプロンプト)
