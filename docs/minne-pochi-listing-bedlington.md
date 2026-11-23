@@ -101,3 +101,6 @@ uchinoko-aruaru_bedlington_pochi.zip
 3. shop/listing_bedlington_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> bedlington` で作った。袋の表は6ページとも64×95mm。PDFの中の名前は6ページとも「Bedlington Terrier」
+- ぽち袋のPDFの新しい名前: BedlingtonTerrier.pdf
+- 2026-11-23 ポストカード(縦向き): もとの絵 templates/originals/bedlington.jpg(2000×2000、カードのふちと外の紙あり)から、背景を白にしてふちを消した bedlington_clean.png を作り、`make_postcard.py ... full/letter --label "Bedlington Terrier"`。商品画像 shop/listing_bedlington_postcard.jpg、机の写真 shop/scene_bedlington_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/bedlington_gemini_16x9.png(名前を消した)
+
