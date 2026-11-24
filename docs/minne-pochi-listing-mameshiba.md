@@ -28,3 +28,4 @@ On the left, a real adult black-and-tan Mame Shiba (a small Shiba Inu with tan e
 
 Photorealistic, shallow depth of field, gentle shadows, calm muted colors. No people, no hands, no text anywhere in the image.
 ```
+- 2026-11-24 あけおめ動画1回目: Geminiが絵を拡大して、耳の先と前足の先が切れた(shop/video_base/mameshiba_gemini_raw_v1_zoomed.mp4)。横長の画像を渡し、「カメラ固定・ズームしない・全身を入れる」と足して作り直しをお願いした
