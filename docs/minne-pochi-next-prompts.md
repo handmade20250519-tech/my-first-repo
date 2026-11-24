@@ -468,3 +468,4 @@ TEXT: Write only the name "Mame Shiba" once, in small, simple, neat hand-lettere
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-24 絵ができた(templates/originals/mameshiba.jpg、2000×2000。筆あとが少し荒いが、ユーザーは気に入った)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/mameshiba_gemini_16x9.png(名前を消した)を作った
