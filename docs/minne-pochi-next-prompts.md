@@ -446,3 +446,25 @@ TEXT: Write only the breed name "Maine Coon" once, in small, simple, neat hand-l
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 - 2026-11-23 絵ができた(templates/originals/mainecoon.jpg)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/mainecoon_gemini_16x9.png を作った。ぽち袋のPDF(ユーザーの名前 MainCoon.pdf)は、袋の英字が「Main Coon」(e がない)だったので、Canvaで「Maine Coon」に直すかユーザーに聞いた。listing_mainecoon_1/3 は今のPDFから作ったもの(直したら作り直す)
+
+## 豆柴(黒)(2026-11-24 新しく足す)
+あるある: 名前を呼ぶと、ちょこんとすわったまま、こてんと首をかしげる。黒柴の「麻呂眉」(目の上の白いまゆ)が、首をかしげるたびに動いて、「なあに?」と聞いているよう
+- ユーザーが通勤中に見かけた黒い豆柴から。柴犬(拒否柴)・ブルドッグ(すわりこみ)と重ならないように、首かしげと麻呂眉にした
+- 豆柴は小さい柴犬だが、子犬ではなく大人の体つきにする(NOT a puppy)
+- 袋の名前は「Mame Shiba」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult black-and-tan Mame Shiba (a small Shiba Inu) sitting neatly upright, seen from the front at a slight three-quarter angle, tilting its head to one side with curiosity as if someone just called its name. Its coat: glossy black on the back and head, with tan (warm reddish-brown) markings on the cheeks, the legs and the small round "eyebrow" spots just above each eye (the classic black Shiba "maro-mayu" eyebrows), and a cream-white chest, throat and muzzle (urajiro). Small, triangular, forward-pointing upright ears, dark almond-shaped eyes, a black nose, and a tightly curled tail resting over its back. Compact, well-proportioned adult Shiba body in a small size, exactly like a real adult dog (NOT a puppy, NOT a cartoon).
+The charm comes only from the real-life moment (a small black Shiba tilting its head with its little eyebrows raised), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; the black coat painted with rich, layered sumi ink washes that keep a soft sheen, tan markings in gentle transparent watercolor. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no question marks, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 60% of the canvas height and no more than 60% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the ears. Plain pure white background with no paper texture, no torn paper edge, no card border, no frame, no scenery; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the name "Mame Shiba" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Mame Shiba. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
