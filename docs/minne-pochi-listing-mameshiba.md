@@ -14,6 +14,7 @@ uchinoko-aruaru_mameshiba_pochi.zip(中身: x)
 ## 商品画像
 - ポストカード(縦向き): `make_postcard.py templates/originals/mameshiba.jpg mameshiba full/letter --label "Mame Shiba"`。商品画像 shop/listing_mameshiba_postcard.jpg、机の写真 shop/scene_mameshiba_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/mameshiba_gemini_16x9.png
 - 2026-11-24 ぽち袋のPDF(MameShiba.pdf、templates/pdf/)から listing_mameshiba_1/3 と check/front_mameshiba_blank.png を作った。6ページとも64×95mm。袋の名前は黒の書体
+- 2026-11-24 場面写真: templates/scenes/290.jpg(ユーザーがGeminiで作った)に front_mameshiba_pad.png(0.61)を貼った → shop/scene_mameshiba_1_note.jpg
 - 商品画像の並び: 1 listing_mameshiba_1.jpg → 2 listing_mameshiba_video.jpg → 3 listing_mameshiba_3.jpg → 4 listing_mameshiba_postcard.jpg → 5 scene_mameshiba_1_note.jpg → 6 scene_mameshiba_postcard_note.jpg → 7 listing_shiba_4.jpg
 
 ## 場面写真(Geminiのプロンプト)
