@@ -469,3 +469,25 @@ TEXT: Write only the name "Mame Shiba" once, in small, simple, neat hand-lettere
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
 - 2026-11-24 絵ができた(templates/originals/mameshiba.jpg、2000×2000。筆あとが少し荒いが、ユーザーは気に入った)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/mameshiba_gemini_16x9.png(名前を消した)を作った
+
+## ジャーマン・シェパード(2026-11-25 新しく足す)
+あるある: 散歩の時間がくると、自分のリードをくわえて持ってきて、目の前にきちんとすわって「時間ですよ」。時計よりも正確な、まじめなお散歩係
+- 柴犬(拒否柴)・ブルドッグ(すわりこみ)の「歩かない」と反対の「早く行こう」にした。ジャックラッセル(ボール)とも重ならない
+- すわった形はたてに収まる。耳が大きいので、耳の上の余白を多めにとった
+- 袋の名前は「German Shepherd」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult German Shepherd Dog sitting upright and very straight, seen from the front at a slight three-quarter angle, holding its own leather leash gently in its mouth, with the rest of the leash hanging down loosely in front of its chest and onto the floor. It looks straight at the viewer with an earnest, expectant, polite expression, as if saying "It's time for our walk." Its face: large, upright, pointed ears standing tall, intelligent dark almond-shaped eyes, a long muzzle and a black nose. Coat: classic black-and-tan (a black saddle and black mask with warm tan legs, chest and face), medium-length dense coat, a thick bushy tail resting on the floor. Realistic German Shepherd anatomy and proportions, strong and noble, exactly like a real adult dog (NOT a puppy, NOT a cartoon).
+The charm comes only from the real-life moment (a serious, punctual dog bringing its own leash for the walk), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the black saddle painted with layered sumi ink washes, the tan in warm transparent watercolor. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no clock, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 60% of the canvas height and no more than 60% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the ears. Plain pure white background with no paper texture, no torn paper edge, no card border, no frame, no scenery; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the breed name "German Shepherd" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: German Shepherd. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
