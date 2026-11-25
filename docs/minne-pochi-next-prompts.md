@@ -491,3 +491,4 @@ TEXT: Write only the breed name "German Shepherd" once, in small, simple, neat h
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-25 絵ができた(templates/originals/germanshepherd.jpg)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/germanshepherd_gemini_16x9.png(豆柴で拡大されたので、はじめから犬の高さ55%の小さめ)を作った
