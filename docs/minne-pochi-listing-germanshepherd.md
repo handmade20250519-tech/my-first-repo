@@ -88,6 +88,7 @@ uchinoko-aruaru_germanshepherd_pochi.zip(中身: GermanShepherd.pdf、postcard_g
 ## 商品画像
 - ポストカード(縦向き): `make_postcard.py templates/originals/germanshepherd.jpg germanshepherd full/letter --label "German Shepherd"`。商品画像 shop/listing_germanshepherd_postcard.jpg、机の写真 shop/scene_germanshepherd_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/germanshepherd_gemini_16x9.png(犬の高さ55%)
 - 2026-11-25 ぽち袋のPDF(GermanShepherd.pdf、templates/pdf/。届いたファイルの名前は German_Shepherd.pdf)から listing_germanshepherd_1/3 と check/front_germanshepherd_blank.png を作った。6ページとも64×95mm
+- 2026-11-25 場面写真: templates/scenes/293.jpg(ユーザーがGeminiで作った)に front_germanshepherd_pad.png(0.62)を貼った → shop/scene_germanshepherd_1_note.jpg
 - 2026-11-25 あけおめ動画: 1回目はアップになって使えなかった(shop/video_base/germanshepherd_gemini_raw_v1_zoomed.mp4)。新しいチャットで作り直した2回目(shop/video_base/germanshepherd_gemini_raw.mp4)は全身が入った。48〜167コマ目(首をかしげ、耳としっぽを動かす。はじめと終わりの形がほぼ同じ)で5秒・音なし。犬が小さいので拡大していて、少しやわらかく見える。背景を白に、Klee One で名前を入れた → shop/video_base/germanshepherd_gemini_fixed.mp4 → make_greeting_video.py → listing_germanshepherd_video.jpg
 - 商品画像の並び: 1 listing_germanshepherd_1.jpg → 2 listing_germanshepherd_video.jpg → 3 listing_germanshepherd_3.jpg → 4 listing_germanshepherd_postcard.jpg → 5 scene_germanshepherd_1_note.jpg → 6 scene_germanshepherd_postcard_note.jpg → 7 listing_shiba_4.jpg
 
