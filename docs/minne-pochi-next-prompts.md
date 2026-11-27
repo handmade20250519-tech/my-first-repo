@@ -493,3 +493,24 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 ```
 - 2026-11-25 絵ができた(templates/originals/germanshepherd.jpg)。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/germanshepherd_gemini_16x9.png(豆柴で拡大されたので、はじめから犬の高さ55%の小さめ)を作った
 - 2026-11-25 あけおめ動画1回目: 「カメラ固定・ズームしない」と書いたのに、Geminiが顔と胸のアップにしてしまい(耳も足も切れた)、最後の0.5秒だけ元の絵に戻る動画になった(shop/video_base/germanshepherd_gemini_raw_v1_zoomed.mp4)。使えない。ぽち袋のPDFの名前は GermanShepherd.pdf
+
+## ベンガル(2026-11-27 新しく足す)
+あるある: ヒョウのような柄なのに、水が大好き。洗面台の蛇口から水が出ると飛んできて、前足でちょいちょい。ぬれても気にせず、真剣な顔
+- ほかの猫と重ならない、水あそびにした。洗面ボウルのふちにすわった形はたてに収まる
+- 袋の名前は「Bengal」
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real cat for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Bengal cat sitting on the edge of a simple, plain white round washbasin with a small plain faucet, reaching out one front paw to touch a thin stream of running water, watching the water with a focused, delighted, serious expression. Its coat: short, sleek, golden-brown coat with distinct dark brown leopard-like rosettes and spots, a pale cream belly, a striped tail with a dark tip. A muscular, athletic body, a slightly wild-looking face with small rounded ears, and large green-gold eyes. Realistic Bengal anatomy and proportions, exactly like a real adult cat (NOT a kitten, NOT a cartoon). The washbasin and faucet are simple and plain, with no brand or logo.
+The charm comes only from the real-life moment (a leopard-patterned cat that loves playing with running water), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real cats, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the rosettes painted with soft, slightly bleeding sumi ink, the water as a few light, clear brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no splash effects, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One cat and one washbasin only, centered, filling about 60% of the canvas height and no more than 65% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the ears. Plain pure white background with no paper texture, no torn paper edge, no card border, no frame, no wall, no scenery; only a very faint pale ink wash shadow under the basin.
+
+TEXT: Write only the breed name "Bengal" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the basin, about 6% of the canvas height, on a single line. Spell it exactly: Bengal. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
