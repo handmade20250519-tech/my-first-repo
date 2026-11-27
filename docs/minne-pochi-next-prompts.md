@@ -514,3 +514,4 @@ TEXT: Write only the breed name "Bengal" once, in small, simple, neat hand-lette
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-27 絵ができた(templates/originals/bengal.jpg)。洗面ボウルは丸いたらいのような形で、蛇口が宙に浮いている(壁や台がない)が、白い背景の絵としては目立たない。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/bengal_gemini_16x9.png(小さめ、名前を消した)を作った
