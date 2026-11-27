@@ -520,3 +520,24 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - 2026-11-27 さらにユーザーが「猫の前足がたらいの水の上に乗って、浮いているように見える」と気づいた。たらいをやめ、庭の立水栓のそばの地面にすわって、流れる水に前足をのばす絵に作り直すことにした(新しい指示文をユーザーに渡した。下)。今の bengal.jpg(たらい・柱つき)で作ったポストカードなどは使わない。新しい絵が届いたら作り直す
   - 新しい指示文のちがい: SUBJECT を「garden standing water tap(地面から立つ細い柱、上に蛇口)、水は足元の平たい石に落ちる、猫は柱のそばの地面にすわり、前足1本を水にのばす、ほかの3本は地面」「NO tub, NO basin and NO bowl」に。COMPOSITION は「One cat and one standing tap only」「no wall, no fence, no garden scenery」
 - 2026-11-27 立水栓の新しい絵ができた(templates/originals/bengal.jpg。たらいの絵は bengal_v2_tub_pipe.jpg)。木の柱に蛇口、猫は地面にすわって前足を水に。ポストカード・動画の下じき・机の写真・商品画像・Geminiに渡す横長の画像を作り直した
+
+## ダックス(ロング)(2026-11-27 新しく足す)
+あるある: おやつの袋の音がすると飛んできて、後ろ足で立ち上がり、長い胴をぴーんとのばして前足をそろえ「ちょうだい」。ふわふわの耳がゆれて、目はおやつに釘づけ
+- スムース(毛布にもぐる)・ワイヤー(ひげに草)と重ならないように、立ち上がる「ちょうだい」にした。長い胴がたてにのびるので、縦長に収まる
+- 袋の名前は「Long-haired Dachshund」(長いので、Canvaで入らないときは「Dachshund」だけでもよい)
+
+```
+Create an original, warm Japanese ink-and-wash painting of a single real dog for a Japanese gift envelope (pochi-bukuro).
+
+SUBJECT: A real adult Miniature Long-haired Dachshund standing up on its hind legs, its long body stretched upright, front paws held together in front of its chest in a polite "please" begging pose, looking up eagerly at a treat just out of the picture. Its long, silky, wavy ears hang down and sway, feathered fur on its chest, legs and tail. Coat: rich red (warm reddish-brown) long, silky coat. Dark almond-shaped eyes full of hope, a black nose, a long muzzle. Realistic Dachshund anatomy and proportions with its characteristic long body and short legs, exactly like a real adult dog (NOT a puppy, NOT a cartoon). Nothing else in the picture: no treat, no hand, no bag.
+The charm comes only from the real-life moment (a long-bodied dachshund stretching up tall to beg for a treat), NOT from a cute or comic drawing style. Original design only: do NOT depict any existing character, mascot or brand, and do NOT imitate any specific artist's style.
+
+STYLE: A traditional Japanese sumi-e ink-and-light-color animal painting, as if painted from life by a skilled painter who studied real dogs, on washi paper. Loose, confident brush strokes with variation in thickness; some edges left soft or open instead of fully outlined; soft, transparent watercolor washes with gentle bleeding edges; the long silky fur painted with layered washes and fine flowing brush strokes. Muted, natural, traditional Japanese colors. Calm and gentle, with quiet warmth.
+NOT a cartoon, NOT manga, NOT anime, NOT a children's book illustration, NOT chibi, NOT kawaii: no oversized head, no big round shiny anime eyes, no smile line, no blush on the cheeks, no thick uniform outlines, no motion lines, no sparkles, no symbols of any kind. No people, no hands. Keep the painting readable when printed small (about 5 cm tall).
+
+COMPOSITION: One dog only, centered, filling about 60% of the canvas height and no more than 55% of the canvas width (a compact, upright shape), with generous empty space around it, especially above the ears and nose. Plain pure white background with no paper texture, no torn paper edge, no card border, no frame, no scenery; only a very faint pale ink wash shadow under the dog.
+
+TEXT: Write only the name "Long-haired Dachshund" once, in small, simple, neat hand-lettered brush letters in soft dark sumi ink, centered just below the dog, about 6% of the canvas height, on a single line. Spell it exactly: Long-haired Dachshund. No other text, letters, numbers, seals, signatures or watermarks anywhere.
+
+OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
+```
