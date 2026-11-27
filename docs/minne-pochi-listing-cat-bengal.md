@@ -15,6 +15,7 @@ uchinoko-aruaru_bengal_pochi.zip(中身: x)
 - 絵: 1枚目は蛇口が宙に浮き、2枚目はたらいの水の上に猫が乗って見えたので、庭の立水栓の絵に作り直した(templates/originals/bengal.jpg。前の絵は bengal_v1_floating_faucet.jpg、bengal_v2_tub_pipe.jpg)
 - ポストカード(縦向き): `make_postcard.py templates/originals/bengal.jpg bengal full/letter --label "Bengal"`。商品画像 shop/listing_bengal_postcard.jpg、机の写真 shop/scene_bengal_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/bengal_gemini_16x9.png
 - 2026-11-27 ぽち袋のPDF(Bengal.pdf、templates/pdf/。立水栓の絵)から listing_bengal_1/3 と check/front_bengal_blank.png を作った。6ページとも64×95mm。袋の名前は茶色の書体
+- 2026-11-27 場面写真: templates/scenes/299.jpg(ユーザーがGeminiで作った)に front_bengal_pad.png(0.60)を貼った → shop/scene_bengal_1_note.jpg
 - 商品画像の並び: 1 listing_bengal_1.jpg → 2 listing_bengal_video.jpg → 3 listing_bengal_3.jpg → 4 listing_bengal_postcard.jpg → 5 scene_bengal_1_note.jpg → 6 scene_bengal_postcard_note.jpg → 7 listing_shiba_4.jpg
 
 ## 場面写真(Geminiのプロンプト)
