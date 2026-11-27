@@ -100,3 +100,5 @@ uchinoko-aruaru_cavalier_pochi.zip
 3. shop/listing_cavalier_3.jpg(6種類)
 4. shop/listing_shiba_4.jpg(作り方)
 - 1と3は `python3 shop/make_from_pdf.py <PDF> cavalier` で作った。袋の表は6ページとも64×95mm。PDFの中の名前は6ページとも「Cavalier」
+- 2026-11-27 ポストカード(横向き): もとの絵 templates/originals/cavalier.jpg(1500×1500、紙の目あり)から、紙の目だけを白にした cavalier_clean.png(うすい緑のクッションは残すため、色のある所は白にしない)を作り、`make_postcard.py ... full_yoko/letter_yoko --label "Cavalier"`。商品画像 shop/listing_cavalier_postcard.jpg、机の写真 shop/scene_cavalier_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/cavalier_gemini_16x9.png(小さめ、名前を消した)
+
