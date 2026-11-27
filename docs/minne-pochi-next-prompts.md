@@ -516,3 +516,4 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 ```
 - 2026-11-27 絵ができた(templates/originals/bengal.jpg)。洗面ボウルは丸いたらいのような形で、蛇口が宙に浮いている(壁や台がない)が、白い背景の絵としては目立たない。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/bengal_gemini_16x9.png(小さめ、名前を消した)を作った
 - ぽち袋のPDFの名前: Bengal.pdf
+- 2026-11-27 ユーザーが蛇口の浮きに気づき、Geminiで直してもらった。たらいの中から柱(水道管)が立ち、その上に蛇口がついた形になった。庭の「立水栓と水受け」に見えるので、これを使う(templates/originals/bengal.jpg。前の絵は bengal_v1_floating_faucet.jpg)。ポストカード・動画の下じき・商品画像・Geminiに渡す横長の画像を作り直した
