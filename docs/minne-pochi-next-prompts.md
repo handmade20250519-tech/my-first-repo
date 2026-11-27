@@ -519,3 +519,4 @@ OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready 
 - 2026-11-27 ユーザーが蛇口の浮きに気づき、Geminiで直してもらった。たらいの中から柱(水道管)が立ち、その上に蛇口がついた形になった。庭の「立水栓と水受け」に見えるので、これを使う(templates/originals/bengal.jpg。前の絵は bengal_v1_floating_faucet.jpg)。ポストカード・動画の下じき・商品画像・Geminiに渡す横長の画像を作り直した
 - 2026-11-27 さらにユーザーが「猫の前足がたらいの水の上に乗って、浮いているように見える」と気づいた。たらいをやめ、庭の立水栓のそばの地面にすわって、流れる水に前足をのばす絵に作り直すことにした(新しい指示文をユーザーに渡した。下)。今の bengal.jpg(たらい・柱つき)で作ったポストカードなどは使わない。新しい絵が届いたら作り直す
   - 新しい指示文のちがい: SUBJECT を「garden standing water tap(地面から立つ細い柱、上に蛇口)、水は足元の平たい石に落ちる、猫は柱のそばの地面にすわり、前足1本を水にのばす、ほかの3本は地面」「NO tub, NO basin and NO bowl」に。COMPOSITION は「One cat and one standing tap only」「no wall, no fence, no garden scenery」
+- 2026-11-27 立水栓の新しい絵ができた(templates/originals/bengal.jpg。たらいの絵は bengal_v2_tub_pipe.jpg)。木の柱に蛇口、猫は地面にすわって前足を水に。ポストカード・動画の下じき・机の写真・商品画像・Geminiに渡す横長の画像を作り直した
