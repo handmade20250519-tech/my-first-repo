@@ -88,6 +88,7 @@ uchinoko-aruaru_dachshundlong_pochi.zip(中身: LonghairedDachshund.pdf、postca
 ## 商品画像
 - ポストカード(縦向き): `make_postcard.py templates/originals/dachshundlong.jpg dachshundlong full/letter --label "Long-haired Dachshund"`。商品画像 shop/listing_dachshundlong_postcard.jpg、机の写真 shop/scene_dachshundlong_postcard_note.jpg。Geminiに渡す横長の画像 shop/video_base/dachshundlong_gemini_16x9.png
 - 2026-11-28 ぽち袋のPDF(LonghairedDachshund.pdf、templates/pdf/。届いたファイルの名前は Long-haired_Dachshund.pdf)から listing_dachshundlong_1/3 と check/front_dachshundlong_blank.png を作った。6ページとも64×95mm。袋の名前はオレンジ茶色の書体。袋の犬は、もとの絵と左右が逆(右向き)
+- 2026-11-28 場面写真: templates/scenes/302.jpg(ユーザーがGeminiで作った)に front_dachshundlong_pad.png(0.61)を貼った → shop/scene_dachshundlong_1_note.jpg
 - 2026-11-28 ユーザーの希望で、ポストカードを袋と同じ右向きにした(もとの絵を左右反転した templates/originals/dachshundlong_flip.png から作り直し)。動画はGeminiのまま(左向き)
 - 2026-11-28 あけおめ動画: Geminiの動画(shop/video_base/dachshundlong_gemini_raw.mp4、10秒)。1回で全身が入った。58〜171コマ目(前足をふって「ちょうだい」、耳としっぽがゆれる。はじめと終わりの形が近い)を少しゆっくりにして5秒・音なし。背景を白に、Klee One で名前を入れた → shop/video_base/dachshundlong_gemini_fixed.mp4 → make_greeting_video.py → listing_dachshundlong_video.jpg
 - 商品画像の並び: 1 listing_dachshundlong_1.jpg → 2 listing_dachshundlong_video.jpg → 3 listing_dachshundlong_3.jpg → 4 listing_dachshundlong_postcard.jpg → 5 scene_dachshundlong_1_note.jpg → 6 scene_dachshundlong_postcard_note.jpg → 7 listing_shiba_4.jpg
