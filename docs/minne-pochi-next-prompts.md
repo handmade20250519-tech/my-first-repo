@@ -541,3 +541,4 @@ TEXT: Write only the name "Long-haired Dachshund" once, in small, simple, neat h
 
 OUTPUT: Highest available resolution (4K), 1:1 aspect ratio. Crisp, print-ready artwork.
 ```
+- 2026-11-28 絵ができた(templates/originals/dachshundlong.jpg)。名前は dachshundlong。ポストカード(縦向き)・動画の下じき・机の写真・商品画像と、Geminiに渡す横長の画像 shop/video_base/dachshundlong_gemini_16x9.png(小さめ、名前を消した)を作った。ぽち袋のPDFの名前は LonghairedDachshund.pdf
